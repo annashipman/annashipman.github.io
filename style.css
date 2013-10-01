@@ -1,0 +1,198 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height:130%;
+}
+
+date {
+    color: #666;
+}
+
+p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.photo-credit {
+    font-size: 12px;
+}
+
+ul  {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-left: 10px;
+    padding: 0;
+    display: inline-block;
+}
+
+ol {
+    line-height: 1.7;
+}
+
+li {
+    padding-bottom: 10px;
+}
+
+a {
+    color:#1278db;
+    text-decoration:none;
+}
+
+.name a {
+    color: white;
+}
+
+a:hover, a:focus{
+    text-decoration: underline;
+}
+
+img {
+    display:block;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0 2px 4px #ddd;
+    margin: 1em 0;
+    width:100%;
+}
+
+.header {
+    background-image:url('/img/texture.jpg');
+    text-shadow: 0px 2px 5px black;
+}
+
+h1, h2 {
+    font-size: 24px;
+    padding-bottom: 10px;
+    line-height: 100%;
+    margin: 30px 0 0 0;
+}
+
+.link-group{
+    margin-top:10px;
+    padding-bottom:20px;
+}
+
+.header-text{
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.navigation {
+    padding: 20px 0 25px 30px;
+}
+
+.twitter{
+    float:right;
+    padding-top:20px;
+    padding-right: 10px;
+    font-size:0.9em;
+}
+
+.name {
+    padding: 50px 0 0 50px;
+    font-family: "Gill Sans", Calibri, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    font-weight: normal;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: white;
+    display:block;
+}
+
+.ie-note{
+    float:right;
+    font-size:0.9em;
+}
+
+.code-sample{
+    background-color: #deebf5;
+    font-family: "Andale Mono", "Courier New", Courier, monospace;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.code-sample-inline{
+    background-color: #deebf5;
+    font-family: "Andale Mono", "Courier New", Courier, monospace;
+    font-size: 14px;
+    padding: 0;
+}
+
+.pretty-code-sample{
+    border: 1px solid #ddd;
+    background:#eee;
+    padding:15px;
+}
+
+p .pretty-code-sample {
+    padding:2px;
+}
+
+.blog-post{
+    margin-bottom: 30px;
+    border-bottom: 1px dotted #333;
+}
+
+.sidebar{
+    font-size:14px;
+}
+
+.left-2-column {
+    float:left;
+    width: 45%;
+}
+
+.right-2-column {
+    float:right;
+    width:50%;
+}
+
+/* lifted directly from http://matthewjamestaylor.com/blog/perfect-3-column.htm*/
+.colmask {
+    position:relative;    /* This fixes the IE7 overflow hidden bug */
+    clear:both;
+    float:left;
+    width:100%;            /* width of whole page */
+    overflow:hidden;        /* This chops off any overhanging divs */
+}
+
+.colright,
+.colmid,
+.colleft {
+    float:left;
+    width:100%;            /* width of page */
+    position:relative;
+}
+.col1,
+.col2,
+.col3 {
+    float:left;
+    position:relative;
+    padding:0 0 1em 0;    /* no left and right padding on columns, we just make them narrower instead */
+    overflow:hidden;
+}
+/* 3 Column settings */
+.threecol {
+    background:#fff;        /* right column background colour */
+}
+.threecol .colmid {
+    right:25%;            /* width of the right column */
+    background:#fff;        /* center column background colour */
+}
+.threecol .colleft {
+    right:50%;            /* width of the middle column */
+    background:#fff;    /* left column background colour */
+}
+.threecol .col1 {
+    width:46%;            /* width of center column content (column width minus padding on either side) */
+    left:102%;            /* 100% plus left padding of center column */
+}
+.threecol .col2 {
+    width:20%;            /* Width of left column content (column width minus padding on either side) */
+    left:30%;            /* width of (right column) plus (center column left and right padding) plus (left column left padding) */
+}
+.threecol .col3 {
+    width:21%;            /* Width of right column content (column width minus padding on either side) */
+    left:85%;            /* Please make note of the brackets here:
+                    (100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
+}

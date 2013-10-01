@@ -1,0 +1,941 @@
+<!doctype html>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<html lang="en-GB">
+    <head>
+        <title>Anna Shipman : JFDI</title>
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <!-- Anything good about the styling of this website is down to the amazing Chris Govias; you should hire him: http://work.chrisgovias.com/ Anything bad or stupid is down to me. Do let me know if you spot anything. -->
+    </head>
+    <body>
+        <div class="header">
+            <span class="name"><a href="/">Anna Shipman</a> : JFDI</span>
+            <div class="navigation">
+                <a href="http://www.twitter.com/annashipman" class="header-text twitter">Follow me on Twitter</a>
+                <table class="link-group">
+                    <tr>
+                        <td><a href="jfdi.html" class="header-text">JFDI</a></td>
+                        <td><a href="cv.html" class="header-text">CV</a></td>
+                        <td><a href="games.html" class="header-text">Games</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+<div class="colmask threecol">
+    <div class="colmid">
+        <div class="colleft">
+            <div class="col1">
+                <!-- Column 1 start -->
+<div id="puppet-module" class="blog-post">
+<h1>Creating a Puppet module</h1>
+<date>9th September 2013</date>
+<p>I learnt three very interesting things recently, courtesy of the brilliant <a
+href="https://twitter.com/dancarley" target="_blank">Dan Carley</a>.<p>
+<ol>
+<li><a href="#git-filter-branch">git filter-branch</a></li>
+<li><a href="#generate-module">how to create a puppet module using our puppet module skeleton</a></li>
+<li><a href="#shopt">shopt -s dotglob</a></li>
+</ol>
+<p>While creating the Puppet manifests for the GOV.UK mirror, we realised we
+needed a module that was part of the GOV.UK Puppet, so our task was to pull it out into a standalone module and
+have both GOV.UK and our new <a
+href="https://github.com/alphagov/govuk_mirror-puppet" target="_blank">GOV.UK
+mirror</a> use it.</p>
+<p>The first step in creating a new module is to pull it out into its own git
+repository.<p>
+<p>First, clone the repository the module is currently in. (Extra learning here:
+you don't need to clone it from Github, you can just git clone the existing
+repository.) You want <span class="code-sample-inline">--no-hardlinks</span> so it's entirely separate:</p>
+<div class="code-sample">
+git clone --no-hardlinks puppet puppet-auditd
+</div>
+<p>At this stage our puppet-auditd repo still points at our puppet repo, so we
+want to remove the remote:</p>
+<div class="code-sample">
+git remote rm origin
+</div>
+<p><span id="git-filter-branch">Now</span> we want to get rid of everything that's not our module and make our module
+the root, and this is where we use <a
+href="http://teach.github.com/articles/lesson-filter-branch/" target="_blank">git
+filter-branch</a>:</p>
+<div class="code-sample">
+git filter-branch --subdirectory-filter modules/audit-d HEAD
+</div>
+<p>The next thing we want to do is create the files in the framework around the
+subdirectory
+to make it a Puppet module, for example the Modulefile. For this we can use our <a
+href="https://github.com/gds-operations/puppet-module-skeleton"
+target="_blank">Puppet module skeleton</a>. However, we don't want
+to directly follow the instructions there as we already have a lot of the
+classes we need. Instead of creating it from scratch as per those instructions,
+we <span id="generate-module">generate our new module stucture</span>:<p>
+<div class="code-sample">
+puppet module generate gdsoperations-auditd
+</div>
+<p>and then then we copy over the generated files.</p>
+<p>However, a normal recursive copy won't work:<p>
+<div class="code-sample">
+cp -r A/* B
+</div>
+<p>This will only copy non-dotfiles, and we want the dotfiles as well, like
+.gitignore.</p>
+<p>However, attempting to copy the dotfiles as well:</p>
+<div class="code-sample">
+cp -r A/.* B
+</div>
+<p>leads to hilarious results.  <span class="code-sample-inline">..</span> is a
+directory too, so the above command copies all those contents recursively as
+well. Try it. It's most entertaining. But it's not really what we want.
+<p><span id="shopt">What</span> we can do is toggle what is included in <span class="code-sample-inline" >A/*</span> for this shell. The
+documentation is <a
+href="http://www.gnu.org/software/bash/manual/html_node/The-Shopt-Builtin.html"
+target="_blank">here</a>, but this is what we need:
+<div class="code-sample">
+shopt -s dotglob
+</div>
+<p>In order to check what is going to be copied now you can:<p>
+<div class="code-sample">
+echo A/*
+</div>
+<p>and if you like it:<p>
+<div class="code-sample">
+cp -r A/* B
+</div>
+<p>The next step is to go through the files to work out which modifications to
+keep and which ones are not relevant.</p>
+<img src="img/files_changed.png">
+<p>Another tip from Dan: vimdiff is really useful for this task. I won't go into
+how and what we decided; you can see that <a
+href="https://github.com/gds-operations/puppet-auditd/compare/c140536...cad9a94"
+target="_blank">here</a>.</p>
+</div>
+<div id="regex-picture" class="blog-post">
+<h1>Some Regex in the form of a Picture!</h1>
+<date>10th August 2013</date>
+<img src="img/regex.jpg" />
+</div>
+<div id="where-start" class="blog-post">
+<h1>Where Do I Start?</h1>
+<date>6th July 2013</date>
+<p>The first day at a new job is always a bit nerve-wracking. In a recent
+session at <a href="http://www.spaconference.org/spa2013/" target="_blank">SPA
+2013</a>, we came up with some things a developer joining a new team can do to get up to speed quickly.</p>
+<img src="img/where_start.jpg" />
+<h3>Whiteboard an architecture diagram</h3>
+<p>This is a brilliant way to get a quick overview of how the pieces of
+your new project fit together, and can be tailored to whatever level of
+understanding you (or the person you are talking to) has. It's a good way to
+meet people on other teams, when you're looking to get more detail on some of
+the parts of the diagram. And your fresh perspective can often be very useful to the person taking you through the architecture.</p>
+<p>However, it can sometimes be hard to know who the right person is to ask, and
+it can also be hard to get the right level of detail.</p>
+<h3>Facilitate a retrospective</h3>
+<p>This is the fastest way to find out what's going on in a team, and beacuse
+you're new, you will essentially be an external facilitator which is really
+useful to the team. It's also a great way to find out what's going on in other teams once you've settled in.<p>
+<p>However, it could be challenging if your new place of work is not used to
+agile working, and of course you do have to be the kind of person who has the
+confidence to faciliate a retrospective for a bunch of people you don't know
+yet.</p>
+<h3>Start putting a glossary together</h3>
+<p>...with the aim of putting it on the wiki.</p>
+<p>This will give you a head start on understanding the concepts that the rest of team take for granted – and has the added advantage that you may hit on areas of vagueness or disagreement that can be straightened out.</p>
+<p>It can however be hard to get started with this, and to work out what to focus on, and in some teams it might be a challenge to find anyone who
+understands them all.</p>
+<h3>In Summary: Do something, document something</h3>
+<p>People have different ways of learning and sometimes the explanations you get
+in your first week can lead to information overload and be hard to take in. So it can be
+useful to ask more directed questions, for example in pursuit of added detail
+for an architecture diagram, or to draw out actions for a retrospective.</p>
+<p>We had some other ideas as well:</p>
+<li>Pair program as much as you can, with different people</li>
+<li>You could think about shadowing someone for a morning or a day</li>
+<li>Talk to other teams - the teams that particularly can give you insight into
+what you need to know are the testing team, the support team and the ops
+team</li>
+<li>Find out where people go for lunch and wangle yourself an invitation!</li>
+</ul>
+<p>We also stole some ideas from other teams, like if the team's processes are
+not documented you could offer to do that as a way to gain understanding. For
+example, how well documented are the new joiner instructions? You are in a great
+place to improve those, and a big win would be automating some part of that.
+Also, meeting the users is a fantastic way to understand the business, so if
+that's not part of your induction you could arrange that.</p>
+<p>Thanks to <a href="https://twitter.com/andylongshaw" target="_blank">Andy
+Longshaw</a>, <a href="https://twitter.com/eoinwoodz" target="_blank">Eoin
+Woods</a> and <a href="http://rozanski.org.uk/" target="_blank">Nick
+Rozanski</a> for organising the session.</p>
+</div>
+<div id="roof-bug-fixing" class="blog-post">
+<h1>Roof Bug-fixing</h1>
+<date>21st May 2013</date>
+<p>I often find myself viewing life through the lens of software development, a bit like when you play too much Tetris and all your friends turn into shapes. But recent events have made me think: maybe other things actually would be better if they were more like software development?</p>
+<p>Recently, I had a leak into my flat. By "recently" I mean it's been ongoing for four and a half months, but that's not what this post is about. This is about applying software development ideas to other fields, instead of the other way around. We talk about <a href="http://manifesto.softwarecraftsmanship.org/" target="_blank">"software craftsmanship"</a> – I'm thinking about the opposite, as applied to, for example, roofing.</p>
+<p>I first noticed the leak as I was about to go on holiday before Christmas. It rained very heavily, and literally hours before I was due to leave, I saw water bubbling up between the laminate floorboards in the hall. I pulled up the vinyl on the bathroom floor and then took the side of the bath off, and found that my bathroom was about an inch deep in water.</p>
+<p>Cut forward a fortnight to when the housing association manage to send out a surveyor to investigate. He tells me what is causing the problem: the flat above and to the right has – without permission – erected some kind of structure on their balcony, and this has caused damage to the brickwork, so when it rains water is seeping into my flat through the holes in their balcony.</p>
+<img src="img/balcony.jpg" />
+<p>At this stage, it's a bit of a mystery to me how that works. And why shouldn't it be? I'm not a roofer. Or a surveyor, or a builder, or an architect. I have only the vaguest notion of how buildings are put together, and I don't think to ask for an explanation of how the water is filling up my flat. Apparently, the Offending Neighbour has drilled a hole to put up the mystery structure, and the hole is the problem. They are going to asphalt over it. And they do so.</p>
+<p>All well and good, and the insurance company come round to measure up the flat to fix the damage. Except the day they come to do this, it rains heavily, and once again, I see water bubbling up through the floor in the hall. They have asphalted over the hole in the balcony, but this hasn't fixed the leak!</p>
+<p>A builder comes to my flat to discuss it with me. This is where it starts to get interesting. The builder has already looked at the Offending Neighbour's balcony and now he wants to look at my flat. But he can't see how the pieces fit together. Eventually, I have to take him outside to point at the balcony to demonstrate that water coming from the balcony at the point at which it intersects with my flat would lead to damp at exactly the spot we see it, as per the diagram above.</p>
+<p>This is when I first start to think of this in terms of a bug. Here is the point at which you need to look at the bigger picture. We're not talking about a bit of mistaken logic in a Ruby program affecting the output of that program. We're talking about a timeout two layers away. The manifestation of the problem is a long way from the cause, and you really need a view of the bigger picture to be able to reason about it.</p>
+<p>So the builder goes away, and finally (after calls and emails and threats and complaints) the housing association get back to me and tell me that they are going to put something called <a href="http://en.wikipedia.org/wiki/Flashing_(weatherproofing)"target="_blank">flashing</a> on the point at which the wall of my flat meets the wall of ON's balcony. This, they tell me, will definitely fix the problem.</p> 
+<img src="img/flashing.jpg" />
+<p>So this makes sense to me. At this point, I've got an idea of the bigger picture, though the details of the water seeping through the brickwork and then somehow bubbling up through the floor are somewhat hazy to me. But I do have one strong opinion at this point: I want to be sure this time that they have really fixed it. At this point, I conceive of the idea of a <a href="http://www.universalroof.com/orlando-roofing/water-testing.html" target="_blank">water test</a>.</p>
+<p>You see, when we find a bug in our software, we try and recreate it. Then we know when we've fixed it. And something I was starting to notice here was that this wasn't happening. It was as if I had noticed the timeout, and made a configuration change in the general area, then marked the story as done and walked away. We don't do that, with software. And yet this situation that was making my life pretty inconvenient – three months in, my flat was covered in mould, smelt of damp and all my furniture was in one room while I waited for the leak to be be fixed – was being dealt with by people who seemed to be making general stabs in the direction of the problem, without any kind of theory or analysis.</p>
+<p>Of course, I didn't quite realise that – you expect people to be professionals, whatever the job is. But I was sure I wanted them to do a water test.</p>
+<p>But getting them to do this was pretty hard, even though it seemed completely obvious to me. What's the problem? Stand on the balcony with a hose, see if the problem is fixed! At one point, I was told it wasn't "feasible". I started to wonder if I was being too idealistic and actually a building was more like a huge legacy codebase where you may not even have access to all the libraries. Maybe I'd just have to accept a best guess instead of a rigorous approach.</p>
+<p>Finally, four months in, I managed to persuade them to do it. The head of repairs at the housing association came round to instruct the roofer, but even as he did this he was complaining that the water test was pointless, a waste of time, as it was due to rain today anyway and that would test it. He didn't really grasp the idea that a water test is a controlled test – it's a way to control the input so as to work out whether the output is what you'd expect were your conclusions correct. Rain – apart from being unpredictable – is not controlled. For a start, it rains all over the building at once.</p>
+<p>But then the roofer came round, and he was a true software developer.</p><p>We went up to the balcony together and he explained to me what he was going to do. Firstly, he was going to hose down on the balcony, not going over the edge. This was to test the flashing.</p>
+<p>There is a gap between ON's fence and the wall of my flat. It seemed to me that the gap was too low and my suspicion was that rainwater was overflowing through the gap and thus soaking into my wall.</p>
+<img src="img/top_view.jpg" />
+<p>However, the roofer explained to me that this was the design of the balcony, to prevent flooding. If it rained heavily, the water would flow along the gully and into the drain, and the gap was to prevent the balcony flooding if the rain was too heavy.</p>
+<p>However, secondly, he explained, he was going to hose down specifically through the gap and over the side of the wall of my flat so we could see what would happen if the balcony did flood. The reason he was doing these things separately, he told me, was so he could isolate the cause of the problem. If he did both at once, we wouldn't know what the specific problem was.</p>
+<p>Yes! Exactly! This is why we don't make the arbitrary configuration change and correct the logic in the Ruby program at the same time, because then how do we know? This man was speaking my language!</p>
+<p>The first thing took him about thirty seconds to discover. They turned the hose on the flashing, the  water ran down the gully as planned and then – that was it. The drain was completely blocked. It took less than a minute for the balcony to flood and the water to start pouring through the gap and down my wall. Thus demonstrating another benefit of methodical testing – you surface things you might have assumed to be different.</p>
+<p>Later, when unblocking it, the roofer told me it must have taken years to get to that state. One might have thought that ON would have reported it at some point in those years. But why would she? She may not even have noticed – presumably she doesn't hang around outside when it's raining. It had not occurred to any of the previous investigators of this problem to check the drain. And while it may seem an obvious thing to have checked, one often overlooks the obvious, and that is why testing is good.</p>
+<p>The second thing took this software genius of a roofer a few more minutes to discover. After unblocking the drain, he hosed down the side of the my building and at this point I found that there was water coming in under the bath again. He looked closer at the building and saw, under where the balcony joined my wall, a gap.</p>
+<img src="img/gap.jpg" />
+<p>Having hosed the wall, he had seen that water ran into that gap and from there, the easiest escape would be into my flat, rather than back out. By attempting to recreate the problem, he identified the solution.</p>
+<p>So he unblocked the drain, and he filled in the hole with cement. And then, as if he had not covered himself in glory enough, he told me he was only 95% certain that this would solve the problem, whereas the previous fixes, I had been assured, were the solution. He knows a building is a legacy system. But he has the software methodology approach.</p>
+<p>There's more learning here as well – for example, to not assume that you won't understand a problem that isn't in your field – but the main thing I took from it was this: everything would be better if it was a bit more like software development. Craftsmen should be more like software developers.</p>
+<img src="img/fixed.jpg" />
+</div>
+<div id="upgrading" class="blog-post">
+    <h1>Upgrading to 12.04...</h1>
+<date>6th May 2013</date>
+<p>I needed to write some code. Thanks to <a href="http://georgebrock.com/images/thumbsup.gif" target="_blank">George Brocklehurst</a>, I was no longer content to do this on my personal laptop using gedit – I required Vim.</p>
+<p>But I could not upgrade Vim!</p>
+<div class="code-sample">
+Failed to fetch http://gb.archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_7.2.330-1ubuntu4_amd64.deb  404  Not Found [IP: 91.189.92.201 80]<br />
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?<br />
+</div>
+<p>OK, maybe it was unrelated, but it was time to face the inevitable. I was on Ubuntu 10.10. I needed to upgrade. <a href="#hard-earned-learnings">Skip to what I learned from this sorry saga.</a></p>
+<p>Great, so all I needed to do was update to next package from the Update Manager, right?</p>
+<div class="code-sample">Error during update<br />
+A problem occurred during the update. This is usually some sort of network problem, please check your network connection and retry.<br />
+, W:Failed to fetch http://extras.ubuntu.com/ubuntu/dists/natty/main/binary-i386/Packages.gz  404  Not Found<br />
+, E:Some index files failed to download, they have been ignored, or old ones used instead.<br /></div>
+<p>Ah. Wrong. I left it so long that it was <a href="http://askubuntu.com/questions/226906/how-to-upgrade-ubuntu-unsupported-10-10-to-11-04-then-ultimately-to-12-10" target="_blank">no longer supported</a>.
+
+<p>Right, so I couldn't go to 11.04. But actually, I didn't want 11.04, I wanted 12.04. So can I not just go directly there?</p>
+<p>Well, no, as it turns out. Or maybe you can. I still don't know. But threads like <a href="http://askubuntu.com/questions/34430/can-i-skip-over-releases-when-upgrading" target="_blank">this</a> suggested that I couldn't go directly to 12.04 without doing a fresh install and losing my files. I didn't fancy that, so I thought I'd go the long way round.</p> 
+<p>Since I was out of time to upgrade via the Update Manager, I needed to download the <a href="http://old-releases.ubuntu.com/releases/natty/" target="_blank">11.04 ISO</a>, confirming that it was, as I thought, 64-bit:</p>
+<div class="code-sample" id="64">
+uname -m<br />
+x86_64<br /></div>
+<p>and then save the ISO to a CD. Having not done this before, I found <a href="https://help.ubuntu.com/community/BurningIsoHowto" target="_blank">this</a> useful. You want the CD to have multiple files and folders, not just the ISO as one file.</p>
+<p>Great. So then you stick the CD in and just follow the instructions. Like <a href="http://www.liberiangeek.net/2012/04/upgrade-to-ubuntu-12-04-from-11-10-using-ubuntu-cd-dvd/" target="_blank">these</a>. Fine. No problem.</p>
+<p>Except... problem. <a href="http://www.liberiangeek.net/wp-content/uploads/2012/04/upgrade_cd_percise_4.png" target="_blank">This bit?</a> That hung there for HOURS. If you click the arrow you can see the command it is hanging on, but Googling that on another computer (which I had by now switched on in order to continue with my life) gave me nothing.</p>
+<p>I'm telling you this, even though I'm embarrassed: I killed it. It had been hanging there for hours! I couldn't take it any more!</p>
+<p>And funnily enough, that turned out not to have an ideal outcome... it would not boot. On the plus side, it's dual boot and Windows seemed fine, though at this stage, I was pretty sure I could "fix" that too:</p>
+<blockquote class="twitter-tweet"><p>Current status <a href="http://t.co/mgSQUIBrUY" title="http://xkcd.com/349/">xkcd.com/349/</a></p>&mdash; Anna Shipman (@annashipman) <a href="https://twitter.com/annashipman/status/318362562385309696">March 31, 2013</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>Fine, never mind, all my files etc were backed up, it's no biggie. In fact, I could just install Ubuntu 12.04 at this point? Since it appeared that I may well have lost all my files.</p>
+<p>Except somehow, no. The other computer I was using was Windows, and – who knew? – it wasn't so easy to get the ISO onto a CD. After some trying, I gave up.</p>
+<p>Next plan was to install 11.04 from the disc I actually had. And, to my joy and incredulity – THIS WORKED!</p>
+<blockquote class="twitter-tweet"><p>Omg! So I've managed to upgrade to 11.04. I mean, yeah, I was aiming for 12.04, and OK, so I've lost all my files but, y'know, go me!</p>&mdash; Anna Shipman (@annashipman) <a href="https://twitter.com/annashipman/status/318384505117372416">March 31, 2013</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>And then, amazingly, the upgrade to 11.10, and then 12.04, could be done via the Update Manager. Finally, six hours after I'd embarked on this foolish mission I was able to report back:</p>
+<blockquote class="twitter-tweet"><p>Made it to 12.04! Hurrah! All I need to do is restore my lost files from backup and then I can get on with what I planned to do 6 hrs ago...</p>&mdash; Anna Shipman (@annashipman) <a href="https://twitter.com/annashipman/status/318423522768723968">March 31, 2013</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>...shortly followed by...<p>
+<blockquote class="twitter-tweet"><p>Current status (finally!) <a href="http://t.co/vJVhFTg6Y6" title="http://i.imgur.com/VhlQK.gif">i.imgur.com/VhlQK.gif</a></p>&mdash; Anna Shipman (@annashipman) <a href="https://twitter.com/annashipman/status/318660522130149376">April 1, 2013</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<h3 id="hard-earned-learnings">So what have I learned?</h3>
+<ol><li>How to check your system is <a href="#64">64-bit</a>.</li>
+<li>How to embed tweets into blog posts (click the 'More' button to the right of the 'Favourite' button and all will be revealed).</li>
+<li>Not to put off the upgrade until such time that it's no longer supported and you have to go through all this!</li>
+<li>ALWAYS be backing up your files. As Jeff Atwood said, "until you have a backup strategy of some kind, <a href="http://www.codinghorror.com/blog/2009/12/international-backup-awareness-day.html" target="_blank">you're screwed</a>, you just don't know it yet". This could've been much worse for me.</li></ol>
+<p>Happy <a href="http://i.imgur.com/VhlQK.gif" target="_blank">programming</a>!</p>
+</div>
+<div id="partitioning" class="blog-post">
+    <h1>Partitioning!</h1>
+<date>24th April 2013</date>
+<p>Today I learned from the awesome <a
+href="https://twitter.com/rjw1" target="_blank">bob</a> how to add storage to a box,
+including partitioning, mounting, and other things I'd heard of but had never
+done myself.</p>
+<p>We had to add some storage to the elasticsearch boxes. We generate a lot of logs
+and they all go to elasticsearch. By default when we provision servers we give
+them 32GB but this wasn't enough. So here's how to do it:</p>
+<ol>
+<li>Add the extra disk through our virtualisation platform's control panel.</li>
+<li>Reboot the box so that it sees the new disk.</li>
+<li>Partition the new disk. There are many ways to partition a disk - we used <a
+href="http://en.wikipedia.org/wiki/Cfdisk" target="_blank">cfdisk</a>, which has a GUI. 
+<div class="code-sample">cfdisk /dev/sdb</div>
+This opens the GUI and then you tab through it to select options. We just
+accepted all the defaults, so the only time we had to change it was at the end,
+to select [write].
+We did consider making the type Linux LVM as this would have meant we could extend it
+later, but in this case we just accepted the default type of Linux.<br />
+This means that as well as /dev/sdb we have /dev/sdb1. (Extra learning points
+here - disks are added alphabetically. So the existing disk was sda. If,
+subsequent to this, we add another disk, it will be sdc.)</li>
+<li>Before we can mount the disk we need to give it a filesystem. We gave it <a
+href="http://en.wikipedia.org/wiki/Ext4" target="_blank">ext4</a> because "everything uses ext4
+these days" (bob). If you don't have a good reason for picking one of the others, then
+use ext4.
+<div class="code-sample">mkfs.ext4 /dev/sdb1</div></li>
+<li>Now we mount the new disk to a temporary directory:
+<div class="code-sample">mkdir /mnt/tmp<br />
+mount /dev/sdb1 /mnt/tmp</div></li>
+<li>At this point we need to stop elasticsearch and also disable puppet (otherwise it will just start elasticsearch again on its next run):
+<div class="code-sample">service elasticsearch-logging stop<br />
+puppet agent --disable</div></li>
+<li>Now we need to copy the elasticsearch indices to the new disk. Because the indices are just files you can rsync them, as long as elasticsearch has been stopped, which it has.
+<div class="code-sample">  rsync -av --stats --progress /mnt/elasticsearch/*
+/mnt/tmp</div>
+The -v flag above is 'verbose', and in addition, the stats and progress options
+give some more noisy output while the rsync is going on. Often, when using rsync
+you would want to add -z, but since this is just from one disk to another and
+not going over the wire then there's no need here. Finally, -a is 'archive'. As
+the man page helpfully notes, this is "same as -rlptgoD (no -H)". I will leave
+that as an exercise for the reader.<br />
+This stage takes some time.</li>
+<li>When it's finished, we did two things, just as a (slightly paranoid) check
+to see if it worked:
+<ol><li>Run the same command again. If it has successfully rsynched everything, the two will be the same so it will output immediately.</li>
+<li><a href="http://en.wikipedia.org/wiki/Du_(Unix)" target="_blank">du
+-sh</a> to check that /mnt/elasticsearch and /mnt/tmp are the same
+size.</li></ol></li>
+<li>Instead of mounting the new disk in the same way as step 5 above, we can edit <a href="http://en.wikipedia.org/wiki/Fstab" target="_blank">/etc/fstab</a>. We add this line:
+<div class="code-sample">/dev/sdb1       /mnt/elasticsearch ext4 defaults 0
+0</div>
+We should have thought about using <a
+href="http://puppetlabs.com/puppet/what-is-puppet" target="_blank">Puppet</a> here, as doing it like this means there are parts of the infrastructure that are not code.</li>
+<li>Next, we unmount sdb1 from /mnt/tmp:
+<div class="code-sample">umount /mnt/tmp</div></li>
+<li>Then, we move the old elastic search directory and create a new one:
+<div class="code-sample">mv /mnt/elasticsearch /mnt/elasticsearch-old<br />
+mkdir /mnt/elasticsearch</div></li>
+<li>Now mount the sdb1 to the new elasticsearch. Because of step 9 above, we can pass either the mount directory or the directory to be mounted; we do not need both. This has the added advantage of testing our fstab setup.
+<div class="code-sample">mount /mnt/elasticsearch</div></li>
+<li>All done! Now we need to:
+<ol>
+<li>Restart elastic search</li>
+<li>Re-enable puppet</li>
+<li>Delete /mnt/tmp and /mnt/elasticsearch-old</li>
+</ol></li></ol>
+</div>
+<div id="roof-hacking" class="blog-post">
+    <h1>Roof Hacking</h1>
+<date>24th March 2013</date>
+<p>Two weeks ago I was at the excellent <a href="http://devfort.com/" target="_blank">/dev/fort</a>. More on that another time; all I'll say now is that we were making a website in a <a href="http://www.landmarktrust.org.uk/search-and-book/properties/fort-clonque-7423" target="_blank">fort</a>.</p>
+<p>On one feature I was pairing (actually, tripling...) on some Django with the awesome <a href="https://twitter.com/georgebrock" target="_blank">George Brocklehurst</a> and the brilliant <a href="https://twitter.com/jcoglan" target="_blank">James Coglan</a>. James and I took a break to look at the <a href="http://www.flickr.com/photos/mn_francis/8559067275/in/set-72157632998241737/" target="_blank">causeway being underwater at high tide</a>, and when we returned we found that George had relocated from our previous office (the green sofa) to the flat roof of the officers' mess. With his phone playing Ben Howard's cover of <a href="http://www.youtube.com/watch?v=sPU8V-nvUEk" target="_blank">Call Me Maybe</a> and glasses of whisky hand-delivered by the fantastic <a href="https://twitter.com/cgovias" target="_blank">Chris Govias</a>, it was perfect.</p>
+<p>Except it wasn't, because George's battery was running low, and he couldn't push his changes to my laptop because the wifi didn't reach that far. "Of course, we could always set up a local wifi on the roof," said George. Was he trolling me? No, he was not, and here's how:</p>
+<p>George committed to a local branch and then set up his mac as a network hub (a <a href="http://support.apple.com/kb/PH3771" target="_blank">computer-to-computer network</a>).</p>
+<p>Then I added a git remote that pointed at the repository on George's machine:</p>
+<div class="code-sample">git remote add george georgebrocklehurst@169.254.145.66:code/devfort7/hobbit/.git</div>
+<p>The IP address here was his machine on the network he'd created, and it was his ssh login (so I needed him to enter his password).</p>
+<p>This included the pleasure of having to type:</p>
+<div class="code-sample">git fetch george</div>
+<p>Then I merged george's branch into mine:</p>
+<div class="code-sample">git merge george/onboarding</div>
+<p>and we were ready to use my computer to continue the good work.</p>
+<img src="img/roofhacking.jpg" />
+<p class="photo-credit">Photo by the aforementioned brilliant <a href="https://twitter.com/jcoglan" target="_blank">James Coglan</a>.</p>
+</div>
+<div id="estimating" class="blog-post">
+    <h1>How to Estimate</h1>
+<date>21st January 2013</date>
+<p>I want to share this great idea about estimating that came from the excellent <a href="https://twitter.com/mnowster" target="_blank">Mazz Mosley</a>. Instead of worrying about estimating in hours or days, estimate in story points as follows:</p>
+<div class="pretty-code-sample">
+<p>1: This is trivial. I know exactly the code I would write if I went back to my desk right now.</p>
+<p>2: This is quite easy. I know roughly what I'd have to do. I might have to look one or two things up.</p>
+<p>3: This is a bit complex. I might have to refresh my memory on a few things and there are a couple of unknowns.</p>
+<p>5: This is big. I have only a rough idea of how I'd do this.</p>
+<p>8+: I don't know how to do this.</p>
+</div>
+<p>I've written 8+ rather than the more standard 8, 13, 21 etc because in our team we had an additional rule – if it's 8+ then the story is too big and you need to break it down a bit more. Maybe have a timeboxed spike? Then you will have more information for the next planning meeting.</p>
+<p>It doesn't matter how much time each point ends up being (and this will vary from team to team); after a few sprints of estimating like this the velocity will become meaningful and you can use it for predicting how much work you'll get through in future sprints.</p>
+</div>
+<div id="learning-perl" class="blog-post">
+    <h1>Learning the perls</h1>
+<date>20th November 2012</date>
+<p>After some time muddling through with Perl, I have accepted the inevitable – it's time to actually knuckle down and learn it properly. I have acquired <a href="http://www.amazon.co.uk/Learning-Perl-Randal-L-Schwartz/dp/1449303587/" target="_blank">some</a> <a href="http://www.amazon.co.uk/Modern-Perl-chromatic/dp/0977920178/" target="_blank">books</a>, but I also require some direction – so I asked my excellent colleague and friend <a href="https://twitter.com/cackhanded" target="_blank">Mark Norman Francis</a> to write a brief guest post for my blog.</p>
+<p>His instructions were "Complete the sentence: In order to understand C you need to understand Pointer Arithmetic. In order to understand Perl you need to understand...". He went many better, and produced the following:</p>
+<div class="pretty-code-sample">In order to write perl in a modern context, I think these are the basic skills you'll need.<br/>
+<ol>
+<li>Perl's provided documentation is extensive and worthwhile, so learn to use `perldoc` to read both the provided manuals and the documentation of the builtin perl functions.</li>
+<li>Learn the difference between variables – scalar, array, hash, and references (hint for references: learn to make a hash of hashes).</li>
+<li>Learn how to use an array as a stack.</li>
+<li>Basic regular expression usage – matching, replacing, capturing substrings, case-insensitivity, metacharacters, and writing more readable expressions by having perl ignore the whitespace.</li>
+<li>Learn to use perl on the command line as a pipe filter instead of awk/sed.</li>
+<li>Learn how to write your own functions.</li>
+<li>Learn how to use core modules such as `File::Find` (write a tool to list files in a directory structure from smallest to largest in size).</li>
+<li>Refactor the code from step 7 to use a Schwartzian Transform to sort the file sizes.
+<li>Learn how to install third-party libraries from CPAN.</li>
+<li>Install Moose from CPAN, then work through `Moose::Manual` and `Moose::Cookbook` to learn to write modern OO perl.</li>
+<li>Learn how to use `Test::More` to test code and `Devel::Cover` to produce coverage reports.</li>
+<li>Find an abstract intro to OO example (such as employee payroll) and write it in Moose with full unit test coverage.</li>
+<li>Lastly, read the `perlstyle` documentation, and then write your own style guide.</ol></div>
+<p>Thanks, Norm. Thorm.</p>
+</div>
+<div id="d3" class="blog-post">
+    <h1>Learning More About D3</h1>
+<date>19th July 2012</date>
+<p>I had a really inspiring chat with <a href="https://twitter.com/mattb" target="_blank">Matt Biddulph</a> about D3 this week. He showed me some really cool things. I made some notes.</p>
+<img src="img/D3.jpg" />
+</div>
+<div id="cap-or-pacelc" class="blog-post">
+    <h1>CAP again – or should that be PACELC?</h1>
+<date>15th July 2012</date>
+<p>The last thing I wrote about was the CAP Theorem. Last week, <a href="https://twitter.com/thattommyhall" target="_blank">Tom Hall</a> visited our office and gave a very interesting talk, the central thesis of which was that the CAP Theorem, as often explained, is incorrect – or at least not very meaningful.</p>
+<p>The first point, explained very clearly in <a href="http://www.cloudera.com/blog/2010/04/cap-confusion-problems-with-partition-tolerance/" target="_blank">CAP Confusion: Problems with 'partition tolerance'</a> is that P, "Partition Tolerance", as per the <a href="http://lpd.epfl.ch/sgilbert/pubs/BrewersConjecture-SigAct.pdf"target="_blank">proof</a> of the CAP Theorem, is not a property of your application; rather it is a property of the network it's on. The network may partition. To quote from Henry Robinson's Cloudera article:</p>
+
+<p class="pretty-code-sample">"Partition tolerance means simply developing a coping strategy by choosing which of the other system properties to drop. This is the real lesson of the CAP theorem – if you have a network that may drop messages, then you cannot have both availability and consistency, you must choose one."</p>
+
+<p>The rest of the article is very worth reading.</p>
+
+<p>The second point Tom covered is from <a href="http://dbmsmusings.blogspot.co.uk/2010/04/problems-with-cap-and-yahoos-little.html" target="_blank">Problems with CAP, and Yahoo's little known NoSQL system</a> by Daniel Abadi. Abadi covers the point above very clearly, and then points out that there is a missing letter from CAP – L, for latency.</p>
+
+<p class="pretty-code-sample">"Keeping replicas consistent over a wide area network requires at least one message to be sent over the WAN in the critical path to perform the write... Unfortunately, a message over a WAN significantly increases the latency of a transaction... Consequently, in order to reduce latency, replication must be performed asynchronously. This reduces consistency."</p>
+
+<p>He suggests CAP should be rewritten as PACELC:</p> <p class="pretty-code-sample">"If there is a partition (P) how does the system tradeoff between availability and consistency (A and C); else (E) when the system is running as normal in the absence of partitions, how does the system tradeoff between latency (L) and consistency (C)?"</p>
+
+<p>Tom's talk covered many other interesting topics and is worth catching if you can. One of the other many interesting things Tom talked about was Vector Clocks. I won't go into that here, but they are worth reading up on! <a href="http://basho.com/blog/technical/2010/01/29/why-vector-clocks-are-easy/"target="_blank">Here</a> is a potential place to start...</p>
+</div>
+
+<div id="cap-theorem-and-mongodb" class="blog-post">
+    <h1>The CAP Theorem and MongoDB</h1>
+<date>29th April 2012</date>
+<p>This week I learned some things about MongoDB. One of them was about how it fits in with the CAP theorem.</p>
+<p>They say a picture is worth a thousand words, and I think this diagram from my excellent new colleague <a href="https://twitter.com/matwall" target="_blank">Mat Wall</a> while he was explaining it to me says everything:</p>
+<img src="img/mongodb.jpg" />
+<p>Over and out.</p>
+<p>OK, perhaps I can offer a tiny bit of exposition.</p>
+<p>The CAP Theorem is: where C is consistency, A is availability, and P is partition tolerance, you can't have a system that has all three. (It gets to be called a theorem because it has been formally proved.)</p>
+<p>Roughly speaking:</p>
+<ul>
+<li>Consistency means that when two users access the system at the same time they should see the same data.</li>
+<li>Availability means up 24/7 and responds in a reasonable time.</li>
+<li>Partition Tolerance means if part of the system fails, it is possible for the system as a whole to continue functioning.</li>
+</ul>
+<p>If you have a web app backed by a SQL database, most likely, it is CA.</p>
+<p>It is C because it's transaction-based. So when you update the database, everything stops until you've finished. So anything reading from the database will get the same data.</p>
+<p>It can be A, but it won't be P because SQL databases tend to run on single nodes.</p>
+<p>If you want your application to be P, according to the CAP theorem, you have to sacrifice either A or C.</p>
+<p>With MongoDB, in order to gain P, you sacrifice C. There are various ways to set it up, but in our application we have one master database, that all writes go to, and several secondaries (as can be seen from the diagram: M is the Master, the Rs are the secondaries – also called replicas, or slaves). Reads may come from the secondaries. So it is possibly that one or more of the secondary nodes could be disconnected from the application by some kind of network failure, but the application will not fall over because the read requests will just go to another node. Hence P.</p>
+<p>The reason this sacrifices C is because the writes go to the master, and then take some time to filter out to all the secondaries. So C is not completely sacrificed – there is just a possibility that there may be some delay. We are not allowing a situation where the secondaries are permanently out of synch with the master – there is "eventual consistency". </p>
+<p>So you might use this in applications where, for example, you are offering the latest news story. If User A gets the latest news 10 seconds earlier than User B, this doesn't really matter. Of course, if it was a day later, then that would be a problem.  The failure case of C is just around the time of the write and you want to keep that window of consistency small.</p>
+<p>There is also a concept of durability, which you can also be flexible with.</p>
+<p>Take the following two lines of pseudocode:</p>
+<p class="code-sample">
+1. insert into table UNIVERSAL_TRUTHS (name, characteristic) values ('Anna', 'is awesome')<br/>
+2. select characteristic from UNIVERSAL_TRUTHS where name = 'Anna'
+</p>
+<p>What we're saying when we sacrifice consistency is, if I run these two lines on the same node then when I run line 2, I can be sure it will return 'is awesome'. However, if I run line 2 on a different node, I can't be sure it's in already. It will still be "eventually consistent" so if I run it later (and it hasn't been changed again in the interim) it will at some point return the correct data.</p>
+<p>However, you can also configure MongoDB to be flexible about durability. This is where, if you run the two lines of code on the <date>same</date> node, it might be the case that line 2 hasn't run, and possibly even never will. You might do this, for example if you were storing analytics. If you are looking for general trends, it might not matter so much if 1% of the transactions fail, so you might configure it to be flexible on durability. Of course you wouldn't do that for something as crucial as characteristics about Anna.</p>
+</div>
+                <div id="questions-for-data" class="blog-post">
+<h1>What Should Your Work Log Tell You?</h1>
+<date>15th April 2012</date>
+<p>We've got some great data for the <a href="http://www.spaconference.org/spa2012/" target="_blank">SPA2012</a> workshop on JavaScript visualisations. <a href="https://twitter.com/hibri" target="_blank">Hibri</a> has managed to obtained three years' worth of <a href="http://www.7digital.com/" target="_blank">7Digital</a>'s work-tracking data and <a href="https://twitter.com/robbowley" target="_blank">Rob</a> has very kindly allowed us to use it (anonymised, of course).</p>
+
+<p>We're going to use this dataset to show different information using different libraries for the visualisations.</p>
+
+<p>What I'd really like your input on is, what would you like to know? If this was your work-tracking data, what questions would you want it to answer?</p>
+
+<p>For example, we could create a Sunburst diagram using JIT to show what proportion of total development time is spent on the four different applications. We could create an interactive line graph using Raphael to show the average time a piece of work takes, and how that average has changed over the past three years.</p>
+
+<p>A little more info about the exact data is below, or feel free to skip straight to the <a href="#example-questions">example questions</a>, or just go right ahead and <a href="https://twitter.com/annashipman" target="_blank">tweet me</a> or email me (at this domain) with what kind of information you'd want from a work log stretching back that far. You might get a great visualisation prepared for you to show just that!</p>
+
+<h2>The Data</h2>
+
+<p>Here is an example:</p>
+
+<p class="code-sample">
+        "Feature ID": "A-321",</br>
+        "Application Name": "Project A",</br>
+        "Type": "Bug",</br>
+        "T-Shirt Size": "S",</br>
+        "Added": "15/03/2011 12:12",</br>
+        "Prioritised, Awaiting Analysis": "15/03/2011 12:12",</br>
+        "Analysis Completed": "15/03/2011 12:12",</br>
+        "Development Started": "15/03/2011 13:21",</br>
+        "Systest Ready": "15/03/2011 16:21",</br>
+        "Systest OK": "17/03/2011 10:34",</br>
+        "In UAT": "17/03/2011 10:34",</br>
+        "Ready For Release": "17/03/2011 10:34",</br>
+        "In Production": "17/03/2011 10:35",</br>
+        "Done": "22/03/2011 10:48",</br>
+        "Lead Time": "2",</br>
+        "Cycle Time": "2",</br>
+        "Development Cycle Time": "2"
+</p>
+
+<p>So this is a really rich dataset. We have all the dates that various stages of the release process happened, as well as some information about what application it was for, what type of work it was (e.g. Bug, Feature, Build Maintenance), what the rough estimate was (T-shirt size), and how long the whole process took, both from first raised to done (lead time) and from dev start to done (development cycle time). The log goes back to 2009.</p>
+
+<h2 id="example-questions">Example Questions</h2>
+
+<p>Here are a few of the questions we've thought about answering. </p>
+
+<ul><li>How many bugs are raised by application?</li>
+<li>How does the average cycle time of development compare to the number of bugs raised?</li>
+<li>How often are bugs reported and not worked on?</li>
+<li>What proportion of time is spent on each applications, and, drilling down, what proportion of that work is new features/bugs/build maintenance etc?</li></ul>
+
+<h2>Your Chance for a Hand-crafted Visualisation Just for You!</h2>
+
+<p>We'd love this workshop to be as relevant and interesting as possible, so please do let me know what kind of information you'd like to see visualised and it may well make it into the talk! <a href="https://twitter.com/annashipman" target="_blank">Tweet me</a> or email me at this domain. Thank you!</p>
+</div>
+
+<div id="personal-development-1" class="blog-post">
+<h1>P.O.A.</h1>
+ <date>20th February 2012</date>
+<p>My goal is to be a better developer.</p>
+<p>A few weeks ago, I had an appraisal. There was a lot of positive feedback and also some really useful suggested areas for development. With the help of my good friend and unofficial mentor <a href="http://www.twitter.com/dolsonagile" target="_blank">Dolan O'Toole</a>, I pulled together some practical suggestions as to how I could improve them:</p>
+<img src="img/dolsfeedback.jpg" />
+<p>I then drew up a rough syllabus of the next steps I should focus on:</p>
+<img src="img/syllabus.jpg" />
+<p>I'd be interested if any of you have suggestions for additions to this? What should a great developer know?</p>
+</div>
+
+
+                <div id="gamejam-knowledge" class="blog-post">
+<h1>Would Have Been Useful to Know at My First Game Jam</h1>
+ <date>14th February 2012</date>
+<p>I had no idea what to expect at my first <a href="http://globalgamejam.org/" target="_blank">game jam</a>, and I was nervous about whether I'd be able to participate. I'm a programmer, but I'd never written a videogame, and I don't even much play videogames.</p>
+
+<p>As it turned out, everyone was really friendly and welcoming and I was able to get totally stuck in. But there were a few things that I didn't know that everyone else seemed to know, and I was too shy to admit I didn't know too. Now, following my new and brilliant strategy of "ask as many questions as you can, the stupider the better" (more on that in a later post), I have managed to learn some of these things, and I'll share them here. They are <a href="#game-engine">the game engine</a>, <a href="#game-mechanics">game mechanics</a>, and <a href="#art">a little bit about art</a>.</p>
+
+<h2 id="game-engine">The Game Engine</h2>
+
+<p>When writing video games, people talk about the "engine". For example, "What engine are you using?" and "Don't write your own engine; this is not 'engine jam' ".</p>
+
+<p>A game engine is something that handles the nuts and bolts of a game for you, which basically comes down to displaying the graphics, dealing with input (keyobard, joystick etc), and handling collisions. For example, in a game, when your player runs into a baddie you might want them to bounce off each other at an equal pace. Using a game engine means you can just specify the details of the collision. Not using a game engine means you have to write code to describe the angles and velocities yourself.</p>
+
+<p><a href="http://unity3d.com/unity/" target="_blank">Unity</a> is a game engine that handles all this stuff for you. You can copy your art into the folder structure and then drag and drop it to where you want it to be. Game objects have default collision behaviour and you can just write a script to change it.</p>
+
+<p><a href="http://www.flixel.org/" target="_blank">Flixel</a> is another game engine. It's a level below Unity – there's no graphical user interface, and you have to do a bit more work with the graphics, but the collisions, keyboard input and various other features are there for you.</p>
+
+<h3>A Note on Writing Your Own Game Engine</h3>
+
+<p>I didn't understand at the time why my <a href="http://globalgamejam.org/2011/flocks-sake" target="_blank">second game jam</a> was so much harder than my <a href="http://globalgamejam.org/2010/bacterial-warfare" target="_blank">first</a>, but when I explained what we did to the brilliant <a href="https://twitter.com/joehalliwell" target="_blank">Joe Halliwell</a> afterwards, it all became clear. We disobeyed the advice. We wrote our own game engine.</p>
+
+<p>To be precise, we used <a href="http://www.opengl.org/about/" target="_blank">OpenGL</a>, which is a 2D/3D Graphics API written in C. It gives the instructions to the graphics card – you definitely don't want to be doing that yourself – at least not in a 48-hour game jam. The code was written in Python, and for the binding we used <a href="http://pyopengl.sourceforge.net/" target="_blank">PyOpenGL</a>. For the physics we used <a href="http://box2d.org/" target="_blank">Box2D</a>. OK, so we didn't exactly write our own game engine from scratch, but we assembled one from various constituent parts.</p>
+
+<p>The alleged reasons were that we didn't know Unity, most of us knew Python (except for me – that added another layer of complexity to the weekend!) and between us we had two Macs, two Linux boxes and one loser running Windows. The real reason is that the brilliant <a href="http://www.texasexpat.net/" target="_blank">Trevor Fountain</a> loves this stuff and, if it existed, would sign up to 'engine jam' like a shot.</p>
+
+<h2 id="game-mechanics">Game Mechanics</h2>
+
+<p>Another phrase I heard a lot and pretended to understand was "game mechanics". To be fair, I thought I did understand it – I thought it was jumping, shooting etc. I was wrong.</p>
+
+<p>Game mechanics are more like constructs of rules. Unlocking an achievement is a game mechanic. Going up a level when you reach a certain number of points is a game mechanic. Dying when you lose 90% of your health bar is a game mechanic. So when someone asks "What are the game mechanics?", they mean something like, what are the gamey things here? What makes this a game, rather than just graphics moving across a screen?</p>
+
+<p>I like <a href="http://gamification.org/wiki/Game_Mechanics" target="_blank">this list</a> of potential game mechanics.</p>
+
+<h2 id="art">A Little Bit About Art</h2>
+
+<p>While I'm here, just a few words on pixel art vs vector graphics, something else I heard talked about which added to the background radiation of feeling I didn't quite understand what was going on.</p>
+
+<p>There's an extremely detailed article on the differences <a href="http://www.1stwebdesigner.com/design/pixel-vector-graphics-difference/" target="_blank">here</a> but in very brief summary – technically speaking, pixel (aka bitmap, raster) art is basically dot-matrix, i.e. made up of pixels individually coloured, and vector art is created using mathematical functions and is basically points and the lines joining them. The art for your game may be either, or some combination of the two. A brief rule of thumb is that old games tend to use pixel art, but the choice is up to you – different tools for different times.</p>
+
+<p>However, it's more than just the technical differences, and the conversations you hear about pixel vs vector art will probably reflect something other than the strict technical distinction. <a href="https://twitter.com/doches" target="_blank">Trevor</a> summed it up for me very clearly, so here is an edited version of what he said:</p>
+
+<p>"To me, pixel art is more of an aesthetic choice than a technical term. It's true that older games had a pixel art aesthetic, especially on 8- or
+16-bit platforms. Today, though, I think people use the terms 'pixel art' and 'retro' more or less interchangeably – games like <a href="http://www.canabalt.com" target="_blank">Canabalt</a> or <a href="http://shauninman.com/lastrocket/" target="_blank">The Last Rocket</a> are undeniably retro, and use the pixel art style to great effect. Games like <a href="http://chrome.angrybirds.com/" target="_blank">Angry Birds</a> are rendered using the same technology (2d sprites), yet no one would ever say that Angry Birds qualified as pixel art.</p>
+<p>"As for vector art, true vector images (e.g. svg) are rarely used outwith UI design and Flash."</p>
+
+<h2>Next steps</h2>
+
+<p><a href="http://v21.posterous.com/how-to-make-your-first-videogame" target="_blank">How to Make Your First Videogame</a> by the excellent <a href="https://twitter.com/v21" target="_blank">v21</a> is great, and the short video <a href="http://youcanmakevideogames.com/" target="_blank">You Can Make Video Games</a> is fab and really worth watching. Or why not just sign up to the <a href="http://globalgamejam.org/" target="_blank">next Global Game Jam</a>?</p>
+
+<p>Enjoy!</p>
+</div>
+
+<div id="jstalk-structure" class="blog-post">
+<h1>JavaScript Talk Takes Shape</h1>
+ <date>21st January 2012</date>
+<p>Just over a week to go until the final deadline for the SPA submissions, and the JavaScript visualisations talk is shaping up.</p>
+<p>The plan is to demonstrate the use of a JS library to produce a certain kind of visualisation, followed by a 15-20 minute exercise where participants use the library to create a similar visualisation. I've said "rinse and repeat 4-5 times", though I'm slightly dubious as to whether we're going to have time to do more than three. <a href="https://twitter.com/hibri">Hibri</a> and I are going to do one each and demo to the other, so we'll have a better idea then of how many we can cover. I'm really excited about what we're going to produce!</p>
+<p>At the moment we are planning to try and do:</p>
+<ul>
+<li>A force-directed graph (library tbc, possibly d3)</li>
+<li>A sunburst diagram with JIT</li>
+<li>An interactive line graph with Raphael</li>
+<li>A bar chart (library tbc, possibly just using Canvas)</li>
+<li>A stream graph (library tbc, possibly d3 if not using d3 for force-directed)</li>
+<li>A heat map (library tbc)</li>
+</ul>
+<p>Is there a type of visualisation you'd really like to see us demonstrate, or a library you think we can't miss out? Please do let me know.</p>
+<p>There is also still time to give feedback directly on this and all other proposals for SPA 2012 <a href="http://www.spaconference.org/scripts/proposals.php">here</a> (SPA login required).</p>
+</div>
+
+<div id="chat-with-ian" class="blog-post">
+<h1>Preparation Begins for the JavaScript Talk...</h1>
+ <date>18th December 2011</date>
+<p>As part of preparing the proposal for the JavaScript visualisations talk, I had a coffee with <a href="https://twitter.com/ian_alderson" target="_blank">Ian Alderson</a>. He did an excellent talk at SPA2011, along with Adam Iley, on HTML5. The presentation is still available online (using HTML5 for the slides!) <a href="http://webappsthatshine.com/presentation/" target="_blank">here</a>, I really recommend you check it out.</p>
+<p>Although Ian doesn't have time to co-pilot on the talk, he very generously gave up his time to give me some advice. Notes below. The first suggestion of his that I plan to follow is a comparison between SVG and Canvas – as he pointed out, all JS visualisation libraries will be based on one or the other, so that will definitely be a factor in what library to choose. It's not the case that one is just better than the other – both have strengths and weaknesses. Watch this space for more on this topic...</p>
+<img src="img/talkwithIan.jpg" />
+</div>
+
+<div id="js-talk" class="blog-post">
+<h1>JavaScript Visualisations Proposal</h1>
+ <date>30th November 2011</date>
+<p>I have proposed a talk for SPA2012 on JavaScript visualisations.</p>
+<p>The basic outline of the proposal is a workshop where we will demonstrate the use of different JS libraries to visualise different kinds of data with several 15-20 minute exercises where participants use the library to create a similar visualisation. Ideally participants would leave with an overview of how and when to use the libraries and tools we've covered, and ideally an idea of what factors to think about when choosing a JS data visualisation tool.</p>
+<p>Still in the very early stages of planning it, but I am in the process of moving this site over to a host that will support WordPress, at which point I will be able to invite comments/suggestions. In the meantime, any suggestions are very welcome, by email or <a href="http://www.twitter.com/annashipman" target="_blank">twitter</a>.</p>
+<p>Notes from the first planning meeting, with <a href="http://www.hibri.net/" target="_blank">Hibri</a>:</p>
+<img src="img/planning1.jpg" />
+</div>
+
+<div id="continuing-struggles" class="blog-post">
+<h1>My Continuing Struggles with Linux</h1>
+ <date>17th October 2011</date>
+<p>Summarised excellently by this cartoon. It's great fun, but...</p>
+<p><a href="http://xkcd.com/196/" target="_blank"><img src="img/command_line_fu.png" /></a></p>
+</div>
+
+<div id="sorl-bites-me" class="blog-post">
+<h1>Sorl-thumbnail Comes Back to Bite Me</h1>
+<date>12th September 2011</date>
+<p>Well, the <a href="#no-sorl-thumbnail">lack of sorl-thumbnail</a> came back to bite me when I got the latest version of the Django project I've been working on. Previous releases had lulled me into a false sense of security, but then the latest update, a bit too late in the evening, I had that old error:</p>
+
+<p class="code-sample">ImportError: No module named sorl-thumbnail</p>
+
+<p>So off I went again. I had no problem downloading sorl-thumbnail but everywhere I went wanted to put it into the wrong directory. It's not in the Synaptic Package Manager, and I couldn't find a PPA. Just to make it a bit more exciting, the dependency of the project I needed it for was something like version 3.2.5. The current version is 11.0.4.</p>
+<p>Ideally what I wanted to be able to do was set some kind of flag on the install that told it to install somewhere else. Surelly there is a way to do that? But I couldn't find it. I had got as far as actually (again!) RTFM, and was browsing through the <a href="http://docs.python.org/distutils/apiref.html" target="_blank">Core Distutils functionality</a> page when lo and behold, I stumbled upon <a href="http://uswaretech.com/blog/2009/03/create-your-own-online-store-in-few-hours-using-satchmo-django/" target="_blank">this</a>. Not directly relevant you might think – but wait, item 13? What's this?</p>
+<p>Yes, to cut a long story short, I had discovered symlinks. New to me, old to everyone else. It was short work to set one up, helped by <a href="http://www.cyberciti.biz/faq/creating-soft-link-or-symbolic-link/" target="_blank">this</a>, and lo and behold: it works.</p>
+<p>Kind of begs the question as to why I didn't do that in the first place for all the packages... but never mind. Onwards and upwards!</p>
+</div>
+<div id="evaluation-of-css" class="blog-post">
+<h1>How to Write Efficient CSS – Evaluation of CSS</h1>
+<date>29th August 2011</date>
+<p>I recently did a knowledge share at work on how to write efficient CSS, and one of my colleagues – a senior developer with a lot of experience – said "I felt the penny drop". High praise indeed, so I thought it was worth reproducing it here.</p>
+<p>The write-up is pretty long, so I've divided the divs into <a href="#basic-css">Basic CSS</a> in which I cover:
+<ol>
+  <li><a href="#css">CSS</a></li>
+  <li><a href="#selectors">Selectors</a></li>
+  <li><a href="#the-cascade">The Cascade</a></li>
+  <li><a href="#inheritance">Inheritance</a></li>
+</ol>
+and <a href="#evaluation-of-css">Evaluation of CSS</a></li> in which I cover how CSS is evaluated and some things we can do to make it more efficient.</p>
+<h2>How CSS is Evaluated</h2>
+<p>The key information is these two points:
+<ol>
+<li>For each element, the CSS engine searches through style rules to find a match.</li>
+<li>The engine evaluates each rule from right to left, starting from the rightmost selector (called the "key") and moving through each selector until it finds a match or discards the rule.</li>
+</ol>
+<h3>1. For each element, the CSS engine searches through style rules to find a match</h3>
+<p>The style system breaks rules up into four categories by key selector.
+<ol>
+<li>ID Rules – for example <span class="pretty-code-sample">button#backButton { ... }</span></li>
+<li>Class Rules – for example <span class="pretty-code-sample">button.toolbarButton { ... } </span></li>
+<li>Tag Rules – for example <span class="pretty-code-sample">treeitem > treerow { ... } </span></li>
+<li>Universal Rules – all other rules</li>
+</ol>
+<p>The CSS engine then takes each html element in the document in turn. If it has an ID, then the engine searches through the style rules and checks rules that match that element's ID. If it has a class, only Class Rules for a class found on the element will be checked. Only Tag Rules that match the tag will be checked.
+Universal Rules will always be checked.</p>
+<h3>2. The engine evaluates each rule from right to left...</h3>
+<p>So in the example <span class="pretty-code-sample">button#backButton { ... }</span> the key is the id "backButton". In the example I give in <a href="#basic-css">Basic CSS</a> the key is the class "blog-post".</p>
+<p>The engine starts with the key and then evaluates the rule from right to left. So if you have a button with an id of "backButton", the engine first matches the id to the id and then compares the next selector – is the element a button? In the example from <a href="#basic-css">Basic CSS</a> the evaluation for the second selector, <span class="pretty-code-sample">ul#nav.dhtml li a.blog-post</span>, is as follows. Does the element have a class of blog-post? If so, is it a link? If so, is there anywhere in its ancestry a list item? If so, is there anywhere in the ancestry of that list item an unordered list element with a class of dhtml and an id of nav?</p>
+</p>You may be getting a slight clue now as to why I think that selector is inefficient.</p>
+<h3>Recommendations</h3>
+<p>There are some obvious ways we can start here. </p>
+<ul><li>Firstly, remove unused CSS. It's not like, for example, unused Java code which really just slows things down for other developers. The CSS engine is going to search through every rule for every element. The fewer rules required to check for a given element, the faster style resolution will be.</li>
+<li>Avoid use of descendant selectors – they speed up page development, but they slow down page rendering.</li>
+<li>Avoid qualifying ID selectors at all – as IDs should be unique so adding extra qualification is unnecessary and costly.</li>
+<li>It's a good idea to avoid use of html elements in selectors for a couple of reasons:
+<ol>
+<li>The style will be lost of the element type is changed</li>
+<li>The less specific the key the greater the number of nodes that need to be evaluated</li>
+</ol>
+<li>Avoid use of child selectors. They are more efficient than descendant selectors, but they are still inefficient: for each matching element, the browser has to evaluate another node. It becomes doubly expensive for each child selector in the rule.</li>
+</ul>
+<p>These are just recommendations as to how to write the CSS. If you care about your website's performance you should already be <a href="http://developer.yahoo.com/performance/rules.html" target="_blank">minimising and gzipping your CSS</a>. So how much of an edge will these recommendations give you?</p>
+<h3>CSS and Performance</h3>
+<p>CSS and performance is a fairly hot topic right now, especially with all the cool things that you can do using CSS3. Dave Hyatt, architect for Safari and Webkit, said "The sad truth about CSS3 selectors is that they really shouldn't be used at all if you care about page performance." (The comment can be found <a href="http://www.shauninman.com/archive/2008/05/05/css_qualified_selectors#comment_3942" target="_blank">here</a>).</p>
+<p>That's certainly something I've heard, for example at conferences. However, another web giant, Steve Souders (works at Google on web performance) has a different opinion. It's worth reading the piece <a href="http://www.stevesouders.com/blog/2009/03/10/performance-impact-of-css-selectors/" target="_blank">in full</a> (there are charts and everything!), but the takeaway here is: "On further investigation, I'm not so sure that it's worth the time to make CSS selectors more efficient. I'll go even farther and say I don't think anyone would notice if we woke up tomorrow and every web page's CSS selectors were magically optimized."</p>
+<p>So why am I bothering with this? Well, a few reasons. One is I think it's always worth taking the time to find out how things work and I'm glad to be able to make a reasoned judgment on this.</p>
+<p>But also, there are various things to consider when thinking about writing efficient CSS. There is performance, obviously, but two other major concerns are ease of writing and (in my view more important) ease of reading. I love clean code, and I think it's crucial that code is easy for other developers to read. I'm not sure I care whether or not <span class="pretty-code-sample">ul#nav.dhtml li a.blog-post</span> is performant or not, it's certainly not clean, and it took me some brow furrowing to work out when it would apply. So personally, I'm going to follow the rules I've outlined above. What do you think? I'd love to hear your opinion.</p>
+<h3>Useful Further Reading</h3>
+<p>I gleaned most of the information about how the CSS engine works from <a href="http://code.google.com/speed/page-speed/docs/rendering.html" target="_blank">Page Speed documentation</a> and the <a href="https://developer.mozilla.org/en/writing_efficient_css" target="_blank">Mozilla blog</a>. I couldn't find any information about how IE evaluates CSS, please do let me know if you have any.</p>
+<p>To take things further with writing nice CSS, you could look at <a href="http://net.tutsplus.com/tutorials/html-css-techniques/using-compass-and-sass-for-css-in-your-next-project/" target="_blank">Compass/SASS</a>, or my current favourite, <a href="http://oocss.org/" target="_blank">OOCSS</a>.</p>
+</div>
+
+<div id="basic-css" class="blog-post">
+<h1>How to Write Efficient CSS – Basic CSS</h1>
+<date>6th August 2011</date>
+<p>I recently did a knowledge share at work on how to write efficient CSS, and one of my colleagues – a senior developer with a lot of experience – said "I felt the penny drop". High praise indeed, so I thought it was worth reproducing it here, even though other similar divs are available on the internet.</p>
+<p>The write-up is pretty long, so I've divided the divs into <a href="#basic-css">Basic CSS</a> in which I cover:
+<ol>
+  <li><a href="#css">CSS</a></li>
+  <li><a href="#selectors">Selectors</a></li>
+  <li><a href="#the-cascade">The Cascade</a></li>
+  <li><a href="#inheritance">Inheritance</a></li>
+</ol>
+and <a href="#evaluation-of-css">Evaluation of CSS</a></li> in which I cover how CSS is evaluated and some things we can do to make it more efficient.</p>
+<h2 id="css">CSS</h2>
+<p>For those who have no idea at all what CSS is, I can recommend nothing better than the <a href="http://www.w3schools.com/css/css_intro.asp">w3schools excellent intro</a>. The w3school is always my first port of call for definitive answers on html, CSS and JavaScript. I will assume that you at least know that CSS stands for Cascading Style Sheets, and realise why separating that from html can make development easier.</p>
+<p>
+<h3>Syntax</h3>
+<p>CSS is applied to html elements using selectors. The syntax of CSS is: </p>
+<span class="pretty-code-sample">selector { CSS property : value; }</span>
+<p>If you want to add comments, use <span class="pretty-code-sample">/* comment */
+</span>  as C-style comments (//) will cause your CSS to fail silently – all you'll see is your website looking wrong.</p>
+<p>Let's look at some more details of how CSS is written. </p>
+<p class="pretty-code-sample">a.blog-post, ul#nav.dhtml li a.blog-post {<br/>
+    <span>display: block;</span><br/>
+    <span>float: right;</span><br/>
+    <span>height: 24px;</span><br/>
+    <span>width: 24px;</span><br/>
+    <span>margin: 3px 3px 0 0;</span><br/>
+    <span>padding: 0 0 0 0;</span><br/>
+    <span>background: url(../images/film_help.png) no-repeat;</span><br/>
+}</p>
+
+<ol>
+<li><h3>Padding and the box model</h3></li>
+<p>If you've ever worked with CSS at all, no doubt you have fiddled around changing the padding or the margin without actually knowing why. I certainly did. Until I saw this diagram, which suddenly made everything clear:</p>
+<a href="http://www.w3schools.com/css/css_boxmodel.asp" target="_blank"><img src="img/box-model.gif" /></a>
+<p>Have a look at the page on w3schools, but basically the margin is how far the box is from other elements, and the padding is how much space you'd like between the inside of the box and the content. Genius. And obviously, although not given in the CSS example above, you can manipulate the border too, as I have done in my code samples on this page, for example <span class="code-sample">border-style: dashed;</span></p>
+
+<li><h3>Padding and Margin shortcuts</h3></li>
+<p>It is possible to specify each direction of the padding, for example <span class="pretty-code-sample">padding-left:3px</span>. However you can also use a shortcut, as has been done in the example. The order is like a clock: Top, Right, Bottom, Left; so an element with the CSS in the example applied to it will have a margin on the top and the right. <a href="http://stackoverflow.com/questions/356759/a-mnemonic-for-the-order-of-css-margin-and-padding-shorthand-properties" target="_blank">Another way to remember this</a> is by remembering that if you don't get it right there will be TRouBLe. :o)</p>
+<p>However, you can make it even shorter than that. Three values set the top to the first, the right AND left to the second and the bottom to the third. For example:</p>
+<p>margin:10px 5px 15px;<br/>
+top margin is 10px<br/>
+right and left margins are 5px<br/>
+bottom margin is 15px<br/>
+</p>
+<p>Two values set the top and bottom to the first, and the right and left to the second, and one value sets them all to the same. <a href="http://www.w3schools.com/css/css_margin.asp" target="_blank">Here</a> if you didn't follow that.</p>
+<li><h3>Ems</h3></li>
+<p>Sizes can be given in pixels, ems or percentages. Pixels you know. Percentages are as a percentage of the enclosing elements (see <a href="#inheritance">inheritance</a>). Ems are also calculated as percentages, where the default for most browsers is that 1em = 16px. However (of course) there is a slight twist in that ems are not calculated correctly in IE, so .85em is smaller than 85%. The <a href="http://www.w3schools.com/css/css_font.asp" target="_blank">w3schools recommendation</a> is to use a combination of percentages and ems. The <a href="#developer-tools">developer tools</a> are invaluable in this respect and there is a useful discussion <a href="http://www.jaxbeachtech.com/css-font-size" target="_blank">here</a>.</p>
+<p>In the meantime you might want to remember this hilarious joke: <date>Q. What did one em say to the other em? A. Who's your daddy?</date> </p>
+<li><h3>No-repeat</h3></li>
+<p>A brief word on the image. <span class="pretty-code-sample">background: url(../images/film_help.png) no-repeat;</span>. The url is a link to where you have stored the image. <span class="pretty-code-sample">no-repeat</span> means you want it to appear once. The default is for it to repeat both horizontally and vertically. A nice trick for filling in a background is to create a slim image with the gradiations you want and then <span class="pretty-code-sample">repeat-x</span> so it fills the div.</p>
+<p>An aside: another way to include images is to instead use a data url. This is where you encode the image inline. The advantage of this is that it doesn't require an extra HTTP request to get the image, and the key to a faster website is minimising the HTTP requests. However, there are reasons (other than the ubiquitous incomplete cross-browser support) why you might not want to use data urls – a good discussion can be found <a href="http://stackoverflow.com/questions/1124149/embedding-background-image-data-into-css-as-base64-good-or-bad-practice" target="_blank">here</a>. Other ways to minimise the HTTP requests associated with loading images can be found <a href="http://developer.yahoo.com/performance/rules.html" target="_blank">here</a>.</p>
+<li><h3>Optional;</h3></li>
+<p>The last semi-colon is optional. In fact, the structure of a CSS class is <span class="pretty-code-sample">selector { CSS property : value }</span> – you only need the semi-colon if you have subsequent instructions. I always put it in anyway though, there's no reason not to.</p>
+</ol>
+<h2 id="selectors">Selectors</h2>
+<p>There are <a href="http://www.w3schools.com/cssref/css_selectors.asp" target="_blank">loads</a> of selectors in CSS. For now, I'll just talk about the most common:</p>
+<h3>html element</h3>
+For example, <span class="pretty-code-example">p { color: red; }</span> would make all text in paragraphs red.
+<h3>#id</h3>
+Giving the ID makes the one specific element behave in a certain way. It is certainly the most efficient selector (see <a href="#evaluation-of-css">how it's evaluated</a>, but it isalso slightly pointless. The point of style is to make a website look and feel consistent – with your brand, with itself, etc. IDs are (supposed to be) unique on a page. So why would you want to style just one thing?
+<h3>.class</h3>
+The most common selector and the one I think we should all be using most of the time.
+<h3>*</h3>
+The universal selector. Some interesting discussion <a href="http://meyerweb.com/eric/divs/webrev/200006a.html" target="_blank">here</a>, but in summary it is the least efficient selector and also allows you to bypass inheritance. I say AVOID.
+<h3>Combinations</h3>
+<h4>x, y</h4>
+<p>This means, apply the style you are outlining to all xs and all ys. For example <span class="pretty-code-sample">p, .blog-intro { font-weight: bold; }</span> makes the text in all paragraphs bold AND the text in all elements with the class "blog-intro".</p>
+<h4>x y</h4>
+<p>The descendant selector. This matches any y which is a descendant of any x. For example <span class="pretty-code-example">p .blog-intro { font-weight: bold; }</span> makes all the text within a paragraph that has the class of "blog-intro" bold – even if it is nested several layers within. It is very inefficient. See <a href="evaluation-of-css">later post</a></p>
+<h4>x > y</h4>
+<p>The child selector. This matches any y which is a child of any x. This is also inefficient, though less inefficient than the descendant selector.</p>
+<h3>a.blog-post, ul#nav.dhtml li a.blog-post</h3>
+<p>So, to return to the selector in the example which I have so far ignored.</p>
+<p>To spell it out, the style outlined here will be applied to any link with the class of blog-post, AND any link with the class of blog-post which is a descendant of a list item which is itself a descendant of an unordered list with the id of nav and a class of dhtml.</p>
+<p>Pretty complicated. Over-complicated, I will argue. But just to note – the reason you might want both of these (you might think the first would cover the second) is because you may well have one or more intermediate styles that have altered the link in the list item further. For example if you have styled ul#nav.dhtml differently, the link will appear differently unless you reset it here.</p>
+<p>In my view, examples like this are why people do not like CSS. Oh, and this is a real example from a live application, by the way. Names slightly changed to protect the innocent.</p>
+<h2 id="the-cascade">The Cascade</h2>
+<p>As hinted at above, you can have multiple styles applied to an element, and the cascade is what determines which one is actually applied. CSS styles are cascaded in the following order, with the one applying last being the one that sticks:
+<ol>
+<li>Origin (i.e. Browser then Author)</li>
+<li>Importance (normal vs !important)</li>
+<li>Specificity
+<ol>
+<li>Inline</li>
+<li>Highest number of id selectors</li>
+<li>Highest number of class, attribute, or pseudo classes</li>
+<li>Highest number of elements and pseudo elements</li>
+</ol></li>
+<li>If still the same, the order in which they appear.</li>
+</ol>
+<p><a href="http://reference.sitepoint.com/css/cascade" target="_blank">Here</a> for (very dense) more.
+<h3>Specificity</h3>
+<p>Selectors are considered to be specific in the following way (ordered from the least to the most specific):
+<ol>
+<li>The type selector</li>
+<li>The descendant selector</li>
+<li>The adjacent sibling selector</li>
+<li>The child selector</li>
+<li>The class selector</li>
+<li>The attribute selector</li>
+<li>The ID selector</li>
+</ol>
+<a href="http://www.alternategateways.com/tutorials/css/css-101/part-four-the-css-order-of-precedence" target="_blank">Here</a> for more.
+<h3>Order</h3>
+<p>The order, listed from the least precedence to the most precedence:</p>
+<ol>
+<li>Browser default</li>
+<li>External style sheet</li>
+<li>Internal style sheet (i.e. written in the head)</li>
+<li>Inline style (i.e. inside an HTML element)</li>
+</ol>
+<p>Notes:</p>
+<p>An external stylesheet will override an internal stylesheet if it's linked to in the head after the internal style sheet.</p>
+<p>And the most common trip-up in legacy code systems: The same class within a CSS file will override one written higher up in that file.</p>
+<h3>important!</h3>
+<p>You will have seen that <span class="pretty-code-sample">important!</span> takes precedence in the cascade. This is what you add if you can't get the style you want using the normal rules of cascade and inheritance. Don't use it unless you <strong>really</strong> have to – to me, it says "I don't know how CSS works so I'm just going to hack it."</p>
+<h3 id="developer-tools">Developer Tools</h3>
+<p>All modern browsers have developer tools so you can examine elements to see what CSS is being applied, and in a surprising departure from the norm, the best one in my opinion is the one available in IE when you press F12.</p>
+<p>For example, in this screenshot you can see that the colour being applied here is the one from the class ul.dhtml#nav not the one specified for body or the one specified for body.mainframe.</p>
+<img src="img/ie-dev-tools.png" />
+<h2 id="inheritance">Inheritance</h2>
+<p>I could not do a better job of writing up inheritance than <a href="http://www.maxdesign.com.au/divs/css-inheritance/" target="_blank">this</a> company presentation. I really recommend you go and click through it. It starts very simple and you may think it's a waste of your time but if you are not 100% sure how inheritance in CSS works then this will really help.</p>
+<p>A brief summary though if you really can't be bothered: Elements inherit styles from the elements within which they are nested. So in the following html, if you apply a style of <span class="pretty-code-sample">font-weight: bold</span> to p, then the text inside the span will also be bold.</p>
+<p class="pretty-code-sample">
+&lsaquo;body&rsaquo;<br/>
+&lsaquo;p&rsaquo;I'm bold. &lsaquo;span&rsaquo;And so am I!&lsaquo;/span&rsaquo;&lsaquo;/p&rsaquo;<br/>
+&lsaquo;/body&rsaquo;
+</p>
+<p><a href="#evaluation-of-css">Read on</a> for how to write it efficiently!</p>
+</div>
+
+<div id="firefox-part-2" class="blog-post">
+<h1>A Voyage of Discovery – Upgrading Firefox Part 2</h1>
+<date>27th July 2011</date>
+<p>Right, it turned out my next step was not a chat with Joe Halliwell but instead with my good friend and mentor, <a href="http://dolsonagile.wordpress.com/">Dolan O'Toole</a>, and what I thought might be a voyage of discovery into how to make my installation of firefox run like a normal program turned out to be just a short trip of discovery to finding out that I hadn't actually been looking in the right places.</p>
+
+<p>After helpfully pointing out that I "sound like a linux newbie :)" (yes, yes I am), Dolan explained where I'd gone wrong: "You followed the instuctions as they are. The only thing you weren't aware of is that most of the time, someone would have done a build of a program for ubuntu and put it in an apt repository, usually on launchpad. I usually search for something like "firefox 5 ubuntu 10.10" if I need to install something before I resort to manual installations."</p>
+
+<p>Good tip, and here it is:</p>
+
+<p><a href="http://www.webupd8.org/2011/06/firefox-5-lands-in-firefox-stable-ppa.html">http://www.webupd8.org/2011/06/firefox-5-lands-in-firefox-stable-ppa.html</a></p>
+
+<p>So – I have learned that it's not quite as straightforward as finding the instructions and then following them – you also have to know stuff. That's OK though. And at least I have firefox the way I want it now. I'm sure there'll be another opportunity to get my hands dirty...</p>
+</div>
+
+
+<div id="firefox-part-1" class="blog-post">
+<h1>Upgrading Firefox – part 1...</h1>
+<date>20th July 2011</date>
+<p>So. Not content with the Ubuntu version of Firefox which is at 3.6.18, I decided that I wanted Firefox 5.0. Heck, I want 5.0.1.</p>
+
+<p>So I followed <a href="https://help.ubuntu.com/community/FirefoxNewVersion/MozillaBuilds" target="_blank">these</a> instructions.</p>
+
+<p>To no avail. I followed them to the letter (or so I thought), but when I finished up by running <span class="code-sample">firefox</span>, to my joy, Firefox popped up, and to my moments later horror, it was still 3.6.18.</p>
+
+<p>Why??</p>
+
+<p>Well, lots of reasons why, as I discovered when I unistalled Firefox 3.6.18.</p>
+
+<p>First of all, when it said "Run the following shell script" I just typed it into the console window. That did not work. Don't sigh, I'm new to this!</p>
+
+<p>So I created the shell script and saved it. Following, incidentally, instructions <a href="http://www.go2linux.org/starting-with-shell-script" target="_blank">here</a> – the bit I was missing was the permissions: <span class="code-sample">chmod +x myfirstscript.sh</span>
+
+<p>[NB. I couldn't agree more with the grateful commenter on that link: "Everybody just writes "run the shell script" but a complete beginner doesn't know, that shell scripts have to be executable and are started with ./"]</p>
+
+<p>OK I've run the script woo hoo! "The firefox command in your ~/bin directory will now run Firefox with the mozilla-build profile." I have the file, the file contains another script, that script should allow me to start firefox, right? </p>
+
+<p>Wrong.</p>
+
+<p><span class="code-sample">bash: /usr/bin/firefox: No such file or directory</span></p>
+
+<p>Well that, presumably is why running the firefox command before started up the old firefox. (So – hey – I could have just run the script in the command line like I wanted!)</p>
+
+<p>So, I decided to roll back a step and delete the new <span class="code-sample">~/bin</span> directory – I didn't like it anyway. I discovered I could actually run Firefox, from the firefox directory, by running this command: <span class="code-sample">exec "/home/anna/firefox/firefox" -P mozilla-build "\$@" </span>. So I wrote a shellscript to do that.</p>
+
+<p>So now I can run firefox. It's 5.0.1. But I have to run it from the command line. Closing Firefox doesn't close the terminal window, but that terminal window is taken up with running firefox (maybe there's a way round that like with gedit &).</p>
+
+<p>A few other things. The firefox running remembers passwords. It remembers what I've set my home page to. But it doesn't start up on the home page even though I've asked it to. Agreeing to restart it does so. Behind the scenes, there are a couple of errors: </p>
+
+<p class="code-sample">(firefox-bin:1923): Gtk-WARNING **: Loading IM context type 'ibus' failed
+
+(firefox-bin:1923): Gtk-WARNING **: /usr/lib/gtk-2.0/2.10.0/immodules/im-ibus.so: wrong ELF class: ELFCLASS64
+</p>
+
+<p>Ideally I want this firefox to run normally, i.e. be available on the menu, have an icon in the top panel, not to rely on a command window. I suspect my next port of call is to discuss this with Mr Joseph Halliwell. I hope there will be a part 2 where I turn out to have learned loads about this area!</p>
+</div>
+
+<div id="learned-today" class="blog-post">
+<h1>What I have learned about folder structure today</h1>
+
+<date>22nd April 2011</date>
+
+<p><a href="http://packages.python.org/distribute/easy_install.html" target="_blank">Easy_install</a> (as it comes) doesn't work for Debian-based systems.</p>
+
+<p>The default behaviour is to install things to <span class="code-sample">/usr/local/</span> – this is the Gnu default – whereas the synaptic package manager installs things to <span class="code-sample">/usr/</span>. I imagine there may be a way to reconfigure the default behaviour, but I didn't get that far.</p>
+
+<p>This is how I found out this rather useful piece of information. I had installed easy_install, and then used it to download all the dependencies I needed to get started with this python/Django project I was going to work on. And then – nada.</p>
+
+<p>For about three hours, no matter what I did, I had this message: </p>
+
+<p class="code-sample">File "/usr/local/lib/python2.6/dist-packages/Django-1.3-py2.6.egg/django/db/backends/mysql/base.py", line 28, in <module>
+    from django.db import utils
+ImportError: cannot import name utils
+</p>
+
+<p>My friend who was with me, trying to get me set up to start work on the project, is a Django expert, but he uses Windows. Hey, so do I! What am I even doing using linux? (See sidebar for answer...)</p>
+
+<p>We tried a lot of things. I won't go into them all here, mainly because I can't remember many of them. We tried a lot of things that people on the internet had suggested. As a last resort, we even tried to RTFM. To no avail.</p>
+
+<p>After we'd given up and my friend had left, I went back to it to try and figure out what was going on. I even tried to resort to the beginner standard of adding log messages, but all the files I wanted to edit were read-only. Finally, <a href="http://docs.djangoproject.com/en/dev/topics/install/?from=olddocs" target="_blank">this page</a> offered me a glimmer of a clue.</p>
+
+<p>Specifically, the question "Where are my site-packages stored?" and the answer:</p>
+
+<p><span class="code-sample">python -c "from distutils.sysconfig import get_python_lib; print get_python_lib()"</span></p>
+
+<p>Which for me, returns <span class="code-sample">/usr/lib/python2.6/dist-packages</span></p>
+
+<p>Hang on though, the error is in <span class="code-sample">/usr/local/lib</span> . . . eh?</p>
+
+<p>A visit to the python2.6 folder in <span class="code-sample">/usr/local</span> confirmed that all of the stuff I needed was in there. And a call to my incredibly helpful and talented friend <a href="http://www.joehalliwell.com/" target="_blank">Joe Halliwell</a> confirmed my growing suspicion that this was Not Correct. He explained to me the Gnu/Debian folder structure differences.</p>
+
+<p id="no-sorl-thumbnail">So, I backtracked. I installed everything I needed (except sorl-thumbnail, which wasn't there. However, all I need to do is find a ppa. There is probably also another way to install it correctly. By the time this is all done, I may even know what it is.)</p>
+
+<p>I ran through a few errors on the way, but all of the <span class="code-sample">ImportError: No module named django_extensions</span> variety, and solved one by one, satisfyingly, by installing what I needed in the correct way.</p>
+
+<p>Finally, several hours after my friend came round to work on this, I now have a new error:</p>
+
+<p class="code-sample">File "/usr/lib/pymodules/python2.6/MySQLdb/connections.py", line 170, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+_mysql_exceptions.OperationalError: (1045, "Access denied for user 'anna'@'localhost' (using password: NO)")
+</p>
+
+<p>It's progress.</p></div>
+                <!-- Column 1 end -->
+            </div>
+            <div class="col2">
+                <!-- Column 2 start -->
+                <div class="sidebar">
+<ul>
+<li><a href="#puppet-module">Creating a Puppet module</a> <date>9th September 2013</date></li>
+<li><a href="#regex-picture">Some Regex in the form of a Picture!</a> <date>10th
+August 2013</date></li>
+<li><a href="#where-start">Where Do I Start?</a> <date>6th July 2013</date></li>
+<li><a href="#roof-bug-fixing">Roof Bug-fixing</a> <date>21st May 2013</date></li>
+<li><a href="#upgrading">Ugrading to 12.04...</a> <date>6th May 2013</date></li>
+<li><a href="#partitioning">Partioning!</a> <date>24th April 2013</date></li>
+<li><a href="#roof-hacking">Roof Hacking</a> <date>24th March 2013</date></li>
+<li><a href="#estimating">How to Estimate</a> <date>21st January 2013</date></li>
+<li><a href="#learning-perl">Learning the perls</a> <date>20th November 2012</date></li>
+<li><a href="#d3">Learning More About D3</a> <date>19th July 2012</date></li>
+<li><a href="#cap-or-pacelc">CAP again – or should that be PACELC?</a> <date>15th July 2012</date></li>
+<li><a href="#cap-theorem-and-mongodb">The CAP Theorem and MongoDB</a> <date>29th April 2012</date></li>
+<li><a href="#questions-for-data">What Should Your Work Log Tell You?</a> <date>15th April 2012</date></li>
+<li><a href="#personal-development-1">P.O.A.</a> <date>20th February 2012</date></li>
+<li><a href="#gamejam-knowledge">Would Have Been Useful to Know at My First Game Jam</a> <date>14th February 2012</date></li>
+<li><a href="#jstalk-structure">JavaScript Talk Takes Shape</a> <date>21st January 2012</date> </li>
+<li><a href="#chat-with-ian">Preparation Begins for the JavaScript Talk...</a> <date>18th December 2011</date> </li>
+<li><a href="#js-talk">JavaScript Visualisations Proposal</a> <date>30th November 2011</date></li>
+<li><a href="#continuing-struggles">My Continuing Struggles with Linux</a> <date>17th October 2011</date></li>
+<li><a href="#sorl-bites-me">Sorl-thumbnail Comes Back to Bite Me</a> <date>12th September 2011</date></li>
+<li><a href="#evaluation-of-css">How to Write Efficient CSS – Evaluation of CSS</a> <date>29th August 2011</date></li>
+<li><a href="#basic-css">How to Write Efficient CSS – Basic CSS</a> <date>6th August 2011</date></li>
+<li><a href="#firefox-part-2">A Voyage of Discovery – Upgrading Firefox Part 2</a> <date>27th July 2011</date></li>
+<li><a href="#firefox-part-1">Upgrading Firefox – part 1...</a> <date>20th July 2011</date></li>
+<li><a href="#learned-today">What I have learned about folder structure today</a> <date>22nd April 2011</date></li>
+</ul>
+</div>
+                <!-- Column 2 end -->
+            </div>
+            <div class="col3">
+                <!-- Column 3 start -->
+                <!-- Column 3 end -->
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <p>This page uses the <a href="http://matthewjamestaylor.com/blog/perfect-3-column.htm" target="_blank">Perfect 'Holy Grail' 3 Column Liquid Layout</a> by <a href="http://matthewjamestaylor.com" target="_blank">Matthew James Taylor</a>.</p>
+</div>
+
+</body>
+</html>
