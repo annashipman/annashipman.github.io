@@ -147,6 +147,10 @@ p .pretty-code-sample {
     width:50%;
 }
 
+.message-container {
+    margin: 50px;
+}
+
 /* lifted directly from http://matthewjamestaylor.com/blog/perfect-3-column.htm*/
 .colmask {
     position:relative;    /* This fixes the IE7 overflow hidden bug */
