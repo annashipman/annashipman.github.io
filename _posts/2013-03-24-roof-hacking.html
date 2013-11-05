@@ -1,0 +1,19 @@
+---
+anchor_id: roof-hacking
+title: Roof Hacking
+layout: blog_post
+---
+<p>Two weeks ago I was at the excellent <a href="http://devfort.com/" target="_blank">/dev/fort</a>. More on that another time; all I'll say now is that we were making a website in a <a href="http://www.landmarktrust.org.uk/search-and-book/properties/fort-clonque-7423" target="_blank">fort</a>.</p>
+<p>On one feature I was pairing (actually, tripling...) on some Django with the awesome <a href="https://twitter.com/georgebrock" target="_blank">George Brocklehurst</a> and the brilliant <a href="https://twitter.com/jcoglan" target="_blank">James Coglan</a>. James and I took a break to look at the <a href="http://www.flickr.com/photos/mn_francis/8559067275/in/set-72157632998241737/" target="_blank">causeway being underwater at high tide</a>, and when we returned we found that George had relocated from our previous office (the green sofa) to the flat roof of the officers' mess. With his phone playing Ben Howard's cover of <a href="http://www.youtube.com/watch?v=sPU8V-nvUEk" target="_blank">Call Me Maybe</a> and glasses of whisky hand-delivered by the fantastic <a href="https://twitter.com/cgovias" target="_blank">Chris Govias</a>, it was perfect.</p>
+<p>Except it wasn't, because George's battery was running low, and he couldn't push his changes to my laptop because the wifi didn't reach that far. "Of course, we could always set up a local wifi on the roof," said George. Was he trolling me? No, he was not, and here's how:</p>
+<p>George committed to a local branch and then set up his mac as a network hub (a <a href="http://support.apple.com/kb/PH3771" target="_blank">computer-to-computer network</a>).</p>
+<p>Then I added a git remote that pointed at the repository on George's machine:</p>
+<div class="code-sample">git remote add george georgebrocklehurst@169.254.145.66:code/devfort7/hobbit/.git</div>
+<p>The IP address here was his machine on the network he'd created, and it was his ssh login (so I needed him to enter his password).</p>
+<p>This included the pleasure of having to type:</p>
+<div class="code-sample">git fetch george</div>
+<p>Then I merged george's branch into mine:</p>
+<div class="code-sample">git merge george/onboarding</div>
+<p>and we were ready to use my computer to continue the good work.</p>
+<img src="/img/roofhacking.jpg" />
+<p class="photo-credit">Photo by the aforementioned brilliant <a href="https://twitter.com/jcoglan" target="_blank">James Coglan</a>.</p>

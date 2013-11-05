@@ -1,0 +1,41 @@
+---
+anchor_id: firefox-part-1
+title: Upgrading Firefox – part 1...
+layout: blog_post
+---
+<p>So. Not content with the Ubuntu version of Firefox which is at 3.6.18, I decided that I wanted Firefox 5.0. Heck, I want 5.0.1.</p>
+
+<p>So I followed <a href="https://help.ubuntu.com/community/FirefoxNewVersion/MozillaBuilds" target="_blank">these</a> instructions.</p>
+
+<p>To no avail. I followed them to the letter (or so I thought), but when I finished up by running <span class="code-sample">firefox</span>, to my joy, Firefox popped up, and to my moments later horror, it was still 3.6.18.</p>
+
+<p>Why??</p>
+
+<p>Well, lots of reasons why, as I discovered when I unistalled Firefox 3.6.18.</p>
+
+<p>First of all, when it said "Run the following shell script" I just typed it into the console window. That did not work. Don't sigh, I'm new to this!</p>
+
+<p>So I created the shell script and saved it. Following, incidentally, instructions <a href="http://www.go2linux.org/starting-with-shell-script" target="_blank">here</a> – the bit I was missing was the permissions: <span class="code-sample">chmod +x myfirstscript.sh</span>
+
+<p>[NB. I couldn't agree more with the grateful commenter on that link: "Everybody just writes "run the shell script" but a complete beginner doesn't know, that shell scripts have to be executable and are started with ./"]</p>
+
+<p>OK I've run the script woo hoo! "The firefox command in your ~/bin directory will now run Firefox with the mozilla-build profile." I have the file, the file contains another script, that script should allow me to start firefox, right? </p>
+
+<p>Wrong.</p>
+
+<p><span class="code-sample">bash: /usr/bin/firefox: No such file or directory</span></p>
+
+<p>Well that, presumably is why running the firefox command before started up the old firefox. (So – hey – I could have just run the script in the command line like I wanted!)</p>
+
+<p>So, I decided to roll back a step and delete the new <span class="code-sample">~/bin</span> directory – I didn't like it anyway. I discovered I could actually run Firefox, from the firefox directory, by running this command: <span class="code-sample">exec "/home/anna/firefox/firefox" -P mozilla-build "\$@" </span>. So I wrote a shellscript to do that.</p>
+
+<p>So now I can run firefox. It's 5.0.1. But I have to run it from the command line. Closing Firefox doesn't close the terminal window, but that terminal window is taken up with running firefox (maybe there's a way round that like with gedit &).</p>
+
+<p>A few other things. The firefox running remembers passwords. It remembers what I've set my home page to. But it doesn't start up on the home page even though I've asked it to. Agreeing to restart it does so. Behind the scenes, there are a couple of errors: </p>
+
+<p class="code-sample">(firefox-bin:1923): Gtk-WARNING **: Loading IM context type 'ibus' failed
+
+(firefox-bin:1923): Gtk-WARNING **: /usr/lib/gtk-2.0/2.10.0/immodules/im-ibus.so: wrong ELF class: ELFCLASS64
+</p>
+
+<p>Ideally I want this firefox to run normally, i.e. be available on the menu, have an icon in the top panel, not to rely on a command window. I suspect my next port of call is to discuss this with Mr Joseph Halliwell. I hope there will be a part 2 where I turn out to have learned loads about this area!</p>

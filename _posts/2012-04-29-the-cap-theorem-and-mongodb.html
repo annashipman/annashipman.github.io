@@ -1,0 +1,32 @@
+---
+anchor_id: cap-theorem-and-mongodb
+title: The CAP Theorem and MongoDB
+layout: blog_post
+---
+<p>This week I learned some things about MongoDB. One of them was about how it fits in with the CAP theorem.</p>
+<p>They say a picture is worth a thousand words, and I think this diagram from my excellent new colleague <a href="https://twitter.com/matwall" target="_blank">Mat Wall</a> while he was explaining it to me says everything:</p>
+<img src="/img/mongodb.jpg" />
+<p>Over and out.</p>
+<p>OK, perhaps I can offer a tiny bit of exposition.</p>
+<p>The CAP Theorem is: where C is consistency, A is availability, and P is partition tolerance, you can't have a system that has all three. (It gets to be called a theorem because it has been formally proved.)</p>
+<p>Roughly speaking:</p>
+<ul>
+<li>Consistency means that when two users access the system at the same time they should see the same data.</li>
+<li>Availability means up 24/7 and responds in a reasonable time.</li>
+<li>Partition Tolerance means if part of the system fails, it is possible for the system as a whole to continue functioning.</li>
+</ul>
+<p>If you have a web app backed by a SQL database, most likely, it is CA.</p>
+<p>It is C because it's transaction-based. So when you update the database, everything stops until you've finished. So anything reading from the database will get the same data.</p>
+<p>It can be A, but it won't be P because SQL databases tend to run on single nodes.</p>
+<p>If you want your application to be P, according to the CAP theorem, you have to sacrifice either A or C.</p>
+<p>With MongoDB, in order to gain P, you sacrifice C. There are various ways to set it up, but in our application we have one master database, that all writes go to, and several secondaries (as can be seen from the diagram: M is the Master, the Rs are the secondaries – also called replicas, or slaves). Reads may come from the secondaries. So it is possibly that one or more of the secondary nodes could be disconnected from the application by some kind of network failure, but the application will not fall over because the read requests will just go to another node. Hence P.</p>
+<p>The reason this sacrifices C is because the writes go to the master, and then take some time to filter out to all the secondaries. So C is not completely sacrificed – there is just a possibility that there may be some delay. We are not allowing a situation where the secondaries are permanently out of synch with the master – there is "eventual consistency". </p>
+<p>So you might use this in applications where, for example, you are offering the latest news story. If User A gets the latest news 10 seconds earlier than User B, this doesn't really matter. Of course, if it was a day later, then that would be a problem.  The failure case of C is just around the time of the write and you want to keep that window of consistency small.</p>
+<p>There is also a concept of durability, which you can also be flexible with.</p>
+<p>Take the following two lines of pseudocode:</p>
+<p class="code-sample">
+1. insert into table UNIVERSAL_TRUTHS (name, characteristic) values ('Anna', 'is awesome')<br/>
+2. select characteristic from UNIVERSAL_TRUTHS where name = 'Anna'
+</p>
+<p>What we're saying when we sacrifice consistency is, if I run these two lines on the same node then when I run line 2, I can be sure it will return 'is awesome'. However, if I run line 2 on a different node, I can't be sure it's in already. It will still be "eventually consistent" so if I run it later (and it hasn't been changed again in the interim) it will at some point return the correct data.</p>
+<p>However, you can also configure MongoDB to be flexible about durability. This is where, if you run the two lines of code on the <date>same</date> node, it might be the case that line 2 hasn't run, and possibly even never will. You might do this, for example if you were storing analytics. If you are looking for general trends, it might not matter so much if 1% of the transactions fail, so you might configure it to be flexible on durability. Of course you wouldn't do that for something as crucial as characteristics about Anna.</p>

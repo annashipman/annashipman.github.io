@@ -1,0 +1,132 @@
+---
+anchor_id: basic-css
+title: How to Write Efficient CSS – Basic CSS
+layout: blog_post
+---
+<p>I recently did a knowledge share at work on how to write efficient CSS, and one of my colleagues – a senior developer with a lot of experience – said "I felt the penny drop". High praise indeed, so I thought it was worth reproducing it here, even though other similar divs are available on the internet.</p>
+<p>The write-up is pretty long, so I've divided the divs into <a href="#basic-css">Basic CSS</a> in which I cover:
+<ol>
+  <li><a href="#css">CSS</a></li>
+  <li><a href="#selectors">Selectors</a></li>
+  <li><a href="#the-cascade">The Cascade</a></li>
+  <li><a href="#inheritance">Inheritance</a></li>
+</ol>
+and <a href="#evaluation-of-css">Evaluation of CSS</a></li> in which I cover how CSS is evaluated and some things we can do to make it more efficient.</p>
+<h2 id="css">CSS</h2>
+<p>For those who have no idea at all what CSS is, I can recommend nothing better than the <a href="http://www.w3schools.com/css/css_intro.asp">w3schools excellent intro</a>. The w3school is always my first port of call for definitive answers on html, CSS and JavaScript. I will assume that you at least know that CSS stands for Cascading Style Sheets, and realise why separating that from html can make development easier.</p>
+<p>
+<h3>Syntax</h3>
+<p>CSS is applied to html elements using selectors. The syntax of CSS is: </p>
+<span class="pretty-code-sample">selector { CSS property : value; }</span>
+<p>If you want to add comments, use <span class="pretty-code-sample">/* comment */
+</span>  as C-style comments (//) will cause your CSS to fail silently – all you'll see is your website looking wrong.</p>
+<p>Let's look at some more details of how CSS is written. </p>
+<p class="pretty-code-sample">a.blog-post, ul#nav.dhtml li a.blog-post {<br/>
+    <span>display: block;</span><br/>
+    <span>float: right;</span><br/>
+    <span>height: 24px;</span><br/>
+    <span>width: 24px;</span><br/>
+    <span>margin: 3px 3px 0 0;</span><br/>
+    <span>padding: 0 0 0 0;</span><br/>
+    <span>background: url(../images/film_help.png) no-repeat;</span><br/>
+}</p>
+
+<ol>
+<li><h3>Padding and the box model</h3></li>
+<p>If you've ever worked with CSS at all, no doubt you have fiddled around changing the padding or the margin without actually knowing why. I certainly did. Until I saw this diagram, which suddenly made everything clear:</p>
+<a href="http://www.w3schools.com/css/css_boxmodel.asp" target="_blank"><img src="/img/box-model.gif" /></a>
+<p>Have a look at the page on w3schools, but basically the margin is how far the box is from other elements, and the padding is how much space you'd like between the inside of the box and the content. Genius. And obviously, although not given in the CSS example above, you can manipulate the border too, as I have done in my code samples on this page, for example <span class="code-sample">border-style: dashed;</span></p>
+
+<li><h3>Padding and Margin shortcuts</h3></li>
+<p>It is possible to specify each direction of the padding, for example <span class="pretty-code-sample">padding-left:3px</span>. However you can also use a shortcut, as has been done in the example. The order is like a clock: Top, Right, Bottom, Left; so an element with the CSS in the example applied to it will have a margin on the top and the right. <a href="http://stackoverflow.com/questions/356759/a-mnemonic-for-the-order-of-css-margin-and-padding-shorthand-properties" target="_blank">Another way to remember this</a> is by remembering that if you don't get it right there will be TRouBLe. :o)</p>
+<p>However, you can make it even shorter than that. Three values set the top to the first, the right AND left to the second and the bottom to the third. For example:</p>
+<p>margin:10px 5px 15px;<br/>
+top margin is 10px<br/>
+right and left margins are 5px<br/>
+bottom margin is 15px<br/>
+</p>
+<p>Two values set the top and bottom to the first, and the right and left to the second, and one value sets them all to the same. <a href="http://www.w3schools.com/css/css_margin.asp" target="_blank">Here</a> if you didn't follow that.</p>
+<li><h3>Ems</h3></li>
+<p>Sizes can be given in pixels, ems or percentages. Pixels you know. Percentages are as a percentage of the enclosing elements (see <a href="#inheritance">inheritance</a>). Ems are also calculated as percentages, where the default for most browsers is that 1em = 16px. However (of course) there is a slight twist in that ems are not calculated correctly in IE, so .85em is smaller than 85%. The <a href="http://www.w3schools.com/css/css_font.asp" target="_blank">w3schools recommendation</a> is to use a combination of percentages and ems. The <a href="#developer-tools">developer tools</a> are invaluable in this respect and there is a useful discussion <a href="http://www.jaxbeachtech.com/css-font-size" target="_blank">here</a>.</p>
+<p>In the meantime you might want to remember this hilarious joke: <date>Q. What did one em say to the other em? A. Who's your daddy?</date> </p>
+<li><h3>No-repeat</h3></li>
+<p>A brief word on the image. <span class="pretty-code-sample">background: url(../images/film_help.png) no-repeat;</span>. The url is a link to where you have stored the image. <span class="pretty-code-sample">no-repeat</span> means you want it to appear once. The default is for it to repeat both horizontally and vertically. A nice trick for filling in a background is to create a slim image with the gradiations you want and then <span class="pretty-code-sample">repeat-x</span> so it fills the div.</p>
+<p>An aside: another way to include images is to instead use a data url. This is where you encode the image inline. The advantage of this is that it doesn't require an extra HTTP request to get the image, and the key to a faster website is minimising the HTTP requests. However, there are reasons (other than the ubiquitous incomplete cross-browser support) why you might not want to use data urls – a good discussion can be found <a href="http://stackoverflow.com/questions/1124149/embedding-background-image-data-into-css-as-base64-good-or-bad-practice" target="_blank">here</a>. Other ways to minimise the HTTP requests associated with loading images can be found <a href="http://developer.yahoo.com/performance/rules.html" target="_blank">here</a>.</p>
+<li><h3>Optional;</h3></li>
+<p>The last semi-colon is optional. In fact, the structure of a CSS class is <span class="pretty-code-sample">selector { CSS property : value }</span> – you only need the semi-colon if you have subsequent instructions. I always put it in anyway though, there's no reason not to.</p>
+</ol>
+<h2 id="selectors">Selectors</h2>
+<p>There are <a href="http://www.w3schools.com/cssref/css_selectors.asp" target="_blank">loads</a> of selectors in CSS. For now, I'll just talk about the most common:</p>
+<h3>html element</h3>
+For example, <span class="pretty-code-example">p { color: red; }</span> would make all text in paragraphs red.
+<h3>#id</h3>
+Giving the ID makes the one specific element behave in a certain way. It is certainly the most efficient selector (see <a href="#evaluation-of-css">how it's evaluated</a>, but it isalso slightly pointless. The point of style is to make a website look and feel consistent – with your brand, with itself, etc. IDs are (supposed to be) unique on a page. So why would you want to style just one thing?
+<h3>.class</h3>
+The most common selector and the one I think we should all be using most of the time.
+<h3>*</h3>
+The universal selector. Some interesting discussion <a href="http://meyerweb.com/eric/divs/webrev/200006a.html" target="_blank">here</a>, but in summary it is the least efficient selector and also allows you to bypass inheritance. I say AVOID.
+<h3>Combinations</h3>
+<h4>x, y</h4>
+<p>This means, apply the style you are outlining to all xs and all ys. For example <span class="pretty-code-sample">p, .blog-intro { font-weight: bold; }</span> makes the text in all paragraphs bold AND the text in all elements with the class "blog-intro".</p>
+<h4>x y</h4>
+<p>The descendant selector. This matches any y which is a descendant of any x. For example <span class="pretty-code-example">p .blog-intro { font-weight: bold; }</span> makes all the text within a paragraph that has the class of "blog-intro" bold – even if it is nested several layers within. It is very inefficient. See <a href="evaluation-of-css">later post</a></p>
+<h4>x > y</h4>
+<p>The child selector. This matches any y which is a child of any x. This is also inefficient, though less inefficient than the descendant selector.</p>
+<h3>a.blog-post, ul#nav.dhtml li a.blog-post</h3>
+<p>So, to return to the selector in the example which I have so far ignored.</p>
+<p>To spell it out, the style outlined here will be applied to any link with the class of blog-post, AND any link with the class of blog-post which is a descendant of a list item which is itself a descendant of an unordered list with the id of nav and a class of dhtml.</p>
+<p>Pretty complicated. Over-complicated, I will argue. But just to note – the reason you might want both of these (you might think the first would cover the second) is because you may well have one or more intermediate styles that have altered the link in the list item further. For example if you have styled ul#nav.dhtml differently, the link will appear differently unless you reset it here.</p>
+<p>In my view, examples like this are why people do not like CSS. Oh, and this is a real example from a live application, by the way. Names slightly changed to protect the innocent.</p>
+<h2 id="the-cascade">The Cascade</h2>
+<p>As hinted at above, you can have multiple styles applied to an element, and the cascade is what determines which one is actually applied. CSS styles are cascaded in the following order, with the one applying last being the one that sticks:
+<ol>
+<li>Origin (i.e. Browser then Author)</li>
+<li>Importance (normal vs !important)</li>
+<li>Specificity
+<ol>
+<li>Inline</li>
+<li>Highest number of id selectors</li>
+<li>Highest number of class, attribute, or pseudo classes</li>
+<li>Highest number of elements and pseudo elements</li>
+</ol></li>
+<li>If still the same, the order in which they appear.</li>
+</ol>
+<p><a href="http://reference.sitepoint.com/css/cascade" target="_blank">Here</a> for (very dense) more.
+<h3>Specificity</h3>
+<p>Selectors are considered to be specific in the following way (ordered from the least to the most specific):
+<ol>
+<li>The type selector</li>
+<li>The descendant selector</li>
+<li>The adjacent sibling selector</li>
+<li>The child selector</li>
+<li>The class selector</li>
+<li>The attribute selector</li>
+<li>The ID selector</li>
+</ol>
+<a href="http://www.alternategateways.com/tutorials/css/css-101/part-four-the-css-order-of-precedence" target="_blank">Here</a> for more.
+<h3>Order</h3>
+<p>The order, listed from the least precedence to the most precedence:</p>
+<ol>
+<li>Browser default</li>
+<li>External style sheet</li>
+<li>Internal style sheet (i.e. written in the head)</li>
+<li>Inline style (i.e. inside an HTML element)</li>
+</ol>
+<p>Notes:</p>
+<p>An external stylesheet will override an internal stylesheet if it's linked to in the head after the internal style sheet.</p>
+<p>And the most common trip-up in legacy code systems: The same class within a CSS file will override one written higher up in that file.</p>
+<h3>important!</h3>
+<p>You will have seen that <span class="pretty-code-sample">important!</span> takes precedence in the cascade. This is what you add if you can't get the style you want using the normal rules of cascade and inheritance. Don't use it unless you <strong>really</strong> have to – to me, it says "I don't know how CSS works so I'm just going to hack it."</p>
+<h3 id="developer-tools">Developer Tools</h3>
+<p>All modern browsers have developer tools so you can examine elements to see what CSS is being applied, and in a surprising departure from the norm, the best one in my opinion is the one available in IE when you press F12.</p>
+<p>For example, in this screenshot you can see that the colour being applied here is the one from the class ul.dhtml#nav not the one specified for body or the one specified for body.mainframe.</p>
+<img src="/img/ie-dev-tools.png" />
+<h2 id="inheritance">Inheritance</h2>
+<p>I could not do a better job of writing up inheritance than <a href="http://www.maxdesign.com.au/divs/css-inheritance/" target="_blank">this</a> company presentation. I really recommend you go and click through it. It starts very simple and you may think it's a waste of your time but if you are not 100% sure how inheritance in CSS works then this will really help.</p>
+<p>A brief summary though if you really can't be bothered: Elements inherit styles from the elements within which they are nested. So in the following html, if you apply a style of <span class="pretty-code-sample">font-weight: bold</span> to p, then the text inside the span will also be bold.</p>
+<p class="pretty-code-sample">
+&lsaquo;body&rsaquo;<br/>
+&lsaquo;p&rsaquo;I'm bold. &lsaquo;span&rsaquo;And so am I!&lsaquo;/span&rsaquo;&lsaquo;/p&rsaquo;<br/>
+&lsaquo;/body&rsaquo;
+</p>
+<p><a href="#evaluation-of-css">Read on</a> for how to write it efficiently!</p>

@@ -1,0 +1,71 @@
+---
+anchor_id: partitioning
+title: Partitioning!
+layout: blog_post
+---
+<p>Today I learned from the awesome <a
+href="https://twitter.com/rjw1" target="_blank">bob</a> how to add storage to a box,
+including partitioning, mounting, and other things I'd heard of but had never
+done myself.</p>
+<p>We had to add some storage to the elasticsearch boxes. We generate a lot of logs
+and they all go to elasticsearch. By default when we provision servers we give
+them 32GB but this wasn't enough. So here's how to do it:</p>
+<ol>
+<li>Add the extra disk through our virtualisation platform's control panel.</li>
+<li>Reboot the box so that it sees the new disk.</li>
+<li>Partition the new disk. There are many ways to partition a disk - we used <a
+href="http://en.wikipedia.org/wiki/Cfdisk" target="_blank">cfdisk</a>, which has a GUI. 
+<div class="code-sample">cfdisk /dev/sdb</div>
+This opens the GUI and then you tab through it to select options. We just
+accepted all the defaults, so the only time we had to change it was at the end,
+to select [write].
+We did consider making the type Linux LVM as this would have meant we could extend it
+later, but in this case we just accepted the default type of Linux.<br />
+This means that as well as /dev/sdb we have /dev/sdb1. (Extra learning points
+here - disks are added alphabetically. So the existing disk was sda. If,
+subsequent to this, we add another disk, it will be sdc.)</li>
+<li>Before we can mount the disk we need to give it a filesystem. We gave it <a
+href="http://en.wikipedia.org/wiki/Ext4" target="_blank">ext4</a> because "everything uses ext4
+these days" (bob). If you don't have a good reason for picking one of the others, then
+use ext4.
+<div class="code-sample">mkfs.ext4 /dev/sdb1</div></li>
+<li>Now we mount the new disk to a temporary directory:
+<div class="code-sample">mkdir /mnt/tmp<br />
+mount /dev/sdb1 /mnt/tmp</div></li>
+<li>At this point we need to stop elasticsearch and also disable puppet (otherwise it will just start elasticsearch again on its next run):
+<div class="code-sample">service elasticsearch-logging stop<br />
+puppet agent --disable</div></li>
+<li>Now we need to copy the elasticsearch indices to the new disk. Because the indices are just files you can rsync them, as long as elasticsearch has been stopped, which it has.
+<div class="code-sample">  rsync -av --stats --progress /mnt/elasticsearch/*
+/mnt/tmp</div>
+The -v flag above is 'verbose', and in addition, the stats and progress options
+give some more noisy output while the rsync is going on. Often, when using rsync
+you would want to add -z, but since this is just from one disk to another and
+not going over the wire then there's no need here. Finally, -a is 'archive'. As
+the man page helpfully notes, this is "same as -rlptgoD (no -H)". I will leave
+that as an exercise for the reader.<br />
+This stage takes some time.</li>
+<li>When it's finished, we did two things, just as a (slightly paranoid) check
+to see if it worked:
+<ol><li>Run the same command again. If it has successfully rsynched everything, the two will be the same so it will output immediately.</li>
+<li><a href="http://en.wikipedia.org/wiki/Du_(Unix)" target="_blank">du
+-sh</a> to check that /mnt/elasticsearch and /mnt/tmp are the same
+size.</li></ol></li>
+<li>Instead of mounting the new disk in the same way as step 5 above, we can edit <a href="http://en.wikipedia.org/wiki/Fstab" target="_blank">/etc/fstab</a>. We add this line:
+<div class="code-sample">/dev/sdb1       /mnt/elasticsearch ext4 defaults 0
+0</div>
+We should have thought about using <a
+href="http://puppetlabs.com/puppet/what-is-puppet" target="_blank">Puppet</a> here, as doing it like this means there are parts of the infrastructure that are not code.</li>
+<li>Next, we unmount sdb1 from /mnt/tmp:
+<div class="code-sample">umount /mnt/tmp</div></li>
+<li>Then, we move the old elastic search directory and create a new one:
+<div class="code-sample">mv /mnt/elasticsearch /mnt/elasticsearch-old<br />
+mkdir /mnt/elasticsearch</div></li>
+<li>Now mount the sdb1 to the new elasticsearch. Because of step 9 above, we can pass either the mount directory or the directory to be mounted; we do not need both. This has the added advantage of testing our fstab setup.
+<div class="code-sample">mount /mnt/elasticsearch</div></li>
+<li>All done! Now we need to:
+<ol>
+<li>Restart elastic search</li>
+<li>Re-enable puppet</li>
+<li>Delete /mnt/tmp and /mnt/elasticsearch-old</li>
+</ol></li></ol>

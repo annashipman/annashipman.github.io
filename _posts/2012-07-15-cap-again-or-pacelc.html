@@ -1,0 +1,19 @@
+---
+anchor_id: cap-or-pacelc
+title: CAP again – or should that be PACELC?
+layout: blog_post
+---
+<p>The last thing I wrote about was the CAP Theorem. Last week, <a href="https://twitter.com/thattommyhall" target="_blank">Tom Hall</a> visited our office and gave a very interesting talk, the central thesis of which was that the CAP Theorem, as often explained, is incorrect – or at least not very meaningful.</p>
+<p>The first point, explained very clearly in <a href="http://www.cloudera.com/blog/2010/04/cap-confusion-problems-with-partition-tolerance/" target="_blank">CAP Confusion: Problems with 'partition tolerance'</a> is that P, "Partition Tolerance", as per the <a href="http://lpd.epfl.ch/sgilbert/pubs/BrewersConjecture-SigAct.pdf"target="_blank">proof</a> of the CAP Theorem, is not a property of your application; rather it is a property of the network it's on. The network may partition. To quote from Henry Robinson's Cloudera article:</p>
+
+<p class="pretty-code-sample">"Partition tolerance means simply developing a coping strategy by choosing which of the other system properties to drop. This is the real lesson of the CAP theorem – if you have a network that may drop messages, then you cannot have both availability and consistency, you must choose one."</p>
+
+<p>The rest of the article is very worth reading.</p>
+
+<p>The second point Tom covered is from <a href="http://dbmsmusings.blogspot.co.uk/2010/04/problems-with-cap-and-yahoos-little.html" target="_blank">Problems with CAP, and Yahoo's little known NoSQL system</a> by Daniel Abadi. Abadi covers the point above very clearly, and then points out that there is a missing letter from CAP – L, for latency.</p>
+
+<p class="pretty-code-sample">"Keeping replicas consistent over a wide area network requires at least one message to be sent over the WAN in the critical path to perform the write... Unfortunately, a message over a WAN significantly increases the latency of a transaction... Consequently, in order to reduce latency, replication must be performed asynchronously. This reduces consistency."</p>
+
+<p>He suggests CAP should be rewritten as PACELC:</p> <p class="pretty-code-sample">"If there is a partition (P) how does the system tradeoff between availability and consistency (A and C); else (E) when the system is running as normal in the absence of partitions, how does the system tradeoff between latency (L) and consistency (C)?"</p>
+
+<p>Tom's talk covered many other interesting topics and is worth catching if you can. One of the other many interesting things Tom talked about was Vector Clocks. I won't go into that here, but they are worth reading up on! <a href="http://basho.com/blog/technical/2010/01/29/why-vector-clocks-are-easy/"target="_blank">Here</a> is a potential place to start...</p>

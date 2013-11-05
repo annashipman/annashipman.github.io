@@ -1,0 +1,84 @@
+---
+anchor_id: puppet-module
+title: Creating a Puppet module
+layout: blog_post
+---
+<p>I learnt three very interesting things recently, courtesy of the brilliant <a
+href="https://twitter.com/dancarley" target="_blank">Dan Carley</a>.<p>
+<ol>
+<li><a href="#git-filter-branch">git filter-branch</a></li>
+<li><a href="#generate-module">how to create a puppet module using our puppet module skeleton</a></li>
+<li><a href="#shopt">shopt -s dotglob</a></li>
+</ol>
+<p>While creating the Puppet manifests for the GOV.UK mirror, we realised we
+needed a module that was part of the GOV.UK Puppet, so our task was to pull it out into a standalone module and
+have both GOV.UK and our new <a
+href="https://github.com/alphagov/govuk_mirror-puppet" target="_blank">GOV.UK
+mirror</a> use it.</p>
+<p>The first step in creating a new module is to pull it out into its own git
+repository.<p>
+<p>First, clone the repository the module is currently in. (Extra learning here:
+you don't need to clone it from Github, you can just git clone the existing
+repository.) You want <span class="code-sample-inline">--no-hardlinks</span> so it's entirely separate:</p>
+<div class="code-sample">
+git clone --no-hardlinks puppet puppet-auditd
+</div>
+<p>At this stage our puppet-auditd repo still points at our puppet repo, so we
+want to remove the remote:</p>
+<div class="code-sample">
+git remote rm origin
+</div>
+<p><span id="git-filter-branch">Now</span> we want to get rid of everything that's not our module and make our module
+the root, and this is where we use <a
+href="http://teach.github.com/articles/lesson-filter-branch/" target="_blank">git
+filter-branch</a>:</p>
+<div class="code-sample">
+git filter-branch --subdirectory-filter modules/audit-d HEAD
+</div>
+<p>The next thing we want to do is create the files in the framework around the
+subdirectory
+to make it a Puppet module, for example the Modulefile. For this we can use our <a
+href="https://github.com/gds-operations/puppet-module-skeleton"
+target="_blank">Puppet module skeleton</a>. However, we don't want
+to directly follow the instructions there as we already have a lot of the
+classes we need. Instead of creating it from scratch as per those instructions,
+we <span id="generate-module">generate our new module stucture</span>:<p>
+<div class="code-sample">
+puppet module generate gdsoperations-auditd
+</div>
+<p>and then then we copy over the generated files.</p>
+<p>However, a normal recursive copy won't work:<p>
+<div class="code-sample">
+cp -r A/* B
+</div>
+<p>This will only copy non-dotfiles, and we want the dotfiles as well, like
+.gitignore.</p>
+<p>However, attempting to copy the dotfiles as well:</p>
+<div class="code-sample">
+cp -r A/.* B
+</div>
+<p>leads to hilarious results.  <span class="code-sample-inline">..</span> is a
+directory too, so the above command copies all those contents recursively as
+well. Try it. It's most entertaining. But it's not really what we want.
+<p><span id="shopt">What</span> we can do is toggle what is included in <span class="code-sample-inline" >A/*</span> for this shell. The
+documentation is <a
+href="http://www.gnu.org/software/bash/manual/html_node/The-Shopt-Builtin.html"
+target="_blank">here</a>, but this is what we need:
+<div class="code-sample">
+shopt -s dotglob
+</div>
+<p>In order to check what is going to be copied now you can:<p>
+<div class="code-sample">
+echo A/*
+</div>
+<p>and if you like it:<p>
+<div class="code-sample">
+cp -r A/* B
+</div>
+<p>The next step is to go through the files to work out which modifications to
+keep and which ones are not relevant.</p>
+<img src="/img/files_changed.png">
+<p>Another tip from Dan: vimdiff is really useful for this task. I won't go into
+how and what we decided; you can see that <a
+href="https://github.com/gds-operations/puppet-auditd/compare/c140536...cad9a94"
+target="_blank">here</a>.</p>

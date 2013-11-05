@@ -1,0 +1,53 @@
+---
+anchor_id: questions-for-data
+title: What Should Your Work Log Tell You?
+layout: blog_post
+---
+<p>We've got some great data for the <a href="http://www.spaconference.org/spa2012/" target="_blank">SPA2012</a> workshop on JavaScript visualisations. <a href="https://twitter.com/hibri" target="_blank">Hibri</a> has managed to obtained three years' worth of <a href="http://www.7digital.com/" target="_blank">7Digital</a>'s work-tracking data and <a href="https://twitter.com/robbowley" target="_blank">Rob</a> has very kindly allowed us to use it (anonymised, of course).</p>
+
+<p>We're going to use this dataset to show different information using different libraries for the visualisations.</p>
+
+<p>What I'd really like your input on is, what would you like to know? If this was your work-tracking data, what questions would you want it to answer?</p>
+
+<p>For example, we could create a Sunburst diagram using JIT to show what proportion of total development time is spent on the four different applications. We could create an interactive line graph using Raphael to show the average time a piece of work takes, and how that average has changed over the past three years.</p>
+
+<p>A little more info about the exact data is below, or feel free to skip straight to the <a href="#example-questions">example questions</a>, or just go right ahead and <a href="https://twitter.com/annashipman" target="_blank">tweet me</a> or email me (at this domain) with what kind of information you'd want from a work log stretching back that far. You might get a great visualisation prepared for you to show just that!</p>
+
+<h2>The Data</h2>
+
+<p>Here is an example:</p>
+
+<p class="code-sample">
+        "Feature ID": "A-321",</br>
+        "Application Name": "Project A",</br>
+        "Type": "Bug",</br>
+        "T-Shirt Size": "S",</br>
+        "Added": "15/03/2011 12:12",</br>
+        "Prioritised, Awaiting Analysis": "15/03/2011 12:12",</br>
+        "Analysis Completed": "15/03/2011 12:12",</br>
+        "Development Started": "15/03/2011 13:21",</br>
+        "Systest Ready": "15/03/2011 16:21",</br>
+        "Systest OK": "17/03/2011 10:34",</br>
+        "In UAT": "17/03/2011 10:34",</br>
+        "Ready For Release": "17/03/2011 10:34",</br>
+        "In Production": "17/03/2011 10:35",</br>
+        "Done": "22/03/2011 10:48",</br>
+        "Lead Time": "2",</br>
+        "Cycle Time": "2",</br>
+        "Development Cycle Time": "2"
+</p>
+
+<p>So this is a really rich dataset. We have all the dates that various stages of the release process happened, as well as some information about what application it was for, what type of work it was (e.g. Bug, Feature, Build Maintenance), what the rough estimate was (T-shirt size), and how long the whole process took, both from first raised to done (lead time) and from dev start to done (development cycle time). The log goes back to 2009.</p>
+
+<h2 id="example-questions">Example Questions</h2>
+
+<p>Here are a few of the questions we've thought about answering. </p>
+
+<ul><li>How many bugs are raised by application?</li>
+<li>How does the average cycle time of development compare to the number of bugs raised?</li>
+<li>How often are bugs reported and not worked on?</li>
+<li>What proportion of time is spent on each applications, and, drilling down, what proportion of that work is new features/bugs/build maintenance etc?</li></ul>
+
+<h2>Your Chance for a Hand-crafted Visualisation Just for You!</h2>
+
+<p>We'd love this workshop to be as relevant and interesting as possible, so please do let me know what kind of information you'd like to see visualised and it may well make it into the talk! <a href="https://twitter.com/annashipman" target="_blank">Tweet me</a> or email me at this domain. Thank you!</p>

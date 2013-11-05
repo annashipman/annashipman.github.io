@@ -1,0 +1,13 @@
+---
+anchor_id: sorl-bites-me
+title: Sorl-thumbnail Comes Back to Bite Me
+layout: blog_post
+---
+<p>Well, the <a href="#no-sorl-thumbnail">lack of sorl-thumbnail</a> came back to bite me when I got the latest version of the Django project I've been working on. Previous releases had lulled me into a false sense of security, but then the latest update, a bit too late in the evening, I had that old error:</p>
+
+<p class="code-sample">ImportError: No module named sorl-thumbnail</p>
+
+<p>So off I went again. I had no problem downloading sorl-thumbnail but everywhere I went wanted to put it into the wrong directory. It's not in the Synaptic Package Manager, and I couldn't find a PPA. Just to make it a bit more exciting, the dependency of the project I needed it for was something like version 3.2.5. The current version is 11.0.4.</p>
+<p>Ideally what I wanted to be able to do was set some kind of flag on the install that told it to install somewhere else. Surelly there is a way to do that? But I couldn't find it. I had got as far as actually (again!) RTFM, and was browsing through the <a href="http://docs.python.org/distutils/apiref.html" target="_blank">Core Distutils functionality</a> page when lo and behold, I stumbled upon <a href="http://uswaretech.com/blog/2009/03/create-your-own-online-store-in-few-hours-using-satchmo-django/" target="_blank">this</a>. Not directly relevant you might think – but wait, item 13? What's this?</p>
+<p>Yes, to cut a long story short, I had discovered symlinks. New to me, old to everyone else. It was short work to set one up, helped by <a href="http://www.cyberciti.biz/faq/creating-soft-link-or-symbolic-link/" target="_blank">this</a>, and lo and behold: it works.</p>
+<p>Kind of begs the question as to why I didn't do that in the first place for all the packages... but never mind. Onwards and upwards!</p>

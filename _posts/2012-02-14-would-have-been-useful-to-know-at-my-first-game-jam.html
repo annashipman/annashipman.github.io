@@ -1,0 +1,52 @@
+---
+anchor_id: gamejam-knowledge
+title: Would Have Been Useful to Know at My First Game Jam
+layout: blog_post
+---
+<p>I had no idea what to expect at my first <a href="http://globalgamejam.org/" target="_blank">game jam</a>, and I was nervous about whether I'd be able to participate. I'm a programmer, but I'd never written a videogame, and I don't even much play videogames.</p>
+
+<p>As it turned out, everyone was really friendly and welcoming and I was able to get totally stuck in. But there were a few things that I didn't know that everyone else seemed to know, and I was too shy to admit I didn't know too. Now, following my new and brilliant strategy of "ask as many questions as you can, the stupider the better" (more on that in a later post), I have managed to learn some of these things, and I'll share them here. They are <a href="#game-engine">the game engine</a>, <a href="#game-mechanics">game mechanics</a>, and <a href="#art">a little bit about art</a>.</p>
+
+<h2 id="game-engine">The Game Engine</h2>
+
+<p>When writing video games, people talk about the "engine". For example, "What engine are you using?" and "Don't write your own engine; this is not 'engine jam' ".</p>
+
+<p>A game engine is something that handles the nuts and bolts of a game for you, which basically comes down to displaying the graphics, dealing with input (keyobard, joystick etc), and handling collisions. For example, in a game, when your player runs into a baddie you might want them to bounce off each other at an equal pace. Using a game engine means you can just specify the details of the collision. Not using a game engine means you have to write code to describe the angles and velocities yourself.</p>
+
+<p><a href="http://unity3d.com/unity/" target="_blank">Unity</a> is a game engine that handles all this stuff for you. You can copy your art into the folder structure and then drag and drop it to where you want it to be. Game objects have default collision behaviour and you can just write a script to change it.</p>
+
+<p><a href="http://www.flixel.org/" target="_blank">Flixel</a> is another game engine. It's a level below Unity – there's no graphical user interface, and you have to do a bit more work with the graphics, but the collisions, keyboard input and various other features are there for you.</p>
+
+<h3>A Note on Writing Your Own Game Engine</h3>
+
+<p>I didn't understand at the time why my <a href="http://globalgamejam.org/2011/flocks-sake" target="_blank">second game jam</a> was so much harder than my <a href="http://globalgamejam.org/2010/bacterial-warfare" target="_blank">first</a>, but when I explained what we did to the brilliant <a href="https://twitter.com/joehalliwell" target="_blank">Joe Halliwell</a> afterwards, it all became clear. We disobeyed the advice. We wrote our own game engine.</p>
+
+<p>To be precise, we used <a href="http://www.opengl.org/about/" target="_blank">OpenGL</a>, which is a 2D/3D Graphics API written in C. It gives the instructions to the graphics card – you definitely don't want to be doing that yourself – at least not in a 48-hour game jam. The code was written in Python, and for the binding we used <a href="http://pyopengl.sourceforge.net/" target="_blank">PyOpenGL</a>. For the physics we used <a href="http://box2d.org/" target="_blank">Box2D</a>. OK, so we didn't exactly write our own game engine from scratch, but we assembled one from various constituent parts.</p>
+
+<p>The alleged reasons were that we didn't know Unity, most of us knew Python (except for me – that added another layer of complexity to the weekend!) and between us we had two Macs, two Linux boxes and one loser running Windows. The real reason is that the brilliant <a href="http://www.texasexpat.net/" target="_blank">Trevor Fountain</a> loves this stuff and, if it existed, would sign up to 'engine jam' like a shot.</p>
+
+<h2 id="game-mechanics">Game Mechanics</h2>
+
+<p>Another phrase I heard a lot and pretended to understand was "game mechanics". To be fair, I thought I did understand it – I thought it was jumping, shooting etc. I was wrong.</p>
+
+<p>Game mechanics are more like constructs of rules. Unlocking an achievement is a game mechanic. Going up a level when you reach a certain number of points is a game mechanic. Dying when you lose 90% of your health bar is a game mechanic. So when someone asks "What are the game mechanics?", they mean something like, what are the gamey things here? What makes this a game, rather than just graphics moving across a screen?</p>
+
+<p>I like <a href="http://gamification.org/wiki/Game_Mechanics" target="_blank">this list</a> of potential game mechanics.</p>
+
+<h2 id="art">A Little Bit About Art</h2>
+
+<p>While I'm here, just a few words on pixel art vs vector graphics, something else I heard talked about which added to the background radiation of feeling I didn't quite understand what was going on.</p>
+
+<p>There's an extremely detailed article on the differences <a href="http://www.1stwebdesigner.com/design/pixel-vector-graphics-difference/" target="_blank">here</a> but in very brief summary – technically speaking, pixel (aka bitmap, raster) art is basically dot-matrix, i.e. made up of pixels individually coloured, and vector art is created using mathematical functions and is basically points and the lines joining them. The art for your game may be either, or some combination of the two. A brief rule of thumb is that old games tend to use pixel art, but the choice is up to you – different tools for different times.</p>
+
+<p>However, it's more than just the technical differences, and the conversations you hear about pixel vs vector art will probably reflect something other than the strict technical distinction. <a href="https://twitter.com/doches" target="_blank">Trevor</a> summed it up for me very clearly, so here is an edited version of what he said:</p>
+
+<p>"To me, pixel art is more of an aesthetic choice than a technical term. It's true that older games had a pixel art aesthetic, especially on 8- or
+16-bit platforms. Today, though, I think people use the terms 'pixel art' and 'retro' more or less interchangeably – games like <a href="http://www.canabalt.com" target="_blank">Canabalt</a> or <a href="http://shauninman.com/lastrocket/" target="_blank">The Last Rocket</a> are undeniably retro, and use the pixel art style to great effect. Games like <a href="http://chrome.angrybirds.com/" target="_blank">Angry Birds</a> are rendered using the same technology (2d sprites), yet no one would ever say that Angry Birds qualified as pixel art.</p>
+<p>"As for vector art, true vector images (e.g. svg) are rarely used outwith UI design and Flash."</p>
+
+<h2>Next steps</h2>
+
+<p><a href="http://v21.posterous.com/how-to-make-your-first-videogame" target="_blank">How to Make Your First Videogame</a> by the excellent <a href="https://twitter.com/v21" target="_blank">v21</a> is great, and the short video <a href="http://youcanmakevideogames.com/" target="_blank">You Can Make Video Games</a> is fab and really worth watching. Or why not just sign up to the <a href="http://globalgamejam.org/" target="_blank">next Global Game Jam</a>?</p>
+
+<p>Enjoy!</p>

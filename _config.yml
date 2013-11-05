@@ -1,3 +1,5 @@
 safe: true
 lsi: false
 pygments: true
+
+permalink: /jfdi/:title.html

@@ -1,0 +1,55 @@
+---
+anchor_id: evaluation-of-css
+title: How to Write Efficient CSS – Evaluation of CSS
+layout: blog_post
+---
+<p>I recently did a knowledge share at work on how to write efficient CSS, and one of my colleagues – a senior developer with a lot of experience – said "I felt the penny drop". High praise indeed, so I thought it was worth reproducing it here.</p>
+<p>The write-up is pretty long, so I've divided the divs into <a href="#basic-css">Basic CSS</a> in which I cover:
+<ol>
+  <li><a href="#css">CSS</a></li>
+  <li><a href="#selectors">Selectors</a></li>
+  <li><a href="#the-cascade">The Cascade</a></li>
+  <li><a href="#inheritance">Inheritance</a></li>
+</ol>
+and <a href="#evaluation-of-css">Evaluation of CSS</a></li> in which I cover how CSS is evaluated and some things we can do to make it more efficient.</p>
+<h2>How CSS is Evaluated</h2>
+<p>The key information is these two points:
+<ol>
+<li>For each element, the CSS engine searches through style rules to find a match.</li>
+<li>The engine evaluates each rule from right to left, starting from the rightmost selector (called the "key") and moving through each selector until it finds a match or discards the rule.</li>
+</ol>
+<h3>1. For each element, the CSS engine searches through style rules to find a match</h3>
+<p>The style system breaks rules up into four categories by key selector.
+<ol>
+<li>ID Rules – for example <span class="pretty-code-sample">button#backButton { ... }</span></li>
+<li>Class Rules – for example <span class="pretty-code-sample">button.toolbarButton { ... } </span></li>
+<li>Tag Rules – for example <span class="pretty-code-sample">treeitem > treerow { ... } </span></li>
+<li>Universal Rules – all other rules</li>
+</ol>
+<p>The CSS engine then takes each html element in the document in turn. If it has an ID, then the engine searches through the style rules and checks rules that match that element's ID. If it has a class, only Class Rules for a class found on the element will be checked. Only Tag Rules that match the tag will be checked.
+Universal Rules will always be checked.</p>
+<h3>2. The engine evaluates each rule from right to left...</h3>
+<p>So in the example <span class="pretty-code-sample">button#backButton { ... }</span> the key is the id "backButton". In the example I give in <a href="#basic-css">Basic CSS</a> the key is the class "blog-post".</p>
+<p>The engine starts with the key and then evaluates the rule from right to left. So if you have a button with an id of "backButton", the engine first matches the id to the id and then compares the next selector – is the element a button? In the example from <a href="#basic-css">Basic CSS</a> the evaluation for the second selector, <span class="pretty-code-sample">ul#nav.dhtml li a.blog-post</span>, is as follows. Does the element have a class of blog-post? If so, is it a link? If so, is there anywhere in its ancestry a list item? If so, is there anywhere in the ancestry of that list item an unordered list element with a class of dhtml and an id of nav?</p>
+</p>You may be getting a slight clue now as to why I think that selector is inefficient.</p>
+<h3>Recommendations</h3>
+<p>There are some obvious ways we can start here. </p>
+<ul><li>Firstly, remove unused CSS. It's not like, for example, unused Java code which really just slows things down for other developers. The CSS engine is going to search through every rule for every element. The fewer rules required to check for a given element, the faster style resolution will be.</li>
+<li>Avoid use of descendant selectors – they speed up page development, but they slow down page rendering.</li>
+<li>Avoid qualifying ID selectors at all – as IDs should be unique so adding extra qualification is unnecessary and costly.</li>
+<li>It's a good idea to avoid use of html elements in selectors for a couple of reasons:
+<ol>
+<li>The style will be lost of the element type is changed</li>
+<li>The less specific the key the greater the number of nodes that need to be evaluated</li>
+</ol>
+<li>Avoid use of child selectors. They are more efficient than descendant selectors, but they are still inefficient: for each matching element, the browser has to evaluate another node. It becomes doubly expensive for each child selector in the rule.</li>
+</ul>
+<p>These are just recommendations as to how to write the CSS. If you care about your website's performance you should already be <a href="http://developer.yahoo.com/performance/rules.html" target="_blank">minimising and gzipping your CSS</a>. So how much of an edge will these recommendations give you?</p>
+<h3>CSS and Performance</h3>
+<p>CSS and performance is a fairly hot topic right now, especially with all the cool things that you can do using CSS3. Dave Hyatt, architect for Safari and Webkit, said "The sad truth about CSS3 selectors is that they really shouldn't be used at all if you care about page performance." (The comment can be found <a href="http://www.shauninman.com/archive/2008/05/05/css_qualified_selectors#comment_3942" target="_blank">here</a>).</p>
+<p>That's certainly something I've heard, for example at conferences. However, another web giant, Steve Souders (works at Google on web performance) has a different opinion. It's worth reading the piece <a href="http://www.stevesouders.com/blog/2009/03/10/performance-impact-of-css-selectors/" target="_blank">in full</a> (there are charts and everything!), but the takeaway here is: "On further investigation, I'm not so sure that it's worth the time to make CSS selectors more efficient. I'll go even farther and say I don't think anyone would notice if we woke up tomorrow and every web page's CSS selectors were magically optimized."</p>
+<p>So why am I bothering with this? Well, a few reasons. One is I think it's always worth taking the time to find out how things work and I'm glad to be able to make a reasoned judgment on this.</p>
+<p>But also, there are various things to consider when thinking about writing efficient CSS. There is performance, obviously, but two other major concerns are ease of writing and (in my view more important) ease of reading. I love clean code, and I think it's crucial that code is easy for other developers to read. I'm not sure I care whether or not <span class="pretty-code-sample">ul#nav.dhtml li a.blog-post</span> is performant or not, it's certainly not clean, and it took me some brow furrowing to work out when it would apply. So personally, I'm going to follow the rules I've outlined above. What do you think? I'd love to hear your opinion.</p>
+<h3>Useful Further Reading</h3>
+<p>I gleaned most of the information about how the CSS engine works from <a href="http://code.google.com/speed/page-speed/docs/rendering.html" target="_blank">Page Speed documentation</a> and the <a href="https://developer.mozilla.org/en/writing_efficient_css" target="_blank">Mozilla blog</a>. I couldn't find any information about how IE evaluates CSS, please do let me know if you have any.</p>
+<p>To take things further with writing nice CSS, you could look at <a href="http://net.tutsplus.com/tutorials/html-css-techniques/using-compass-and-sass-for-css-in-your-next-project/" target="_blank">Compass/SASS</a>, or my current favourite, <a href="http://oocss.org/" target="_blank">OOCSS</a>.</p>

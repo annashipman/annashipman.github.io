@@ -1,0 +1,46 @@
+---
+anchor_id: learned-today
+title: What I have learned about folder structure today
+layout: blog_post
+---
+<p><a href="http://packages.python.org/distribute/easy_install.html" target="_blank">Easy_install</a> (as it comes) doesn't work for Debian-based systems.</p>
+
+<p>The default behaviour is to install things to <span class="code-sample">/usr/local/</span> – this is the Gnu default – whereas the synaptic package manager installs things to <span class="code-sample">/usr/</span>. I imagine there may be a way to reconfigure the default behaviour, but I didn't get that far.</p>
+
+<p>This is how I found out this rather useful piece of information. I had installed easy_install, and then used it to download all the dependencies I needed to get started with this python/Django project I was going to work on. And then – nada.</p>
+
+<p>For about three hours, no matter what I did, I had this message: </p>
+
+<p class="code-sample">File "/usr/local/lib/python2.6/dist-packages/Django-1.3-py2.6.egg/django/db/backends/mysql/base.py", line 28, in <module>
+    from django.db import utils
+ImportError: cannot import name utils
+</p>
+
+<p>My friend who was with me, trying to get me set up to start work on the project, is a Django expert, but he uses Windows. Hey, so do I! What am I even doing using linux? (See sidebar for answer...)</p>
+
+<p>We tried a lot of things. I won't go into them all here, mainly because I can't remember many of them. We tried a lot of things that people on the internet had suggested. As a last resort, we even tried to RTFM. To no avail.</p>
+
+<p>After we'd given up and my friend had left, I went back to it to try and figure out what was going on. I even tried to resort to the beginner standard of adding log messages, but all the files I wanted to edit were read-only. Finally, <a href="http://docs.djangoproject.com/en/dev/topics/install/?from=olddocs" target="_blank">this page</a> offered me a glimmer of a clue.</p>
+
+<p>Specifically, the question "Where are my site-packages stored?" and the answer:</p>
+
+<p><span class="code-sample">python -c "from distutils.sysconfig import get_python_lib; print get_python_lib()"</span></p>
+
+<p>Which for me, returns <span class="code-sample">/usr/lib/python2.6/dist-packages</span></p>
+
+<p>Hang on though, the error is in <span class="code-sample">/usr/local/lib</span> . . . eh?</p>
+
+<p>A visit to the python2.6 folder in <span class="code-sample">/usr/local</span> confirmed that all of the stuff I needed was in there. And a call to my incredibly helpful and talented friend <a href="http://www.joehalliwell.com/" target="_blank">Joe Halliwell</a> confirmed my growing suspicion that this was Not Correct. He explained to me the Gnu/Debian folder structure differences.</p>
+
+<p id="no-sorl-thumbnail">So, I backtracked. I installed everything I needed (except sorl-thumbnail, which wasn't there. However, all I need to do is find a ppa. There is probably also another way to install it correctly. By the time this is all done, I may even know what it is.)</p>
+
+<p>I ran through a few errors on the way, but all of the <span class="code-sample">ImportError: No module named django_extensions</span> variety, and solved one by one, satisfyingly, by installing what I needed in the correct way.</p>
+
+<p>Finally, several hours after my friend came round to work on this, I now have a new error:</p>
+
+<p class="code-sample">File "/usr/lib/pymodules/python2.6/MySQLdb/connections.py", line 170, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+_mysql_exceptions.OperationalError: (1045, "Access denied for user 'anna'@'localhost' (using password: NO)")
+</p>
+
+<p>It's progress.</p>

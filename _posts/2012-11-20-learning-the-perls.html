@@ -1,0 +1,23 @@
+---
+anchor_id: learning-perl
+title: Learning the perls
+layout: blog_post
+---
+<p>After some time muddling through with Perl, I have accepted the inevitable – it's time to actually knuckle down and learn it properly. I have acquired <a href="http://www.amazon.co.uk/Learning-Perl-Randal-L-Schwartz/dp/1449303587/" target="_blank">some</a> <a href="http://www.amazon.co.uk/Modern-Perl-chromatic/dp/0977920178/" target="_blank">books</a>, but I also require some direction – so I asked my excellent colleague and friend <a href="https://twitter.com/cackhanded" target="_blank">Mark Norman Francis</a> to write a brief guest post for my blog.</p>
+<p>His instructions were "Complete the sentence: In order to understand C you need to understand Pointer Arithmetic. In order to understand Perl you need to understand...". He went many better, and produced the following:</p>
+<div class="pretty-code-sample">In order to write perl in a modern context, I think these are the basic skills you'll need.<br/>
+<ol>
+<li>Perl's provided documentation is extensive and worthwhile, so learn to use `perldoc` to read both the provided manuals and the documentation of the builtin perl functions.</li>
+<li>Learn the difference between variables – scalar, array, hash, and references (hint for references: learn to make a hash of hashes).</li>
+<li>Learn how to use an array as a stack.</li>
+<li>Basic regular expression usage – matching, replacing, capturing substrings, case-insensitivity, metacharacters, and writing more readable expressions by having perl ignore the whitespace.</li>
+<li>Learn to use perl on the command line as a pipe filter instead of awk/sed.</li>
+<li>Learn how to write your own functions.</li>
+<li>Learn how to use core modules such as `File::Find` (write a tool to list files in a directory structure from smallest to largest in size).</li>
+<li>Refactor the code from step 7 to use a Schwartzian Transform to sort the file sizes.
+<li>Learn how to install third-party libraries from CPAN.</li>
+<li>Install Moose from CPAN, then work through `Moose::Manual` and `Moose::Cookbook` to learn to write modern OO perl.</li>
+<li>Learn how to use `Test::More` to test code and `Devel::Cover` to produce coverage reports.</li>
+<li>Find an abstract intro to OO example (such as employee payroll) and write it in Moose with full unit test coverage.</li>
+<li>Lastly, read the `perlstyle` documentation, and then write your own style guide.</ol></div>
+<p>Thanks, Norm. Thorm.</p>
