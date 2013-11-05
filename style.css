@@ -16,7 +16,7 @@ p {
     font-size: 12px;
 }
 
-ul  {
+ul {
     font-size: 14px;
     line-height: 1.7;
     margin-left: 10px;
@@ -41,6 +41,9 @@ a {
     color: white;
 }
 
+h1 a {
+    color: black;
+}
 a:hover, a:focus{
     text-decoration: underline;
 }
@@ -131,10 +134,6 @@ p .pretty-code-sample {
 .blog-post{
     margin-bottom: 30px;
     border-bottom: 1px dotted #333;
-}
-
-.sidebar{
-    font-size:14px;
 }
 
 .left-2-column {
