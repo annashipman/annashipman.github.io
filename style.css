@@ -114,17 +114,23 @@ h1, h2 {
     padding: 10px;
 }
 
-.code-sample-inline{
+.code-sample-inline {
     background-color: #deebf5;
     font-family: "Andale Mono", "Courier New", Courier, monospace;
     font-size: 14px;
     padding: 0;
 }
 
-.pretty-code-sample{
+.pretty-code-sample {
     border: 1px solid #ddd;
-    background:#eee;
-    padding:15px;
+    background: #eee;
+    padding: 5px 15px 15px 15px;
+}
+
+.quote {
+    font-style: italic;
+    background: #dee;
+    padding: 15px
 }
 
 p .pretty-code-sample {
