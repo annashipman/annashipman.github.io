@@ -1,5 +1,6 @@
 safe: true
 lsi: false
 pygments: true
+markdown: kramdown
 
 permalink: /jfdi/:title.html
