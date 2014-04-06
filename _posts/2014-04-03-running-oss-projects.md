@@ -12,7 +12,7 @@ The executive summary is that if you are trying to build a community, you need t
 
 Optimise documentation for bringing people into your community. It’s unlikely to already be good for that, as you are so familiar with the code and the project that you don’t realise what someone new to it doesn’t know.
 
-One way to do this is to make it clear that you are happy to answer people’s questions - even hundreds of questions - as long as they follow up by submitting a patch to clarify the documentation. Encourage people to raise bugs against the documentation.
+One way to do this is to make it clear that you are happy to answer people’s questions -- even hundreds of questions -- as long as they follow up by submitting a patch to clarify the documentation. Encourage people to raise bugs against the documentation.
 
 ### Make it easy to get involved
 
@@ -22,7 +22,7 @@ In a later discussion back at GDS we decided not to do that for this project bec
 
 As well as (or instead of) an IRC channel, you should have a mailing list.  You can either make it open or make it so that only a subset of people can reply. Someone advised that it wasn’t a good idea to have lots of mailing lists, (\*announce\*, \*discussion\* etc). It was also pointed out that even if you’re not writing code, managing the community can easily become a full-time job.
 
-The Perl community does communication well, and the example of [Catalyst](http://www.catalystframework.org/) was given - this project has 450 committers and the maintainer has changed 5+ times. Also mentioned was this blog post about communication with newcomers to the project: [Love your idiots](http://shadow.cat/blog/matt-s-trout/love-your-idiots/).
+The Perl community does communication well, and the example of [Catalyst](http://www.catalystframework.org/) was given -- this project has 450 committers and the maintainer has changed 5+ times. Also mentioned was this blog post about communication with newcomers to the project: [Love your idiots](http://shadow.cat/blog/matt-s-trout/love-your-idiots/).
 
 
 ### Respond quickly to external contributions
@@ -31,7 +31,7 @@ One of the things that I especially wanted to know about was how quickly you sho
 
 The most important PRs to pay attention to are the ones from new contributors. Again, optimise for bringing people into your community.
 
-It’s a good idea to have CI run tests on PRs so you can see failures before merging - [Travis](https://travis-ci.org/) is good for this as it integrates well with GitHub. However, it was stressed that it is important to review the contribution as well, even if it passes all the tests!
+It’s a good idea to have CI run tests on PRs so you can see failures before merging -- [Travis](https://travis-ci.org/) is good for this as it integrates well with GitHub. However, it was stressed that it is important to review the contribution as well, even if it passes all the tests!
 
 ### Communicate your vision
 
@@ -41,7 +41,7 @@ You need one person or a group of people to be responsible for maintenance, and 
 
 But also, take it as it comes. If you as the maintainer don’t think a direction is correct, it’s completely fine for someone to fork the software, and you may later find that the fork is doing the job better. The example of [GCC](http://gcc.gnu.org/) was given, where a separate fork existed for about 5 years, and the GCC maintainers eventually realised that the fork was what everyone was using and merged it back in.
 
-Modularity also makes the process easier - having a common core that everyone can agree on is relatively easy, and divergence can be supported with plugins.
+Modularity also makes the process easier -- having a common core that everyone can agree on is relatively easy, and divergence can be supported with plugins.
 
 It is very important that if you close a PR, you do so with a clear explanation, whether this is due to poor quality or incompatible direction. 
 
@@ -57,11 +57,11 @@ This is great advice for life in general. Even if what they are suggesting looks
 
 ### Issue tracking
 
-We currently manage work on the project internally using [PivotalTracker](http://www.pivotaltracker.com/). My plan was, once we’re ready to make it OSS, we move remaining features and bugs to GitHub issues, and work from that. This was seen as a good idea - it makes it clear to people what we are planning to work on and (ideally!) prevents them from raising issues we already know about. It also has a major benefit - you can Google for the issue.
+We currently manage work on the project internally using [PivotalTracker](http://www.pivotaltracker.com/). My plan was, once we’re ready to make it OSS, we move remaining features and bugs to GitHub issues, and work from that. This was seen as a good idea -- it makes it clear to people what we are planning to work on and (ideally!) prevents them from raising issues we already know about. It also has a major benefit -- you can Google for the issue.
 
 ### It must be an active project
 
-You need to be using the software yourself, otherwise it’s a recipe for abandonware. And it’s good to make this activity clear - related to the above point about issue tracking, if all your activity is on your internal tracker and mailing list and private IRC channel, then it won’t be clear to potential users and contributors that the project is still active. 
+You need to be using the software yourself, otherwise it’s a recipe for abandonware. And it’s good to make this activity clear -- related to the above point about issue tracking, if all your activity is on your internal tracker and mailing list and private IRC channel, then it won’t be clear to potential users and contributors that the project is still active. 
 
 ### Contributing Guidelines
 
