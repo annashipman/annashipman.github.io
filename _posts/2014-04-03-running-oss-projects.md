@@ -79,4 +79,4 @@ Many other things were discussed, including when you need a standalone website, 
 
 #### Notes
 
-Note that ScaleSummit operates under the [Chatham House Rule](http://en.wikipedia.org/wiki/Chatham_House_Rule) so none of the comments made in the session have been attributed, and thanks to [Matt Bostock](https://twitter.com/mattbostock) and [Phil Potter](https://twitter.com/philandstuff) whose write-ups ([Matt's](http://tech.mattbostock.com/2014/03/23/scale-summit/), [Phil's](https://gist.github.com/philandstuff/9684513), were a very useful addition to my own notes.
+Note that ScaleSummit operates under the [Chatham House Rule](http://en.wikipedia.org/wiki/Chatham_House_Rule) so none of the comments made in the session have been attributed, and thanks to [Matt Bostock](https://twitter.com/mattbostock) and [Phil Potter](https://twitter.com/philandstuff) whose write-ups ([Matt's](http://tech.mattbostock.com/2014/03/23/scale-summit/), [Phil's](https://gist.github.com/philandstuff/9684513)), were a very useful addition to my own notes.
