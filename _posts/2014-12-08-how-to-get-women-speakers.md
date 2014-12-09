@@ -39,7 +39,7 @@ As anyone who has organised a conference knows, there is little correlation betw
 
 When we announced the call for proposals, as well as tweeting it and sending it to various mailing lists, I and my co-chair set about writing individually to people we thought would propose good sessions.
 
-One name that was suggested to me was that of [Sandi Metz](https://twitter.com/sandimetz). At the time, I wasn't aware that she was the author of the extremely good [Practical Object-Oriented Desgin in Ruby](http://www.informit.com/store/practical-object-oriented-design-in-ruby-an-agile-primer-9780321721334), but I looked at [her website](http://www.sandimetz.com/) and the courses she was running sounded excellent, so I emailed her in the hope that she might be available.
+One name that was suggested to me was that of [Sandi Metz](https://twitter.com/sandimetz). At the time, I wasn't aware that she was the author of the extremely good [Practical Object-Oriented Design in Ruby](http://www.informit.com/store/practical-object-oriented-design-in-ruby-an-agile-primer-9780321721334), but I looked at [her website](http://www.sandimetz.com/) and the courses she was running sounded excellent, so I emailed her in the hope that she might be available.
 
 She got back to me, but she was uncertain about submitting to SPA. Not because, as you might think, it wasn't a big enough deal conference for her, but because she was uncertain that her material was appropriate for the conference. I quote from her original email (with her permission):
 <div class="quote">"I hear that SpaConf is a place for leading edge, new thought, experimental stuff, and I feel like I'm doing simple, straightforward, intuitive, well-known, obvious OOP".</div>
