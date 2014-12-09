@@ -85,6 +85,8 @@ A shout out to [Andy Allan](https://twitter.com/fymd), who organised [Scotch on 
 - the organisers made a big effort with the rest of the programme as you can see from the [final line-up](http://2014.sotr.eu/#nav-speakers), which is actually missing two women who had to drop out very close to the event and were not replaced
 - quite close to the conference, Andy asked me if I was also interested in being on a panel. I said that I didn't want to be the only (read: token) woman, and he said that was fine, he'd already also lined up the excellent [Kitt Hodsden](https://twitter.com/kitt). The [final panel](https://www.youtube.com/watch?v=4ai4y-Iecfw&feature=youtu.be) was three men and two women
 
+If you are trying to encourage people new to speaking, [these resources](/jfdi/conference-speaking.html) might help.
+
 ## In summary
 
 Seek out women and other under-represented groups who do great work in our field. They will not be hard to find. Pick out some examples of their work that show they'd be good for your conference. Contact them and ask them to submit. Be prepared to put some work into encouraging people.
