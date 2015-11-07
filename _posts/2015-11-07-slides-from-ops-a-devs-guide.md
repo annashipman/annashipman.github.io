@@ -1,10 +1,10 @@
 ---
 anchor_id: slides-ops-a-devs-guide
-title: "Slides and links from Operations: A developer's guide"
+title: "Slides and links from Operations: a developer's guide"
 layout: blog_post
 ---
 
-Slides from my talk *Operations: A developer's guide*, at [FFConf
+Slides from my talk *Operations: a developer's guide*, at [FFConf
 2015](http://2015.ffconf.org/).
 
 The last slide is links; these are copied below so you can actually click on
