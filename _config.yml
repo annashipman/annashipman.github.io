@@ -1,13 +1,8 @@
 safe: true
 lsi: false
 pygments: true
-markdown: redcarpet
-redcarpet:
-  extensions:
-    - autolink
-    - no_intra_emphasis
-    - smart
-    - strikethrough
-    - superscript
+
+kramdown:
+  input: GFM
 
 permalink: /jfdi/:title.html
