@@ -4,5 +4,6 @@ pygments: true
 
 kramdown:
   input: GFM
+  hard_wrap: false
 
 permalink: /jfdi/:title.html
