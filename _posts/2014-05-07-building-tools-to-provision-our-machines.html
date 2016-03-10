@@ -4,4 +4,120 @@ title: Building tools to provision our machines
 layout: blog_post
 ---
 
-<p>I wrote a blog post on the GDS Technology blog about the work I've been doing building vCloud Tools: <a href="https://gdstechnology.blog.gov.uk/2014/05/07/building-tools-to-provision-our-machines/" target="_blank">Building tools to provision our machines</a>.</p>
+<p>Over the last few months, I’ve been leading a small team <a title="vCloud
+Tools" href="https://github.com/alphagov/vcloud-tools">building tools</a> to
+automate creation and configuration of our servers.</p>
+<h2>Tools to automate provisioning</h2>
+<p>Currently, our production environment is hosted with Skyscape, and we manage
+it using <a href="http://www.vmware.com/uk/products/vcloud-director">VMware
+vCloud Director</a>. Skyscape, and other providers using vCloud Director, expose
+a UI for managing VMs and networks.</p>
+<p>However, a UI isn't suitable when you need to bring a lot of machines up in a
+repeatable, reliable way, for example when <a
+href="https://gdstechnology.blog.gov.uk/2014/03/28/migrating-govuk-infrastructure/">migrating
+the site to a new platform</a>. In addition, if you can automate provisioning,
+the configuration files represent your infrastructure as code, providing
+documentation about your system.</p>
+<p>VMware vCloud Director supports the <a
+href="http://pubs.vmware.com/vcd-51/index.jsp?topic=%2Fcom.vmware.vcloud.api.doc_51%2FGUID-F4BF9D5D-EF66-4D36-A6EB-2086703F6E37.html">vCloud
+API</a>, but there was no widely-available tooling to orchestrate this kind of
+operation using the API. So we built <a
+href="https://github.com/alphagov/vcloud-tools">vCloud Tools</a>.</p>
+<h2>Our suppliers currently all use vCloud Director</h2>
+<p>The UK Government’s policy is <a
+href="https://www.gov.uk/government/news/government-adopts-cloud-first-policy-for-public-sector-it">cloud
+first</a> and we procure services through <a title="CloudStore"
+href="http://govstore.service.gov.uk/cloudstore/">CloudStore</a> (which uses the
+<a href="https://www.gov.uk/how-to-use-cloudstore#g-cloud-framework">G-Cloud</a>
+framework). As government, it’s vital that we provide secure, resilient services
+that citizens can trust, and we need various assurances from our suppliers to
+support that.</p>
+<p>There are a number of Infrastructure as a Service (IaaS) platforms that are
+able to provide these assurances, but when we procured our current suppliers
+last year, the vendors that met our requirements (both technical and
+non-functional, eg self-service provisioning, a pay-as-you go cost model) used
+vCloud Director.</p>
+<p>We very much want to encourage potential new suppliers, but given the
+availability in the market, we can be reasonably certain we’ll be using at least
+one VMware-based solution for at least the next 12-18 months, and it’s likely
+that many other <a href="https://www.gov.uk/transformation">transformation
+projects</a> will also be drawing on the same pool of hosting providers. So it’s
+definitely worth investing time to make provisioning easy.</p>
+<h2>Preventing vendor lock-in</h2>
+<p>Having an easy way to provision environments will allow us to move more
+easily between vendors that use vCloud Director, which will help prevent
+supplier lock-in. But we also don’t want to lock ourselves in to VMware, so we
+are taking several steps to guard against that:</p>
+<ul>
+<li>We access the vCloud API via an Open Source library called <a
+href="http://fog.io/">fog</a> which can communicate with multiple types of cloud
+providers. If we add different vendor solutions in the future, we can extend our
+existing tools.</li>
+<li>Within our suite of vCloud Tools, the interaction with fog and the vCloud
+API takes place in <a href="http://rubygems.org/gems/vcloud-core">vCloud
+Core</a>, which the other tools depend on. This means any changes to use a
+different provider would be localised and should not affect the work we’ve done
+in the other tools.</li>
+<li>We’ve aimed to restrict our usage of VMware to functionality that has
+equivalents on other platforms, for example, Load Balancers, Firewalls and NAT,
+so we don’t have an infrastructure design that can’t be moved.</li>
+</ul>
+<h2>Previous iterations of provisioning tooling</h2>
+<p>Automation of provisioning is something we’ve been iterating on since we
+launched GOV.UK 18 months ago. Prior to vCloud Tools, we used a tool we had
+built called vCloud Provisioner. This was really useful when moving onto our
+first platform, but because it was built quickly it has a lot of hard-coded
+detail about the environment, so it doesn’t help us be flexible when moving
+between suppliers. In addition these hard-coded details include sensitive
+information, so we can’t share it, meaning it cannot be useful to anyone outside
+of the GOV.UK team.</p>
+<p>Several members of the infrastructure team worked on subsequent iterations of
+the provisioning tooling. These iterations included <a
+href="https://github.com/gds-attic/vcloud-box-spinner">vCloud Box Spinner</a>
+and <a href="https://github.com/gds-attic/vcloudtools">vcloudtools</a>. However,
+the people working on these were building these tools alongside their other
+business-as-usual work keeping <a href="https://www.gov.uk/">GOV.UK</a> up and
+running, so when they ran into issues, it was difficult to find time to address
+them. With the <a
+href="https://gdstechnology.blog.gov.uk/2014/03/28/migrating-govuk-infrastructure/">migration
+to the new platform</a> looming, we needed to prioritise this piece of work in
+order to be able to bring up a new environment quickly, reliably and easily.</p>
+<h2>We think vCloud Tools will be more robust</h2>
+<p>There are several things we have done to improve the chances of producing
+robust, more widely useful tools in this iteration.</p>
+<p>We have committed the time and resources to this, forming a small team who
+focus entirely on vCloud Tools rather than firefighting or other operations
+work, and we are <a
+href="https://gds.blog.gov.uk/2012/10/12/coding-in-the-open/">coding in the
+open</a>, so we won’t fall into the trap of including sensitive information that
+it is later too hard to factor out.</p>
+<p>Not only are the GOV.UK team “<a
+href="http://en.wikipedia.org/wiki/Eat_one%27s_own_dog_food">eating our own
+dogfood</a>” by using vCloud Tools to provision our new hosting environments,
+there are two other GDS teams also using the tools, the <a
+href="https://gds.blog.gov.uk/2014/01/23/what-is-identity-assurance/">Identity
+Assurance Programme</a> and the <a
+href="https://www.gov.uk/performance">Performance Platform</a>. Other exemplar
+projects have started using the tools, and we have already accepted pull
+requests from people we do not know, so there is the beginnings of a community
+around the tools. This keeps us from making it too GOV.UK specific and means
+that we get a lot of extremely useful user feedback.</p>
+<p>And in the meantime we are contributing back to Open Source - in one <a
+href="https://github.com/fog/fog/commit/e33ad6265">recent release</a> of fog, a
+huge number of the contributions were from the GOV.UK vCloud Tools team (who
+were, at that time, <a href="https://github.com/annashipman">me (Anna
+Shipman)</a>, <a href="https://github.com/snehaso">Sneha Somwanshi</a>, <a
+href="https://github.com/mikepea">Mike Pountney</a> and <a
+href="https://github.com/danielabel">Dan Abel</a>).</p>
+<p>These factors mean that we feel confident that we are going to produce tools
+that will continue to be very useful to us and other teams for some time.</p>
+<h2>More will follow</h2>
+<p>There will be future posts about particular aspects of what we’ve done and
+how, including one soon on how we used vCloud Tools in our platform migration.
+If there’s anything you’d particularly like more detail on, please let us know
+in the comments below.</p>
+
+
+<p><em>This post originally appeared on the <a
+href="https://gdstechnology.blog.gov.uk/2014/05/07/building-tools-to-provision-our-machines/">GDS
+Technology Blog</a></em>.</p>
