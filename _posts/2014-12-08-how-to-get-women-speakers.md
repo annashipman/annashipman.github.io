@@ -28,7 +28,7 @@ I recently received an email from a friend organising a conference:
 
 <p>I'm also using an anonymised review process and am (as always) being encouraging to first-time speakers.</p>
 
-<p>Thoughts?</a>
+<p>Thoughts?</p>
 </div>
 
 These are all really good things to do, and I recommend any conference organiser does the same, but I did have one more suggestion, and that is outreach.
