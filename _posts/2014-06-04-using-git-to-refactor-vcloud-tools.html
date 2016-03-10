@@ -4,4 +4,165 @@ title: Using Git to refactor vCloud Tools into separate gems
 layout: blog_post
 ---
 
-<p>Another post on the GDS Technology blog – this one is about using Git to re-architect vCloud Tools. <a href="https://gdstechnology.blog.gov.uk/2014/06/04/using-git-to-refactor-vcloud-tools-into-separate-gems/" target="_blank">Using Git to refactor vCloud Tools into separate gems</a>.</p>
+<p>When I started working on <a
+href="https://gdstechnology.blog.gov.uk/2014/05/07/building-tools-to-provision-our-machines/">vCloud
+Tools</a>, we had most of our functionality in one repository. There wasn’t a
+clear separation of concerns – the code was <a
+href="http://en.wikipedia.org/wiki/Coupling_%28computer_programming%29">tightly
+coupled</a> – and it also meant that a user who only wanted to use one tool to
+do one job had to install the whole thing. So I pulled out each functional area
+into an individual <a
+href="http://rubylearning.com/blog/2010/12/14/ruby-gems-%E2%80%94-what-why-and-how/">Ruby
+gem</a>.</p>
+<h2>Rewriting history</h2>
+<p>When creating the repository for each new gem, I didn't want to lose all the
+commit history; it is very <a
+href="http://mislav.uniqpath.com/2014/02/hidden-documentation/">useful
+documentation</a>. If I had started each gem from scratch, the commit history
+would remain in the vcloud-tools repository, but I prefer not to have to go
+somewhere else to see the history of what I'm working on right now.</p>
+<p>I also didn't want to create each directory side-by-side and then delete the
+unnecessary code, as this would make each repository much larger than it needed
+to be (as Git stores all the history) and would essentially be several
+duplicated projects with different bits deleted.</p>
+<p>What I really wanted was to go back in time and to have started with this
+structure from the beginning.</p>
+<p>Luckily, Git provides a mechanism to do this: <a
+href="https://www.kernel.org/pub/software/scm/git/docs/git-filter-branch.html">git
+filter-branch</a>.</p>
+<h2>Creating the new repository</h2>
+<p>To get started, I cloned the existing vcloud-tools repository locally:</p>
+<div class="code-sample">git clone --no-hardlinks /path/to/vcloud-tools-repo
+newrepo</div>
+<p>You need the <span class="code-sample">--no-hardlinks</span> flag because when cloning from a
+repo on a local machine, files under <span class="code-sample">.git/objects/</span> are linked to
+the original to save space, but I wanted my new repo to be an independent
+copy.</p>
+<p>I then deleted the remote in newrepo. I didn't want to push my new,
+pared-down repo over vcloud-tools.</p>
+<div class="code-sample">git remote rm origin</div>
+<h2>Deleting irrelevant code</h2>
+<p>Having made a new repository, I then pruned away any code that was unrelated
+to that tool. So for example when pulling out vCloud Core, I pruned away all
+directories that didn't contain vCloud Core code.</p>
+<p>For this, I used a tree-filter. This checks out each commit and runs a shell
+command against it, in this case <span class="code-sample">rm -rf c</span>, where c is an irrelevant
+directory or file.</p>
+<div class="code-sample">git filter-branch --tree-filter "rm -rf c" --prune-empty
+HEAD</div>
+<p>Because it's checking out each commit, it takes some time to do it this way
+(though it speeds up, as using <span class="code-sample">--prune-empty</span> removes commits that
+are left blank after the shell command does its job, so the total number of
+commits decreases as you progress through the task).</p>
+<p>This command actually allows you to use any shell command you want, but I
+found that deleting things I didn't require one-by-one, while time-consuming,
+meant that I picked up some things that had been missed, for example <a
+href="https://github.com/alphagov/vcloud-tools/pull/93">files in the wrong
+place</a> and <a
+href="https://github.com/alphagov/vcloud-tools/pull/94">tidy-up</a> that <a
+href="https://github.com/alphagov/vcloud-core/commit/9f0d27a3ab1dea3209f9775707393f1a2cd07">needed
+to be done</a>.</p>
+<h2>Tidying up</h2>
+<p>After each time you run this command and prune away files or directories, you
+need to do some cleanup. (I just wrote a little shell script and ran it each
+time.)</p>
+<p>When you run git filter-branch a <span
+class="code-sample">.git/refs/original</span> directory is
+created, to allow for a restore. These objects will be retained if you don't
+remove them so you need to remove the references:</p>
+<div class="code-sample">git for-each-ref --format="%(refname)" refs/original/ | xargs -n 1
+git update-ref -d</div>
+<p>These are usually cleaned up by Git on a scheduled basis, but because I was
+going on to remove other folders, I wanted to expire them immediately, and then
+reset to <span class="code-sample">HEAD</span> in case that had changed anything.</p>
+<div class="code-sample">git reflog expire --expire=now --all
+git reset --hard</div>
+<p>Then, I forced garbage collection of all orphaned entities.</p>
+<div class="code-sample">git gc --aggressive --prune=now</div>
+<p>The final line of my shell script just output the size of the
+<span class="code-sample">.git</span> folder so I could see it getting smaller as I pruned away
+unneeded code.</p>
+<div class="code-sample">du -sh .git</div>
+<h2>Important warning!</h2>
+<p>You need to be extremely careful when rewriting history. It is very important
+not to do this on a public repository unless you have a <a
+href="https://help.github.com/articles/remove-sensitive-data">very good
+reason</a>, as it makes everyone else’s copy of that repository incorrect. So I
+waited until it was finished and I was happy with my local version before
+pushing it up to a <a href="https://github.com/alphagov/vcloud-core">new
+repository</a>.</p>
+<h2>Applying gem structure</h2>
+<p>For all tools other than vCloud Core, the first thing I had to do was redo
+the <a
+href="https://github.com/alphagov/vcloud-launcher/commit/c09090668acfef26df713110d05d0f4850c22163">directory</a>
+<a
+href="https://github.com/alphagov/vcloud-launcher/commit/65178f291a909cdc517549b11e48a5d3731f97e7">structure</a>.</p>
+<p>I also had to move the <a
+href="https://github.com/alphagov/vcloud-launcher/commit/8c096a3cc70f6d96680080f4697f45d394e2cbbe">file
+that loads the dependencies</a>, and during the pruning process is became clear
+that we had a lot of dependencies at the wrong level, or <a
+href="https://github.com/alphagov/vcloud-launcher/commit/f6327ba559348ca7309226ac2be83abee4316753">
+not required at all</a>. Deleting code is very satisfying!</p>
+<p>I then added the <a
+href="https://github.com/alphagov/vcloud-core/commit/449e8d94a272c9bda73f069713798691c11f84ea">required
+files</a> for a gem, for example a gemspec, a licence. At this point, I also
+added a <a
+href="https://github.com/alphagov/vcloud-net_launcher/commit/2dc595338e044336b92e36a543718789b1fa67c2">CHANGELOG</a>
+to help us move the tools to <a
+href="https://github.com/gds-operations/open-source-guidelines">open
+source</a>.</p>
+<h2>Some interesting things about Git</h2>
+<p>I discovered some new things. For example, Git is case-insensitive with
+regard to file names.</p>
+<div class="code-sample">git mv spec/vcloud/fog/Service_interface_spec.rb
+spec/vcloud/fog/service_interface_spec.rb</div>
+<p>told me:</p>
+<div class="code-sample">fatal: destination exists,
+source=spec/vcloud/fog/Service_interface_spec.rb,
+destination=spec/vcloud/fog/service_interface_spec.rb</div>
+<p>You need to force it with the <span class="code-sample">-f</span> flag.</p>
+<p>Also, you can copy commits from another repository, as if you were using
+<span class="code-sample">git cherry-pick</span> to copy from a branch in the same repository, by <a
+href="http://stackoverflow.com/a/9507417">creating a patch and applying it
+locally</a>.</p>
+<div class="code-sample">git --git-dir=../some_other_repo/.git \
+format-patch -k -1 --stdout | \
+git am -3 -k</div>
+<h2>Then I published the gem</h2>
+<p>To enable our continuous integration, I added a <a
+href="https://github.com/alphagov/vcloud-core/blob/master/jenkins.sh">Jenkins
+job</a> and a<a href="https://help.github.com/articles/creating-webhooks">
+Jenkins hook to GitHub</a>  so that a commit to master will trigger a build in
+Jenkins.</p>
+<p>Once I was happy that everything was present and correct and it was ready to
+publish, I added a <a
+href="https://github.com/alphagov/gem_publisher">gem_publisher</a> <a
+href="https://github.com/alphagov/vcloud-core/commit/3934e43f360e5d19ba7c97ec60f7987acfee2912">rake
+task</a>, and then <a
+href="https://github.com/alphagov/vcloud-core/commit/a6eaa1f9ee800bed3048074c94770cea9e035934">included
+that in Jenkins</a>. This means that when a commit is merged to master, if the
+tests pass and the version has changed, the new version is automatically
+published to <a href="http://rubygems.org/">RubyGems</a>.</p>
+<p>Ta-dah! <a href="http://rubygems.org/gems/vcloud-core">vCloud Core</a>.</p>
+<p>Finally, I made a <a
+href="https://github.com/alphagov/vcloud-tools/pull/116">pull request on vCloud
+Tools</a> to remove it.</p>
+<h2>Pulling out all gems</h2>
+<p>Over a couple of months I pulled out all the gems and the architecture of
+vCloud Tools now looks like this:</p>
+<img src="/img/vcloud-tools-architecture.jpg" alt="hand-drawn diagram of vCloud Tools
+architecture" />
+<p>This approach follows the <a
+href="http://www.faqs.org/docs/artu/ch01s06.html">UNIX philosophy</a> of simple
+tools that do one thing, which together can form a toolchain to do do more
+complex tasks. vCloud Core now takes care of the interactions with fog and the
+vCloud API, and the other tools depend on that. <a
+href="https://github.com/alphagov/vcloud-tools">vCloud Tools</a> is now a
+meta-gem that pulls in all the other gems as dependencies. This has definitely
+made it easier to develop on and use vCloud Tools, and I learned a lot about Git
+and Ruby gems along the way!</p>
+
+
+<p><em>This post originally appeared on the <a
+href="https://gdstechnology.blog.gov.uk/2014/06/04/using-git-to-refactor-vcloud-tools-into-separate-gems/"
+target="_blank">GDS Technology Blog</a></em>.</p>
