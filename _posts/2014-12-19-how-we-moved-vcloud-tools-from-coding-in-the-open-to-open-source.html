@@ -4,4 +4,164 @@ title: How we moved vCloud Tools from Coding in the Open to Open Source
 layout: blog_post
 ---
 
-<p>I've written a post on the GDS Technology blog about moving a project from 'coded in the open' to true Open Source. <a href="https://gdstechnology.blog.gov.uk/2014/12/19/how-we-moved-vcloud-tools-from-coding-in-the-open-to-open-source/" target="_blank">How we moved vCloud Tools from Coding in the Open to Open Source</a>.</p>
+     <p>At GDS, most of our code is publicly available in our <a
+href="https://github.com/alphagov/">alphagov organisation on GitHub</a>. We call
+this “Coding in the Open” rather than “<a
+href="http://en.wikipedia.org/wiki/Open-source_software">Open Source</a>”. As <a
+href="//gds.blog.gov.uk/2012/10/12/coding-in-the-open/">James explained in a
+previous blog post</a> this is because for most of our software, we are not in a
+position to offer the support that true Open Source requires.</p>
+<p>However, we do also have some Open Source Software, in our <a
+href="https://github.com/gds-operations/">GDS Operations organisation</a> on
+GitHub. When we <a
+href="https://gdstechnology.blog.gov.uk/2014/05/07/building-tools-to-provision-our-machines/">started
+building vCloud Tools</a>, they were “Coded in the Open”, and we wanted to make
+them into Open Source Software. Here are the steps we took to do that.</p>
+<h2>Ensuring the project has a long term home</h2>
+<p>For the first several months of vCloud Tools’ development, the four of us
+working on vCloud Tools were a separate team with a separate backlog. However,
+once the tools were <a
+href="https://gdstechnology.blog.gov.uk/2014/05/21/using-vcloud-tools-to-provision-a-new-platform/">ready
+to be used</a>, we wanted to bring them back into the GOV.UK Infrastructure
+Team. <a href="https://twitter.com/mikepea">Mike Pountney</a> and I rejoined the
+Infrastructure Team with the vCloud Tools backlog, and our colleagues who hadn’t
+been working on vCloud Tools started picking <a
+href="https://www.gov.uk/service-manual/agile/writing-user-stories.html">stories</a>
+up.</p>
+<p>Initially this was mostly <a
+href="http://en.wikipedia.org/wiki/Pair_programming">pair programming</a> in
+order to share the knowledge. A couple of people who were particularly
+interested took more ownership, but everyone in the Infrastructure Team
+contributed, including the Head of Infrastructure, <a
+href="https://twitter.com/massacarl">Carl Massa</a>, who <a
+href="https://github.com/gds-operations/vcloud-tools/pull/188">merged the change
+that published vCloud Tools to RubyGems</a>.</p>
+<h2>Releasing each tool as a Ruby gem</h2>
+<p>Packaging the code as a <a href="http://rubygems.org/">Ruby gem</a> makes it
+easier for others to get started with using each tool, using a commonly
+installed packaging tool. It also ensures that the code follows a relatively
+consistent structure. Most people used to working with tools developed in Ruby
+will quickly know how to install it, how to use it, and where to start if they
+want to make modifications.</p>
+<p>I explained as part of <a
+href="https://gdstechnology.blog.gov.uk/2014/06/04/using-git-to-refactor-vcloud-tools-into-separate-gems/">a
+previous blog post</a> the steps we took to release each tool as a gem.</p>
+<h2>Learning from others’ experience</h2>
+<p>We already had several Open Source projects, mostly <a
+href="https://forge.puppetlabs.com/gdsoperations">Puppet modules</a> and our own
+<a href="https://gds-operations.github.io/guidelines/">Open Source
+guidelines</a>, but we were interested in learning from others who knew about
+maintaining larger projects. One of the main things I learned while <a
+href="http://www.annashipman.co.uk/jfdi/running-oss-projects.html">talking to
+people with experience in this area</a> was that when running an Open Source
+project, you want to optimise for bringing people into your community.</p>
+<p>Because of that, we made some changes, one of which was to add contributing
+guidelines with the specific aim of being helpful to new contributors. We wanted
+to make it easy for people who were unfamiliar with what would be involved, so
+we included explicit detail about how to raise a pull request and what we are
+looking for. You can see from the <a
+href="https://github.com/gds-operations/vcloud-core/blob/master/CONTRIBUTING.md">contributing
+guidelines on vCloud Core</a> that we say pull requests must contain tests, but
+we offer to help users write them.</p>
+<p>To make it easier for contributors and reviewers to see the quality of
+submissions, we also added <a href="https://travis-ci.org/">Travis</a>
+configuration so that lint and unit tests and are run against all pull
+requests.</p>
+<h2>Guidelines for communication with contributors</h2>
+<p>At the same time we also set some ground rules amongst ourselves, for example
+how quickly we should make sure we respond to pull requests. We drew up some
+guidelines for reviewing external pull requests. These were on our internal
+operations manual, but I have now added these to our <a
+href="https://github.com/alphagov/styleguides/blob/master/pull-requests.md">public
+styleguide for reviewing PRs</a>.</p>
+<h2>Putting vCloud Tools with our other Open Source projects</h2>
+<p>As I mentioned, we have other Open Source projects in our <a
+href="https://github.com/gds-operations/">GDS Operations organisation</a>, and
+once vCloud Tools had met all our Open Source guidelines, we wanted to move the
+tools to this organisation.</p>
+<p>Since there are six gems and they are related, we discussed moving them to an
+organisation called vCloud Tools. This would have some advantages, for example
+it would make it easier to add core maintainers who do not work at GDS. However,
+after some discussion, we felt that it was important to keep the link to GDS so
+that people who wanted to find out what work government was doing would be able
+to find their way to vCloud Tools along with other projects. This is also in
+keeping with what other organisations who have a lot of Open Source do, for
+example <a href="http://etsy.github.io/">Etsy</a> and <a
+href="http://netflix.github.io/">Netflix</a>.</p>
+<p>We also created a <a href="http://gds-operations.github.io/">website</a> to
+showcase our Open Source, with a lot more detail on <a
+href="http://gds-operations.github.io/vcloud-tools/">vCloud Tools</a>.</p>
+<h2>Moving issues to GitHub</h2>
+<p>Another thing that came out of early discussions with other Open Source
+practitioners was the importance of public issue tracking. We had features and
+bugs in our own issue tracking system, but having them on GitHub issues is
+better for users because it means they can find them. For example, if a user
+experiences a bug, they can search for it and may find that we’ve fixed it in a
+later version or at least that we are aware of it. It also has the advantage
+that people might fix our issues for us!</p>
+<p>At this stage we also added a <a
+href="https://github.com/gds-operations/vcloud-walker/labels/newcomer-friendly">‘newcomer
+friendly’ label</a>, for issues that don’t involve an in-depth understanding of
+the tools and don’t require access to a vCloud Director environment. This is to
+offer people an easier way to get involved in contributing.</p>
+<h2>Encouraging early users</h2>
+<p>Because we had been coding in the open from the start, we already had some
+early users. This was really useful, because we found they picked up things we
+had missed. For example, people coming to the project for the first time will
+notice onboarding details that you may have forgotten, and can help you clarify
+your documentation.</p>
+<p>Users of your software also help by finding issues that you might have
+overlooked. For example, one of our early users noticed a <a
+href="https://github.com/gds-operations/vcloud-edge_gateway/issues/36">discrepancy
+between our documentation and our code</a> which turned out to be a bug. This
+was really useful because the bug was in a feature that we don’t use on GOV.UK,
+so if they had not raised it, we might never have noticed it ourselves.</p>
+<p>In order to encourage users, we visited and spoke to teams both inside and
+outside government. This early contact helped us make sure we were focusing on
+features that would be useful for more than just ourselves, and in some cases
+our users even <a
+href="https://github.com/gds-operations/vcloud-core/pull/68">added these
+features themselves</a>.</p>
+<h2>Sharing our experience with others</h2>
+<p>We’ve worked closely with some of our colleagues in government, and currently
+teams at the <a
+href="https://www.gov.uk/government/organisations/ministry-of-justice">Ministry
+of Justice</a>, <a
+href="https://www.gov.uk/government/organisations/hm-revenue-customs">HMRC</a>
+and <a
+href="https://www.gov.uk/government/organisations/driver-and-vehicle-licensing-agency">DVLA</a>
+as well as external companies are using vCloud Tools for some of their
+provisioning.</p>
+<p>However, visiting individual teams wouldn’t scale for every team that’s
+interested, so in order to share more widely we started talking a bit more about
+what we were doing with vCloud Tools publicly. We wrote some blog posts,
+including a one by <a href="https://twitter.com/mattbostock">Matt Bostock</a>
+which shows how you could <a
+href="https://gdstechnology.blog.gov.uk/2014/05/21/using-vcloud-tools-to-provision-a-new-platform/">use
+vCloud Tools to provision your environment</a>. Matt and <a
+href="https://twitter.com/dancarley">Dan Carley</a> gave a talk at the Ministry
+of Justice, and I gave <a
+href="http://2014.sotr.eu/speakers.html#annashipman">two</a> <a
+href="http://velocityconf.com/velocityny2014/public/schedule/detail/35839">talks</a>
+at conferences.</p>
+<h2>What happens next?</h2>
+<p>We still have work to do. One thing we’ve found difficult is when a
+contributor raises a pull request for a feature that is not something we need at
+the moment. There is work involved in reviewing the code and testing it, and
+when the feature is not a priority for GOV.UK we’ve found that it’s hard to make
+a case for doing that work ahead of other things we need to do.</p>
+<p>We are really keen to support our Open Source projects, and including
+contributors’ code even when it’s not something we will use immediately helps
+the tools be more robust and useful. We’ve discussed some ideas around this, and
+our current plan is to allot some time every week specifically for working on
+Open Source, so that those kinds of features will be a priority during that
+time. We will see how we get on and report back.</p>
+<p>We’re also aware that a wider range of contributors leads to other
+considerations and what that means about things like how we license code is
+another post in itself. Watch this space, and as always, your comments are very
+welcome.</p>
+
+
+<p><em>This post originally appeared on the <a
+href="https://gdstechnology.blog.gov.uk/2014/12/19/how-we-moved-vcloud-tools-from-coding-in-the-open-to-open-source/"
+target="_blank">GDS Technology Blog</a></em>.</p>
