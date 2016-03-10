@@ -157,5 +157,4 @@ Traffic through the Redirector is easing off as GOV.UK pages are consistently
 higher in the Google search results, but it's been really exciting making sure
 that we do our best not to break the strands of the Web.
 
-*This post originally appeared on the [GDS Technology
-Blog](https://gds.blog.gov.uk/2012/12/10/testing-the-redirections/).*
+*This post originally appeared on the [GDS Blog](https://gds.blog.gov.uk/2012/12/10/testing-the-redirections/).*
