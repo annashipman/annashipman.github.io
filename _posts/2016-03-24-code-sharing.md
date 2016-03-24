@@ -49,7 +49,7 @@ If someone has written code that is perfect for your use case, it can still be h
 
 The general feeling was that forming a community is very useful to prevent duplication of work or code, but it was also pointed out that there are costs. For example the time cost of communication and staying in touch, keeping documentation up to date etc. Again, these may outweigh the costs of duplicating work.
 
-There are other advantages to being involved in communities of interest, but it is worth considering the cost of the time and effort. For example, while the idea of a Slack channel for a community, mentioned above, can be very useful, [Slack can also be a drain on productivity](://m.signalvnoise.com/is-group-chat-making-you-sweat-744659addf7d#.3dhurm2vu).
+There are other advantages to being involved in communities of interest, but it is worth considering the cost of the time and effort. For example, while the idea of a Slack channel for a community, mentioned above, can be very useful, [Slack can also be a drain on productivity](http://m.signalvnoise.com/is-group-chat-making-you-sweat-744659addf7d#.3dhurm2vu).
 
 We also returned a few times to the topic of sharing services, or platforms, rather than the code itself. Instead of writing code to be shared, build a service or platform that provides functionality. However, the question of cost came up again: building and operating a service is expensive and takes skilled people, as well as maintenance costs.
 
