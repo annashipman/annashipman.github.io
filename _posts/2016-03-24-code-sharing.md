@@ -1,6 +1,6 @@
 ---
 anchor_id: code-sharing
-title: Code-sharing in large organisations
+title: Code sharing in large organisations
 layout: blog_post
 ---
 
