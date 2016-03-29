@@ -29,7 +29,7 @@ For those working in UK government, there are already [some forums for these dis
 
 ## How to build a community
 
-One useful idea came from [Paul Gillespie](https://twitter.com/bigpg) (quoted with permission). He explained that at Skyscanner, they copy [Spotify's org struture](http://www.scribd.com/doc/113617905/Scaling-Agile-Spotify), and have something called guilds. These are essentially communities of interest. For example, they have one for web dev, one for AWS, one for Python. These guilds have Slack channels, mailing lists and every two weeks they have a guild meeting, which is a one- to two-hour webinar. They use Trello to set the agenda for this meeting, and each guild is run by a core committee.
+One useful idea came from [Paul Gillespie](https://twitter.com/bigpg) (quoted with permission). He explained that at Skyscanner, they copy [Spotify's org struture](http://www.scribd.com/doc/113617905/Scaling-Agile-Spotify), and have something called guilds. These are essentially communities of interest. For example, they have one for web dev, one for AWS, one for Python. These guilds have Slack channels, mailing lists and every two weeks they have a guild meeting, which is a one-hour webinar. They use Trello to set the agenda for this meeting, and each guild is run by a core committee.
 
 I later talked to Paul a bit more and he said that in total they have around 6 or 7 guilds. You don't want to have too many, because being involved in a guild is quite labour-intensive.
 
