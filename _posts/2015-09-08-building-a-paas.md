@@ -94,4 +94,4 @@ interested in getting involved in our user research, or seeing a demo of what
 we’ve done so far, please get in touch.</p>
 
 *This post originally appeared on the [GDS
-Blog](https://gds.blog.gov.uk/2015/09/08/building-a-platform-to-host-digital-services/)*.
+Blog](https://gds.blog.gov.uk/2015/09/08/building-a-platform-to-host-digital-services/) and was co-written with [Carl Massa](https://twitter.com/massacarl)*.
