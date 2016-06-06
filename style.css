@@ -146,12 +146,13 @@ p .pretty-code-sample {
 
 .left-2-column {
     float:left;
-    width: 45%;
+    width: 25%;
 }
 
 .right-2-column {
     float:right;
     width:50%;
+    margin-right: 20%;
 }
 
 .message-container {
