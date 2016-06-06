@@ -1,24 +1,9 @@
 ---
 layout: default
 ---
-
-<div class="colmask threecol">
-    <div class="colmid">
-        <div class="colleft">
-            <div class="col1">
-                <!-- Column 1 start -->
-                {{ content }}
-                <!-- Column 1 end -->
-            </div>
-            <div class="col2">
-                <!-- Column 2 start -->
-                {% include sidebar.html %}
-                <!-- Column 2 end -->
-            </div>
-            <div class="col3">
-                <!-- Column 3 start -->
-                <!-- Column 3 end -->
-            </div>
-        </div>
-    </div>
+<div class="left-2-column">
+    {% include sidebar.html %}
+</div>
+<div class="right-2-column">
+    {{ content }}
 </div>

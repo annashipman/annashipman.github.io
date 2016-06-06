@@ -1,10 +1,12 @@
-<!DOCTYPE HTML>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<html lang="en-GB">
+<!doctype html>
+<html>
     <head>
+        <link rel="canonical" href="{{ page.redirect_to }}"/>
         <title>Anna Shipman</title>
-        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="stylesheet" type="text/css" href="/style.css" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta http-equiv="refresh" content="0;url={{ page.redirect_to }}" />
     </head>
     <body>
         <div class="header">
@@ -20,10 +22,7 @@
                 </table>
             </div>
         </div>
-<div class="message-container">
-<h1>404</h1>
-<p>There isn't a page here.</p>
-<p>Please use the links above to find your way home.</p>
-</div>
+    <h1>Redirecting...</h1>
+      <a href="{{ page.redirect_to }}">Click here if you are not redirected.</a>
 </body>
 </html>
