@@ -4,6 +4,7 @@ title: CAP again – or should that be PACELC?
 layout: blog_post
 ---
 <p>The last thing I wrote about was the CAP Theorem. Last week, <a href="https://twitter.com/thattommyhall" target="_blank">Tom Hall</a> visited our office and gave a very interesting talk, the central thesis of which was that the CAP Theorem, as often explained, is incorrect – or at least not very meaningful.</p>
+
 <p>The first point, explained very clearly in <a href="http://www.cloudera.com/blog/2010/04/cap-confusion-problems-with-partition-tolerance/" target="_blank">CAP Confusion: Problems with 'partition tolerance'</a> is that P, "Partition Tolerance", as per the <a href="http://lpd.epfl.ch/sgilbert/pubs/BrewersConjecture-SigAct.pdf"target="_blank">proof</a> of the CAP Theorem, is not a property of your application; rather it is a property of the network it's on. The network may partition. To quote from Henry Robinson's Cloudera article:</p>
 
 <p class="pretty-code-sample">"Partition tolerance means simply developing a coping strategy by choosing which of the other system properties to drop. This is the real lesson of the CAP theorem – if you have a network that may drop messages, then you cannot have both availability and consistency, you must choose one."</p>

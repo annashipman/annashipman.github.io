@@ -4,10 +4,11 @@ title: Building a platform to host digital services
 layout: blog_post
 ---
 
- <p>Right now, hosting services is one of the most time-consuming barriers for
+<p>Right now, hosting services is one of the most time-consuming barriers for
 new digital services, and usually involves duplicating work done elsewhere. On
 the Government Platform as a Service team we’re working on solving that.<span
 id="more-19788"></span></p>
+
 <h2>Repetition, repetition, repetition</h2>
 <p>Every digital service that government runs needs to have a place to run from;
 it <a href="https://en.wikipedia.org/wiki/Web_hosting_service">needs to be
