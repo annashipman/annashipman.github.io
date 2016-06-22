@@ -2,14 +2,16 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <html lang="en-GB">
   <head>
-    <title>Anna Shipman : {{ include.page_name }}</title>
+    <title>Anna Shipman{{ include.page_name }}</title>
       <link rel="shortcut icon" href="/favicon.ico" />
       <link rel="stylesheet" type="text/css" href="/style.css" />
       <link rel="alternate" type="application/x.atom+xml" title="RSS feed for this site" href="/atom.xml" />
+      {{ include.canonical_link }}
+      {{ include.meta_refresh }}
   </head>
   <body>
     <div class="header">
-      <span class="name"><a href="/">Anna Shipman</a> : {{ include.page_name }}</span>
+      <span class="name"><a href="/">Anna Shipman</a>{{ include.page_name }}</span>
       <div class="navigation">
         <a href="http://www.twitter.com/annashipman" class="header-text twitter">Follow me on Twitter</a>
         <table class="link-group">

@@ -9,6 +9,7 @@ href="https://gds.blog.gov.uk/2015/09/08/building-a-platform-to-host-digital-ser
 previous post</a>. <span id="more-1257"></span> One of the first things we did
 was look at the open source PaaS options that were available. This post is about
 how we did that and what we learned.</p>
+
 <img
 src="/img/our_whiteboard_comparison.jpg" alt="Comparison table of PaaS" />
 <h2>The open source options we considered</h2>

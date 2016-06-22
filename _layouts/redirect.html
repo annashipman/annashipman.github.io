@@ -1,28 +1,10 @@
-<!doctype html>
-<html>
-    <head>
-        <link rel="canonical" href="{{ page.redirect_to }}"/>
-        <title>Anna Shipman</title>
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="stylesheet" type="text/css" href="/style.css" />
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <meta http-equiv="refresh" content="0;url={{ page.redirect_to }}" />
-    </head>
-    <body>
-        <div class="header">
-            <span class="name"><a href="/">Anna Shipman</a></span>
-            <div class="navigation">
-                <a href="http://www.twitter.com/annashipman" class="header-text twitter">Follow me on Twitter</a>
-                <table class="link-group">
-                    <tr>
-                        <td><a href="/jfdi.html" class="header-text">JFDI</a></td>
-                        <td><a href="/cv.html" class="header-text">CV</a></td>
-                        <td><a href="/etc.html" class="header-text">Etc</a></td>
-                    </tr>
-                </table>
-            </div>
-        </div>
+---
+---
+{% capture canonical_link %}"<link rel="canonical" href={{ page.redirect_to }} />"{% endcapture %}
+{% capture meta_refresh %}<meta http-equiv="refresh" content="0;url={{ page.redirect_to }}" />{% endcapture %}
+
+{% include header.html canonical_link=canonical_link meta_refresh=meta_refresh %}
     <h1>Redirecting...</h1>
-      <a href="{{ page.redirect_to }}">Click here if you are not redirected.</a>
+      <a href="{{ page.redirect_to }}">Click here if you are not redirected</a>
 </body>
 </html>

@@ -9,6 +9,7 @@ relatively unstructured, and dependent on what opportunities came up. Over the
 last few months I’ve been leading on developing a more structured career path
 for developers and web operations engineers. This blog post describes what that
 involved.</p>
+
 <h2>Working out our values</h2>
 <p>First, we needed to be clear on what skills we expect someone to demonstrate
 at each level (e.g. junior, senior). Every organisation has implicit cultural
