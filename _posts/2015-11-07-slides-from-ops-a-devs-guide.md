@@ -12,15 +12,11 @@ them!
 
 Video to follow...
 
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/39M8UxzdHZYV1e"
-width="425" height="355" frameborder="0" marginwidth="0" marginheight="0"
-scrolling="no" style="border:1px solid #CCC; border-width:1px;
-margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div
-style="margin-bottom:5px"> <strong> <a
-href="//www.slideshare.net/annashipman/operations-a-developers-guide"
-title="Operations: a developer&#x27;s guide" target="_blank">Operations: a
-developer&#x27;s guide</a> </strong> from <strong><a
-href="//www.slideshare.net/annashipman" target="_blank">annashipman</a></strong>
+<div class="embedded">
+  <iframe src="//www.slideshare.net/slideshow/embed_code/key/39M8UxzdHZYV1e" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen>
+  </iframe>
+  <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/annashipman/operations-a-developers-guide" title="Operations: a developer&#x27;s guide" target="_blank">Operations: a developer&#x27;s guide</a> </strong> from <strong><a href="//www.slideshare.net/annashipman" target="_blank">annashipman</a></strong>
+  </div>
 </div>
 
 ## Links

@@ -159,3 +159,19 @@ p .pretty-code-sample {
 .message-container {
     margin: 50px;
 }
+
+.embedded {
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+}
+
+.embedded iframe, .embedded object, .embedded embed {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
