@@ -96,6 +96,7 @@ h1, h2 {
     text-transform: uppercase;
     color: white;
     display:block;
+    line-height: 100%;
 }
 
 .ie-note{
