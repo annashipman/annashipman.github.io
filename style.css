@@ -86,12 +86,6 @@ h1, h2 {
     padding: 20px 0 25px 30px;
 }
 
-.twitter{
-    float:right;
-    padding-top:20px;
-    padding-right: 10px;
-    font-size:0.9em;
-}
 
 .name {
     padding: 50px 0 0 50px;
@@ -156,6 +150,12 @@ p .pretty-code-sample {
       float:right;
       width:46%;
       margin-right: 27%;
+  }
+
+  .twitter{
+      float:right;
+      padding-right: 10px;
+      font-size:0.9em;
   }
 }
 
