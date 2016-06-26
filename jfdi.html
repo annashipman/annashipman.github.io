@@ -2,19 +2,21 @@
 ---
 
 {% include header.html page_name=" : JFDI" %}
+
 <div class="left-column">
     {% include sidebar.html %}
 </div>
 
 <div class="right-column">
-{% for post in site.posts %}
-<div id="{{ post.anchor_id }}" class="blog-post">
-<h1><a href="{{post.url}}">{{ post.title}}</a></h1>
-<date>{{ post.date | date_to_long_string }}</date>
-  {{ post.content }}
+
+  {% for post in site.posts %}
+    <div id="{{ post.anchor_id }}" class="blog-post">
+      <h1><a href="{{post.url}}">{{ post.title}}</a></h1>
+      <date>{{ post.date | date_to_long_string }}</date>
+        {{ post.content }}
+    </div>
+  {% endfor %}
+
 </div>
 
-{% endfor %}
-
-</div>
 {% include footer.html %}
