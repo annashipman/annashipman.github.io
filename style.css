@@ -144,16 +144,19 @@ p .pretty-code-sample {
     border-bottom: 1px dotted #333;
 }
 
-.left-2-column {
-    float:left;
-    width: 20%;
-    padding: 0 1% 0 1%;
-}
 
-.right-2-column {
-    float:right;
-    width:46%;
-    margin-right: 27%;
+@media (min-width: 700px) {
+  .left-2-column {
+      float:left;
+      width: 20%;
+      padding: 0 1% 0 1%;
+  }
+
+  .right-2-column {
+      float:right;
+      width:46%;
+      margin-right: 27%;
+  }
 }
 
 .message-container {
