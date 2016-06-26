@@ -146,13 +146,13 @@ p .pretty-code-sample {
 
 
 @media (min-width: 700px) {
-  .left-2-column {
+  .left-column {
       float:left;
       width: 20%;
       padding: 0 1% 0 1%;
   }
 
-  .right-2-column {
+  .right-column {
       float:right;
       width:46%;
       margin-right: 27%;
