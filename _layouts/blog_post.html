@@ -1,8 +1,18 @@
 ---
-layout: blog_layout
 ---
-<div id="{{ page.anchor_id }}" class="blog-post">
-<h1>{{ page.title}}</h1>
-<date>{{ page.date | date_to_long_string }}</date>
-  {{ content }}
+
+{% include header.html page_name=" : JFDI" %}
+
+<div class="right-column">
+  <div id="{{ page.anchor_id }}" class="blog-post">
+    <h1>{{ page.title}}</h1>
+    <date>{{ page.date | date_to_long_string }}</date>
+      {{ content }}
+  </div>
 </div>
+
+<div class="left-column">
+    {% include sidebar.html %}
+</div>
+
+{% include footer.html %}
