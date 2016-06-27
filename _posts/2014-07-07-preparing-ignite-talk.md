@@ -40,4 +40,6 @@ The format of Ignite talks is a good constraint to encourage creativity and I re
 
 When it was finished I'd made quite a few mistakes and missed out things I'd wanted to say, but on balance, I think it went pretty well. Judge for yourself.
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/Q1qWzz6liK0" frameborder="0" allowfullscreen></iframe>
+<div class="embedded">
+  <iframe src="//www.youtube.com/embed/Q1qWzz6liK0" frameborder="0" allowfullscreen></iframe>
+</div>
