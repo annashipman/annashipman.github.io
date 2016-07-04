@@ -59,6 +59,10 @@ img {
     width:20%;
 }
 
+.half-width {
+    width:50%;
+}
+
 .header {
     background-image:url('/img/texture.jpg');
     text-shadow: 0px 2px 5px black;

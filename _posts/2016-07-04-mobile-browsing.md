@@ -6,7 +6,7 @@ layout: blog_post
 
 I've had this blog for five years, but I've only recently started using my phone to browse the internet, at which point I realised it displayed terribly on a small screen. It's a wonder anyone ever read my posts.
 
-<img class="narrow-image" src="/img/before_responsive.png" alt="Screenshot of site on an iPhone before redesign" />
+<img class="half-width" src="/img/before_responsive.png" alt="Screenshot of site on an iPhone before redesign" />
 
 As a predominantly back-end developer, it wasn't immediately clear to me what I needed to do to improve matters, so I thought it was worth making a note here once I figured it out.
 
@@ -22,7 +22,7 @@ The first thing I needed to do was work out how I wanted the site to look on a m
 
 I was using a [three column layout](http://matthewjamestaylor.com/blog/perfect-3-column.htm). However, on some pages the right column was left blank, and on one page I was instead using a two column layout. Only one page was making full use of the three columns. It was time to let it go.
 
-<img class="narrow-image" src="/img/only_page_using_3_columns.png" alt="Only page using 3 columns" /> <img class="narrow-image" src="/img/page_using_2_columns.png" alt="Page using 2 columns" />
+<img class="half-width" src="/img/only_page_using_3_columns.png" alt="Only page using 3 columns" /> <img class="half-width" src="/img/page_using_2_columns.png" alt="Page using 2 columns" />
 
 ## Redirecting a URL
 
@@ -38,7 +38,7 @@ When I [started using Jekyll](https://github.com/annashipman/annashipman.github.
 
 These initial changes actually made the site worse on mobile because there was more padding on the right.
 
-<img class="narrow-image" src="/img/in_progress_responsive.png" alt="Screenshot of site even narrower on iPhone screen" />
+<img class="half-width" src="/img/in_progress_responsive.png" alt="Screenshot of site even narrower on iPhone screen" />
 
 ## Set viewport
 
@@ -48,11 +48,11 @@ The first change after the redesign was [to add the viewport meta tag](https://g
 
 After setting the viewport initial scale, most individual posts looked good on mobile. However the JDFI page has all the posts on it, and it looked very wrong. All the content was squished to the left.
 
-<img class="narrow-image" src="/img/unresponsive_images.png" alt="JFDI page with all content squished to left" />
+<img class="half-width" src="/img/unresponsive_images.png" alt="JFDI page with all content squished to left" />
 
 It turns out that the code provided by YouTube and SlideShare to embed videos/slides into your site is not responsive; it has a fixed width. This means that the site renders the text correctly for the size of the device, but when it gets to the fixed width video it then zooms out to allow space for it.
 
-<img class="narrow-image" src="/img/fixed_width_video.png" alt="An embedded video pushing the page size out" />
+<img class="half-width" src="/img/fixed_width_video.png" alt="An embedded video pushing the page size out" />
 
 These [two](https://www.abeautifulsite.net/how-to-embed-youtubevimeo-videos-responsively) [articles](https://coolestguidesontheplanet.com/videodrome/youtube/) were useful in working out how to fix this. I changed the HTML to not have the fixed sizes and [added some CSS](https://github.com/annashipman/annashipman.github.io/commit/a66e09868d39c8d2ff6101bcbb2326075feeeffe).
 
