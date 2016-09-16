@@ -40,7 +40,7 @@ If someone suggests you write a blog post about something that's always a good h
 
 ## Don't be perfectionist
 
-Before I started blogging, I worried for quite some time about what I would say, how I would know to write about, or whether it would be  being interesting. In the end I decided to just go for it (hence the name of my blog).
+Before I started blogging, I worried for quite some time about what I would say, how I would know to write about, or whether it would be interesting. In the end I decided to just go for it (hence the name of my blog).
 
 My early posts are really very boring; they were just details of me getting to grips with Unix. I doubt anyone read them. But it got me started, and it got me into the habit of writing things up and speaking into the void.
 
