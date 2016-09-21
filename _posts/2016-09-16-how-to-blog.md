@@ -54,7 +54,7 @@ The inspiring [Mark Needham](https://twitter.com/markhneedham) started [his blog
 
 ## Write the post when you get the idea
 
-However, I don't have a schedule. My aim is just to keep my site roughly up to date, which for me means I start to feel anxous if I've not posted in the past three months. I usually try and write posts when the idea strikes me and if I've been writing a lot, I might park it to post later.
+However, I don't have a schedule. My aim is just to keep my site roughly up to date, which for me means I start to feel anxious if I've not posted in the past three months. I usually try and write posts when the idea strikes me and if I've been writing a lot, I might park it to post later.
 
 For example, I wrote the first draft of this in August 2015, but I had just [posted on the GDS Technology blog](https://gdstechnology.blog.gov.uk/2015/07/24/a-career-path-for-technologists-at-gds/) and I knew I had [two](https://gds.blog.gov.uk/2015/09/08/building-a-platform-to-host-digital-services/) [more](https://gdstechnology.blog.gov.uk/2015/10/27/looking-at-open-source-paas-technologies/) GDS blog posts coming soon, so I parked this one.
 
