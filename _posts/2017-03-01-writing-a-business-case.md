@@ -44,7 +44,7 @@ If you've made a good case so far, then it should be obvious at this point what 
 
 ## Include a management case
 
-If they approve this case, how would you manage it as a project? Do you already have an idea of the group of people you would get together to work on it? If so, include these details. Make it easy for the people for whom you are making the case to see that if approved, you would be able to deliver this successfully.
+If they approve this case, how would you manage it as a project? Do you already have an idea of the group of people you would get together to work on it? If so, include these details. Make it easy for those reading the business case to see that if approved, you would be able to deliver this successfully.
 
 ## The process should take time
 
