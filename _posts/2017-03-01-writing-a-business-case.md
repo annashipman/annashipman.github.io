@@ -12,7 +12,7 @@ Instead of opening with the solution you are proposing, start by defining the pr
 
 ## Make it strategic
 
-Make the strategic point – why is this a problem that we want to solve?  What is the outcome we are trying to get to and how does that support the organisations stated aims? In our case, why is this something government should care about?
+Make the strategic point – why is this a problem that we want to solve?  What is the outcome we are trying to get to and how does that support the organisation's stated aims? In our case, why is this something government should care about?
 
 ## Think of three or four potential solutions
 
@@ -44,7 +44,7 @@ If you've made a good case so far, then it should be obvious at this point what 
 
 ## Include a management case
 
-If they approve this case, how would you manage it as a project? Do you already have an idea of the group of people you would get together to work on it? If so, include these details. Make it easy for the people you are making the case to see that if approved, you would be able to deliver this successfully.
+If they approve this case, how would you manage it as a project? Do you already have an idea of the group of people you would get together to work on it? If so, include these details. Make it easy for the people for whom you are making the case to see that if approved, you would be able to deliver this successfully.
 
 ## The process should take time
 
