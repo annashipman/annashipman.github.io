@@ -4,7 +4,7 @@ title: Writing a business case
 layout: blog_post
 ---
 
-As I become more senior I have more of a need to make business case to justify things. I turned to the excellent [Peter Grzeszczak](https://twitter.com/Pete_Grz) for advice, and this is what he said.
+As I become more senior I have more of a need to write business cases. I turned to the excellent [Peter Grzeszczak](https://twitter.com/Pete_Grz) for advice, and this is what he said.
 
 ## Start with the problem, not the solution
 
@@ -50,7 +50,7 @@ If they approve this case, how would you manage it as a project? Do you already 
 
 Part of the point of making a business case is sharing the information. It shouldn't come out of the blue for anyone who will be involved in making the decision or supporting the work.
 
-As a rough rule of thumb for a business case for a significant piece of work, Peter suggested you would probably be looking at around a month: you might spend a week or so on discovery, making sure you're clear on the problem (maybe having a workshop) and working out who will be the sponsor; once you've got the options you'll probably spend another week or two getting the data to support those options, and then a week or two to write it up.
+As a rough rule of thumb, for a business case for a significant piece of work Peter suggested you would probably be looking at around a month: you might spend a week or so on discovery, making sure you're clear on the problem (maybe having a workshop) and working out who will be the sponsor; once you've got the options you'll probably spend another week or two getting the data to support those options, and then a week or two to write it up.
 
 Be loud and open as you go; you want input from people who have something to add, and you want people to know it's happening.
 
@@ -66,4 +66,4 @@ We were not talking about producing a business case for the Treasury, though tha
 
 ## Ultimately, it's about telling a story
 
-Your business case should be a narrative. Here's the problem. Here's what we should do. It might cost us money, but here are the reasons that it's the right thing to do.
+Your business case should be a narrative. Here's the problem. Here's a good solution. It might cost us money, but here are the reasons that it's the right thing to do.
