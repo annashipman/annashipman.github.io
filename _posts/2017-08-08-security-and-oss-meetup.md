@@ -4,9 +4,9 @@ title: Cross government meetup on Open Source and Security
 layout: blog_post
 ---
 
-![Make things open image](/img/Make-things-open.png)
-
 We are hosting the second cross-government meetup on Open Source in London on Tuesday 26th September.
+
+![Make things open image](/img/Make-things-open.png)
 
 The event will focus on security considerations around Open Source and talks will be given by:
 

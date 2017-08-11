@@ -4,9 +4,9 @@ title: Come to the cross-government Open Source meetup
 layout: blog_post
 ---
 
-![Post-it note saying Share knowledge](/img/Share-knowledge.png)
-
 We are organising a series of cross-government Open Source meetups to exchange ideas, talk about code we can reuse or collaborate on and build a community around Open Source.
+
+![Post-it note saying Share knowledge](/img/Share-knowledge.png)
 
 Making code open is the foundation of the transformation of government. One of the major benefits of open code is how easy it makes collaboration, and potentially reuse; saving other teams time and effort. As I wrote about in [my post outlining the next steps for open source in government](https://governmenttechnology.blog.gov.uk/2016/12/15/next-steps-for-open-source-in-government/), the best way to make that happen is to talk to each other.
 
