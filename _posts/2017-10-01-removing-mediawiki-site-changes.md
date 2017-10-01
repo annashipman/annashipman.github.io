@@ -5,9 +5,9 @@ date: 2017-10-01 09:00
 layout: blog_post
 ---
 
-I run the website for [SPA conference](http://www.spaconference.org). This conference has been running for more than 20 years, and I've been the web admin since 2014. This is about one step in updating a 20-year-old legacy PHP site into something more modern: removing the integrated wiki.
+I run the website for [SPA conference](http://www.spaconference.org). This conference has been running for more than 20 years, and I've been the web admin since 2014. This is about one step in updating a 20-year-old legacy PHP site into something more modern: removing the integrated wiki. The story is in two parts, and this part is about why I removed the integrated wiki and the changes I made to the function of the site to accommodate that.
 
-The story is in two parts. This part is about why I removed the integrated wiki and the changes I made to the function of the site to accommodate that, and the second part is about [how I made sure the wiki pages were still available](/jfdi/removing-mediawiki-cool-uris.html).
+The second part is about [how I made sure the wiki pages were still available](/jfdi/removing-mediawiki-cool-uris.html).
 
 ## The site included a 'discussion wiki'
 

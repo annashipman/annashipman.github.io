@@ -5,9 +5,7 @@ date: 2017-10-01 10:00
 layout: blog_post
 ---
 
-I run the website for [SPA conference](http://www.spaconference.org). This conference has been running for more than 20 years, and I've been the web admin since 2014. This is about one step in updating a 20-year-old legacy PHP site into something more modern: removing the integrated wiki.
-
-The story is in two parts. This part is about how I made sure links to the old wiki still worked. It involves many, many things I learned about `.htaccess`.
+I run the website for [SPA conference](http://www.spaconference.org). This conference has been running for more than 20 years, and I've been the web admin since 2014. This is about one step in updating a 20-year-old legacy PHP site into something more modern: removing the integrated wiki. The story is in two parts and this  part is about how I made sure links to the old wiki still worked. It involves many, many things I learned about `.htaccess`.
 
 To read about the actual changes I made to the site, see my previous post: [Removing MediaWiki from SPA: changes to the site](/jfdi/removing-mediawiki-site-changes.html).
 
