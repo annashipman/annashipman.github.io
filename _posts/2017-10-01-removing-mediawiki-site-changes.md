@@ -1,7 +1,7 @@
 ---
 anchor_id: mediawiki-spa-site-changes
 title: Removing MediaWiki from SPA&#58; Changes to the site
-date: 2018-01-01 09:00
+date: 2017-10-01 09:00
 layout: blog_post
 ---
 
@@ -23,15 +23,15 @@ The sessions at SPA are mostly interactive, so session outpts can included slide
 
 Session leaders were encouraged to add output from the session to the wiki and you could then [look at all outputs from the conference](http://www.spaconference.org/mediawiki/index.php?title=SpaTwoThousandAndFourteenOutput).
 
-To replace this, I added the ability for conference presenters to update their sessions with the outputs. You can see an example under outputs for the session [Access control for REST services](http://spaconference.org/spa2017/sessions/session694.html).
+To replace this, I added the ability for conference presenters to update their sessions with the outputs. You can see an example under the heading 'Outputs' for the session [Access control for REST services](http://spaconference.org/spa2017/sessions/session694.html).
 
 {% comment %} As part of this I added functionality to make them clickable https://github.com/dcleal/spa-conf/pull/88 {% endcomment %}
 
 ## User pages
 
-If you are submitting a session to the CFP, you need to [sign up to the conference site](http://www.spaconference.org/scripts/myprofile.php), where you fill in some details and if you consented, a user page was created on the wiki.
+If you are submitting a proposal to SPA, you need to [sign up to the conference site](http://www.spaconference.org/scripts/myprofile.php), where you fill in some details and, if you consented, a user page was created on the wiki.
 
-In previous years tickets were also purchased through the site, so most users would have a wiki page and the wiki (helped by some PHP scripts) showed a 'card index' to help with the community feel:
+In previous years tickets were also purchased through the site, so this meant all attendees would also sign up to the conference site, and so most attendees would have a wiki page. The wiki (helped by some PHP scripts) showed a 'card index' of these user pages to help with the community feel:
 
 ![Page showing a list of all user pages](/img/people_page.png)
 
@@ -41,13 +41,13 @@ I moved the user pages to the site itself, rather than the wiki. And we don't ne
 
 Before:
 
-![wiki](/img/wiki_user_with_info.png)
+![A user page on the wiki](/img/user_page_on_wiki.png)
 
 After:
 
-![site](/img/site_user_with_info.png)
+![The same user page on the site](/img/user_page_on_site.png)
 
-As part of this, I also made a change to the way the site handled images. {% comment %} https://github.com/dcleal/spa-conf/pull/76 {% endcomment %}Previously, when a user uploaded an image that would be stored by MediaWiki and that would be the image associated with them. A new image would update their user page. Now, user images are uploaded to a directory called mugshots. When a user is a session leader for a particular conference, and they have an image in mugshots their image will be copied over to the current year's images directory and used in their user page.
+As part of this, I also made a change to the way the site handled images. {% comment %} https://github.com/dcleal/spa-conf/pull/76 {% endcomment %}Previously, when a user uploaded an image, it would be stored by MediaWiki and that would be the image associated with them. A new image would update their user page. Now, user images are uploaded to a directory called mugshots. When a user is a session leader for a particular conference, and they have an image in mugshots their image will be copied over to the current year's images directory and used in their user page.
 
 Two reasons to copy the image over rather than just linking to mugshots:
 
@@ -72,11 +72,11 @@ Many of the sessions at SPA are lead by two or more session leaders, and if thei
 
 Before:
 
-![empt_wiki](/img/wiki_empty_user.png)
+![A wiki page showing a user with no details](/img/wiki_empty_user.png)
 
 After:
 
-![empt_site](/img/site_empty_user.png)
+![A page on the site showing a user with no details](/img/site_empty_user.png)
 
 I think the after looks better. However, one potential addition is a script to let the programme chairs know which speakers need to pad out their bios. There's no need to force this information at the proposal stage, as some proposals will be rejected.
 
