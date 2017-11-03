@@ -3,7 +3,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title>Anna Shipman</title>
+  <title>JFDI</title>
+  <subtitle>Anna Shipman's blog</subtitle>
   <link href="http://www.annashipman.co.uk/atom.xml" rel="self"/>
   <link href="http://www.annashipman.co.uk/"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
