@@ -60,12 +60,14 @@ However, I had a lot of issues setting it up, and after the amount of time it to
 2. They've [changed their default sign-up to not request confirmation](https://kb.mailchimp.com/lists/signup-forms/single-opt-in-vs.-double-opt-in) and the process for [changing this setting](https://us17.admin.mailchimp.com/lists/opt-in-status/) is somewhat opaque:
 
     ![Image of an unlabeled checkbox that you have to select for double-opt-in](/img/select_double_opt_in.png)
+    {:.half-width}
 
 3. There were some hidden rules about what email addresses are allowed for the mailing list, for example `list@` wasn't allowed. I don't have a catchall for my domain, so I had to set up a new forwarding address and attempt to create an account with no clue about which other addresses wouldn't be allowed.
 
 4. It doesn't seem that you can change the default subscribe options:
 
     ![Image showing subscription preferences which include 'First Name' and 'Last Name'](/img/subscription_preferences.png)
+    {:.half-width}
 
     I don't want to ask for first name, last name as that is [not good practice for handling names](https://www.w3.org/International/questions/qa-personal-names). I guess that being able to change these settings is one feature of a paid-for plan but it's a shame to have to pay to correct that.
 
