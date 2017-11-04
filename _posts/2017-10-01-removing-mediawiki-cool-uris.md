@@ -49,6 +49,7 @@ So then all I had to do was put the output of the spider into a directory called
 The first issue was that the web server didn't know what to do with the files. Most web servers guess at the content type based on the file extension. The files in my static site have names like `http://www.spaconference.org/mediawiki/index.php?title=BelbinTeamRolesInSoftwareDevelopment`. Without a file extension, browsers will assume it's binary.
 
 ![Dialog box indicating server thinks files are binary](/img/files_look_like_binary.png)
+{:.half-width}
 
 To solve this, I created a new `.htaccess` file in the `mediawiki` directory. I wanted to contain strange config needed for retaining the wiki information to the directory itself, rather than messing with the already somewhat complex `.htaccess` for the whole site.
 
