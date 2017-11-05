@@ -41,11 +41,11 @@ I usually publicise new posts on Twitter, though I also have an [Atom feed](http
 
 ## Why I've set up a mailing list
 
-Twitter is ephemeral, it relies on you seeing a tweet about a new post to know it's there. It's also [problematic](https://www.theguardian.com/commentisfree/2017/jan/03/ive-left-twitter-unusable-anyone-but-trolls-robots-dictators-lindy-west), and it seems like a good idea [not to rely on it](https://medium.com/the-mission/want-the-ultimate-career-asset-and-most-durable-form-of-power-start-building-your-platform-fb02ea7bdb1e) as my only way of sharing my writing.
+Only publicising posts via Twitter relies on you seeing a tweet to know there's a new post. Twitter is also [problematic](https://www.theguardian.com/commentisfree/2017/jan/03/ive-left-twitter-unusable-anyone-but-trolls-robots-dictators-lindy-west), and it seems like a good idea [not to rely on it](https://medium.com/the-mission/want-the-ultimate-career-asset-and-most-durable-form-of-power-start-building-your-platform-fb02ea7bdb1e) as my only way of sharing my writing.
 
 ## Why you should sign up to my mailing list
 
-I blog about a bunch of interesting topics from [open source in government](https://www.annashipman.co.uk/jfdi/benefits-of-coding-in-the-open.html) through [how to write a good pull request](https://www.annashipman.co.uk/jfdi/good-pull-requests.html) to [tips on conference speaking](https://www.annashipman.co.uk/jfdi/break-into-public-speaking.html), via [more than you ever wanted to know about redirecting URLs](https://www.annashipman.co.uk/jfdi/removing-mediawiki-cool-uris.html), so signing up for the mailing list means you won't miss out on any of that good stuff.
+I blog about a bunch of interesting topics, from [open source in government](https://www.annashipman.co.uk/jfdi/benefits-of-coding-in-the-open.html) through [how to write a good pull request](https://www.annashipman.co.uk/jfdi/good-pull-requests.html) to [tips on conference speaking](https://www.annashipman.co.uk/jfdi/break-into-public-speaking.html), via [more than you ever wanted to know about redirecting URLs](https://www.annashipman.co.uk/jfdi/removing-mediawiki-cool-uris.html), so signing up for the mailing list means you won't miss out on any of that good stuff.
 
 ## How I set it up
 
@@ -57,27 +57,28 @@ However, I had a lot of issues setting it up, and after the amount of time it to
 
 1. It doesn't seem that you can change the default subscribe preferences from asking for name as 'First Name', 'Last Name'. I don't want to do this as that is [not good practice for handling names](https://www.w3.org/International/questions/qa-personal-names). I guess that being able to change these settings is one feature of a paid-for plan but it's a shame to have to pay to correct that.
 
-2. The link in the email should you wish to unsubscribe takes you to a form that requires you to write the email address you wish to be removed. This is an annoying pattern (we know what it is! You just followed a link from the very email we sent!) and was nearly a deal-breaker for me, but time is limited and I will work out how to migrate away/fix that later.
+2. The unsubscribe link in the email takes you to a form that requires you to write the email address you want to remove. This is an annoying pattern (we know what it is! You just followed a link from the very email we sent!) and was nearly a deal-breaker for me, but time is limited and I will work out how to migrate away/fix that later.
 
-3. There were some hidden rules about what email addresses are allowed for the mailing list, for example `list@` wasn't allowed. I don't have a catchall for my domain, so I had to set up a new forwarding address and attempt to create an account with no clue about which other addresses wouldn't be allowed.
+3. There were some hidden rules about what email addresses are allowed for the mailing list, for example `list@` wasn't allowed. I don't have a catchall for my domain, so I had to set up a new forwarding address each time without a hint as to which other addresses wouldn't be allowed.
 
-4. I found the experience of setting up the mailing campaign frustrating; drag and drop editing the design of an HTML email must be annoying even if you're not by default a Vim user. There is also a limit to how many test emails you can send which I didn't find out about until I'd hit it (it's 12 for free accounts) and there doesn't seem to be any way to test a plain-text version of the HTML email — so if you do sign up to receive emails in plain text and it looks rubbish, please do let me know.
+4. I found the experience of setting up the mailing campaign frustrating; drag-and-drop editing the design of an HTML email must be challenging even if you're not by default a Vim user. There is also a limit to how many test emails you can send which I didn't find out about until I'd hit it (it's 12 for free accounts) and there doesn't seem to be any way to test a plain-text version of the HTML email — so if you do sign up to receive emails in plain text and it looks rubbish, please do let me know.
 
 It's also worth noting that they've [changed their default sign-up to not request confirmation](https://kb.mailchimp.com/lists/signup-forms/single-opt-in-vs.-double-opt-in).
 
 ## Sending blog posts automatically is easy
 
-Having said that, it is free and offers some great advantages like ease of managing your list, subscribers and unsubscribers. The automation of emailing when a new blog is published via your RSS (or Atom) feed is great and really easy to set up, it was just designing the email that was taxing. And I'm sure that there are a lot of other advantages to MailChimp that I'll see when I have larger list than just the three test accounts that are all me.
+Having said that, it is free, and it offers some great advantages. It's very easy to manage subscribers and unsubscribers.
 
-## Let me know if you have other good solutions
+The automation of emailing when a new blog is published via your RSS (or Atom) feed is great and straightforward to set up, it was just designing the email that was taxing. And I'm sure that there are a lot of other advantages to MailChimp that I'll see when I start using it a bit more.
+
+## However, do let me know if you have other good solutions
 
 There are [some free/open source tools](http://www.thatsjournal.com/email-marketing/list-of-best-free-open-source-email-list-management-software) which I didn't have time to look into, and if anyone has any recommendations I'd love to hear them. I think my requirements are:
 
-- embedded form to allow sign-up
-- double opt-in
+- double opt-in for sign-ups
 - unsubscribe that doesn't require you to type your email address again
 - automate sending blog posts as they are published
 
-Also, if you know any MailChimp solutions to my problems above, do let me know.
+Also, if you know any MailChimp solutions to my problems above, please let me know.
 
 And do sign up!
