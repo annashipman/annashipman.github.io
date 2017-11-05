@@ -15,7 +15,7 @@ In early years, the conference was residential and had a much smaller, close com
 
 The wiki was an installation of [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki), modified so that conference website and the wiki could share a single login. {% comment %} https://github.com/dcleal/spa-conf/blob/e7dd9c7dc17ff617d7402372d8fe525cf356a135/mediawiki/extensions/SPAAuth/SPAAuth.php {% endcomment %}
 
-In recent years, the wiki has been used for two main things: session outputs and user pages. 
+In recent years, the wiki has been used for two main things: session outputs and user pages.
 
 ## Session outputs
 
