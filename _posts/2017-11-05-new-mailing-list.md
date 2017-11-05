@@ -55,13 +55,11 @@ However, I had a lot of issues setting it up, and after the amount of time it to
 
 ## A few issues with MailChimp
 
-1. It doesn't seem that you can change the default subscribe preferences from asking for name as 'First Name', 'Last Name'. I don't want to do this as that is [not good practice for handling names](https://www.w3.org/International/questions/qa-personal-names). I guess that being able to change these settings is one feature of a paid-for plan but it's a shame to have to pay to correct that.
+1. The unsubscribe link in the email takes you to a form that requires you to write the email address you want to remove. This is an annoying pattern (we know what it is! You just followed a link from the very email we sent!) and was nearly a deal-breaker for me, but time is limited and I will work out how to migrate away/fix that later.
 
-2. The unsubscribe link in the email takes you to a form that requires you to write the email address you want to remove. This is an annoying pattern (we know what it is! You just followed a link from the very email we sent!) and was nearly a deal-breaker for me, but time is limited and I will work out how to migrate away/fix that later.
+1. There were some hidden rules about what email addresses are allowed for the mailing list, for example `list@` wasn't allowed. I don't have a catchall for my domain, so I had to set up a new forwarding address each time without a hint as to which other addresses wouldn't be allowed.
 
-3. There were some hidden rules about what email addresses are allowed for the mailing list, for example `list@` wasn't allowed. I don't have a catchall for my domain, so I had to set up a new forwarding address each time without a hint as to which other addresses wouldn't be allowed.
-
-4. I found the experience of setting up the mailing campaign frustrating; drag-and-drop editing the design of an HTML email must be challenging even if you're not by default a Vim user. There is also a limit to how many test emails you can send which I didn't find out about until I'd hit it (it's 12 for free accounts) and there doesn't seem to be any way to test a plain-text version of the HTML email — so if you do sign up to receive emails in plain text and it looks rubbish, please do let me know.
+1. I found the experience of setting up the mailing campaign frustrating; drag-and-drop editing the design of an HTML email must be challenging even if you're not by default a Vim user. There is also a limit to how many test emails you can send which I didn't find out about until I'd hit it (it's 12 for free accounts) and there doesn't seem to be any way to test a plain-text version of the HTML email — so if you do sign up to receive emails in plain text and it looks rubbish, please do let me know.
 
 It's also worth noting that they've [changed their default sign-up to not request confirmation](https://kb.mailchimp.com/lists/signup-forms/single-opt-in-vs.-double-opt-in).
 
