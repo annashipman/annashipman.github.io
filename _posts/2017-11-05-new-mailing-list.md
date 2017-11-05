@@ -4,7 +4,7 @@ title: Sign up to my new mailing list!
 layout: blog_post
 ---
 
-I usually publicise new posts on Twitter, though I also have an [Atom feed](https://www.annashipman.co.uk/atom). However, Twitter relies on people seeing it at the right time, and personally if I wanted to keep up with someone's blog I'd want to get emails, so I've set up a mailing list for new blog posts (and possibly very occasional annoucements).
+I usually publicise new posts on Twitter, though I also have an [Atom feed](https://www.annashipman.co.uk/atom). However, Twitter relies on people seeing it at the right time, so I've set up a mailing list for new blog posts (and possibly very occasional annoucements).
 
 ## Skip the detail and just sign up
 
@@ -49,55 +49,35 @@ I blog about a bunch of interesting topics from [open source in government](http
 
 ## How I set it up
 
-MailChimp currently have this market sewn up; I checked every newsletter I'm subscribed to (I highly recommend [Sandi Metz's Chainline](https://www.sandimetz.com/subscribe/) and [Benedict Evans' newsletter](http://ben-evans.com/newsletter/), by the way) and they are all powered by MailChimp. The plan is free for the first 2,000 subscribers; after that it becomes relatively pricey and I don't have a business model for this blog. However, you can extract your mailing list and I figured JFDI; it will take some time to get that many subscribers!
+MailChimp currently have this market sewn up; I checked every newsletter I'm subscribed to (I highly recommend [Sandi Metz's Chainline](https://www.sandimetz.com/subscribe/) and [Benedict Evans's newsletter](http://ben-evans.com/newsletter/), by the way) and they are all powered by MailChimp. The plan is free for the first 2,000 subscribers; after that it becomes relatively pricey and I don't have a business model for this blog. However, you can extract your mailing list and I figured JFDI; it will take some time to get that many subscribers!
 
 However, I had a lot of issues setting it up, and after the amount of time it took me to create the email template I somewhat wished I'd gone a different route. So if anyone has any suggestions of better mailing list software then do let me know.
 
 ## A few issues with MailChimp
 
-1. I had a massive shock when I tried to sign up my first test user as it shows your home address. Wow. No way. You have to enter this because of a [US anti-spam act](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business) and it's a US company. You also have to include this info in every email, so I have used a PO Box instead.
+1. It doesn't seem that you can change the default subscribe preferences from asking for name as 'First Name', 'Last Name'. I don't want to do this as that is [not good practice for handling names](https://www.w3.org/International/questions/qa-personal-names). I guess that being able to change these settings is one feature of a paid-for plan but it's a shame to have to pay to correct that.
 
-2. They've [changed their default sign-up to not request confirmation](https://kb.mailchimp.com/lists/signup-forms/single-opt-in-vs.-double-opt-in) and the process for [changing this setting](https://us17.admin.mailchimp.com/lists/opt-in-status/) is somewhat opaque:
-
-    ![Image of an unlabeled checkbox that you have to select for double-opt-in](/img/select_double_opt_in.png)
-    {:.half-width}
+2. The link in the email should you wish to unsubscribe takes you to a form that requires you to write the email address you wish to be removed. This is an annoying pattern (we know what it is! You just followed a link from the very email we sent!) and was nearly a deal-breaker for me, but time is limited and I will work out how to migrate away/fix that later.
 
 3. There were some hidden rules about what email addresses are allowed for the mailing list, for example `list@` wasn't allowed. I don't have a catchall for my domain, so I had to set up a new forwarding address and attempt to create an account with no clue about which other addresses wouldn't be allowed.
 
-4. It doesn't seem that you can change the default subscribe options:
+4. I found the experience of setting up the mailing campaign frustrating; drag and drop editing the design of an HTML email must be annoying even if you're not by default a Vim user. There is also a limit to how many test emails you can send which I didn't find out about until I'd hit it (it's 12 for free accounts) and there doesn't seem to be any way to test a plain-text version of the HTML email — so if you do sign up to receive emails in plain text and it looks rubbish, please do let me know.
 
-    ![Image showing subscription preferences which include 'First Name' and 'Last Name'](/img/subscription_preferences.png)
-    {:.half-width}
+It's also worth noting that they've [changed their default sign-up to not request confirmation](https://kb.mailchimp.com/lists/signup-forms/single-opt-in-vs.-double-opt-in).
 
-    I don't want to ask for first name, last name as that is [not good practice for handling names](https://www.w3.org/International/questions/qa-personal-names). I guess that being able to change these settings is one feature of a paid-for plan but it's a shame to have to pay to correct that.
+## Sending blog posts automatically is easy
 
-5. The link in the email should you wish to unsubscribe takes you to a form that requires you to write the email address you wish to be removed. This is an infuriating pattern (we know what it is! You just followed a link from the very email we sent!) and was nearly a deal-breaker for me, but time is limited and I will work out how to migrate away/fix that later.
-
-## Sending blog posts automatically
-
-I found the experience of setting up the mailing campaign frustrating; drag and drop editing the design of an HTML email must be annoying even if you're not by default a Vim user. There is also a limit to how many test emails you can send which I didn't find out about until I'd hit it (it's 12 for free accounts) and there doesn't seem to be any way to test a plain-text version of the HTML email — so if you do sign up to receive emails in plain text and it looks rubbish, please do let me know.
-
-However, the automation of emailing when a new blog is published via your RSS (or Atom) feed is great; it's nice not to have to set that up.
+Having said that, it is free and offers some great advantages like ease of managing your list, subscribers and unsubscribers. The automation of emailing when a new blog is published via your RSS (or Atom) feed is great and really easy to set up, it was just designing the email that was taxing. And I'm sure that there are a lot of other advantages to MailChimp that I'll see when I have larger list than just the three test accounts that are all me.
 
 ## Let me know if you have other good solutions
 
-I think MailChimp has a lot of great functionality if you are selling things, but I really just want a mailing list to keep in touch. There are [some free/open source tools](http://www.thatsjournal.com/email-marketing/list-of-best-free-open-source-email-list-management-software) which I didn't have time to look into, and if anyone has any recommendations I'd love to hear them. I think my requirements are:
+There are [some free/open source tools](http://www.thatsjournal.com/email-marketing/list-of-best-free-open-source-email-list-management-software) which I didn't have time to look into, and if anyone has any recommendations I'd love to hear them. I think my requirements are:
 
 - embedded form to allow sign-up
 - double opt-in
-- one click unsubscribe
+- unsubscribe that doesn't require you to type your email address again
 - automate sending blog posts as they are published
 
 Also, if you know any MailChimp solutions to my problems above, do let me know.
 
 And do sign up!
-
-
-TODO:
-
-- polish up this post and go!!
-- add a footer to all posts, something about sending the posts but also something else.
-If you’d like to be notified when I publish a new post, and possibly receive very occasional announcements, sign up to my mailing list!
-- move CSS to stylesheet
-- don't forget to actually activate the campaign!
-- and delete the other one
