@@ -5,10 +5,10 @@
 
   <title>JFDI</title>
   <subtitle>Anna Shipman's blog</subtitle>
-  <link href="http://www.annashipman.co.uk/atom.xml" rel="self"/>
-  <link href="http://www.annashipman.co.uk/"/>
+  <link href="https://www.annashipman.co.uk/atom.xml" rel="self"/>
+  <link href="https://www.annashipman.co.uk/"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>http://www.annashipman.co.uk/</id>
+  <id>https://www.annashipman.co.uk/</id>
   <author>
     <name>Anna Shipman</name>
   </author>
@@ -16,9 +16,9 @@
   {% for post in site.posts %}
   <entry>
     <title>{{ post.title }}</title>
-    <link href="http://www.annashipman.co.uk{{ post.url }}"/>
+    <link href="https://www.annashipman.co.uk{{ post.url }}"/>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
-    <id>http://www.annashipman.co.uk{{ post.url }}</id>
+    <id>https://www.annashipman.co.uk{{ post.url }}</id>
     <content type="html">{{ post.content | xml_escape }}</content>
   </entry>
   {% endfor %}
