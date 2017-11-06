@@ -116,6 +116,7 @@ h1, h2 {
     background-color: #deebf5;
     font-family: "Andale Mono", "Courier New", Courier, monospace;
     font-size: 14px;
+    margin: 16px 0;
     padding: 10px;
     overflow-x: auto;
 }
