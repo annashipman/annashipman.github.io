@@ -20,6 +20,10 @@ p {
     font-size: 14px;
 }
 
+.mailing-list-box {
+    border-bottom: 1px dotted #333;
+}
+
 ul {
     line-height: 1.7;
     margin-left: 24px;
