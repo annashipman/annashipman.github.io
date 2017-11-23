@@ -8,13 +8,6 @@ I usually publicise new posts on Twitter, though I also have an [Atom feed](http
 
 ## Skip the detail and just sign up
 
-<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-    /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
-
 <div id="mc_embed_signup">
   <form action="https://annashipman.us17.list-manage.com/subscribe/post?u=c853878c1ba4f3cfef3649e21&amp;id=1d7520de80" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
