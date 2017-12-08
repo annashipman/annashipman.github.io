@@ -26,7 +26,7 @@ Firstly, I've shown the value of coding in the open; why it's worth taking that 
 
 Most importantly, I've [blogged about the benefits on the GDS blog](https://gds.blog.gov.uk/2017/09/04/the-benefits-of-coding-in-the-open/), which I've had feedback has been of huge help to open-source advocates across both government and industry.
 
-Secondly, I've addressed the reservations teams have around the practicalities of taking that step. The first question most people have is whether coding in the open is secure. It is. To make that clear, and to share the safeguards you need, I've published guidance about [when code should be open or closed](https://www.gov.uk/government/publications/open-source-guidance/when-code-should-be-open-or-closed) and [security considerations while coding in the open](https://www.gov.uk/government/publications/open-source-guidance/security-considerations-when-coding-in-the-open). This not only helps people with the details, it also demonstrates our commitment to the policy.
+Secondly, I've addressed the reservations teams have around the practicalities of taking that step. The first question most people have is whether coding in the open is secure. It is. To make that clear, and to share the safeguards you need, I've published guidance about [when code should be open or closed](https://www.gov.uk/government/publications/open-source-guidance/when-code-should-be-open-or-closed) and [security considerations when coding in the open](https://www.gov.uk/government/publications/open-source-guidance/security-considerations-when-coding-in-the-open). This not only helps people with the details, it also demonstrates our commitment to the policy.
 
 Thirdly, I've addressed some of the other practical details. For example, here is some guidance I wrote about [how we license code at GDS](https://github.com/alphagov/styleguides/blob/master/licensing.md).
 
@@ -34,7 +34,7 @@ Thirdly, I've addressed some of the other practical details. For example, here i
 
 As well as helping teams code in the open, I've also supported teams opening existing code that had been closed. As well as lots of smaller services, I'm really proud to have supported the opening of three high-profile GDS projects this year. [GOV.UK Verify](https://github.com/alphagov/?utf8=%E2%9C%93&q=verify&type=&language=), [GOV.UK Pay](https://govukpay-docs.cloudapps.digital/#contribute) and the [Register to Vote frontend](https://github.com/alphagov/ier-frontend).
 
-The Open Source Lead role is about strategic influence, and the versatility required to persuade and support such varied teams, working with developers and senior exectutives, has been one of the most interesting parts of the role.
+The Open Source Lead role is about strategic influence, and the versatility required to persuade and support such varied teams, working with everyone from developers to very senior executives, has been one of the most interesting parts of the role.
 
 My work here has ranged from writing papers for completely non-technical audiences explaining why (and how) the code should be opened, through hands-on help with the code, to influencing senior stakeholders to push for quicker progress from their angle.
 
@@ -70,7 +70,7 @@ I've supported and encouraged several others to write blog posts about their ope
 
 I've also talked a lot of my counterparts in other governments, and I even found myself writing some lines to send back to an MP responding to a constituent's inquiry about open source.
 
-I also did a lot of other work moving things along, but can’t yet report the results. That’s one of the interesting things about this level of work, the achievements are larger but the intervening steps tend to not be things that are interesting to talk about (“I had a chat with this person and now have an idea of what to say to that person to convince them that this other course of action might be a good bet...”).
+I also did a lot of other work moving things along, but can’t yet report the results. That’s one of the interesting things about this level of work, the achievements are larger but the intervening steps tend to be things that are not interesting to talk about ("I had a chat with this person and now have an idea of what to say to that person to convince them that this other course of action might be a good bet...").
 
 ## Making open source in government self-sustaining
 
