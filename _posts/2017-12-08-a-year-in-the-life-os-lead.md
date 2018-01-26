@@ -68,7 +68,7 @@ I arranged a workshop on contributing to humanitarian open source software; two 
 
 I've supported and encouraged several others to write blog posts about their open source work. Many have been published on the [GDS technology blog](https://gdstechnology.blog.gov.uk/category/open-source/) as well as an excellent one from [the Ministry of Justice](https://mojdigital.blog.gov.uk/2017/02/21/why-we-code-in-the-open/).
 
-I've also talked a lot of my counterparts in other governments, and I even found myself writing some lines to send back to an MP responding to a constituent's inquiry about open source.
+I've also talked to a lot of my counterparts in other governments, and I even found myself writing some lines to send back to an MP responding to a constituent's inquiry about open source.
 
 I also did a lot of other work moving things along, but can’t yet report the results. That’s one of the interesting things about this level of work, the achievements are larger but the intervening steps tend to be things that are not interesting to talk about ("I had a chat with this person and now have an idea of what to say to that person to convince them that this other course of action might be a good bet...").
 
