@@ -4,7 +4,8 @@ title: How to open up closed code
 layout: blog_post
 ---
 
-<p>Every digital service designed within government has to meet the <a href="https://www.gov.uk/service-manual/service-standard">Digital Service Standard</a>. One of the requirements of the standard is that new source code should be <a href="https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open">made open and published under an open source licence</a>.</p>
+Every digital service designed within government has to meet the <a href="https://www.gov.uk/service-manual/service-standard">Digital Service Standard</a>. One of the requirements of the standard is that new source code should be <a href="https://www.gov.uk/service-manual/service-standard/make-all-new-source-code-open">made open and published under an open source licence</a>.
+
 <p>There are a few situations where it’s acceptable to <a href="https://www.gov.uk/government/publications/open-source-guidance/when-code-should-be-open-or-closed">keep code closed</a> but in most cases it will need to be open.</p>
 <p>The easiest way to make code public is to write the code in the open from the beginning, and I’ve <a href="https://gds.blog.gov.uk/2017/09/04/the-benefits-of-coding-in-the-open/">previously blogged about the benefits of doing this</a>.</p>
 <p>Your team may have old closed code that it needs to open. If there is a lot of closed code, this can be challenging. Here are 3 ways to open it up.</p>
