@@ -8,7 +8,9 @@ One of my main aims as [Open Source Lead](/jfdi/a-year-in-the-life-os-lead.html)
 
 ## The benefits of coding in the open
 
-I've shared this in various formats:
+I was often asked what the value of coding in the open is to the teams
+themselves, those who are opening the code. There is a lot of value. I've
+shared that in various formats:
 
 - Blog post on GDS blog: [The benefits of coding in the open](https://gds.blog.gov.uk/2017/09/04/the-benefits-of-coding-in-the-open/)
 - 30 min conference talk: [Coding in the open in government](https://www.turingfest.com/2017/engineering/anna-shipman?wvideo=0p810lpdqr)
@@ -26,6 +28,10 @@ I've shared this in various formats:
 - Blog post on GDS technology blog: [Don't be afraid to code in the open: here's how to do it securely](https://gdstechnology.blog.gov.uk/2017/09/27/dont-be-afraid-to-code-in-the-open-heres-how-to-do-it-securely/)
 - Guidance: [When code should be open or closed](https://www.gov.uk/government/publications/open-source-guidance/when-code-should-be-open-or-closed)
 - Guidance: [Security considerations when coding in the open](https://www.gov.uk/government/publications/open-source-guidance/security-considerations-when-coding-in-the-open)
+
+From the security perspective, it's also worth knowing that while
+[GCHQ](https://en.wikipedia.org/wiki/Government_Communications_Headquarters) don't code in the open, they have
+released quite a bit of [open source code](https://github.com/gchq/).
 
 ## GDS open code
 
