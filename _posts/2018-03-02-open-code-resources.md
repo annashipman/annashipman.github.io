@@ -38,6 +38,8 @@ released quite a bit of [open source code](https://github.com/gchq/).
 - GDS's GitHub organisation: [Alphagov](https://github.com/alphagov)
 - GOV.UK have documented all of the GOV.UK code: [Developer docs](https://docs.publishing.service.gov.uk/)
 - [GOV.UK Verify code on GitHub](https://github.com/alphagov/?utf8=%E2%9C%93&q=verify&type=&language=)
+- Curated list of [GOV.UK Frontend code and
+  ecosystem](https://github.com/nickcolley/awesome-govuk-frontend)
 - [All posts about open code on the GDS technology blog](https://gdstechnology.blog.gov.uk/category/open-source/)
 
 ## Coding in the open across government
