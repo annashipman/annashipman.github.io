@@ -20,7 +20,7 @@ shared that in various formats:
 
 - Official guidance on the Government Service Design Manual: [Making source code open and reusable](https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable)
 - Blog post with examples: [How to open up closed code](https://gdstechnology.blog.gov.uk/2018/02/19/how-to-open-up-closed-code/)
-- GOV.UK [guidelines for licensing GDS code](https://github.com/alphagov/styleguides/blob/master/licensing.md)
+- GOV.UK guidelines for [licensing GDS code](https://github.com/alphagov/styleguides/blob/master/licensing.md)
 - [GDS open source guidelines](http://gds-operations.github.io/guidelines/) for open code that GDS explicitly intends to support
 
 ## Security when coding in the open
