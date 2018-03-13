@@ -142,6 +142,8 @@ deploy:
 ```
 {:.code-sample}
 
-## Have a look at the SPA example
+## Further information
 
-I hope this is useful. Feel free to have a look at the [SPA website travisi file](https://github.com/spaconference/spa-website/blob/master/.travis.yml) and [the builds](https://travis-ci.org/spaconference/spa-website/builds/) if you'd like to know more.
+This (allegedly deprecated but still working) [`travis.yml` linter](http://lint.travis-ci.org/) is useful.
+
+Have a look at the [SPA website Travis file](https://github.com/spaconference/spa-website/blob/master/.travis.yml) and [the builds](https://travis-ci.org/spaconference/spa-website/builds/) if you'd like to know more about how it works for us.
