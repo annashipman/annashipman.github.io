@@ -56,7 +56,7 @@ Another possibility was suggested to me by my excellent psychologist friend, Dr 
 
 ## I'm glad I finally did it
 
-I first saw the article in the newspaper when it came out, over a decade ago, and at the time I did not feel confident enough to ask colleagues to do that for me. That change in itself is interesting – I may be more self-aware than I was then, but I'm also much more confident about asking people to do things like this for me.
+I first saw the article in the newspaper when it came out, over a decade ago, and at the time I did not feel confident enough to ask colleagues to do that for me. That change in itself is interesting – I may be more self-aware than I was then, but I'm also much more comfortable with asking people to do things like this for me.
 
 In all, it was an interesting and worthwhile exercise, and it was nice to see that my self-assessment is reasonably close to what others think of me. If you do try it for yourself, do let me know how you found it!
 
