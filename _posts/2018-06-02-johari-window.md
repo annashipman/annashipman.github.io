@@ -52,7 +52,7 @@ The Google form was not very user-friendly. If I was doing it again, I think I w
 
 I'd also be tempted to remove some of the options, both to make it easier for the participants, and also because some of them are odd. For example "loving" is not something I would expect colleagues to comment on. "Religious" is odd as well, is that relevant to your personality? Could we remove some of the near duplicates, like "intelligent"/"clever"?
 
-Another possibility was suggested to me by my excellent psychologist friend, Dr Sarah Haywood: you could just ask people to supply their own adjectives and then put them into a word cloud or similar. That might also have the advantage of drawing out some more negative words, which is also really useful to know.
+Another possibility was suggested to me by my excellent art therapist and trainer friend, Dr Sarah Haywood: you could just ask people to supply their own adjectives and then put them into a word cloud or similar. That might also have the advantage of drawing out some more negative words, which is also really useful to know.
 
 ## I'm glad I finally did it
 
