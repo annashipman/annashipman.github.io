@@ -69,7 +69,7 @@ The number in brackets refers to the number of other people (not me) who selecte
 - Intelligent (5)
 - Trustworthy (4)
 - Organised (3)
-- Self-assertive(2)
+- Self-assertive (2)
 - Wise (2)
 
 ### Known to others and not known to self
