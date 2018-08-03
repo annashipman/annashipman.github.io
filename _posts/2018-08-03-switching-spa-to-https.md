@@ -4,7 +4,7 @@ title: Moving SPA to HTTPS
 layout: blog_post
 ---
 
-I had long been thinking I must move the SPA site to HTTPS. However, everything is difficult when using shared hosting and I wasn't sure how to do it. So I was delighted when [Johan Peeters](https://twitter.com/YoPeeters) and [Nelis Boucké](https://twitter.com/nelisboucke) proposed a session for last year's conference called [Why SPA should switch to HTTPS and how easy that is](http://spaconference.org/spa2017/sessions/session703.html).
+I had long been thinking I must move the [SPA site](https://www.spaconference.org/) to HTTPS. However, everything is difficult when using shared hosting and I wasn't sure how to do it. So I was delighted when [Johan Peeters](https://twitter.com/YoPeeters) and [Nelis Boucké](https://twitter.com/nelisboucke) proposed a session for the 2017 SPA conference called [Why SPA should switch to HTTPS and how easy that is](http://spaconference.org/spa2017/sessions/session703.html).
 
 It was a great session. In short, they recommended three approaches:
 
@@ -81,7 +81,7 @@ OpenSSL 0.9.8e-fips-rhel5 01 Jul 2008
 
 Essentially, the version of `curl` bundled with OpenSSL doesn't allow copying over HTTPS.
 
-Unfortunately, with shared hosting, there's nothing I can do about that. I can't upgrade OpenSSL, and I certainly can't rebundle curl and whatever `file_get_contents` is using.
+Unfortunately, with shared hosting, there's nothing I can do about that. I can't upgrade OpenSSL, and I certainly can't rebundle `curl` and whatever `file_get_contents` is using.
 
 The only solution to allow publishing using the current method was to allow the site to be served as HTTPS and HTTP.
 
@@ -143,7 +143,7 @@ The third idea was clearly the best long term idea – removing the CMS was some
 
 ## An interesting diversion
 
-My initial supposition was that the files would be generated on the server so I could just copy them over, but they're not. CMS Made Simple stores the data in separate blogs in the database, and composing them is difficult. However, CMS Made Simple is open source, and because we are on shared hosting, the code was vendored, so I could dig into it and work out how the files were composed.
+My initial supposition was that the files would be generated on the server so I could just copy them over, but they're not. CMS Made Simple stores the data in separate blobs in the database, and composing them is difficult. However, CMS Made Simple is open source, and because we are on shared hosting, the code was vendored, so I could dig into it and work out how the files were composed.
 
 This was a very interesting diversion and involved a lot of diving into [output buffering in PHP](https://secure.php.net/manual/en/book.outcontrol.php). I spent quite some time down this rabbithole, dealing with issues like wanting my script to call an output buffer but it not working, and this being because there was an unexpected `ob_get_clean()` in the CMS Made Simple PHP; the buffers are not nested so that call clears all buffers for the rest of that process.
 
@@ -214,7 +214,7 @@ Some of the previous sites don't look great, but there is a Cloudflare setting '
 
 I changed back my new error pages and all the URLs in the code{% comment %}https://github.com/annashipman/spa-conf/pull/113{% endcomment %}, and then switched HSTS back on.
 
-Moving the site to HTTPS caused the build of the [Jekyll site I'd set up to produce static content instead of the CMS](/jfdi/removing-cms-from-spa.html) to fail in a way I hadn't anticipated, but the amazing advantage of the static pages now being open meant that [someone else identified and fixed this problem](https://github.com/spaconference/spa-website/pull/25) before I was aware of it.
+Moving the site to HTTPS caused the build of the [Jekyll site that replaced the CMS](/jfdi/removing-cms-from-spa.html) to fail in a way I hadn't anticipated, but the amazing advantage of the static pages now being open meant that [someone else identified and fixed this problem](https://github.com/spaconference/spa-website/pull/25) before I was aware of it.
 
 The main issue outstanding is that the local version of the scripts doesn't work over HTTPS. This is annoying, but currently only for me as I'm the only person working on it, so I'll fix it at some point. I also set up the SPA account with Cloudflare under my account rather than a separate one, which will make it harder for me to hand over when I do, but that's also a story for another day.
 
