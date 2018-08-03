@@ -222,6 +222,6 @@ The great success is I finally managed to switch HTTPS back on in time for this 
 
 ## I'm not sure it was that easy
 
-So, despite Yo and Nelis's claims, it was not in fact that easy. To be fair, they didn't know the full story of the 20 year old PHP site. And it wasn't quite as complicated as [Stack Overflow's migration to HTTPS](https://nickcraver.com/blog/2017/05/22/https-on-stack-overflow/). It is a great relief to have done it.
+So, despite Yo and Nelis's claims, it was not in fact that easy. To be fair, they didn't know the full story of the 20 year old PHP site. And it's a great relief to have done it.
 
 I look forward to the next epic task they set me.
