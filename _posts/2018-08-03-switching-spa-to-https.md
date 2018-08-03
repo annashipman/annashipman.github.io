@@ -79,13 +79,13 @@ OpenSSL> version
 OpenSSL 0.9.8e-fips-rhel5 01 Jul 2008
 ````
 
-Essentially, the version of `curl` bundled with OpenSSL doesn't allow copying over HTTPS.
+Essentially, the version of OpenSSL that `curl` was using doesn't allow copying over HTTPS.
 
 Unfortunately, with shared hosting, there's nothing I can do about that. I can't upgrade OpenSSL, and I certainly can't rebundle `curl` and whatever `file_get_contents` is using.
 
 The only solution to allow publishing using the current method was to allow the site to be served as HTTPS and HTTP.
 
-This meant I had to change the settings on Cloudflare to no longer be "always use HTTPS", which also means that I couldn't use [HSTS](https://www.owasp.org/index.php/HTTP_Strict_Transport_Security_Cheat_Sheet). This was very annoying as it meant I then had to reply on the user to try to use HTTPS in order to protect themselves. On the plus side, it did allow me to publish the content again rather than an empty string.
+This meant I had to change the settings on Cloudflare to no longer be "always use HTTPS", which also means that I couldn't use [HSTS](https://www.owasp.org/index.php/HTTP_Strict_Transport_Security_Cheat_Sheet). This was very annoying as it meant I then had to rely on the user to try to use HTTPS in order to protect themselves. On the plus side, it did allow me to publish the content again rather than an empty string.
 
 ## Fixing the CSS
 
@@ -109,7 +109,7 @@ Then, in September 2017, when I was deploying the site for 2018, the whole thing
 
 ![Cloudflare warning](/img/cloudflare_warning.png)
 
-I needed to finish getting the 2018 site out, and didn't time to investigate and fix (often the way on side projects when the next priority should be going to bed). In order to move foward, I had to switch off HTTP entirely, which would have been an embarrassing full climbdown if anyone paid attention to the site outside of the conference season.
+I needed to finish getting the 2018 site out, and didn't have time to investigate and fix (often the way on side projects when the next priority should be going to bed). In order to move foward, I had to switch off HTTP entirely, which would have been an embarrassing full climbdown if anyone paid attention to the site outside of the conference season.
 
 I couldn't remove the CMS immediately, as I was in the middle of an [epic of removing MediaWiki from the site](/jfdi/removing-mediawiki-site-changes.html). While I was writing up that epic, I realised that the session and user pages on the 2017 site didn't have CSS because I'd optimistically updated the links to point to HTTPS. So I then had to [find and replace all those links](https://github.com/spaconference/previous-spa-sites/commit/33c5f1a6).
 
