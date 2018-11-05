@@ -149,3 +149,7 @@ In itself this is not an amazing book but it's worth reading for the point about
 1. His explanation of why "people are not fungible resources". If you have someone working half time on two teams, it's not the case that they are 50% on each team and that adds up to 100%; it's more like 30 or 40% on each team. The more teams you split people between, the less total time they're able to actually function.
 
 For a better explanation of these two points alone, this is definitely worth the short time it will take you to read it.
+
+## Do let me know what you think
+
+I'd be interested to hear about books that you recommend, or what you thought of these books if you've read them.
