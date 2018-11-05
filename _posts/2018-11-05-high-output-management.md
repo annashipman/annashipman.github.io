@@ -4,7 +4,7 @@ title: High output management
 layout: blog_post
 ---
 
-Earlier this year I read [High Output Management](https://www.waterstones.com/book/high-output-management/andrew-grove/9780679762881). This is one of the best books I've read on leadership, and I really recommend you read it. Some of the things I took from it are here.
+Earlier this year I read [High Output Management](https://www.amazon.co.uk/High-Output-Management-Andrew-Grove/dp/0679762884/). This is one of the best books I've read on leadership, and I really recommend you read it. Some of the things I took from it are here.
 
 It's really excellent on what the important things are when running a large team or business. Andy Grove was co-founder and CEO of Intel, so it's written by someone who was actually doing the work at the time, unlike lots of other management books.
 
