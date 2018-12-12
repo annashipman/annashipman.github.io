@@ -1,6 +1,6 @@
 ---
 anchor_id: high-output
-title: What I Learned in Six Years at GDS
+title: What I learned in six years at GDS
 layout: blog_post
 ---
 When I joined the Government Digital Service in April 2012, <a href="https://www.gov.uk/">GOV.UK</a> was just going into public beta. GDS was a completely new organisation, part of the Cabinet Office, with a mission to stop wasting government money on over-complicated and underperforming big IT projects and instead deliver simple, useful services for the public.
