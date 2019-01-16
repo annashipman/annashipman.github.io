@@ -84,13 +84,21 @@ Some of the excellent advice I got from the people I talked to included:
 - Think about how you would introduce yourself = "this is the kind of person I am".
 - And someone who noted that I was taking time over choosing my next step (more on that in a moment) reminded me not spend too long thinking before taking action by asking me "what is the risk of getting it wrong?"
 
-Some of the chats were with potential employers, almost a pre-interview stage, and these were also very useful. It was a lot of effort but it was good practice. The interview process is about learning about the company as well as them interviewing you, and I made some good contacts with people in companies that I never entered into a formal process with.
+## If you do nothing else, definitely have some chats
+
+Many of the chats led to introductions to other people for more chats, and many of those resolved into an actual job that I could potentially apply for.
+
+This meant some of the chats were with potential employers, almost a pre-interview stage, and these were also very useful. It was a lot of effort but it was good practice. The interview process is about learning about the company as well as them interviewing you, and I made some good contacts with people in companies that I never entered into a formal process with.
+
+If you are looking for a new job and you only follow one suggestion from this, it would be do reach out to people for chats. Be explicit that you are looking for a new role. It took a lot of time, but it was the most fruitful part of this process.
 
 ## I had 21 hours of interviews
 
 In the end, I interviewed with four companies, which involved 21 hours of interviews with 31 different people. At this level, application processes can be very long.
 
-I withdrew from one partway through the process ("Engineering manager") because having been through two interview rounds, I had learned that the role would not bechallenging enough for me. I was unsuccessful in another one ("CTO"), having made it to the final round, but it was a very useful experience and I made some good contacts.
+It's worth mentioning that I found out about all four of those jobs through chats. The jobs were all advertised, but that wasn't how I found out about them.
+
+I withdrew from one partway through the process ("Engineering manager") because having been through two interview rounds, I felt that the role would not be challenging enough for me. I was unsuccessful in another one ("CTO"), having made it to the final round, but it was a very useful experience and I made some good contacts.
 
 And I was ultimately offered two, "Engineering Director" and "Technical Director". Both reported to the CTO, both had opportunities for development and both met all I wanted in my next role. Ultimately, I chose the Financial Times because I really believe in the mission, but it was a tough choice.
 
