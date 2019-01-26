@@ -46,7 +46,7 @@ Because I wasn't sure what my next steps were, I just started looking at job des
 
 This was quite an interesting exercise, because it made me realise some things that are really important to me but it wouldn't necessarily have occurred to me to mention to a recruiter.
 
-For example, I cycle to work. This is a hugely important part of my life and I realised that when I see a job I'm interested in, the first thing I do is find out where the main location is, and then calculate the cycle time using [Citymapper](https://citymapper.com/). If it's too long a bike ride, that's it, the job is out of contention. The interesting bit was that this was an almost unconcious process I was going through – the location was completely non-negotiable, but it didn't appear in my list of characteristics of my ideal job.
+For example, I cycle to work. This is a hugely important part of my life and I realised that when I see a job I'm interested in, the first thing I do is find out where the main location is, and then calculate the cycle time using [Citymapper](https://citymapper.com/). If it's too long a bike ride, that's it, the job is out of contention. The interesting bit was that this was an almost unconscious process I was going through – the location was completely non-negotiable, but it didn't appear in my list of characteristics of my ideal job.
 
 Apart from cycling, I came up with a list of what I was looking for. It included:
 - Needs to be in an organisation that is doing something worthwhile (not, for example, Facebook).
