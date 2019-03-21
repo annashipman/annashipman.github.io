@@ -1,5 +1,5 @@
 ---
-anchor_id: job search
+anchor_id: job-search
 title: Finding the next level tech job
 layout: blog_post
 ---
