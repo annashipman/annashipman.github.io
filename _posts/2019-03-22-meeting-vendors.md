@@ -4,7 +4,7 @@ title: How to make the most out of meetings with vendors
 layout: blog_post
 ---
 
-In my job as Tech Director, an important part of it is building relationships with vendors. When I joined the FT, the excellent [Rob Shilston](https://twitter.com/rtshilston) gave me his five top top tips on how to make the most of those meetings, and he has kindly agreed to share them here.
+Building relationships with vendors is an important part of my role as Tech Director and when I joined the Financial Times, the excellent [Rob Shilston](https://twitter.com/rtshilston) gave me his five top top tips on how to make the most of those meetings. He has kindly agreed to share them here.
 
 ## 1. Use it as an opportunity to learn about how others are doing things
 
