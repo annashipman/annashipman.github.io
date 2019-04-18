@@ -28,95 +28,287 @@ We spent more time learning about the P&L rather than the other two, so I’ll t
 
 ## How to read a P&L
 
-For example, here is John Lewis’s P&L for last year. It was an image in a PDF, so I’ve typed out the contents below:
+For example, here is John Lewis’s P&L for last year. It was an image in a PDF, so I’ve typed out the contents below.
 
+![Screenshot of John Lewis P&L, text is below this image](/img/john-lewis-pl.png)
 
+<table border="1">
+
+<tr>
+  <th>
 Notes
-
-
-2018
+  </th>
+  <td>
+  </td>
+  <th>
+2018 <br />
 £m
-2017
+  </th>
+  <th>
+2017 <br />
 £m
+  </th>
+</tr>
+
+<tr>
+  <td>
 1.2 2.1
+  </td>
+  <td>
 Gross sales
+  </td>
+  <td>
 11,597.7
+  </td>
+  <td>
 11,374.2
+  </td>
+</tr>
+
+<tr>
+  <td>
 2.1
+  </td>
+  <td>
 Revenue
+  </td>
+  <td>
 10,204.0
+  </td>
+  <td>
 10,026.2
+  </td>
+</tr>
 
-
+<tr>
+  <td>
+  </td>
+  <td>
 Cost of sales
+  </td>
+  <td>
 (6839.5)
+  </td>
+  <td>
 (6633.1)
+  </td>
+</tr>
 
-
+<tr>
+  <td>
+  </td>
+  <td>
 Gross profits
+  </td>
+  <td>
 3,364.5
-3,393.1
+    </td>
+    <td>
+    3,393.1
+    </td>
+</tr>
 
+<tr>
+  <td>
+  </td>
+  <td>
+  Other operating income
+  </td>
+  <td>
+  111.3
+  </td>
+  <td>
+  92.6
+  </td>
+</tr>
 
-Other operating income
-111.3
-92.6
-2.2
-Operating expenses before exceptional items and Partnership Bonus
-(3,114.0)
-(3,007.8)
-3.3
-Share of (loss)/profit of joint venture (net of tax)
-(1.0)
-0.3
-2.1
-Operating profit before exceptional items and Partnership Bonus
-360.8
-478.2
+<tr>
+  <td>
+  2.2
+  </td>
+  <td>
+  Operating expenses before exceptional items and Partnership Bonus
+  </td>
+  <td>
+  (3,114.0)
+  </td>
+  <td>
+  (3,007.8)
+  </td>
+</tr>
+
+<tr>
+  <td>
+  3.3
+  </td>
+  <td>
+  Share of (loss)/profit of joint venture (net of tax)
+  </td>
+  <td>
+  (1.0)
+  </td>
+  <td>
+  0.3
+  </td>
+</tr>
+
+<tr>
+  <td>
+  2.1
+  </td>
+  <td>
+  Operating profit before exceptional items and Partnership Bonus
+  </td>
+  <td>
+  360.8
+  </td>
+  <td>
+  478.2
+  </td>
+</tr>
+
+<tr>
+  <td>
 2.3
+  </td>
+  <td>
 Exceptional items
+  </td>
+  <td>
 (111.3)
+  </td>
+  <td>
 171.2
+  </td>
+</tr>
+<tr>
+  <td>
 2.1
+  </td>
+  <td>
 Operating profit before Partnership Bonus
+  </td>
+  <td>
 249.5
+  </td>
+  <td>
 649.4
+  </td>
+</tr>
+<tr>
+  <td>
 5.1
+  </td>
+  <td>
 Finance costs
+  </td>
+  <td>
 (85.7)
+  </td>
+  <td>
 (109.7)
+  </td>
+</tr>
+<tr>
+  <td>
 5.1
+  </td>
+  <td>
 Finance income
+  </td>
+  <td>
 141.1
+  </td>
+  <td>
 1.9
-
-
+  </td>
+</tr>
+<tr>
+  <td>
+  </td>
+  <td>
 Profit before Partnership Bonus and tax
+  </td>
+  <td>
 177.9
+  </td>
+  <td>
 541.6
+  </td>
+</tr>
 
-
+<tr>
+  <td>
+  </td>
+  <td>
 Partnership Bonus
+  </td>
+  <td>
 (74.0)
+  </td>
+  <td>
 (89.6)
+  </td>
+</tr>
+
+<tr>
+  <td>
 2.4
+  </td>
+  <td>
 Profit before tax
+  </td>
+  <td>
 103.9
+  </td>
+  <td>
 452.2
+  </td>
+</tr>
+<tr>
+  <td>
 2.7
+  </td>
+  <td>
 Taxation
+  </td>
+  <td>
 (29.8)
+  </td>
+  <td>
 (98.7)
+  </td>
+</tr>
 
-
+<tr>
+  <td>
+  </td>
+  <td>
 Profit for the year
+  </td>
+  <td>
 74.1
+  </td>
+  <td>
 353.5
+  </td>
+</tr>
+<tr>
+  <td>
 2.1
+  </td>
+  <td>
 Profit before Partnership Bonus, tax and exceptional items
+  </td>
+  <td>
 289.2
+  </td>
+  <td>
 370.4
+  </td>
+</tr>
 
+</table>
 
 There will be a scale. At the top, we can see the scale is millions (“£m”).
 
