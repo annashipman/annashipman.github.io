@@ -35,7 +35,7 @@ For example, here is John Lewis’s P&L for last year. It was an image in a PDF,
 
 ![Screenshot of John Lewis P&L, text is below this image](/img/john-lewis-pl.png)
 
-<table border="1">
+<table class="underline-table">
 
 <tr>
   <th>
