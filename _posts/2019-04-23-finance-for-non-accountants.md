@@ -4,7 +4,7 @@ title: Finance for non-accountants
 layout: blog_post
 ---
 
-This is the first role I’ve had managing a large budget and I recently had some excellent training from my excellent financial director colleague [Isabelle Campbell](https://www.linkedin.com/in/isabelle-campbell18/). Here are my notes.
+This is the first role I’ve had managing a large budget and I recently had some excellent training from my financial director colleague [Isabelle Campbell](https://www.linkedin.com/in/isabelle-campbell18/). Here are my notes.
 
 ## The role of the finance team in an organisation
 
@@ -12,7 +12,7 @@ Isabelle started by answering the question "what is even the point of a finance 
 
 There is a lot to know about finance. The current regulations are on dictionary-thin paper and stack up about four feet high. So the finance team take care of keeping on top of regulations, tax and the latest accounting standards, as well as reporting.
 
-They can also advise those of us who manage budgets, and they do budgeting and forecasting, help to bring colour to how a business area is performing, as well as advising on strategic decisions.
+They do budgeting and forecasting, help to bring colour to how a business area is performing, and can also advise on strategic decisions.
 
 ## Accounting years are important
 
@@ -24,7 +24,10 @@ Most UK companies use the calendar year (i.e. January 1st to December 31st). Man
 
 Every accounting year, most UK companies have a requirement to produce annual accounts. This can include a profit and loss statement (a P&L), a balance sheet and a cash flow statement of varying levels of detail and complexity.
 
-We spent more time learning about the P&L rather than the other two, so I’ll talk more about that, but in brief, the balance sheet is a statement of the company’s assets and liabilities and the cash flow statement is a statement that shows how changes in the balance sheets and P&L affect the cash. The cash flow statement is essentially a check on the balance sheet and P&L.
+We spent more time learning about the P&L rather than the other two, so I’ll talk more about that, but in brief:
+
+- the balance sheet is a statement of the company’s assets and liabilities,
+- and the cash flow statement is a statement that shows how changes in the balance sheets and P&L affect the cash. The cash flow statement is essentially a check on the balance sheet and P&L.
 
 ## How to read a P&L
 
@@ -55,7 +58,7 @@ Notes
 1.2 2.1
   </td>
   <td>
-Gross sales
+<b>Gross sales</b>
   </td>
   <td>
 11,597.7
@@ -70,7 +73,7 @@ Gross sales
 2.1
   </td>
   <td>
-Revenue
+<b>Revenue</b>
   </td>
   <td>
 10,204.0
@@ -98,7 +101,7 @@ Cost of sales
   <td>
   </td>
   <td>
-Gross profits
+<b>Gross profits</b>
   </td>
   <td>
 3,364.5
@@ -127,7 +130,7 @@ Gross profits
   2.2
   </td>
   <td>
-  Operating expenses before exceptional items and Partnership Bonus
+  <b>Operating expenses before exceptional items and Partnership Bonus</b>
   </td>
   <td>
   (3,114.0)
@@ -157,7 +160,7 @@ Gross profits
   2.1
   </td>
   <td>
-  Operating profit before exceptional items and Partnership Bonus
+  <b>Operating profit before exceptional items and Partnership Bonus</b>
   </td>
   <td>
   360.8
@@ -227,7 +230,7 @@ Finance income
   <td>
   </td>
   <td>
-Profit before Partnership Bonus and tax
+<b>Profit before Partnership Bonus and tax</b>
   </td>
   <td>
 177.9
@@ -256,7 +259,7 @@ Partnership Bonus
 2.4
   </td>
   <td>
-Profit before tax
+<b>Profit before tax</b>
   </td>
   <td>
 103.9
@@ -284,7 +287,7 @@ Taxation
   <td>
   </td>
   <td>
-Profit for the year
+<b>Profit for the year</b>
   </td>
   <td>
 74.1
@@ -298,7 +301,7 @@ Profit for the year
 2.1
   </td>
   <td>
-Profit before Partnership Bonus, tax and exceptional items
+<b>Profit before Partnership Bonus, tax and exceptional items</b>
   </td>
   <td>
 289.2
@@ -314,27 +317,27 @@ There will be a scale. At the top, we can see the scale is millions (“£m”).
 
 If a sum is in brackets, it’s negative. For example, “Cost of sales” in 2018 was “(6839.5)”, that means it was -£6,839,500,000, i.e. it cost them ~$7bn to buy or produce what they sold. (This may not include all costs - to see what all the parts are, we’d have to refer to note 2.1.)
 
-The bottom line (hence the phrase!) is the revenue minus expenditure, i.e. the profit. Here £289.2m, though taxes, bonuses and exceptional items will come out of that.
+The bottom line (hence the phrase!) is the revenue minus expenditure, i.e. the profit. Here it is £289.2m, though taxes, bonuses and exceptional items will come out of that.
 
-## Capex and opex
+## Capex and opex
 
-Capex is capital expenditure. This means money spent on something that will have a longer term value; specifically this means a value outside of this accounting year. Buying a car for £30,000 would probably be capex, because you expect that car to last longer than a year. 
+Capex is capital expenditure. This means money spent on something that will have a longer term value; specifically this means a value outside of this accounting year. Buying a car for £30,000 would probably be capex, because you expect that car to last longer than a year.
 
 Capex is money you spend on buying assets.
 
-Opex is operational expenditure. This is money you spend on things that do not retain value for the company. For example, if you lease that car for £8,000 per year, that’s opex. There’s no value to the company. When you stop paying, you no longer have the car.
+Opex is operational expenditure. This is money you spend on things that do not retain value for the company. For example, if you lease that car for £8,000 per year, that’s opex. There’s no value to the company. When you stop paying, you no longer have the car. Examples of opex include paying salaries and rent, buying stationery, etc.
 
-Opex is the cost of operating the business in the year, such as paying salaries and rent, buying stationery etc.
+Opex is the cost of operating the business in the year.
 
 ## Capex and opex in the 21st century
 
 All reasonably straightforward when talking about buying vs leasing cars. With some things it is obvious whether something is capex (for example, buying a fleet of cars) or opex (renting a garage). 
 
-But there are a lot of grey areas. For example, what if our car had cost £15,000? Should we capitalise that, even if we expect it to last more than a year, or should we in fact just consider it part of this year’s operating expenses? That cost may not be worth setting up an asset and administering depreciation. There are guidelines, but this kind of thing is a judgment call and something the finance department can help with. 
+But there are a lot of grey areas. For example, what if our car had cost £15,000? Should we capitalise that, even if we expect it to last more than a year, or should we in fact just consider it part of this year’s operating expenses? There are guidelines, but this kind of thing is a judgment call and something the finance department can help with.
 
 It becomes even more complicated when you get into the kinds of work most companies do now.
 
-For example, staff wages are generally opex. But if they are working on something capitalisable, like software or a website, then there is a question there. For example, if you have a team of people working on building an A/B testing framework that you expect will be used for the next 5-10 years, then that A/B testing framework is an asset that you could potentially capitalise.
+For example, staff wages are generally opex. But if they are working on something capitalisable, like software, then there is a question there. For example, if you have a team of people working on building an A/B testing framework that you expect will be used for the next 5-10 years, then that A/B testing framework is an asset that you could potentially capitalise.
 
 You can’t capitalise all the staff costs because not all costs are “directly attributable” to the production of the asset, for example holiday pay, sick pay, costs of training etc (for more info, this [accounting standard](https://www.pkf.com/media/10033170/ias-16-property-plant-and-equipment-summary.pdf) (PDF) is useful, especially the box on page 3). However, you could capitalise some proportion of the staff wages.
 
@@ -344,7 +347,9 @@ Capex and opex are treated in different ways.  One extremely influential distinc
 
 ## Technology is usually a cost centre
 
-A cost centre is a part of the business to which you allocate costs and is not responsible for revenues. This is in contrast to a profit centre, which can add to the company’s costs and profits. In most businesses, technology is a cost centre, meaning that the main way the technology department can increase the overall profitability is by cutting costs, and/or supporting the revenue-generating areas of the business such as a website, rather than directly increasing revenue, unlike, for example, a sales department.
+A cost centre is a part of the business to which you allocate costs and is not responsible for revenues. This is in contrast to a profit centre, which can add to the company’s costs and profits.
+
+In most businesses, technology is a cost centre, meaning that the main way the technology department can increase the overall profitability is by cutting costs, and/or supporting the revenue-generating areas of the business, rather than directly increasing revenue, unlike, for example, a sales department.
 
 ## This can lead to misalignment of incentives
 
