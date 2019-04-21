@@ -87,6 +87,16 @@ h2 {
     padding-bottom:20px;
 }
 
+.underline-table {
+    border-collapse: collapse;
+}
+
+.underline-table td, th {
+    vertical-align: top;
+    padding: 0 10px;
+    border-bottom: 1px solid #000;
+}
+
 .header-text{
     color: white;
     font-size: 20px;
@@ -96,7 +106,6 @@ h2 {
 .navigation {
     padding: 20px 0 25px 30px;
 }
-
 
 .name {
     padding: 50px 0 0 50px;
