@@ -379,7 +379,7 @@ When a company buys another company, they have an expectation of the value that 
 
 Part of the purchase amount agreed is the value of the assets. The remainder of the cost of the company is what is called "goodwill": this is the difference between the assets that you can put a value to and how much you are willing to pay for it.
 
-In the case of Verizon and Oath, the $4.6bn was a "non-cash goodwill impairment charge", meaning the "goodwill" aspect of the deal was no longer considered to be worth what Verizon had paid, so they were taking a "write-down", i.e. reducing the overall value of Verizon's assets by $.4.6bn, a figure which would have come out of Verizon's 2018 P&L.
+In the case of Verizon and Oath, the $4.6bn was a "non-cash goodwill impairment charge", meaning the "goodwill" aspect of the deal was no longer considered to be worth what Verizon had paid, so they were taking a "write-down", i.e. reducing the overall value of Verizon's assets by $4.6bn, a figure which would have come out of Verizon's 2018 P&L.
 
 ## Budgets and forecasts
 
