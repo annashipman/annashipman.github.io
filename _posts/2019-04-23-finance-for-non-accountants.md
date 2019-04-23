@@ -10,7 +10,7 @@ This is the first role I've had managing a large budget and I recently had some 
 
 Isabelle started by answering the question "what is even the point of a finance team?"
 
-There is a lot to know about finance. The current regulations are on dictionary-thin paper and stack up about four feet high. So the finance team take care of keeping on top of regulations, tax and the latest accounting standards, as well as reporting.
+There is a lot to know about finance. The current regulations are on dictionary-thin paper and stack up about four feet high. So the finance team takes care of keeping on top of regulations, tax and the latest accounting standards, as well as reporting.
 
 They do budgeting and forecasting, and can also advise on strategic decisions.
 
@@ -26,8 +26,8 @@ Every accounting year, most UK companies have a requirement to produce annual ac
 
 We spent more time learning about the P&L rather than the other two, so I'll talk more about that, but in brief:
 
-- the balance sheet is a statement of the company's assets and liabilities,
-- and the cash flow statement is a statement that shows how changes in the balance sheets and P&L affect the cash. The cash flow statement is essentially a check on the balance sheet and P&L.
+- the balance sheet is a statement of the company's assets and liabilities
+- the cash flow statement is a statement that shows how changes in the balance sheets and P&L affect the cash. The cash flow statement is essentially a check on the balance sheet and P&L.
 
 ## How to read a P&L
 
@@ -315,7 +315,7 @@ Taxation
 
 There will be a scale. At the top, we can see the scale is millions ("£m").
 
-If a sum is in brackets, it's negative. For example, "Cost of sales" in 2018 was "(6839.5)", that means it was -£6,839,500,000, i.e. it cost them ~$7bn to buy or produce what they sold. (This may not include all costs - to see what all the parts are, we'd have to refer to note 2.1.)
+If a sum is in brackets, it's negative. For example, "Cost of sales" in 2018 was "(6839.5)", that means it was -£6,839,500,000, i.e. it cost them ~$7bn to buy or produce what they sold. (This may not include all costs – to see what all the parts are, we'd have to refer to note 2.1.)
 
 The bottom line (hence the phrase!) is the revenue minus expenditure, i.e. the profit.
 
