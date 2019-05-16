@@ -12,7 +12,7 @@ The kernel of a strategy contains 3 things:
 
 1. Diagnosis: the current situation
 2. Vision: where you want to get to; this is your guiding policy
-3. Coherent action: how you get from your current situation to your desired end stage. Coherent action consists of feasible plans, resource commitments and actions. 
+3. Coherent action: how you get from your current situation to your desired end state. Coherent action consists of feasible plans, resource commitments and actions. 
 
 The core of strategy is discovering the critical factors and designing a way to coordinate and focus on actions to deal with them, including risk mitigation.
 
@@ -20,7 +20,7 @@ Good strategy is not just what you are trying to do, it’s also why and how.
 
 ## Good strategy almost always looks simple
 
-The book opens with a description of The Battle of Trafalgar, and how the Britis (led by Lord Nelson) won, even though there were fewer British ships than French and Spanish ships.
+The book opens with a description of The Battle of Trafalgar, and how the British (led by Lord Nelson) won, even though there were fewer British ships than French and Spanish ships.
 
 Instead of following what was the usual tactic at the time, approaching in a single line, Nelson's fleet approached in two columns, one aiming at the centre of the French and Spanish line, in order to break up their formation. However, this did put the ships at the front of the columns in greater danger.
 
