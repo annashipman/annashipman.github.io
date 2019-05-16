@@ -4,7 +4,7 @@ title: Good Strategy Bad Strategy
 layout: blog_post
 ---
 
-The excellent [Russell Davies](http://www.russelldavies.com/index.html) gave me a copy of [Good Strategy, Bad Strategy](http://goodbadstrategy.com/) saying it was the best book he’d read on the topic. I found it extremely useful. Here are some of my notes, but I recommend reading it.
+The excellent [Russell Davies](http://www.russelldavies.com/index.html) gave me a copy of [Good Strategy, Bad Strategy](http://goodbadstrategy.com/). He said it was the best book he’d read on the topic, and I found it extremely useful. Here are some of my notes, but I recommend reading it.
 
 ## Strategy is diagnosis, vision, and a plan
 
@@ -20,9 +20,9 @@ Good strategy is not just what you are trying to do, it’s also why and how.
 
 ## Good strategy almost always looks simple
 
-The book opens with a description of The Battle of Trafalgar, and how the British, led by Lord Nelson, won, even though there were fewer British ships than French and Spanish ships.
+The book opens with a description of The Battle of Trafalgar, and how the Britis (led by Lord Nelson) won, even though there were fewer British ships than French and Spanish ships.
 
-Instead of following the usual tactical approach at the time of appraching in a single line, Nelson's fleet approached in two columns, one aiming at the centre of the French and Spanish line, in order to break up their formation. However, this did put the ships at the front of the colunns in greater danger.
+Instead of following what was the usual tactic at the time, approaching in a single line, Nelson's fleet approached in two columns, one aiming at the centre of the French and Spanish line, in order to break up their formation. However, this did put the ships at the front of the columns in greater danger.
 
 In summary, his strategy was to risk his lead ships to break the coherence of his opponents’ fleet.
 
@@ -30,7 +30,7 @@ Good strategy almost always looks this simple.
 
 ## What strategy is not
 
-He talks a lot about what is generally described as strategy and explains why it’s not. For example:
+The author talks a lot about what is generally described as strategy and explains why it’s not. For example:
 
 - Ambition is drive and zeal to excel
 - Determination is commitment and grit
@@ -75,11 +75,15 @@ A strategy should be episodic, though not necessarily annual.
 
 ## You need to make your strategy robust
 
-You have to be able to defend your strategy. He has some interesting suggestions about how you can question your own judgement. For example have in your head a panel of people that you know what kind of thing they'd say, and imagine them critiquing your strategy. He says you should also note down judgements you make over time, and then refer back to improve your process.
+You have to be able to defend your strategy.
+
+He has some interesting suggestions about how you can question your own judgement. For example have in your head a panel of people that you know what kind of thing they'd say, and imagine them critiquing your strategy.
+
+He also suggests that you note down judgements you make over time, and then refer back to improve your process.
 
 ## It involves constant work
 
 Making such a policy work takes more than a plan on paper – you need to work to maintain the coherence of the plan, every quarter, year, decade.
 
-[This Twitter thread](https://twitter.com/iamdeepa/status/944237019265298432) from Deepa Subramaniam is also very useful, particularly some practical tips on how to do that work.
+[This Twitter thread](https://twitter.com/iamdeepa/status/944237019265298432) from Deepa Subramaniam is also very useful, particularly the practical tips on how to do that work.
  
