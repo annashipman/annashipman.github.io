@@ -87,3 +87,6 @@ Making such a policy work takes more than a plan on paper – you need to work t
 
 [This Twitter thread](https://twitter.com/iamdeepa/status/944237019265298432) from Deepa Subramaniam is also very useful, particularly the practical tips on how to do that work.
  
+## You should read it
+
+These are some of the notes I've found useful to refer back to but the book itself is extremely worth reading and has made a big difference to how I think about and work on strategy.
