@@ -4,7 +4,7 @@ title: Good Strategy Bad Strategy
 layout: blog_post
 ---
 
-The excellent [Russell Davies](http://www.russelldavies.com/index.html) gave me a copy of [Good Strategy, Bad Strategy](http://goodbadstrategy.com/). He said it was the best book he’d read on the topic, and I found it extremely useful. Here are some of my notes, but I recommend reading it.
+A while ago, the excellent [Russell Davies](http://www.russelldavies.com/index.html) gave me a copy of [Good Strategy, Bad Strategy](http://goodbadstrategy.com/). He said it was the best book he’d read on the topic, and I found it extremely useful. Here are some of my notes, but I recommend reading it.
 
 ## Strategy is diagnosis, vision, and a plan
 
@@ -89,4 +89,4 @@ Making such a policy work takes more than a plan on paper – you need to work t
  
 ## You should read it
 
-These are some of the notes I've found useful to refer back to but the book itself is extremely worth reading and has made a big difference to how I think about and work on strategy.
+These are some of the notes I've found useful to refer back to, but the book itself is extremely worth reading and has made a big difference to how I think about and work on strategy.
