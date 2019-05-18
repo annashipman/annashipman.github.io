@@ -89,4 +89,6 @@ Making such a policy work takes more than a plan on paper – you need to work t
  
 ## You should read it
 
-These are some of the notes I've found useful to refer back to, but the book itself is extremely worth reading. It has made a big difference to how I think about and work on strategy.
+These are some of the notes I've found useful to refer back to. [These slides](https://www.slideshare.net/sophiedennis/usercentred-digital-strategy-ux-in-the-city-manchester-2017) by [Sophie Dennis](https://twitter.com/sophiedennis) are also an excellent summary of some of the main points.
+
+But the book itself is extremely worth reading. It has made a big difference to how I think about and work on strategy.
