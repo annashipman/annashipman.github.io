@@ -21,10 +21,10 @@ Ideally I want to be able to delegate anything that I am asked to do, as this is
 To start with, I delegated in one of three ways:
 
 1. We have a weekly meeting. In that meeting I might explain the item and someone would volunteer to pick it up.
-1. I would send all of them a message (Slack/email) and say “Can someone pick this up” and someone does.
-1. Occasionally – usually when things are very busy – I picked one of them myself and ask them individually to do something.
+1. I would send all of them a message (Slack/email) and say “Can someone pick this up” and someone would.
+1. Occasionally – usually when things are very busy – I picked one of them myself and asked them individually to do something.
 
-This didn’t feel right. It got things done, but it meant that I was still in control of the flow of tasks and often even who does them.
+This didn’t feel right. It got things done, but it meant that I was still in control of the flow of tasks and often even who did them.
 
 I felt that there must be a better way to do this so that the principals know the problems we have that I need help with (and also know about the problems I don’t know about), without me doling them out.
 
@@ -48,7 +48,7 @@ However, we decided to try having a physical wall to see if that helped. Rather 
 
 (c) Luke Kavanagh
 
-We have a weekly stand-up, on Fridays, which usually lasts half an hour. We initially tried it as an experiment, and quickly found that it was really helpful for context on what each other were working on.
+We have a weekly stand-up, on Fridays, which usually lasts half an hour. We initially tried it as an experiment, and quickly found that it was really helpful. I've also found the wall extremely useful, despite my initial reservations.  It works really well to be able to see that something is being worked on and who is working on it.
 
 We also added retrospectives, once every six weeks, in which we reflect on just our processes within the team of principal engineers and make improvements.
 
@@ -62,7 +62,7 @@ As well as being in those meetings, I was also being sent emails on a wide range
 
 ## Why I didn’t share context
 
-In fact, not sharing context was a deliberate decision on my part. I get *a lot* of emails and go to a lot of meetings. A lot of this are requests to do things that I don’t think are a priority at the moment, so it didn’t seem to make sense to me to pass all that on.
+In fact, not sharing context was a deliberate decision on my part. I get *a lot* of emails and go to a lot of meetings. A lot of this is requests to do things that I don’t think are a priority at the moment, so it didn’t seem to make sense to me to pass all that on.
 
 I also didn’t want to drown my team in emails, because it’s hard to get stuff done when you are getting lots and lots of emails.
 
@@ -79,7 +79,8 @@ So we made some immediate changes:
 
 - We set up a mailing list for the principal engineers and started publicising that as who to email, rather than emailing me only.
 - I started sending a lot more emails to that email address. Sometimes this would be forwarding an email I’ve received, adding “FYI”, so they have the context. If I had a bit more info I might add it in the email.
-- Where possible, I ask someone to accompany me to meetings where I think useful context will be shared, with the purpose of taking notes and sharing context with the rest of the principal engineers and also getting in practice at those sorts of meetings, and meeting the stakeholders.
+- I look for opportunities for principals to go to meetings as my delegate. After the meeting they share back notes to the rest of the team, including me.
+- If I feel I need to be in a meeting where useful context will be shared but it's possible to add someone, I ask one of them to accompany me, with the purpose of taking notes and sharing context with the rest of the principal engineers and also getting in practice at those sorts of meetings, and meeting the stakeholders.
 - Where it hasn’t worked for someone to come to the meeting with me (perhaps a 1:1), I write up notes and email them to the group, or talk through them at our weekly meeting.
 - We already had a short weekly meeting, but we extended it to 50 minutes. We now mark items on the agenda as ‘Proposal’ (ideally will have been circulated in advance), ‘Discussion’, or ‘Info’.
 
@@ -89,16 +90,18 @@ From my perspective a lot of these changes are going really well. Quite often, s
 
 It also seems to be helping balance work a bit better – things sometimes get passed to others at stand-up if someone has too much on their plate.
 
+People email our group email address rather than me or individuals in the team much more often, which means we all have a lot more context, and we can respond to things much faster as questions don't get lost in someone's inbox.
+
 ## Making sure we are working on the right stuff
 
 These changes meant that we made huge improvements in getting things done, but we started to wonder whether we were always thinking about whether the things we were doing more efficiently were the right things. We felt that we might be being too reactive, and not necessarily always working on the highest priority or most strategic pieces of work.
 
 ## Colour-coding buckets of work
 
-We have taken two approaches to this. Firstly, we thought about what kind of things we should be doing, and we think what we should be working on as a team broadly fits into 3 categories:
+We have taken two approaches to this. Firstly, we thought about what kind of things we should be doing, and we think what we should be working on as a team broadly fits into three categories:
 
 1. Team health, e.g. making sure line management is working, improving the dev huddle, helping to create opportunities for engineers on our team to grow their careers, helping with recruitment, etc.
-1. Technical oversight, e.g. using our expertise as senior technologists to support team members with technical issues, or helping teams with decisions that might affect the architecture of a number of teams, etc.
+1. Technical oversight, e.g. using our expertise as senior technologists to support team members with technical issues, helping with decisions that might affect the architecture of a number of teams, overseeing pieces of work with other teans at the FT, etc.
 1. Technical strategy: mainly this is working on the defined next steps of our tech strategy, but this also includes strategic things like writing blog posts, or arranging workshops.
 
 We then colour-coded the cards we use on our wall. The idea is that we should be spending around a third of our time on each of those things.
@@ -118,12 +121,16 @@ A lot of the work in the planning meeting is ahead of time in compiling the agen
 
 ## Sharing my thinking
 
-I’ve also tried to do more to make sure I’m sharing my thinking. I know what needs to be done and have a clear idea of what good looks like, but I don’t think I’ve shared that consistently well.
+I’ve also tried to do more to make sure I’m sharing my thinking. I have a clear idea of where we are trying to get to with our tech strategy and what good looks like, but I don’t think I’ve shared that consistently well.
 
-We are all involved in the tech strategy, but I’ve been consciously working on sharing that better; for example, I’ve added a page to the internal wiki, I gave [a talk at a conference](https://continuouslifecycle.london/sessions/launch-difficult-teenage-years/) and I’m currently working on a blog post (watch this space!).
+We are all involved in the tech strategy, but I’ve been consciously working on sharing that better; for example, I’ve added a page to the internal wiki, I gave [a talk at a conference](https://continuouslifecycle.london/sessions/launch-difficult-teenage-years/) and I’m currently working on a blog post (watch this space!). I'm also working on how we actually measure/evaluate that our tech strategy has been successful.
+
+Interesting suggestions I had from my network around this included the idea of [command intent](https://en.wikipedia.org/wiki/Intent_(military)) and Amazon's practice of [working backwards](https://www.allthingsdistributed.com/2006/11/working_backwards.html).
+
+I think we could also do more to share more widely outside of our small team with the rest of Customer Products what we're working on. I've emailed everyone to let them know where our wall is and that they are welcome to attend stand-ups, but so far no-one has, and I think this is another area we could improve.
 
 ## This has really helped us with working together
 
-This has been a really interesting exercise and we are now working together and sharing information really well as a team, and others are approaching the team with questions rather than individuals. Recently, I’ve been out of the office for a couple of weeks and it’s been great to see everything carrying on really well without me.
+This has been a really interesting exercise and we are now working together and sharing information really well as a team, and others are approaching the team with questions rather than individuals.
 
-
+We've got room for improvement, but it's definitely going in the right direction.  Recently, I’ve been out of the office for a couple of weeks. When I came back, everything had carried on. Decisions had been made, new work had come in and been handled, and apart from some budget approvals, there was nothing that had been on hold waiting for me to get back. This is a brilliant result.
