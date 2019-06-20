@@ -96,13 +96,13 @@ People email our group email address rather than me or individuals in the team m
 
 These changes meant that we made huge improvements in getting things done, but we started to wonder whether we were always thinking about whether the things we were doing more efficiently were the right things. We felt that we might be being too reactive, and not necessarily always working on the highest priority or most strategic pieces of work.
 
-## Colour-coding buckets of work
+## Colour-coding types of work
 
-We have taken two approaches to this. Firstly, we thought about what kind of things we should be doing, and we think what we should be working on as a team broadly fits into three categories:
+We have taken two approaches to this. Firstly, we decided to be more conscious of the type of things we are working on. We think there are three categories of work we should be doing:
 
-1. Team health, e.g. making sure line management is working, improving the dev huddle, helping to create opportunities for engineers on our team to grow their careers, helping with recruitment, etc.
-1. Technical oversight, e.g. using our expertise as senior technologists to support team members with technical issues, helping with decisions that might affect the architecture of a number of teams, overseeing pieces of work with other teans at the FT, etc.
-1. Technical strategy: mainly this is working on the defined next steps of our tech strategy, but this also includes strategic things like writing blog posts, or arranging workshops.
+1. **Team health** e.g. making sure line management is working, improving the dev huddle, helping to create opportunities for engineers on our team to grow their careers, helping with recruitment, etc.
+1. **Technical oversight**, e.g. using our expertise as senior technologists to support team members with technical issues, helping with decisions that might affect the architecture of a number of teams, overseeing pieces of work with other teams at the FT, etc.
+1. **Technical strategy**: mainly this is working on the defined next steps of our tech strategy, but this also includes strategic things like writing blog posts, or arranging workshops.
 
 We then colour-coded the cards we use on our wall. The idea is that we should be spending around a third of our time on each of those things.
 
@@ -121,16 +121,16 @@ A lot of the work in the planning meeting is ahead of time in compiling the agen
 
 ## Sharing my thinking
 
-I’ve also tried to do more to make sure I’m sharing my thinking. I have a clear idea of where we are trying to get to with our tech strategy and what good looks like, but I don’t think I’ve shared that consistently well.
+I have a clear idea of where we are trying to get to with our tech strategy and what good looks like, but I don’t think I’ve shared that consistently well, so I've been consciously working on communicating that better.
 
-We are all involved in the tech strategy, but I’ve been consciously working on sharing that better; for example, I’ve added a page to the internal wiki, I gave [a talk at a conference](https://continuouslifecycle.london/sessions/launch-difficult-teenage-years/) and I’m currently working on a blog post (watch this space!). I'm also working on how we actually measure/evaluate that our tech strategy has been successful.
+For example, I've added a page to the internal wiki, I gave [a talk at a conference](https://continuouslifecycle.london/sessions/launch-difficult-teenage-years/) and I’m currently working on a blog post (watch this space!). I'm also working on how we actually measure/evaluate that our tech strategy has been successful.
 
 Interesting suggestions I had from my network around this included the idea of [command intent](https://en.wikipedia.org/wiki/Intent_(military)) and Amazon's practice of [working backwards](https://www.allthingsdistributed.com/2006/11/working_backwards.html).
 
-I think we could also do more to share more widely outside of our small team with the rest of Customer Products what we're working on. I've emailed everyone to let them know where our wall is and that they are welcome to attend stand-ups, but so far no-one has, and I think this is another area we could improve.
+As a team, we could also do more to share what we are working on as a team with the rest of Customer Products. We've let people know that they are welcome to attend our stand-ups, but so far no-one has, and we could do more to let people know what we're working on.
 
-## This has really helped us with working together
+## These changes have really improved how we work together
 
-This has been a really interesting exercise and we are now working together and sharing information really well as a team, and others are approaching the team with questions rather than individuals.
+We are now working together and sharing information really well as a team, and others are approaching the team with questions, rather than approaching individuals.
 
 We've got room for improvement, but it's definitely going in the right direction.  Recently, I’ve been out of the office for a couple of weeks. When I came back, everything had carried on. Decisions had been made, new work had come in and been handled, and apart from some budget approvals, there was nothing that had been on hold waiting for me to get back. This is a brilliant result.
