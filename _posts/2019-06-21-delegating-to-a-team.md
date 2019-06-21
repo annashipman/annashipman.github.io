@@ -46,7 +46,7 @@ However, we decided to try having a physical wall to see if that helped. Rather 
 
 ![Five people in a stand-up](/img/stand-up.jpg)
 
-(c) Luke Kavanagh
+(c) [Luke Kavanagh](https://www.ft.com/luke)
 
 We have a weekly stand-up, on Fridays, which usually lasts half an hour. We initially tried it as an experiment, and quickly found that it was really helpful. I've also found the wall extremely useful, despite my initial reservations.  It works really well to be able to see that something is being worked on and who is working on it.
 
