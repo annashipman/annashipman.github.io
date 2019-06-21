@@ -127,7 +127,7 @@ For example, I've added a page to the internal wiki, I gave [a talk at a confere
 
 Interesting suggestions I had from my network around this included the idea of [command intent](https://en.wikipedia.org/wiki/Intent_(military)) and Amazon's practice of [working backwards](https://www.allthingsdistributed.com/2006/11/working_backwards.html).
 
-As a team, we could also do more to share what we are working on as a team with the rest of Customer Products. We've let people know that they are welcome to attend our stand-ups, but so far no-one has, and we could do more to let people know what we're working on.
+As a team, we could also do more to share what we are working on with the rest of Customer Products. We've let people know that they are welcome to attend our stand-ups, but so far no-one has, and we could do more to let people know what we're working on.
 
 ## These changes have really improved how we work together
 
