@@ -4,7 +4,7 @@ title: Russell Davies's strategy advice
 layout: blog_post
 ---
 
-Last year, I met the excellent [Russell Davies](http://www.russelldavies.com/index.html) for coffee and advice on how to create a strategy. Russell was the Director of Strategy at the Government Digital Service while I was there. He and the internal comms team did an amazing job of making sure we were all aware of [what we were doing](https://mikebracken.com/blog/the-strategy-is-delivery-again/) and why.
+Last year, I met the excellent [Russell Davies](http://www.russelldavies.com/index.html) to ask his advice on how to create a strategy. Russell was the Director of Strategy at the Government Digital Service while I was there. He and the internal comms team did an amazing job of making sure we were all aware of [what we were doing](https://mikebracken.com/blog/the-strategy-is-delivery-again/) and why.
 
 When I needed to create the tech strategy for my team at the Financial Times, Russell gave me some really useful advice, and has kindly agreed to let me share that here.
 
