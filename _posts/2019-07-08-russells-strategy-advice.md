@@ -1,5 +1,5 @@
 ---
-anchor_id: delegating-team
+anchor_id: russells-advice
 title: Russell Davies's strategy advice
 layout: blog_post
 ---
