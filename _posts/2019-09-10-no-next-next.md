@@ -133,3 +133,5 @@ Once we’ve finished that we will be able to move much faster on the apps and d
 We will continue sharing our journey towards making our product more sustainable, and we’d love to hear your thoughts and experiences.
 
 And if you are interested in joining us on this journey, [we are hiring](https://roles.ft.com/)!
+
+_This post originally appeared on the [FT Product & Technology blog](https://medium.com/ft-product-technology/no-next-next-42c71541ebcc)_.
