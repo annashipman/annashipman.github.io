@@ -10,7 +10,7 @@ Slides from my talk *Operations: a developer's guide*, at [FFConf
 The last slide is links; these are copied below so you can actually click on
 them!
 
-Video to follow...
+[Video is here](/jfdi/ops-a-devs-guide-video.html).
 
 <div class="embedded">
   <iframe src="//www.slideshare.net/slideshow/embed_code/key/39M8UxzdHZYV1e" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen>
