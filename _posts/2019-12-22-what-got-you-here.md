@@ -4,11 +4,11 @@ title: What got you here won't get you there
 layout: blog_post
 ---
 
-Earlier this year, I read [What got you here won't get you there](https://www.goodreads.com/book/show/84525.What_Got_You_Here_Won_t_Get_You_There). Great title. For me, the book didn't quite live up to my initial hopes, but it was interesting and thought-provoking. Here are my notes.
+Earlier this year, I read [What Got You Here Won't Get You There](https://www.goodreads.com/book/show/84525.What_Got_You_Here_Won_t_Get_You_There). Great title. For me, the book didn't quite live up to my initial hopes, but it was interesting and thought-provoking. Here are my notes.
 
 ## The book is about bad habits that stop you progressing
 
-Marshall Goldsmith is an executive coach, and this book is about the 20 behavioural habits that he sees executives having that prevent them getting to the next level.
+Marshall Goldsmith is an executive coach, and this book is about the 20 behavioural habits that he sees preventing executives getting to the next level.
 
 He quotes Peter Drucker: "Half the leaders I have met don't need to learn what to do. They need to learn what to stop."
 
@@ -16,25 +16,27 @@ He quotes Peter Drucker: "Half the leaders I have met don't need to learn what t
 
 As a leader, you often know a lot about a piece of work, maybe more than the person you've delegated it to, and when they tell you your ideas for how to do it, you may try and add some value by suggesting an improvement to their plan.
 
-However this is counter-productive because it is demotivating. "You may have improved the content of my idea by 5 per cent, but you've reduced my commentment to executing it by 50 per cent, because you've taken away my ownership of the idea... and I walk out of your office less enthused than when I went in."
+However this is counter-productive because it is demotivating. "You may have improved the content of my idea by 5 per cent, but you've reduced my commitment to executing it by 50 per cent, because you've taken away my ownership of the idea... and I walk out of your office less enthused than when I went in."
 
 He tells a story about someone he coached who developed the habit of taking a breath before replying to anything, and once they'd got into that habit, they realised half of what they had been about to say was not actually worth saying.
 
 ## Make sure you are clear about your goals
 
-When are you in a hurry? All the time. So it is all the more important to make sure you know why you are doing what you are doing. You will always feel too busy or overcommitted.
+When are you in a hurry? All the time. So it is all the more important to make sure you know why you are doing what you are doing.
 
-(This reminded me of something I heard ages ago which I've found useful for things like agreeing (or not!) to do conference talks: don’t agree to do anything you wouldn’t do tomorrow. Because one day it will be tomorrow.)
+You will always feel too busy or overcommitted.
+
+(This reminded me of something I heard ages ago which I've found useful for things like agreeing – or not! – to do conference talks: don’t agree to do anything you wouldn’t do tomorrow. Because one day it will be tomorrow.)
 
 He says part of being an effective leader is setting up systems to measure everything. That’s how you know how you are doing.
 
 ## Retention is about relationships
 
-He talks about keeping people; “we would have done anything to keep her happy, we wanted to keep her”.
+He talks about retaining good people and tells a story about changing someone's role: "we would have done anything to keep her happy, we wanted to keep her".
 
 Your relationship with top talent is a strategic alliance rather than an employment contract.
 
-Also, he says that Hawthorn found people work better if they believe their boss cares about their welfare.
+Relatedly, he says that the Hawthorne effect is not just that people work better when the boss is watching, but also "it's the reason entire factory floors work harder with greater morale when they see their bosses care about their welfare".
 
 ## Ask for feedback often
 
@@ -48,13 +50,13 @@ Your flaws at work don’t vanish as soon as you get home.
 
 He suggests you request feedback at home – what can I do to be a better partner/parent/friend?
 
-This is a theme he goes more into in his subsequent book, [Triggers](https://www.marshallgoldsmith.com/product/triggers-creating-behavior-that-lasts-becoming-the-person-you-want-to-be/). I like this approach, that I've not seen in other management books, that your home/personal life and work life are areas equally worthy of your investment to improve.
+This is a theme he goes more into in his subsequent book, [Triggers](https://www.marshallgoldsmith.com/product/triggers-creating-behavior-that-lasts-becoming-the-person-you-want-to-be/). I have not seen this in other management books but I like this approach, that both your home/personal life and work life are areas equally worthy of your investment to improve.
 
 ## How to recalibrate if you find your staff "too needy"
 
-He tells an interesting story about an executive who found they were spending too much time attending to requests for support from their staff. This is interesting because people are the most important thing, so if people feel they need your help, as a leader you want to be able to give it. However, at a certain point it can become too much of a burden, as in the story he tells.
+He tells an interesting story about an executive who found they were spending too much time attending to requests for support from their staff. People are the most important part of the job, so if people feel they need your help, as a leader you want to be able to give it. However, as Camille Fournier points out in this excellent post, [being helpful can actually be harmful](https://medium.com/@skamille/delegation-and-time-management-6cb326a880d3?), and this executive needed to recalibrate.
 
-This executive addressed it with two questions to their staff:
+In the story Goldsmith tells, the executive addressed it with two questions to their staff:
 
 - "Your job: are there areas of your job where you think I am too involved or should be less involved?"
 - "My job: do you see me doing things that a person at my level should not be worrying about?"
@@ -65,11 +67,11 @@ He suggests saying “I want you to do as much of my job as you can handle”.
 
 You also have to remember you’re not managing you.
 
-He quotes Drucker again; “know how to ask rather than tell”.
+He quotes Drucker again: “know how to ask rather than tell”.
 
 ## Follow up is really important
 
-He talks about an executive who asked for something to be done by sending a memo: Marshall asked them: how many read it, understood it, acted on it? The executive couldn't answer.
+He talks about an executive who asked for something to be done by sending a memo: Goldsmith asked them: how many read it, understood it, acted on it? The executive couldn't answer.
 
 For things that you want to get done, you need to do follow-up. Send the message. Ask people the next day if they heard it. Then ask if they understood it. Then a few days later ask if they did something about it.
 
@@ -88,13 +90,17 @@ The book finishes with an appendix called the "Global Leadership Inventory", par
 - Effectively manages technology to increase productivity
 - Strives to arrive at an outcome with others
 - Builds an organisation where people care about the greater good
-- Achieves results that lead to long term shareholder value - holds people accountable for their results
+- Achieves results that lead to long term shareholder value – holds people accountable for their results
+
+The whole appendix is an interesting list to return to when looking for ways to develop and grow.
 
 ## Some miscellanous things I liked
 
+These don't fit into a theme particularly, but some thoughts and ideas that I wanted to remember.
+
 - People will do something only if it can be demonstrated that it is in their own best interests according to their own values.
 - Make a 'to stop' list instead of a 'to do' list.
-- Successful people stack the deck in their favour: the  best employees, the best PAs, etc
+- Successful people stack the deck in their favour: the  best employees, the best PAs, etc.
 - Forgiveness means letting go of the hope for a better past.
 
 ## It's worth reading
