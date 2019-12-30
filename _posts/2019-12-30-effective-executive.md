@@ -4,7 +4,7 @@ title: The Effective Executive
 layout: blog_post
 ---
 
-This year, I finally read [The Effective Executive](https://www.goodreads.com/book/show/48019.The_Effective_Executive). It was hard to make succinct notes because so much of it is gold, but here are some of the things I took from it.
+This year, I finally read [The Effective Executive](https://www.goodreads.com/book/show/48019.The_Effective_Executive). It was great. Here are some of the things I took from it.
 
 ## You want to be effective, rather than efficient
 
@@ -15,6 +15,8 @@ Knowledge work is not defined by cost, it's defined by results, and the effectiv
 "Nothing else distinguishes effective executives as much as their tender loving care of time."
 
 Innovation and change make inordinate time demands on the executive. All one can think and do in a short time is to think what one already knows and do as one has always done.
+
+Research, to be productive, has to be the disorganised, the creator of a different future and the enemy of today.
 
 However, he says in any executive job a large part of the time must be wasted. Rarely as much as 25% of one's time is discretionary. So you should set deadlines for the discretionary work.
 
@@ -39,21 +41,19 @@ Concentration – that is, the courage to impose on time and events your own dec
 
 Effective executives periodically review their work programme and ask, if we didn’t already do this would we start now? And unless the answer is a resounding yes they drop the activity or curtail it. Pull out their resources and put them on the activity of tomorrow.
 
-Executives are always bailing out the past – every executive has to spend time, energy and ingenuity on patching up or bailing out the actions and decisions of yesterday, whether their own or their predecessors. This takes up more hours of the day than any other task. Few organisations ever get going on their own good ideas, everyone is much too busy on the tasks of yesterday.
+Every executive has to spend time, energy and ingenuity on patching up or bailing out the actions and decisions of yesterday, whether their own or their predecessors. This takes up more hours of the day than any other task.
 
 The need to slough off the outworn old to make possible the productive new is universal.
 
+## Don't sacrifice the future on the altar of today
+
 It is more productive to convert an opportunity into results than to solve a problem – which only restores the equilibrium of yesterday.
 
-Research, to be productive, has to be the disorganised, the creator of a different future and the enemy of today.
-
-## Decide your 'posteriorities'
-
-Executive work is always postponable because it doesn’t try to solve yesterday’s crises but to make a difference tomorrow.
+Executive work is always postponable because it doesn’t try to solve yesterday’s crises but to make a difference tomorrow. One abandons what one postpones.
 
 The pressures favour the crisis over the opportunity, what has happened over the future, the immediate and visible over the real, and the urgent over the relevant.
 
-One abandons what one postpones.
+## Decide your 'posteriorities'
 
 As well as priorities you should set 'posteriorities' – things not to tackle – and stick to them. One rarely over-prunes.
 
@@ -72,16 +72,20 @@ Setting a posteriority is unpleasant. Every posteriority is someone else’s pri
 
 Executives are not paid for doing things they like to do, they are paid for getting the right things done.
 
-Decisions require courage as much as judgment. But make sure you are not uneasy. Also do not delay. Act if the benefits greatly outweigh cost and risk. Act or do not act, but don’t hedge. (Or, as I prefer to think of it, "Do. Or do not. There is no try.")
+Decisions require courage as much as judgment. Make sure you are not uneasy, but also do not delay. Act or do not act, but don’t hedge. (Or, as I prefer to think of it, "Do. Or do not. There is no try.")
+
 One always has to start out with what is right rather than what is acceptable, because one always has to compromise in the end.
 
 It is fruitless and a waste of time to worry about what is acceptable and what to say – the things one worries about never happen. And in the process of starting out with what is acceptable you lose any chance of coming up with the right answer.
 
 ## Establish a principle rather than making decisions case by case
 
-An executive who makes many decisions is lazy and ineffectual – things should be an example of a few rules.
+An executive who makes many decisions is lazy and ineffectual – everything should be an example of a few rules.
 
-When making decisions, focus on what is strategic and generic rather than trying to solve problems, or adapting to the apparent need of the current moment. What is sound rather than clever. The trickiest decision is between the right and wrong compromise.
+When making decisions, focus on what is strategic and generic rather than trying to solve problems, or adapting to the apparent need of the current moment. Choose what is sound rather than what is clever.
+
+The trickiest decision is between the right and wrong compromise.
+
 ## Until a decision has been acted on it is just a good intention
 
 No task is complete until it has become part of organisational action or behaviour. When the pressures make the decision, this part is slighted.
@@ -104,8 +108,9 @@ In meetings, one can either direct and listen or take part and contribute.
 
 What can I contribute, that others cannot? Why am I on the payroll?
 
-Results come from building on strength not shoring up weakness. Do what you are good at. Ask how can I help, what can I do? Feed the opportunities and starve the problem.
-How do my goals align with the goals of the organisation? Focus work on upward contribution. Think through the purpose and ends, rather than means alone. The executive who works at making strengths productive works at making organisation performance compatible with personal achievement.
+Results come from building on strength not shoring up weakness. Do what you are good at.
+
+Ask how can I help, what can I do? How do my goals align with the goals of the organisation? Focus work on upward contribution. The executive who works at making strengths productive, works at making organisation performance compatible with personal achievement.
 
 ## Making your boss successful is the best way to progress
 
@@ -117,12 +122,13 @@ What does my boss do well, and what do they need from me to perform? Your boss i
 
 This is not the leadership of brilliance and genius but the  more modest leadership of dedication, determination and serious purpose.
 
-Common people achieving uncommon results. It goes from mechanics, to attitudes, values and character; from procedure to commitment. As executives work towards being effective they raise the sights of their own and others and raise the performance level of the organisation.
+Common people achieving uncommon results. It goes from mechanics, to attitudes, values and character; from procedure to commitment.
 
-The task of the executive is not to change human beings but to multiply performance of everyone by putting strengths to work. Put into the leadership position the person who can do the pace-setting job.
+The task of the executive is not to change human beings but to multiply performance of everyone by putting strengths to work.
+
+Put into the leadership position the person who can do the pace-setting job. As executives work towards being effective they raise the sights of their own and others and raise the performance level of the organisation.
 
 ## I loved this book
 
-A lot of it really resonated with my own views about discipline, prioritisation and focusing on the strategic solution rather than solving problems on a case-by-case basis. It also promises a utopian vision of not running around all the time fighting fires: "A well managed plant is a quiet place, a well managed organisation is a dull one."
 
-
+A lot of it really resonated with my own views about discipline, prioritisation and focusing on the strategic solution rather than solving problems on a case-by-case basis. It promises a utopian vision of not running around all the time fighting fires: "A well managed plant is a quiet place, a well managed organisation is a dull one."
