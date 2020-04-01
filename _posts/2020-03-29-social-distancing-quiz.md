@@ -69,7 +69,7 @@ A couple of teams missed rounds where I shared the link in the chat. I should ha
 
 Other than that, it went pretty well, I think!
 
-## I would definitely do it againt
+## I would definitely do it again
 
 It was a lot of fun – at least, I had fun, and other people seemed to as well. Someone said "THANK YOU so much for doing this quiz, it’s just what I needed, it’s really helping me feel connected with everyone and was great fun!" and my favourite comment in Slack was "this is the most amazingly confusing and wonderful pub quiz I’ve ever taken part in. I have literally no idea what is going on and I’m still enjoying it".
 
