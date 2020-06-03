@@ -72,6 +72,8 @@ And then reload Apache for the config to take effect.
 
 `sudo systemctl reload apache2`
 
+You could also put this config into `httpd.conf` instead of into the `conf-available` directory.
+
 ## You can now see "Hello World"
 
 At  `http://SERVER_IP/myapp`
@@ -129,6 +131,8 @@ You might find this doesn't work because Apache can't find Python. In that case 
 
 You [can't set the WSGIPythonHome inside the Virtual Host](https://serverfault.com/a/235624), so put the above line into `httpd.conf`.
 
+As above, you could also put the whole lot into `httpd.conf` instead of into the `sites-available` diretory, but if you do that, make sure the `WSGIPythonHome` line is outside of the Virtual Host block.
+
 To find the virtualenv home, activate the virtualenv, start a python shell, and then:
 
 ```
@@ -172,4 +176,4 @@ This works for my Django project.
 
 ## Why did that all work?
 
-Armed with the instructions on how to get a basic 'Hello World' app running, it might now be helpful to go back and read the erroneously named [Quick configuration guide](https://modwsgi.readthedocs.io/en/develop/user-guides/quick-configuration-guide.html). You have to fill in the dots yourself, so this is what this post is for.
+Armed with the instructions on how to get a basic 'Hello World' app running, it might now be helpful to go back and read the erroneously named [Quick configuration guide](https://modwsgi.readthedocs.io/en/develop/user-guides/quick-configuration-guide.html). You have to fill in some dots yourself, so this is what this post is for.
