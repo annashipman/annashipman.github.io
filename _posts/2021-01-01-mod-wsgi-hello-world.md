@@ -8,7 +8,7 @@ I recently found myself having to use [`mod_wsgi`](https://modwsgi.readthedocs.i
 
 The [docs](https://modwsgi.readthedocs.io/en/develop/getting-started.html) say that you shouldn't attempt to use an app dependent on a framework like Django until you've got a basic 'Hello World' app running first, which will validate that "you at least understand the basics of configuring Apache."
 
-That's kind of patroning; I do *at least* understand the basics of configuring Apache, but it seems this "simple to use" (their words, of course) module needs a bit more explanation.
+That's kind of patronising; I do *at least* understand the basics of configuring Apache, but it seems this "simple to use" (their words, of course) module needs a bit more explanation.
 
 Unfortunately, their ["Quick configuration guide"](https://modwsgi.readthedocs.io/en/develop/user-guides/quick-configuration-guide.html) was anything but, so here's a better one.
 
