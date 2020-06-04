@@ -142,7 +142,7 @@ To find the virtualenv home, activate the virtualenv, start a python shell, and 
 
 ## Running it in daemon mode
 
-It's recommended that you run it in daemon mond, because otherwise it is in 'embedded mode' which requires a restart to Apache whenever you change the `mod_wsgi` configuration.
+It's recommended that you run it in daemon mode, because otherwise it is in 'embedded mode' which requires a restart to Apache whenever you change the `mod_wsgi` configuration.
 
 For that, you need to set `WSGIDaemonProcess` and `WSGIProcessGroup`. Here is what I did, but you can [read more on the `mod_wsgi` docs](https://modwsgi.readthedocs.io/en/develop/user-guides/quick-configuration-guide.html#delegation-to-daemon-process).
 
