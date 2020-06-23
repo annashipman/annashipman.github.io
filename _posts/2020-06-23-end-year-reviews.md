@@ -46,9 +46,9 @@ So while the feedback is very useful, it’s important as a manager you don’t 
 
 For the FT, the output of the performance review is a mark, nominally on a scale of 1–5. Roughly speaking, 3 is where we should all be at. 3 means you are performing well against challenging objectives. 4 means that you are exceeding those objectives; it’s good to get a 4 but also is an indication that perhaps you are due for a promotion as your current objectives are not challenging enough. 5 means you are really knocking it out of the park; you are performing absolutely exceptionally. It’s rare to get a 5.
 
-At the other end of the scale, a 2 means you are not meeting your objectives, and if you get a 2 then you and your manager need to look at doing performance improvement, to get you up to a level where you are meeting your objectives.
+At the other end of the scale, a 2 means you are not meeting your objectives, and if you get a 2 then you and your manager need to look at doing performance improvement, to get you up to a level where you are meeting your objectives. A 2 is not necessarily a bad thing; it can be an extremely useful wake-up call that your peformance isn't aligned with what the organisation is expecting from you, and is a good opportunity to get the support you need to get back on track.
 
-I don’t think 1 actually exists – if someone gets a 1, they should not be working here (so it’s not a normal scale).
+I don’t think 1 is a mark that is ever actually given to someone. If someone is in line to get a 1, then they probably should not be working here, or at least not in that role (so it’s not a normal scale).
 
 For the FT the value of the mark is to see where there are areas that need attention. A 2 indicates to HR that a manager needs support to do performance improvement. A 4 or 5 year after year for the same person indicates they are in the wrong job. A team where every member is getting a 5 indicates something that needs closer attention.
 
