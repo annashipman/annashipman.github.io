@@ -4,7 +4,7 @@ title: Why and how to do annual performance reviews
 layout: blog_post
 ---
 
-We are coming up to mid-year review time in my group at the FT, and two brilliant engineers on my team, [Glynn Phillips](https://twitter.com/GlynnPhillips) and [Charlotte Payne](), decided to run a session for the other line managers in our group on why we have this process.
+We are coming up to mid-year review time in my group at the FT, and two brilliant engineers on my team, [Glynn Phillips](https://twitter.com/GlynnPhillips) and Charlotte Payne, decided to run a session for the other line managers in our group on why we have this process.
 
 Glynn said they were thinking about it at a broader level: “It could be easy for us to answer the "why do we do this" question and it still sounds to some people like ‘Well it's an FT procedure’.”
 
