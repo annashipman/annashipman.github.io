@@ -147,3 +147,7 @@ deploy:
 This (allegedly deprecated but still working) [`travis.yml` linter](http://lint.travis-ci.org/) is useful.
 
 Have a look at the [SPA website Travis file](https://github.com/spaconference/spa-website/blob/master/.travis.yml) and [the builds](https://travis-ci.org/spaconference/spa-website/builds/) if you'd like to know more about how it works for us.
+
+## Edit
+
+Useful commit for future reference is the [creating/encrypting SSH key one](https://github.com/spaconference/spa-website/commit/3ed4b7c9d6).
