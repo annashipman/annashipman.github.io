@@ -4,7 +4,7 @@ title: The Multiple Faces of Technical Leadership
 layout: blog_post
 ---
 
-On Monday I was on a panel, organised by Codemotion, about different technical leadership roles. It was a great discussion, with extremely impressive co-panellists [Omosola Odetunde](https://twitter.com/omosolatweets) and [Pat Kua](https://twitter.com/patkua), and well faciliated by [Piergiorgio Niero](https://twitter.com/pigiuz).
+On Monday I was on a panel, organised by Codemotion, about technical leadership. It was a great discussion, with extremely impressive co-panellists [Omosola Odetunde](https://twitter.com/omosolatweets) and [Pat Kua](https://twitter.com/patkua), and well faciliated by [Piergiorgio Niero](https://twitter.com/pigiuz).
 
 We discussed three main areas:
 
