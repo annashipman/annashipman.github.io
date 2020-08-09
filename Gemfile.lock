@@ -252,6 +252,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  commonmarker
   github-pages
   kramdown (>= 2.3.0)
   nokogiri (>= 1.10.4)
