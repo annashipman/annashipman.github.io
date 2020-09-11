@@ -38,6 +38,8 @@ As a manager, it’s important to review the feedback and make sure you are thin
 
 For example, [“Abrasive” is a word that is only applied to women](https://web.stanford.edu/dept/radiology/cgi-bin/raddiversity/wp-content/uploads/2017/12/TheAbrasivenessTrap.pdf); for men the feedback might say approvingly that he was direct, but more likely it wouldn’t be mentioned. [Black workers tend to receive extra scrutiny from managers and more attention on mistakes](https://www.theatlantic.com/business/archive/2015/10/why-black-workers-really-do-need-to-be-twice-as-good/409276/) than white workers, so feedback that would be overlooked for a white person might be mentioned for a black person. And there are many, many other examples.
 
+[Edit, 11/09/2020: adding [this extremely useful resource: Bias Interruptors](https://biasinterrupters.org/wp-content/uploads/Identifying-Bias-in-Performance-Evaluations-Guide-no-citations.pdf); examples of how bias can appear in performance reviews and steps to address them, shared with me by the excellent [Keran Braich](https://www.linkedin.com/in/keran-braich/).]
+
 It’s also very important to make sure you ask a wide variety of people, not just the ones your report has suggested you ask. I usually ask my reports if there is anyone they’ve had conflict with to get feedback on; it may not be the most positive or constructive feedback, but it will often be very useful, even if you both choose to disregard it.
 
 So while the feedback is very useful, it’s important as a manager you don’t take it as the final say, but as one of the factors that helps you form an overall picture, tell your report if you suspect they should take the feedback with a pinch of salt, and listen to them when they point out biases you may not have seen.
