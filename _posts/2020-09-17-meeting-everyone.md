@@ -1,6 +1,6 @@
 ---
 anchor_id: meeting-everyone
-title: Meeting everyone
+title: Meeting everyone on a new team
 layout: blog_post
 ---
 
@@ -11,9 +11,9 @@ When I joined the Financial Times as Technical Director for FT.com, I inherited 
 The idea was suggested to me by a mentor, who'd been advised to do it by *his* mentor, a Rear Admiral, who said this was something you should do whenever you have a team of fewer than 150 people. My mentor gave me some tips:
 
 - Be clear about whether you will take action or whether this is for information only.
-- This should mostly be about listening - I should talk for maybe 5 minutes and they should talk for 25.
+- This should mostly be about listening - you should talk for maybe 5 minutes and they should talk for 25.
 - It's to find out what's going well and what's not going well.
-- It's informal, but you should make sure it's in an enclosed meeting room so that people feel they can speak freely.
+- It's informal, but make sure it's in an enclosed meeting room so that people feel they can speak freely.
 - Sometimes it will be quite boring, sometimes you may just learn a lot about someone's family or hobbies, but that is useful from a getting to know people/relationship building perspective and it means that you know some things about that person.
 - Aim is to get a bit about their background, their priorities and their pressures.
 
@@ -79,11 +79,11 @@ However, I do not have a very good memory, so for all the subsequent ones I made
 
 ## Introducing myself
 
-In my intro, I gave a potted career history. Starting from my degree in philosophy, and my first career in [children's book publishing](https://www.barringtonstoke.co.uk/), through teaching myself to code, my [masters in Software Systems](https://www.hw.ac.uk/study/uk/postgraduate/information-technology-software-systems.htm) and then my 15+ year career in programming, infrastructure & operations, technical architecture and then my previous role as [Open Source lead](/jfdi/a-year-in-the-life-os-lead.html). I also talked about what appealed to me about the job as Technical Director at the FT.
+In my intro, I gave a potted career history. Starting from my degree in philosophy, and my first career in [children's book publishing](https://www.barringtonstoke.co.uk/), through teaching myself to code, my [masters in Software Systems](https://www.hw.ac.uk/study/uk/postgraduate/information-technology-software-systems.htm) and then my 15+ year career in programming, infrastructure and operations, technical architecture, and my previous role as [Open Source lead](/jfdi/a-year-in-the-life-os-lead.html). I also talked about what appealed to me about the job as Technical Director at the FT.
 
 I said roughly the same thing to everyone. I don't normally introduce myself and give my background, but in this case I thought that as a new Tech Director most of them would not be working closely with me, and I would not be contributing code, so it was worth giving my credentials.
 
-My mentor had suggested I also say something personal. I think he intended something like "married with two children", but instead, I tried to give a different kind of personal detail. I tried to come up with a different one for each conversation, for example something about my [cross-stitch hobby](https://twitter.com/annashipman/status/1043917006477643777).
+My mentor had suggested I also say something personal. I think he intended something like "married with two children" (or whatever), but instead, I tried to give a different kind of personal detail, something about my interests. I tried to come up with a different one for each conversation, for example something about my [cross-stitch hobby](https://twitter.com/annashipman/status/1043917006477643777).
 
 This part was the hardest part for me, because prior to this I had generally enjoyed keeping a clear boundary between work stuff and personal stuff, so that definitely didn't cover talking about cross-stitch, or my home life, on a first meeting. However, I had been trying to bring more of my personal self to work, and this part of the intro did lead to some really interesting conversations and I think helped make a better connection.
 
@@ -131,16 +131,25 @@ I think the relationship-building aspect does have a longer lifespan though; eac
 
 ## Would I do it again?
 
-I would definitely do it again when starting another job.
+I would definitely do it again when starting another job. It gave me an incredible head-start on understanding the areas that needed improvement, and let me start to get to know my impressive, excellent team.
+
+## Would I do it regularly?
 
 One question I have worried over (and is the reason it's taken me so long to write this blog post) is whether it should be a regular thing. My previous mentor said he did it annually.
 
-The big issue for me is the time commitment. It's around 28 hours, which incidentally is my working week if I did nothing else at all. But I couldn't get it done in a week as I find back-to-back meetings too draining, particularly intense focus ones like this. For me then the question is whether the value outweighs the cost enough to do it every year.
+It would be a very big time commitment to do annually, around 28 hours, which incidentally is my working week if I did nothing else at all. But I couldn't get it done in a week, as I find back-to-back meetings too draining, particularly intense focus ones like this. It would take probably 4 weeks a year.
 
-At this stage, I have a lot of other ways of gathering information about how my team are doing. I have open conversations with direct reports who keep me in the loop. We have a Peakon survey, we do a Spotify healthcheck, we have a line managers channel where we raise issues, teams have retrospectives, and we do have feedback loops. So while I am sure there are issues that I am completely missing, I am not sure (famous last words!) that there are enough to justify the time again.
+At this stage, I have a lot of ways of gathering information about how my team are doing. I have open conversations with direct reports who keep me in the loop. We have a Peakon survey, we do a Spotify healthcheck, we have a line managers channel where we raise issues, teams have retrospectives and people do reach out to me with issues. So while I am sure there are issues that I am completely missing, I am not sure (famous last words!) that there are enough to justify the time again.
 
-What I do do is have a 5-10 minute conversation with new starters in their first week or so, so the initial barrier of a conversation with me is broken, and I try to have a coffee with people when they leave the team. That is another great opportunity to ask the "is there anything I should know" question.
+## Talking to joiners and leavers
 
-Now that we are all working from home, I arrange catch ups with people on my team to see how they are doing and to try and replace the casual conversation in the kitchen that is now missing*. Working out how not to lose the social capital we've uilt up in the office, and building it up with new starters is something we all need to address. For a start, things like social events (in work time) are a big part of that, and I make sure to attend as often as I can, both to try to make sure I don't become a distant, completely unapproachable figure, and also because they are often extremely fun.
+While I've decided not to make this a regular thing, I still want to know everyone in my team. What I do now is have a 5-10 minute conversation with new starters in their first week or so, so the initial barrier of a conversation with me is broken.
+
+I also have a coffee with people when they leave the team or the FT. That is another great opportunity to ask the "is there anything I should know" question and get often very useful insights.
+
+Now that we are all working from home, I arrange occasional catch ups* with people on my team to see how they are doing, and to try and replace the casual conversation in the kitchen that is now missing.
+
+Working out how not to lose the social capital we've built up in the office, and building it up with new starters is something we all need to address. For a start, things like social events (in work time) are a big part of that, and I make sure to attend as often as I can, both to try to make sure I don't become a distant, completely unapproachable figure, and also because they are often extremely fun.
+
 
 *If you are on my team and want one of these, even if just for a chat, Slack me.
