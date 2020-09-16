@@ -4,11 +4,11 @@ title: Meeting everyone
 layout: blog_post
 ---
 
-When I joined the Financial Times as Technical Director for FT.com, one of the first things I did was meet everyone in my team for a one-to-one. This was recommended to me by a mentor, who'd been advised to do it by *his* mentor, a Rear Admiral, who said this was something you should do whenever you have a team of fewer than 150 people.
-
-I was initially resistant, but it was extremely valuable, I'm glad I did it, and I would definitely do it again in a future role.
+When I joined the Financial Times as Technical Director for FT.com, I inherited a team of around 50 engineers. One of the first things I did was meet each of them for a one-to-one. I was initially resistant, but it was extremely valuable, I'm glad I did it, and I would definitely do it again in a future role.
 
 ## My mentor's advice about the content of the meeting
+
+The idea was suggested to me by a mentor, who'd been advised to do it by *his* mentor, a Rear Admiral, who said this was something you should do whenever you have a team of fewer than 150 people. My mentor gave me some tips:
 
 - Be clear about whether you will take action or whether this is for information only.
 - This should mostly be about listening - I should talk for maybe 5 minutes and they should talk for 25.
@@ -71,7 +71,7 @@ I put all the information in the meeting invite.
 
 Some people did not read the meeting invite and came with no idea what the meeting was about. Some people had fully prepared and written notes that they then read out to me. Actually people having prepared sometimes was less useful, because sometimes it led the conversation to solutions rather than problems. Howver it was great that people had really given it some thought.
 
-## Making notes felt too much like a promise
+## Making notes felt too much like a promise
 
 Each meeting was half an hour. In the very first one, I made notes in a notebook, but I realised that created an implicit commitment that I was going to take action on everything that was said, even though I had said it was information only.
 
@@ -79,15 +79,15 @@ However, I do not have a very good memory, so for all the subsequent ones I made
 
 ## Introducing myself
 
-In my intro, I gave a potted career history. Starting from my degree in philosophy, and my first career in [children's book publishing](https://www.barringtonstoke.co.uk/) through teaching myself to code, my [masters in Software Systems](https://www.hw.ac.uk/study/uk/postgraduate/information-technology-software-systems.htm) and then my 15+ year career in programming - ops engineering - technical architecture and being open source lead. I also talked about what appealed to me about the job, particularly that as open source lead, I really enjoyed the influencing part of the role and the impact, but I missed having a team.
+In my intro, I gave a potted career history. Starting from my degree in philosophy, and my first career in [children's book publishing](https://www.barringtonstoke.co.uk/), through teaching myself to code, my [masters in Software Systems](https://www.hw.ac.uk/study/uk/postgraduate/information-technology-software-systems.htm) and then my 15+ year career in programming, infrastructure & operations, technical architecture and then my previous role as [Open Source lead](/jfdi/a-year-in-the-life-os-lead.html). I also talked about what appealed to me about the job as Technical Director at the FT.
 
-I said roughly the same thing to everyone. I don't normally introduce myself and give my background, but in this case I thought that as a new tech director most of them would not be working closely with me, and I would not be contributing code, so it was worth giving my credentials.
+I said roughly the same thing to everyone. I don't normally introduce myself and give my background, but in this case I thought that as a new Tech Director most of them would not be working closely with me, and I would not be contributing code, so it was worth giving my credentials.
 
-My mentor had suggested I also say something personal. I think he intended something like "married with two children", but instead, I tried to give a different kind of personal detail and a different one for each conversation, for example something about my [cross-stitch hobby](https://twitter.com/annashipman/status/1043917006477643777).
+My mentor had suggested I also say something personal. I think he intended something like "married with two children", but instead, I tried to give a different kind of personal detail. I tried to come up with a different one for each conversation, for example something about my [cross-stitch hobby](https://twitter.com/annashipman/status/1043917006477643777).
 
-This part was the hardest part for me, because prior to this I had generally enjoyed keeping a clear boundary between work stuff and personal stuff, so that definitely didn't cover talking about cross-stitch, or my home life, on a first meeting. However, I had been trying to bring more of my personal self to work, and this part of the intro did lead to some really interesting conversations and I think helped make a better connection, and trying to come up with a different personal detail for each person was an interesting exercise.
+This part was the hardest part for me, because prior to this I had generally enjoyed keeping a clear boundary between work stuff and personal stuff, so that definitely didn't cover talking about cross-stitch, or my home life, on a first meeting. However, I had been trying to bring more of my personal self to work, and this part of the intro did lead to some really interesting conversations and I think helped make a better connection.
 
-Of course, these days, when we are all at home my personal life is in meetings with me, so it's good I'd already started on that journey!
+Of course, these days, when we are all at home, my personal life is in meetings with me, so it's good I'd already started on that journey!
 
 Giving so much information in my introduction also allowed the other person to introduce themselves how they wanted. Some talked career history, some focused on their hobbies, others were really open about their lives and aspirations.
 
@@ -99,9 +99,9 @@ In my first few months in the new job, I often felt really stretched for time, b
 
 There were two very valuable things about this for me.
 
-The first was getting an idea of what change was needed. These meetings gave me a brilliant insight that wasn't available elsewhere. Patterns started emerging very quickly, and formed the basis of my [tech strategy](https://medium.com/ft-product-technology/the-difficult-teenage-years-setting-tech-strategy-after-a-launch-7f42eb94a424).
+The first was getting an idea of what change was needed. These meetings gave me a brilliant insight that wasn't available elsewhere. Patterns started emerging very quickly, and formed the basis of our [tech strategy](https://medium.com/ft-product-technology/the-difficult-teenage-years-setting-tech-strategy-after-a-launch-7f42eb94a424).
 
-The second was building relationships. I have a big team, around 50 engineers, and a lot of the people I had 1:1s with I would not have come into contact with during the course of the ordinary working week. It would have taken time to meet everyone at socials, and it wouldn't have been the same quality of conversation. I still feel, two years on, that I know a bit about all the people I had those conversations with which has felt to me like a good foundation for our subsequent conversations.
+The second was building relationships. A lot of the people I had 1:1s with I would not have come into contact with during the course of the ordinary working week. It would have taken time to meet everyone at socials, and it wouldn't have been the same quality of conversation. I still feel, two years on, that I know a bit about all the people I had those conversations with, which has felt to me like a good foundation for our subsequent conversations.
 
 It was also good, as someone who is a bit shy, to have names to faces quite quickly and people to say hello to when walking round the office.
 
@@ -121,7 +121,7 @@ All of the people who responded said they found the conversation valuable, and s
 
 One of the challenges of being in a senior leadership position is that there are lot of things you just don't see. Issues that are completely obvious to people in teams, doing the work, are just not clear or even visible to those in leadership positions.
 
-There are various mechanisms to address this, like staff surveys, retrospectives, making sure line managers feel comfortable raising issues with their line managers/their line managers managers, etc, but it's also useful to have that direct line open in case all others fail.
+There are various mechanisms to address this, like staff surveys, retrospectives, making sure line managers feel comfortable raising issues with their line managers/their line managers' managers, etc, but it's also useful to have that direct line open in case all others fail.
 
 One of the questions I asked people in my follow up after a year was whether "do you feel able to raise issues with me?" and the answers ranged from "yes", to "I did at the beginning after having this meeting but less so as time went on."
 
@@ -139,7 +139,8 @@ The big issue for me is the time commitment. It's around 28 hours, which inciden
 
 At this stage, I have a lot of other ways of gathering information about how my team are doing. I have open conversations with direct reports who keep me in the loop. We have a Peakon survey, we do a Spotify healthcheck, we have a line managers channel where we raise issues, teams have retrospectives, and we do have feedback loops. So while I am sure there are issues that I am completely missing, I am not sure (famous last words!) that there are enough to justify the time again.
 
-What I do do is have a 5-10 minute conversation with new starters in their first week or so, so the initial barrier of a conversation with me is broken, and I try to have a coffee with people when they leave the team. That is another great opportunity to ask the "is there anythiung I should know" question.
+What I do do is have a 5-10 minute conversation with new starters in their first week or so, so the initial barrier of a conversation with me is broken, and I try to have a coffee with people when they leave the team. That is another great opportunity to ask the "is there anything I should know" question.
 
-Making sure the relationship is still there is something we all need to address as a team, especially now we are working from home, so things like social events (some in work time) are a big part of that, and I make sure to attend as often as I can, both to try to make sure I don't become a distant, completely unapproachable figure, and also because they are often extremely fun!
+Now that we are all working from home, I arrange catch ups with people on my team to see how they are doing and to try and replace the casual conversation in the kitchen that is now missing*. Working out how not to lose the social capital we've uilt up in the office, and building it up with new starters is something we all need to address. For a start, things like social events (in work time) are a big part of that, and I make sure to attend as often as I can, both to try to make sure I don't become a distant, completely unapproachable figure, and also because they are often extremely fun.
 
+*If you are on my team and want one of these, even if just for a chat, Slack me.
