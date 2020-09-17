@@ -11,7 +11,7 @@ When I joined the Financial Times as Technical Director for FT.com, I inherited 
 The idea was suggested to me by a mentor, who'd been advised to do it by *his* mentor, a Rear Admiral, who said this was something you should do whenever you have a team of fewer than 150 people. My mentor gave me some tips:
 
 - Be clear about whether you will take action or whether this is for information only.
-- This should mostly be about listening - you should talk for maybe 5 minutes and they should talk for 25.
+- This should mostly be about listening – you should talk for maybe 5 minutes and they should talk for 25.
 - It's to find out what's going well and what's not going well.
 - It's informal, but make sure it's in an enclosed meeting room so that people feel they can speak freely.
 - Sometimes it will be quite boring, sometimes you may just learn a lot about someone's family or hobbies, but that is useful from a getting to know people/relationship building perspective and it means that you know some things about that person.
@@ -35,7 +35,7 @@ Firstly I ran through everything I planned to cover, and then stepped through it
 ### What we're going to discuss
 
 - First I'll introduce myself, and tell you a bit about my background
-- Then, if you like, I'd love you to tell me a bit about yourself - as much or as little as you feel like sharing
+- Then, if you like, I'd love you to tell me a bit about yourself – as much or as little as you feel like sharing
 - Then we'll discuss the following questions:
 
 1. What do you think the most important things we should be doing over the next year?
@@ -75,7 +75,7 @@ Some people did not read the meeting invite and came with no idea what the meeti
 
 Each meeting was half an hour. In the very first one, I made notes in a notebook, but I realised that created an implicit commitment that I was going to take action on everything that was said, even though I had said it was information only.
 
-However, I do not have a very good memory, so for all the subsequent ones I made a few notes after each meeting of key themes. This meant I couldn't do more than two in a row or go straight into another meeting, so it made scheduling slightly harder. These days, people are much more aware of the shorter meeting approach so if doing this again, I'd go for the 'therapy hour' - 25 minutes for conversation then 5 minutes for me to make the notes.
+However, I do not have a very good memory, so for all the subsequent ones I made a few notes after each meeting of key themes. This meant I couldn't do more than two in a row or go straight into another meeting, so it made scheduling slightly harder. These days, people are much more aware of the shorter meeting approach so if doing this again, I'd go for the 'therapy hour' – 25 minutes for conversation then 5 minutes for me to make the notes.
 
 ## Introducing myself
 
@@ -143,7 +143,7 @@ At this stage, I have a lot of ways of gathering information about how my team a
 
 ## Talking to joiners and leavers
 
-While I've decided not to make this a regular thing, I still want to know everyone in my team. What I do now is have a 5-10 minute conversation with new starters in their first week or so, so the initial barrier of a conversation with me is broken.
+While I've decided not to make this a regular thing, I still want to know everyone in my team. What I do now is have a 5–10 minute conversation with new starters in their first week or so, so the initial barrier of a conversation with me is broken.
 
 I also have a coffee with people when they leave the team or the FT. That is another great opportunity to ask the "is there anything I should know" question and get often very useful insights.
 
