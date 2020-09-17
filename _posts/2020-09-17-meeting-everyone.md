@@ -14,7 +14,7 @@ The idea was suggested to me by a mentor, who'd been advised to do it by *his* m
 - This should mostly be about listening – you should talk for maybe 5 minutes and they should talk for 25.
 - It's to find out what's going well and what's not going well.
 - It's informal, but make sure it's in an enclosed meeting room so that people feel they can speak freely.
-- Sometimes it will be quite boring, sometimes you may just learn a lot about someone's family or hobbies, but that is useful from a getting to know people/relationship building perspective and it means that you know some things about that person.
+- Sometimes it will be quite boring, sometimes you may just learn a lot about someone's family or hobbies, but that is useful from a getting to know people/relationship-building perspective and it means that you know some things about that person.
 - Aim is to get a bit about their background, their priorities and their pressures.
 
 ## Making time was hard
@@ -137,7 +137,7 @@ I would definitely do it again when starting another job. It gave me an incredib
 
 One question I have worried over (and is the reason it's taken me so long to write this blog post) is whether it should be a regular thing. My previous mentor said he did it annually.
 
-It would be a very big time commitment to do annually, around 28 hours, which incidentally is my working week if I did nothing else at all. But I couldn't get it done in a week, as I find back-to-back meetings too draining, particularly intense focus ones like this. It would take probably 4 weeks a year.
+It would be a very big time commitment to do annually, around 28 hours, which incidentally is my working week if I did nothing else at all. But I couldn't get it done in a week, as I find back-to-back meetings too draining, particularly intense focus ones like this. It would take probably 6-8 weeks a year to get them all done, and that would involve prioritising it above most of my other commitments.
 
 At this stage, I have a lot of ways of gathering information about how my team are doing. I have open conversations with direct reports who keep me in the loop. We have a Peakon survey, we do a Spotify healthcheck, we have a line managers channel where we raise issues, teams have retrospectives and people do reach out to me with issues. So while I am sure there are issues that I am completely missing, I am not sure (famous last words!) that there are enough to justify the time again.
 
