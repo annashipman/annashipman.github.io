@@ -69,7 +69,7 @@ I put all the information in the meeting invite.
 <p>Anna</p>
 </div>
 
-Some people did not read the meeting invite and came with no idea what the meeting was about. Some people had fully prepared and written notes that they then read out to me. Actually people having prepared sometimes was less useful, because sometimes it led the conversation to solutions rather than problems. Howver it was great that people had really given it some thought.
+Some people did not read the meeting invite and came with no idea what the meeting was about. Some people had fully prepared and written notes that they then read out to me. Actually people having prepared sometimes was less useful, because sometimes it led the conversation to solutions rather than problems. However it was great that people had really given it some thought.
 
 ## Making notes felt too much like a promise
 
