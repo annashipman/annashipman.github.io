@@ -4,208 +4,150 @@ title: Turn the Ship Around!
 layout: blog_post
 ---
 
-Prompted by some discussions at work, I recently read [Turn the Ship Around!](https://uk.bookshop.org/books/turn-the-ship-around-a-true-story-of-building-leaders-by-breaking-the-rules/9780241250945). I enjoyed it. Here are my notes.
-
-Maybe say here that I made A LOT of notes and have only written up the ones relevant to me right now so worth you reading as you may get completely different things from it.
+Prompted by some discussions at work, I recently read [Turn the Ship Around!](https://uk.bookshop.org/books/turn-the-ship-around-a-true-story-of-building-leaders-by-breaking-the-rules/9780241250945) I enjoyed it. Here are my notes.
 
 ## Making followers into leaders in the Navy
 
-I had heard of this book, and seen this [short video (10 mins)](https://www.youtube.com/watch?v=OqmdLcyES_Q) with the key points. Recently, one of my team shared a link to the video when we were having a discussion about how to take more ownership, and watching it again I thought I would read the book to get the practical steps.
+I had previously seen a 20-min talk about the concepts, by the author, L. David Marquet. Recently, one of my team shared a link to this [short video (10 min)](https://www.youtube.com/watch?v=OqmdLcyES_Q) when we were having a discussion about how to take more ownership, and I thought I would read the book to get the practical steps.
 
-The context is fascinating, because thinking for oneself; being a leader at all levels rather than following orders, is expressly something I do not associate with the military. The book is essentially a case study of what L. David Marquet and his team aboard a nuclear submarine did to move from a "leader-follower" appraoch to a "leader-leader" approach. Each chapter illustrates an idea with an example, which makes it very easy to read, and then supplements it with questions you can use to think about how this idea could work in your own organisation. He ackowledges at the end that it didn't play out like that - they did some things and then afterwards worked out what the framework had been, but presenting it like this makes it very easy to follow and think about how to apply. I also find it much more powerful when a business book is written by someone who actually has the experience of implementing the ideas they write about (like [High Output Management](/jfdi/high-output-management.html), my favourite).
+The context is fascinating, because being a leader at all levels rather than following orders, is expressly something I do not associate with the military.
 
-Note: not a list of prescriptions
+The book is essentially a case study of what L. David Marquet and his team aboard a nuclear submarine did to move from a "leader-follower" appraoch to a "leader-leader" approach. Each chapter illustrates an idea with an example, which makes it very easy to read, and then supplements it with questions you can use to think about how this idea could work in your own organisation.
 
-## hontest about the challenges
-
-Maybe say here about how he talks about things that went badly, his own worries, etc.
-
-Something he struggled with all career - balancing the courage to hold people accountable for their actions with my compassion for their honest efforts. p. 118.
-
-Caring but not caring - caring about subordinates and the organisation but little about the organisational consequences to yourself 
-
-To promote long term success he had to ignore the short term reward system (duplicaetd elsewehre atm)
-
-Didn’t do it when tired - fell back on and habits. Like per the pandemic. Too tired to engage in the discussion, felt like that’s all he did all day every day p87 Lots of times when he felt like going back to more expected style of leadership. Barking orders etc
-
-## Leadership at all levels
-
-The end result of the work the team did was a submarine where each crew member took responsibility for their own area, and some of the ways this manifested was that instead of the Captain making decisions, crew members would come to him and say "Captain, I intend to..." and he would say "very well" – and this was just the decisions he needed to know about. 95% of the decisions on board were taken without his input.
-
-Leader leader structure meant a wide pool of talent so could let two senior people have leave at the same time.
-
-
-
-## I intend to...
-
-I intend to instead of I will 
-And instead of asking questions, give enough information so captain just needs to say ok
-
-So you need to think like your boss to understand what the questions are. No need of leadership redevelopment programs - the way we ran the ship *was* leadership development programs. 
-
-What causes us to take control when we should be giving control? 
-What would be the most challenging obstacle to “I intend to?”
-
-Ways I think we could use this: Clarifying what done looks like
-Checking out - proactively informing me of where they are. Rather than me chasing, because with me chasing I’m holding on to all the threads. I am responsible. 
-As it's not "I intend to submerge the ship", the tasks are much larger, "I intend to spend time working on a proposal for how to make our content stores more consistent and cost-effective," could take some time...
-
-## Letting go of control
-
-Leadership- communicating people’s worth and potential to people so well they are inspired to see it themselves 
-Empowerment doesn’t work - ie it takes me to empower you, which drowns out the message 
-
-As control is divested, technical competence and organisational clarity need to be strengthened 
-
-Repeated In ever increasing circles 
-
-Let go of idea that there can be leaders and followers 
-
-
-## Training
-
-Created a creed - about learning (not training - too passive)
-
-Learning mindset - learning while doing. “Instead of looking at a task as just a chore, look at it as an opportunity to learn more about the associated piece of equipment, the procedure, or if nothing else, about how to delegate or accomplish tasks.”
-
-Love this bit  their creed 
-
-“Therefore, our vision of our command is a learning and competence factory. The raw materials are the new personnel reporting aboard each week, new equipment, and tactics. The product is well-qualified, experienced sailors who, upon detaching from the command, carry their competence throughout the Navy. Each of you, then, is both a product of the factory (when you learn) and a machine in the factory (when you help others learn).
-
-What do you expect me to do? I expect you to be a better submariner each day.”
-
-Training programme then was actually an enabler that allowed them to pass decision-making authority to lower and lower levels. 
-
-P.132 - revolutionary way of thinking about training!!
-And a suggestion about how to do it - summarise the suggestion. 
-
-He found the learning mindset helped his perspective too, allowed him to approach inspections calmly, even eagerly, rather than anxious about the result; and this impacted the crew as well who sensed this. 
-
+It's not a list of prescriptions, but reading the case study makes it very easy to follow. I also find it much more powerful when a business book is written by someone who actually has the experience of implementing the ideas they write about (like [High Output Management](/jfdi/high-output-management.html), my favourite).
 
 ## Introductory questions
 
-One of the first things he did when taking command of the submarine was meet with each crew member and ask them a set of questions very simliar to [the ones I asked my team when I joined](/jfdi/meeting-everyone.html). (That was recommended to me by a previous mentor; he had been recommended it by a mentor of his, who was a Rear Admiral in the Navy, I wondered if there was a direct connection here!).
+Not one of the key points, but something that I found interesting was that one of the first things he did when taking command of the submarine was meet with each crew member and ask them a set of questions very simliar to [the ones I asked my team when I joined](/jfdi/meeting-everyone.html). (One question I might add for next time is "What is the best thing I can do for you?")
 
-One question that he asked that I did not but liked and might well consider for next time was "What is the best thing I can do for you?" I like that because it's the beginning of people starting to think what the solution to their problems might be.
+That idea was recommended to me by a previous mentor; he had been recommended it by a mentor of his, who was a Rear Admiral in the Navy, so I wondered if there was a direct connection here!
 
+## Leadership at all levels
 
-## Curiosity rather than rote questioning
+The end result of the work the team did was a submarine where each crew member took responsibility for their own area. Instead of the Captain making decisions, crew members would come to him and say "Captain, I intend to..." and he would say "very well".
 
-He was in an interesting position in that he had trained for a different type of submarine, so when he joined this post he was not as technically competent as he expected to be and as the Navy traditionally expect leadership to be. He thus had to take a position of curiosity, and when he asked the crew questions about the equipment it wasn't to test them on their knowledge but because he genuinely did not know. Eventually he became fully technically competent on the ship but by then the patterns of interaction had been set.
+And this was just the decisions he needed to know about. 95% of the decisions on board were taken without his input.
 
-I found this really interesting because it ties into my experience joining as Technical Director of a product that I didn't build, so could not hope to be anywhere near as technically competent with as the people who built it and work on it day to day. He talked about his own struggles with wanting to be the smartest person in the room, and I found this very insightful; one of the challenges with a "leader-leader" approach is having to let go of your idea of yourself as someone who has the answers and this can be very hard.
+The fact that they had leadership at all levels also meant they were more resilient. They had a wide pool of talent. He gives an example of wanting to let two senior people have extended leave for personal reasons at the same time, and because  so could let two senior people have leave at the same time.
 
-One of the questions he poses at the end of the section on this is "Is technical competence personal or organisational?" which is a very interesting question, and reminded me of thoughts around documentation, making sure everyone ... [pad out or kill this bit]
+## I intend to...
 
-## Set clarity about goals
+Initially, they would come to him and say "I intend to..." and he would ask questions, for example, have you considered this safety aspect. Then he started asking them what he was thinking. Ultimately, instead of him asking questions, his crew would give enough information so that he just needs to assent.
 
-Specific goals and the freedom to choose.
+In order to do this, you need to think like your boss to understand what questions they may have. He says on his submarine, they had no need of leadership development programmes – the way they ran the ship *was* a leadership development programme.
 
+While reading this I wondered how we could apply it. My [aim is to have the principal engineers on my team running the team without me](/jfdi/delegating-to-a-team.html), so something like this would be good. One of the challenges is that the tasks are much larger or longer-lived: it's not "I intend to submerge the ship", it's more like "I intend to spend three weeks working on a proposal for how to make our content stores more consistent and cost-effective." and so would have to involve information about why that was a priority compared to other tasks. It also made me think about the importance of clarity around what done looks like. In the first case, done is the ship is safely suberged. What is done in the second case? A case study? A recommendation? The actual work - consistency among our content stores?
 
-Described a “tickler” - even well run ones still have the overhead of maintaining the tracker of work to do and having the supervisory meetings - giving control to team to think of a better way to understand and meet those goals
+It did make me think how valuable this proactive communcation is, rather than the leader holding all the threads and chasing for updates, each person owns the thread and proactively communicates the progress and goals.
 
-Required them to own the problem and the solution to it
+## Emancipated, not empowered
 
-RESIST THE URGE TO PROVUDE SOLUTIONS
+He talks a lot about how "empowerment" doesn't work. It's the leader allowing the crew to be empowered; so it's still "leader-follower", which drowns out the message. Instead, he talks about "emancipation".
 
-Begin with the end in mind - 7 habits od highly effective people... (maybe I should read that next)
+He says he wanted to make sure they deliberately decided to take charge. "It wouldn’t be any good if I directed them. You can’t invoke leader-follower rules to direct a shift from leader-follower to leader-leader."
 
-Rule with menotong meetings - could only talk about long term issues not operational. Asked them to write their end of tour awards (5 years out) or if too long then their next years prefrormance appraisal. P.191 how to write up and use that example. 
+When it's going well you no longer have the ability to empower your staff, because they no are not longer relying on you for their source of power.
 
-Wrote up but they wanted to achieve. And made it specific and measurable by asking questions like open “how would you know if this had been achieved?” And digging deeper: e.g. if it was “we’d have fewer critiques” next question is how many critiques did you have last year?  In the process they often learned that they hadn’t been keeping track of appropriate data. It meant the end of year reviews had concrete data in themSo instead of reduced significantly it would say reduced by 43%.
+He then defines leadership as communicating people’s worth and potential to people so well they are inspired to see it themselves.
 
-I wonder about getting us all to begin with the end in mind, all writing our iwn 3 year outcomes would help?
+## Delegating authority further
 
-For how far in the future are you optimising your organisation?
+He achieved this by delegating authority as far down as possible. He started small, with each department head in charge of authorising leave. But then they weren't in charge of the consequences, e.g. if too many people were on leave at once so there weren't enough people to cover the watch. So then each department head was in charge of leave and the watch rota; i.e. the consequences of their decisions.
 
-## Emancipated not empowered
+This became: each department head monitors their own departments and are responsible for getting the work done. (This works well when there are clear domains; one challenge we have on our team is that we share responsibility for a large domain rather than being able to split it clearly by area. This is something we'll have to figure out.)
 
-^ in above section? figure these out
- I wanted to make sure They deliberately decided to take charge. It wouldn’t be any good if I directed them. You can’t invoke leader follower rules to direct a shift from leader follower to leader leader
+He requires each department head – and eventually, each crew member – to own each problem and the solution to it.
 
-Not just in charge of leave but also watch bill, ie consequences of their actions. 
+Delegating authority in this way means always leaving room to question orders, and also people being able to tell him he is wrong. He recounts a story of when an officer much junior to him tells him, in response to an order, "No, Captain, you're wrong." The junior officer was correct, and had they instead followed the Captain's orders, they would not have achieved their mission.
 
-Emancipate rather than empower - decision making control, competence and clarity. When going well you no longer have the ability to empower them because they no are not longer relying on you for their source of power. 
+## How can we delegate authority further?
 
-And meant they could tell him he was wrong, questining orders
+He suggests thinking specifically about what mechanisms/processes can be changed to delegate authority further? This is a good question for us to consider, not just for my direct team but for the people who report into them as well.
+
+He also asks you to think about: what do I, as a proponent of the leader-leader approach need to delegate to show I am willing to walk the talk? Good question. It reminds me of some excellent advice I got some years ago on first taking on a leadership role: "Delegate everything. Far more than feels comfortable."
+
+## As authority is delegated, technical competence at all levels becomes more important
+
+If people need to make their own decisions, they need to be able to be technically competent in their area.
+
+They created a creed – ultimately, it was about learning (not 'training', they felt that was too passive).
+
+I loved this bit of their creed: “Our vision of our command is a learning and competence factory. The raw materials are the new personnel reporting aboard each week, new equipment, and tactics. The product is well-qualified, experienced sailors who, upon detaching from the command, carry their competence throughout the Navy. Each of you, then, is both a product of the factory (when you learn) and a machine in the factory (when you help others learn)."
+
+It is about learning while doing. “Instead of looking at a task as just a chore, look at it as an opportunity to learn more about the associated piece of equipment, the procedure, or if nothing else, about how to delegate or accomplish tasks.”
+
+Finally, in answer the creed, to the question what do you expect me to do? "I expect you to be a better submariner each day.”
+
+This also revolutionised how they thought about training programmes; rather than passive absorbing of information, their training programme was actually an enabler that allowed them to pass decision-making authority to lower and lower levels.  His suggestion about how to apply this in your own organisation is to think about the sentence completion "Our company would be more effective if [level] management could make decisions about [subject]." (As with all his exercises, this is not you on your own but you with your leadership team or at a company off-site). Then "What, technically, do the people at this level of management need to know in order to make that decision?" This leads to a list of topics for training, and "you can directly connect the training topics to increased employee decision making and control – in a word, empowerment."
+
+He found the learning mindset helped his perspective too, allowed him to approach inspections calmly, even eagerly, rather than anxious about the result; and this impacted the crew as well who sensed this.
+
+## Context and clarity at all levels also becomes more important
+
+As the level of control is divested it becomes more and more important that the team be aligned with the goal of the organisation. If clarity of purpose is misunderstood then the criteria by which a decision is made will be skewed and suboptimal decisions will be made.
+
+Don’t move information to authority, move authority to where the information is. "If you ask people what authorities they would like in order to make their jobs easier you’ll definitely get some ideas."
 
 ## Short early conversations are good
 
-Short early conversations a mechanism for control - not me telling them what to do but an opportunity for them to get early feedback on how they were tackling problems. 
+Short early conversations are useful – not telling them what to do but an opportunity for them to get early feedback on how they are tackling problems. The demand for perfect products first time see you them is a waste of subordinates' time. The idea is to proect executive time, but it wastes more time overall.
 
-Demand for perfect products first time see them is a waste of subordinates time
-
-Protecting executive time wastes more time overall 
-
-Early conversation can unearth wel meaning but weroneaous translation of intent 
+Early conversation can unearth well meaning but erroneous translation of intent.
 
 ## Think out loud (both superiors and subordinates)
 
-He talked about this as a mechanism for sharing context both ways. 
+He talks about this as a mechanism for sharing context both ways. On their submarine there is a constant buzz of informatl communication, and he suggests you walk around to get a view of how much is communicated informally – in the current climate, I guess that would equate to paying attention in Slack.
 
-Thinking out loud. Constant buzz of informal communication 
+When his crew didn’t think out loud, that was when he was tempted to step in and interfere, because he didn't know things were heading in the right direction. When he was thinking out loud, he was both imparting useful context, and also modelling that "lack of certainty is strength and certainty is arrogance."
 
-When his crew didn’t think out loud, that was when he was tempted to step in and interferes. When he was thinking out loud it was imparting useful context and modelling that lack of certainty is strength ans certainty is arrogance.  
+The goal is to create an environment in which people express their uncertainty and fears as well as their innovative ideas and hopes.
 
-Do you ever walk round tonight’s what is communicated informally? How does that map into current working? Chat in slack?
+## Don't make decisions
 
-How can you create an environment jn which people express their uncertainty and fears as well as innovative ideas ans hopes. 
+Emergency situations require orders but few situations are actual emergencies.
 
-## Delegating authorigy further
+Take time to let others respond to the situation. Create space for open decisions.
 
-All monitor your own departments and responsible for getting the work done (works when there are clear areas, one challenge we have is that we don't quite have that, I will come back to that)
+If issues that require decisions frequently come up on short notice, then you have a reactive organisation locked in a downward spiral. "When issues aren't foreseen, the team doesn't get time to think about them; a quick decision by the boss is required, which doesn't train the team, and so on."
 
-As authority is delegated, technical competence at all levels becomes more important. 
+He suggests a few ways to deal with it. If it's genuinely urgent, make the decision then ask the team to "red-team" the decision and evaluatie it. If it needs to be made quite soon then ask for input then make the decision. If it can be delayed, then get input from the team (though do not attempt to come to consensus: "that results in whitewashing differences and dissenting votes. Cherish the dissension. If everyone thinks like you, you don't need them."
 
-Don’t move information to authority, move authority to where the information is 
+## Acting first
 
-If you ask people what authorities they would like in order to make their jobs easier you’ll definitely get some ideas. 
+He had an interesting idea about acting as if you have the organisation you want, in the same way that if you smile, you start to feel better. "Instead of trying to change mindsets and then change the way we acted, we would start acting differently and the new thinking would follow."
+  
+His suggestion is think about "I’d know we’d achieved this cultural change if I saw employees [doing something specific]". Then implement the doing of the something specific.
 
-Eliminate top down monitoring
-Some things missed but everyone responsible for their own department and their own work 
+This is an interesting idea; I'm not sure it would work in all cases but I can see the benefit of, for example, requiring that everyone is polite on pull requests as a rule, instead of waiting until everyone has the mindset of everyone being deserving of respect.
 
+## RESIST THE URGE TO PROVIDE SOLUTIONS
 
-What mechanisms/processes can be changed to delegate authority further? OKRs...?
+I've put that in capitals both because he talks about it a lot, and because I feel that urge a lot! It reminds me of one of the most important recommendations in [What got you here won't get you there](/jfdi/what-got-you-here.html) - "Stop adding too much value."
 
-(Maybe note not just pricnipals but teams that ereport to them...)
+## Set clarity about goals
 
-What do I, as a proponent of the leader leader approach need to delegate to show I am willing to walk the talk? ...? I need to talk less in meetings cf the improving everything 5% idea  - relate to what Etienne said
+He described a process they had around maintaining a tracker of work to do and having frequent supervisory meetings to understand the progress of the work. Improvement had usually focused on improving the efficiency of those meetings. But "even well run ones still have the overhead of maintaining the tracker of work to do and having the supervisory meetings". In fact, the goal is to get the work done, so set that goal, and give control to the team to think of a better way to understand and meet those goals.
 
+He talks bout "Begin with the end in mind" (which he notes is from the book 7 habits of highly effective people).
+
+One way he implemented this was by having mentoring meetings with his staff, where the rule was they could e I should read that next) only talk about long term issues not operational. He asked them to write their 'end of tour awards' (3 years out) or – if too far away to think about – then their next year's perfrormance evaluation.
+
+He got them to make it specific and measurable by asking questions like “how would you know if this had been achieved?” And digging deeper: e.g. if it was “we’d have fewer critiques” next question is how many critiques did you have last year?  In the process they often learned that they hadn’t been keeping track of appropriate data. It meant the end of year reviews had concrete data in themSo instead of reduced significantly it would say reduced by 43%.
+
+He asks "for how far in the future are you optimising your organisation?"
 
 ## Success is measured by what happens after you leave
 
 Something that really resonated with me is how he talks about your legacy as a leader. He notes that a lot of ships would be described as a "good ship" but then the captain moves on and they become a "bad ship" - and correctly notes that what this means is that the captain is the one making this happen (and gives examples of captains working really long hours, running around to make sure every job is being done the way they'd like). If you leave, and the organisation collapses behind you then you have not truly built a good organisation.
 
-He can say his methods were successful because "Only ten years later can we assess the true success of the work - continued operational excellence and implausibly high promotion rates 
-" 10 years after he left the ship many people have been promoted and it's still getting awards. I agree with this; if you launch a great product but then don't leave it in a sustainable state, you are not a good leader.
-[too pointed?]
+He can say his methods were successful because "Only ten years later can we assess the true success of the work - continued operational excellence and implausibly high promotion rates".
 
-Problem is that isn't what happens in tech, he talks about Caring but not caring - caring about subordinates and the organisation but little about the organisational consequences to yourself (note this is in 2 places atm) - 
-
-he points out that we don't Don’t evaluate leaders’ effectiveness after they leave - this is my problem, the opposite - need to do more sales
-
-To promote long term success he had to ignore the short term reward system 
-
-## Clarity - context
-
-He realised that not sharing the underlying thought process was the issue - no shortcuts - as the level
-Of control is divested it becomes more and more important that the team be aligned with the goal of the organisation. 
-
-Should have let officers figure it out, even tho tired. Emergency situations require orders but fee situations are emergency 
-
-Don’t make decisions. If you constantly have to that is not good. p.92-93. How to do it.
-
-
-
-Take time to let others respond to the situation. Create space for open decisions. 
-
-f clarity of purpose is misunderstood then the criteria by which a decision is made will be skewed and suboptimal decisions will be made.  - this is not quite the same point as above
+The problem for him is the same as for me: we don't evaluate leaders' effectiveness after they leave but while they are there. To promote long term success he had to ignore the short term reward system. He describes this as "caring but not caring - caring about subordinates and the organisation but little about the organisational consequences to yourself."
 
 ## Priciples
 
-My own question about the creed, how much is this led/guided by the leader? E.g. assume good intent 
+Leadership not about creating a vision but tapping in to what is already there.
 
-P.178 leadership not about creating a vision but tapping in...
 If I were a crew member and faced with deciding between two different courses of action, would these principles provide me with the right criteria against which to select the appropriate course of action 
 
 Making principles real. Used in evaluations. The questions are all around whether you are really using them/they are real. 
@@ -226,24 +168,24 @@ What are the cost of being open about problem in your organisation? Well - step 
 
 He also talks about replacing general terminology with clear concise specific directions p.160 maybe link this in 
 
+## He is honest about the challenges
+
+Unlike a lot of leadership books, he acknowledges the challenges, things that went badly and where this may be hard for you and was hard for him.
+
+For example he gives a couple of examples of when he didn't do what he knew he should because he was too tired. One time he says he was too tired to engage in the discussion and just gave an order. "A more enlightened apporach would have been to engage in a discussion... that's what I wanted to do, but I just didn't have the energy of time anymore. All day, every day, it seemed like that's all I did. It was tiresome."
+
+He notes that when tired or under pressure, he, like eveyrone else, fell back on bad habits. This was something I really noticed in March, at the beginning of the pandemic – I and everyone else reverted to our default behaviours, which are often not the ones we've worked hard on to build our teams and good working relationships.
+
+He also says something he struggled with all his career was "balancing the courage to hold people accountable for their actions with my compassion for their honest efforts"..
+
 ## Most important control is control over yourself
 
 Summing up, he points out that the control you need is the self control to give control, which creates leaders. He says "rejecting the impulse to take control and attract followers will be your greatest challenge and, in time, your most powerful and enduring success."
 
 ## Conculstion
 
-There was a lot more in the book than I have noted here, e.g. the value of feedback, [seomthigne esle mabye], and I would recommend reading it; it's also a slim volume so won't take too long. It's not just for those in a leadership position; for example he suggests that people at the front line might want to read it to embrace decision making, and /challenge leaders - if on my team and want to push me, or maybe leave this for the note in ft-next-dev
+I made A LOT of notes and have only covered some of it here; for example he talks about feedback; about the value of 'curiosity' over rote questioning; about the need to feel the most technically competent being a hindrance, and much more. So I really recommend reading it yourself.
 
-Made loads of notes, this is less than half of what i jotted down but key points for me right now
+It's not just for those in a leadership position; for example he suggests that people at the front line might want to read it to embrace decision making, and/or challenge leaders.
 
 I really enjoyed this book because it completely reflected what I think of as good leadership; building a strong team that can run without you, growing and developing the people who report to you so they are doing a good job, building resilience and an emancipated team who can act to get to the right outcomes without needing to wait for instruction or permission; and it offered some really practical steps to help me get there and some good challenges to where I might think I am doign it already but could improve.
-
-Questions to consider are good - less work than other books 
-
-
-## Where does this slot in?
-
-My goal in any job is to [make mysefl redundant](/jfdi/delegating-to-a-team.html)
-
-Delegate everything, more than you are comfortable with
-
