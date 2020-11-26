@@ -81,6 +81,8 @@ At GDS we used a score of 0-3.
 
 To avoid biases, you need at least two perspectives and ideally three, and the interviewers should be different from each other to help with that: for example, from different disciplines, or different levels (e.g. a junior and a senior), or different ethnic backgrounds, etc.
 
+Each person should make notes during the interview, to allow comparison and feedback later, and then each give a score for each question on your own before discussing as a panel, to guard against your score being influenced by what the others think.
+
 ## Set people up to succeed
 
 Interviews are not meant to be a stressful test, or have trick questions. You want to get the right person for the job, not outwit anyone. So the whole process should be clear and transparent to the candidate.
