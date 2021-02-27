@@ -10,7 +10,7 @@ The panel were absolutely excellent: [Randy Shoup](https://twitter.com/randyshou
 
 They all had a lot of great experience and insight to share. We talked about what a good tech strategy looks like, how to craft one, how to articulate and communicate it,  and how to adapt it as times change. We also discussed the tricky problem of how to make sure people are following it. I could have talked to them for ages.
 
-I made several notes during the session. Nimisha had fascinating insights and models about how to collaborate on a strategy with a distributed team, as she oversees an open sourece platform with a global community. Randy had brilliant thoughts on what a tech strategy should be, including actionable, pragmatic and falsifiable. Anand had great explanations of the importance of showing, rather than telling to get buy-in for your tech strategy; and Papanii shared the extremely useful CBTI paradigm (Customer, Business, Team, Individual) for the order in which you think about whether something has value.
+I made several notes during the session. Nimisha had fascinating insights and models about how to collaborate on a strategy with a distributed team, as she oversees an open source platform with a global community. Randy had brilliant thoughts on what a tech strategy should be, including actionable, pragmatic and falsifiable. Anand had great explanations of the importance of showing, rather than telling, to get buy-in for your tech strategy; and Papanii shared the extremely useful CBTI paradigm (Customer, Business, Team, Individual) for the order in which you think about whether something has value.
 
 I asked the panel to summarise at the end what *the* most important thing for a tech strategy was, and we agreed:
 
