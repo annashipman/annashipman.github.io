@@ -74,11 +74,11 @@ A public company is one where shares can be marketed or traded. They are more li
 
 Public doesn't mean listed. A listed company is one where shares are officially listed and traded on a stock market, for example the London Stock Exchange.
 
-There are about 3.75m registered limited companies in the UK; about 1m of them are publicly listed. About 1,100 are listed on the main market of the London Stock Exchange.
+There are about 4m registered limited companies in the UK; [fewer than 4% of them are public](https://www.gov.uk/government/news/uk-company-statistics-2018-to-2019), and about 800 are listed on the main market of the London Stock Exchange.
 
 There are fewer listed companies than there used to be as there is more regulation now, meaning some companies de-listed rather than comply. For example [insider trading](https://en.wikipedia.org/wiki/Insider_trading) wasn't [illegal in the UK until 1980](https://www.legislation.gov.uk/ukpga/1980/22/pdfs/ukpga_19800022_en.pdf), and since private companies can't trade publicly, it's easier not to fall foul of that law.
 
-Listing a company allows it to raise capital much more easily. For example, Facebook listed to create an exit route for the original funders. It's a way of making the shares actually worth something.
+Listing a company allows it to raise capital much more easily. For example, Facebook listed to create an exit route for the original investors. It's a way of making it clear what the value of the shares is, and making it much easier to sell them.
 
 ## Company funding: debt or equity
 
@@ -161,7 +161,7 @@ This also makes it hard to reason financially about brand deterioration or reput
 
 'Sources' is split into equity (shareholders' funds, retained profit), long-term liabilities (debt) and short-term liabilities (i.e. due within the next 12 months; this might include debt coming due, or things like electricity bills).
 
-## Vluation of all these things can be quite difficult
+## Valuation of all these things can be quite difficult
 
 It is another thing that is not set in stone. For example, valuing stock involves being confident of the price you can sell it at, and you must value it at the lower of the cost or what you can get for it. So if you bought it for £1 per unit but are pretty sure you can only sell it at 80p per unit, the value is 80p per unit – but note that it's still an estimate of what the value is.
 
