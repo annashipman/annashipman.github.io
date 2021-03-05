@@ -40,7 +40,7 @@ The board should be challenging, asking questions. Our instructor said that as a
 
 It turns out that, like my disappointment when I found out that maths was not in fact a field of science in which it was possible to know everything, the same is true of finance. The figures given are not true facts. They are subjective estimates, based on what you think will happen next, and as a consumer of those figures you need to understand the assumptions being made.
 
-For example, if someone buys something from you, you make an estimate about when they'll pay you, and whether they will indeed pay you the full amount - you may need some provision for bad debts. I will talk more about this, but the main take-home message around this was: whatever the question about finance, the answer is very often "it depends".
+For example, if someone buys something from you, you make an estimate about when they'll pay you, and whether they will indeed pay you the full amount – you may need some provision for bad debts. I will talk more about this, but the main take-home message around this was: whatever the question about finance, the answer is very often "it depends".
 
 ## "Profit is not cash"
 
@@ -50,9 +50,9 @@ Profit is where you sell something for more than you estimate it costs. This is 
 
 In fact, profit, rather than being something cut and dried as I had previously thought, is one of the things that includes the most estimates and assumptions.
 
-In addition, profit is what you record in the profit and loss statement, not cash flow. Cash flow is NOT a determinant on whether you have earned the sale. It's irrelevant whether someone pays or not - it's recorded as revenue in the profit & loss statement. Even if they don't pay, you still made the sale - all it means is you have a bad debt. This is better information as well, so you know at the end of the year approximately how many of your sales didn't pay you.
+In addition, profit is what you record in the profit and loss statement, not cash flow. Cash flow is NOT a determinant on whether you have earned the sale. It's irrelevant whether someone pays or not – it's recorded as revenue in the profit & loss statement. Even if they don't pay, you still made the sale – all it means is you have a bad debt. This is better information as well, so you know at the end of the year approximately how many of your sales didn't pay you.
 
-In fact, when looking at the previous year, our instructor said 65% of the companies that had failed in the UK had *increased* their profit that year. The commonest cause of failure due to liquidity is growth - the company grows too quickly and can't fund it.
+In fact, when looking at the previous year, our instructor said 65% of the companies that had failed in the UK had *increased* their profit that year. The commonest cause of failure due to liquidity is growth – the company grows too quickly and can't fund it.
 
 ## Limited company vs partnership
 
@@ -84,7 +84,7 @@ Listing a company allows it to raise capital much more easily. For example, Face
 
 There are two sources of equity: share capital – money you get from selling shares to investors, and retained profits – profits you made in previous years that you did not return to investors as dividends.
 
-Note that retained profits - also called retained earnings and sometimes reserves, though [reserves is not precisely the same](https://keydifferences.com/difference-between-retained-earnings-and-reserves.html) - is not a sum of money; it's not cash, it's just the cumulative amount of profit from previous years that has not been paid out as a dividend.
+Note that retained profits – also called retained earnings and sometimes reserves, though [reserves is not precisely the same](https://keydifferences.com/difference-between-retained-earnings-and-reserves.html) – is not a sum of money; it's not cash, it's just the cumulative amount of profit from previous years that has not been paid out as a dividend.
 
 With equity, you have no legal obligation to pay anything back to shareholders.
 
@@ -129,9 +129,9 @@ In the [previous course I did on finance](/jfdi/finance-for-non-accountants.html
 
 The balance sheet is like an x-ray – a one-off snapshot – and your expectations of what good looks like vary, for example with the age of the patient. Similiarly with a balance sheet, is it a mature business or an early-stage start up? You'd expect to see different things on the balance sheet.
 
-![graph!!  Draw the graph of what we'd expect to see of a business over time, page 130 in notebook.]()
+![Graph showing growth against time, A and B marked](/img/growth_over_time.png)
 
-At A - higher debt. Growth requires funding. Plus less time to build up from previous years. Growth can really increase from A. At B, the company probably already has the market share.
+For example, this graph shows how you would expect growth to change depending on the age of the company. At A the company has higher debt. Growth requires funding. Plus it has hadless time to build up from previous years. Growth can really increase from A. At B, the company probably already has the market share and growth may well have peaked.
 
 ## Balancing the balance sheet
 
@@ -149,7 +149,7 @@ Assets are things that are expected to generate value. For example, with a shop,
 
 Examples of tangible assets are the building you work in, the desk and chair you are sitting at. Tangible confusingly can also be called PPE which doesn't mean what we've come to understand in 2020, it means "Property, Plant and Equipment.
 
-Examples of intangible assets include the website you work on and the related software, and examples of investments include things like investing in a supplier to ensure deliveries, or investing in a customer to ensure continuity of demand - strategic investments.
+Examples of intangible assets include the website you work on and the related software, and examples of investments include things like investing in a supplier to ensure deliveries, or investing in a customer to ensure continuity of demand – strategic investments.
 
 An interesting thing about intangible assets is that they only count if you bought them. So for example, M&S's brand is not on their balance sheet because they built it up, they did not purchase it. There is currently a consultation about this kind of thing, as intangible assets are the vast part of the value of many companies (consider, for example, Facebook's website, which they did not purchase and is therefore not valued as an asset).
 
@@ -163,9 +163,9 @@ This also makes it hard to reason financially about brand deterioration or reput
 
 ## Vluation of all these things can be quite difficult
 
-It is another thing that is not set in stone. For example, valuing stock involves being confident of the price you can sell it at, and you must value it at the lower of the cost or what you can get for it. So if you bought it for £1 per unit but are pretty sure you can only sell it at 80p per unit, the value is 80p per unit - but note that it's still an estimate of what the value is.
+It is another thing that is not set in stone. For example, valuing stock involves being confident of the price you can sell it at, and you must value it at the lower of the cost or what you can get for it. So if you bought it for £1 per unit but are pretty sure you can only sell it at 80p per unit, the value is 80p per unit – but note that it's still an estimate of what the value is.
 
-Likewise when valuing receivables - it is not how much you are owed, but how much you can reasonably expect to actually receieve; as some debtors will not pay, or will not pay the full amount owed.
+Likewise when valuing receivables – it is not how much you are owed, but how much you can reasonably expect to actually receieve; as some debtors will not pay, or will not pay the full amount owed.
 
 ## The profit and loss statement (P&L) is about the profit and loss over a specific accounting period
 
