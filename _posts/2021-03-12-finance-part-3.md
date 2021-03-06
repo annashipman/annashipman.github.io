@@ -115,13 +115,11 @@ Reasons can include:
 
 If you don't pay in agreed terms of trade, creditors can wind you up, i.e. they can initiate administration. 70-80% of administrations are initiated by creditors, rather than banks.
 
-## Management reporting is important for understanding the health of a company
+## Company reports are important for understanding companies' health
 
-I talked in [part two]() about ratios giving you a clue of where to look closely for the health of a company. Another important resource is management reporting.
+Limited companies report annually to Companies House, and anyone can [read these reports online](https://find-and-update.company-information.service.gov.uk/), including creditors and potential investors. Accounts, notes to the accounts, and commentary are collectively called the company reports and accounts.
 
-Limited companies report to Companies House, and creditors can review these reports.
-
-Management reporting should not be about numbers, it should be about the why, the narrative. What did we hope would happen. What actually happened. So what.
+The commentary accompanying the accounts should not just be about numbers, they should be about the why, the narrative. What did we hope would happen? What actually happened? So what?
 
 It should cover leading indicators, i.e. do not wait until KPI (key performance indicators) or targets are met to report, but report on how they are going. KPIs themselves should mostly be non-financial, e.g. Customer Satisfaction. And they should be aligned to the strategy - there should be a "golden thread".
 
@@ -183,9 +181,9 @@ For example:
 
 None of these are perfect. Share price is just a finger in the air.
 
-The method you choose depends in part on why you are valuing the company. For example, is it deciding whether to invest, or deciding whether to buy the whole entereprise? (in the latter case you have to pay for the shares *and* pay the debt).
+The method you choose depends in part on why you are valuing the company. For example, is it deciding whether to invest, or deciding whether to buy the whole entereprise? (In the latter case you have to pay for the shares *and* pay the company's debt.)
 
-Is the company balance-sheet driven or P&L driven? (Most companies the latter)
+Is the company balance-sheet driven or P&L driven? Most companies are the latter, but those such as a bank, which uses its capital (i.e. what is on the balance sheet) and lends it out, is termed balance-sheet  driven.
 
 Price is what you pay, value is what you get. And valuing is subjective; use the tools with caution and take into account non-financial things (e.g. management credibility).
 
