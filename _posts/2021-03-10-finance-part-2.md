@@ -4,7 +4,7 @@ title: "Finance for non-finance directors: Part 2"
 layout: blog_post
 ---
 
-On Monday I published [part one of three  blog posts about finance](), finishing with a quiz. In this post I will share the answers to the quiz, then talk about some important accountancy principles and some ways of thinking about the financial health of companies. In part three on Friday, I will talk about methods for evaluating projects and companies.
+On Monday I published [part one of three  blog posts about finance](/jfdi/finance-part-1.html), finishing with a quiz. In this post I will share the answers to the quiz, then talk about some important accountancy principles and some ways of thinking about the financial health of companies. In part three on Friday, I will talk about methods for evaluating projects and companies.
 
 ## Answers to the balance sheet quiz
 
@@ -44,15 +44,15 @@ How do you know if there is a problem with liquidity? *it depends*. What do I ow
 
 Remember, *profit is not cash*. Many businesses that make a profit do not have sufficient cash to pay their debts.
 
-## Double entry bookkeeping
+## Double-entry bookkeeping
 
-This is the commonly used system of of accounting where every entry has a corresponding and opposite entry thereby identifying the two aspects of any financial transaction or adjustment. For example, one entry might show the source of funding (e.g. promise of future cash flow), and the corresponding entry where it has been spent (i.e. the context. The reason for the transaction, maybe the time period when it will have an impact).
+This is the commonly used system of accounting where every entry has a corresponding and opposite entry, thereby identifying the two aspects of any financial transaction or adjustment. For example, one entry might show a source of funding (e.g. a sale) and the corresponding entry is the result (e.g. a debtor). When the debtor pays up, that entry would be cash one side and clearing of the debt on the other.
 
-That is, it shows with each transaction, how we will pay for it, and what it will achieve. This is is how we link finance to strategy.
+Both sides of each transaction have to add up to the same total. Double-entry bookkeeping is about properly preparing the accounts.
 
 ## How you pay for things is important
 
-What makes a strategy viable is how you are going to pay for it, so double-entry bookkeeping is about interrogating that. Whether you pay now or over time can move something viable to non-viable.
+What makes a strategy viable is how you are going to pay for it. Whether you pay now or over time can move something viable to non-viable.
 
 Our instructor gave us a case study of a new company that went under because they made a few wrong decisions. 1. They invested some cash when they should have borrowed it, repaying over 10 years, i.e. they should have increased their gearing. And 2. They paid for the first lot of materials in the first month, instead of negotiating 30 days with the supplier. She described this as 'mismanagement of funding' and even though they made a profit, the company went under.
 
@@ -68,7 +68,7 @@ Also note that a lot of things on the balance sheet are valued as if the company
 
 ## Accruals and matching is about when activities are recognised
 
-I talked briefly about this in [the first post](). Accruing means we record things when they happen, not when the cash flow happens.
+I talked briefly about this in [the first post](/jfdi/finance-part-1.html). Accruing means we record things when they happen, not when the cash flow happens.
 
 For example, if your financial year is Jan-Dec and you have an electricity bill due next January. By the end of the accounting year you've neither received a bill nor paid it, but you have made an accrual to show that the money will be due. You've had use of the electricity, you just have not yet paid for it.
 
@@ -129,7 +129,8 @@ It's an independent examination of the accounts and expression of opinion. Are t
 When looking at the financial statments, the context is important. Is this an early-stage or a mature business? What are you expecting to see and why? What is the direction of travel over the next 5-10 years?
 
 Another useful tool is the use of financial ratios. Financial ratios are the relationship between two numbers. They don't give answers, but might highlight areas to look at.
-For example, I talked about financial gearing in [Monday's post](). The way you calculate the ratio is long-term debt divided by total capital employed (i.e. long-term debt plus equity), then multiply by 100 to give a percentage.
+
+For example, I talked about financial gearing in [Monday's post](/jfdi/finance-part-1.html). The way you calculate the ratio is long-term debt divided by total capital employed (i.e. long-term debt plus equity), then multiply by 100 to give a percentage.
 
 ![Gearing % = debt/total capital employed x 100](/img/gearing.png)
 Being highly geared is neither good nor bad; *it depends* on the circumstances; but it's a number you can look at to see whether it's as you would expect for a company in that situation.
@@ -150,9 +151,11 @@ If you do different product lines, do not just look at gross profit margin, as p
 
 ## Ratios when thinking about whether to invest in a company
 
-One of the most commonly used ratios for thinking about investment is share price/earnings per share, based on the assumption that the share price represents the discounted value of the future earnings.
+Two of the most commonly used ratios for thinking about investment are earnings per share, and from that, price/earnings ratio (P/E ratio), based on the assumption that the share price represents the discounted value of the future earnings.
 
-You calculate earnings per share by taking profit after tax and dividing by the number of shares. Then you might say, e.g. "the company is trading on a multiple of 10".
+You calculate earnings per share by taking profit after tax and dividing by the number of shares. Then the P/E ratio is market price per share over earnings per share. If the P/E for example is 10, then you might say, "the company is trading on a multiple of 10".
+
+![earnings per share and P/E ratio calculations](/img/pe_calculation.png)
 
 The main reason for trading higher is an expectation that the company might grow in the future (although it could also indicate something like rumours of a takeover).
 
