@@ -96,7 +96,11 @@ Requires that there are internal controls for backing up all of this.
 
 For example, you might anticipate a material loss this year, so you charge the P&L, i.e. make a provision. But then, if it doesn't happen, next year you may 'release the provisions'. Last year you took a hit to the P&L, but the cash appeared this year – and this year's P&L goes up.
 
-Our instructor pointed out this is a standard move for a new CEO or Finance Director, as you've got a window of opportunity to blame the whole thing on your predecessor. You make provisions in year 1, stating because of everything that was going wrong before you joined, this year you will take a hit on profit. Then in year 2 you release the provisions and it looks great. In fact, the profits may be the same as normal in both years (redo graph on p.141 of notebook.)
+Our instructor pointed out this is a standard move for a new CEO or Finance Director, as you've got a window of opportunity to blame the whole thing on your predecessor. You make provisions in year 1, stating because of everything that was going wrong before you joined, this year you will take a hit on profit. Then in year 2 you release the provisions and it looks great. In fact, the profits may be the same as normal in both years.
+
+![Graph showing two potential profit lines](/img/releasing_provisions.png)
+
+In this graph, line 1 and line 2 may actually be the same profit over two years.
 
 You can also make some big write-offs in your first year.
 
@@ -127,7 +131,7 @@ When looking at the financial statments, the context is important. Is this an ea
 Another useful tool is the use of financial ratios. Financial ratios are the relationship between two numbers. They don't give answers, but might highlight areas to look at.
 For example, I talked about financial gearing in [Monday's post](). The way you calculate the ratio is long-term debt divided by total capital employed (i.e. long-term debt plus equity), then multiply by 100 to give a percentage.
 
-![](/img/gearing.png)
+![Gearing % = debt/total capital employed x 100](/img/gearing.png)
 Being highly geared is neither good nor bad; *it depends* on the circumstances; but it's a number you can look at to see whether it's as you would expect for a company in that situation.
 
 Other ratios include things like Earnings per Share (EPS), and the Acid-test ratio. [Here is a list of some common ratios](https://www.investopedia.com/financial-edge/0910/6-basic-financial-ratios-and-what-they-tell-you.aspx) and [here is a list of ratios and their calculations](https://corporatefinanceinstitute.com/resources/knowledge/finance/financial-ratios/).
