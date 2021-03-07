@@ -136,7 +136,7 @@ KPIs should show what you are really going for - what will change when that KPI 
 
 Working capital is the capital required to finance the operating cycle of the busness, i.e. pay debts, costs, etc. The working capital cycle is the length of time it takes to convert the working capital into cash.
 
-![working capital cycle](/img/working_capital_cycle.png)
+![The working capital cycle](/img/working_capital_cycle.png)
 
 Understanding this helps you manage your cash flow, inventory, and efficiency, or alternatively, see how well a business you are looking at is managing those things.
 
@@ -154,7 +154,7 @@ Fixed costs: e.g. salary, rent. These remain constant regardless of activity.
 
 Variable costs: e.g. materials, overtime, sales commission. These vary with activity.
 
-![](/img/break_even_calculations.png)
+![Break-even calculations](/img/break_even_calculations.png)
 
 "Contribution" indicates that every time you sell something, it contributes to fixed cost.
 
@@ -167,6 +167,8 @@ High operational gearing means a high level of fixed costs. This is more risky b
 ![](/img/break_even_analysis.png)
 
 The margin of safety indicates how much sales have to drop before you are no longer breaking even. 10% seems high risk. 30% a bit more comfortable.
+
+![Margin of safety calculation](/img/margin_of_safety.png)
 
 ## There are lots of ways of valuing companies
 
