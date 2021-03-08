@@ -98,7 +98,7 @@ For example, you might anticipate a material loss this year, so you charge the P
 
 Our instructor pointed out this is a standard move for a new CEO or Finance Director, as you've got a window of opportunity to blame the whole thing on your predecessor. You make provisions in year 1, stating because of everything that was going wrong before you joined, this year you will take a hit on profit. Then in year 2 you release the provisions and it looks great. In fact, the profits may be the same as normal in both years.
 
-![Graph showing two potential profit lines](/img/releasing_provisions.png)
+![Graph showing two potential profit lines](/img/releasing_provisions.jpg)
 
 In this graph, line 1 and line 2 may actually be the same profit over two years.
 
@@ -132,7 +132,7 @@ Another useful tool is the use of financial ratios. Financial ratios are the rel
 
 For example, I talked about financial gearing in [Monday's post](/jfdi/finance-part-1.html). The way you calculate the ratio is long-term debt divided by total capital employed (i.e. long-term debt plus equity), then multiply by 100 to give a percentage.
 
-![Gearing % = debt/total capital employed x 100](/img/gearing.png)
+![Gearing % = debt/total capital employed x 100](/img/gearing.jpg)
 Being highly geared is neither good nor bad; *it depends* on the circumstances; but it's a number you can look at to see whether it's as you would expect for a company in that situation.
 
 Other ratios include things like Earnings per Share (EPS), and the Acid-test ratio. [Here is a list of some common ratios](https://www.investopedia.com/financial-edge/0910/6-basic-financial-ratios-and-what-they-tell-you.aspx) and [here is a list of ratios and their calculations](https://corporatefinanceinstitute.com/resources/knowledge/finance/financial-ratios/).
@@ -155,7 +155,7 @@ Two of the most commonly used ratios for thinking about investment are earnings 
 
 You calculate earnings per share by taking profit after tax and dividing by the number of shares. Then the P/E ratio is market price per share over earnings per share. If the P/E for example is 10, then you might say, "the company is trading on a multiple of 10".
 
-![earnings per share and P/E ratio calculations](/img/pe_calculation.png)
+![earnings per share and P/E ratio calculations](/img/pe_calculation.jpg)
 
 The main reason for trading higher is an expectation that the company might grow in the future (although it could also indicate something like rumours of a takeover).
 
