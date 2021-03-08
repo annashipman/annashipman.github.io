@@ -105,7 +105,7 @@ Considerations include:
 - control – with equity, shareholders might take control
 - flexibility – debt is more flexible, you can pay it back if you don't need it, and it's quicker to raise
 - tax – interest can be a tax-deductible expense, whereas dividends are not
-- possibility of raising more – if equity, shareholders should be open to investing more and a successful rights issue can raise the value of the shares because it indicates strong belief in the future growth of the company
+- possibility of raising more – if equity, shareholders should be open to investing more, and a successful rights issue can raise the value of the shares because it indicates strong belief in the future growth of the company
 
 ## Financial gearing and leveraging
 
@@ -131,7 +131,9 @@ The balance sheet is like an x-ray – a one-off snapshot – and your expectati
 
 ![Graph showing growth against time, A and B marked](/img/growth_over_time.png)
 
-For example, this graph shows how you would expect growth to change depending on the age of the company. At A the company has higher debt. Growth requires funding. Plus it has hadless time to build up from previous years. Growth can really increase from A. At B, the company probably already has the market share and growth may well have peaked.
+For example, this graph shows how you would expect growth to change depending on the age of the company. At A the company has higher debt. Growth requires funding. Plus it has had less time to build up from previous years. Growth can really increase from A.
+
+At B, the company probably already has the market share and growth may well have peaked.
 
 ## Balancing the balance sheet
 
@@ -147,9 +149,9 @@ Assets are things that are expected to generate value. For example, with a shop,
 
 'Fixed assets' are assets you generate value from over a period of time longer than the accounting period. They can be tangible, intangible or investments.
 
-Examples of tangible assets are the building you work in, the desk and chair you are sitting at. Tangible confusingly can also be called PPE which doesn't mean what we've come to understand in 2020, it means "Property, Plant and Equipment.
+Examples of tangible assets are the building the company is headquartered in, the desks and chairs in the building, etc. Tangible confusingly can also be called PPE which doesn't mean what we've come to understand in 2020, it means "Property, Plant and Equipment".
 
-Examples of intangible assets include the website you work on and the related software, and examples of investments include things like investing in a supplier to ensure deliveries, or investing in a customer to ensure continuity of demand – strategic investments.
+Examples of intangible assets might include the website you work on and the related software, and examples of investments include things like investing in a supplier to ensure deliveries, or investing in a customer to ensure continuity of demand – strategic investments.
 
 An interesting thing about intangible assets is that they only count if you bought them. So for example, M&S's brand is not on their balance sheet because they built it up, they did not purchase it. There is currently a consultation about this kind of thing, as intangible assets are the vast part of the value of many companies (consider, for example, Facebook's website, which they did not purchase and is therefore not valued as an asset).
 
@@ -205,7 +207,7 @@ Deduct: Interest => this leaves profit before tax (PBT)
 
 Deduct: Corporation tax => this leaves profit after tax (PAT); also called net profit.
 
-Note that if something is on a P&L it has an impact on profit, which can lead to poor decision making, [as I mentioned before](). For example, whether to build or buy software. Built software is an asset, on the balance sheet. Software you buy as a service is an operating expense, therefore reduces your profit.
+Note that if something is on a P&L it has an impact on profit, which can lead to poor decision making, [as I mentioned before](/jfdi/finance-for-non-accountants.html). For example, whether to build or buy software. Built software is an asset, on the balance sheet. Software you buy as a service is an operating expense, therefore reduces your profit. But building all the software you use is definitely not the right decision.
 
 And a reminder: profit is an estimate. It will change, for example, if you change your estimate of depreciation. PROFIT IS NOT CASH.
 
@@ -219,7 +221,7 @@ Private Equity companies like talking about EBITDA because depreciation and amor
 
 As well as Warren Buffett, the IoD, and my instructor on the course are not fans of using EBITDA as a measure, because amortisation and depreciation are real costs. 
 
-A better measure is free cash flow.
+A better measure is free cash flow, which I will talk about shortly.
 
 ## The cash flow statement shows where funding has come from and how it is used
 
