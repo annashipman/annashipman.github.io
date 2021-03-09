@@ -4,7 +4,7 @@ title: "Finance for non-finance directors: Part 3"
 layout: blog_post
 ---
 
-This is the third of three posts summarising some very interesting things I learned about finance on a recent [IoD course](). In [part one]() I talked about funding and financial statements, in [part two]() I talked about accountancy principles and ratios, and today I will talk about deciding which projects, and which companies, to invest in.
+This is the third of three posts summarising some very interesting things I learned about finance on a recent [IoD course](https://www.iod.com/training/open-courses/finance-for-non-financial-directors). In [part one](/jfdi/finance-part-1.html) I talked about funding and financial statements, in [part two](/jfdi/finance-part-2.html) I talked about accountancy principles and ratios, and today I will talk about deciding which projects, and which companies, to invest in.
 
 ## Weighted average cost of capital (WACC)
 
@@ -26,11 +26,11 @@ By how much should a capital project or investment exceed WACC? The answer depen
 
 A commonly used model to help with calculating the cost of equity is the capital asset pricing model (CAPM), which uses the term 'beta' to represent how responsive your business model is to changes in the overall economy. We didn't learn how to calculate CAPM, but what we learned about beta was interesting.
 
-Beta is represented as whether it is greater than, less than or equal to 1. A beta of 1 means it's about the same risk as the overall economy. Greater than 1 means higher risk, and less than one means more stable than the overall economy. For example, airlines are good examples of sectors with a beta higher than 1 - they amplify the risks in the economy. If the economy goes down, people stop taking foreign holidays. Food retail is a good example of a beta lower than 1 - if there is a recession, people do still buy food, and if there is a boom, people do not buy more food.
+Beta is represented as whether it is greater than, less than or equal to 1. A beta of 1 means it's about the same risk as the overall economy. Greater than 1 means higher risk, and less than one means more stable than the overall economy. For example, airlines are good examples of sectors with a beta higher than 1 – they amplify the risks in the economy. If the economy goes down, people stop taking foreign holidays. Food retail is a good example of a beta lower than 1 – if there is a recession, people do still buy food, and if there is a boom, people do not buy more food.
 
 ## Risk is something where there is uncertainty of outcome
 
-As I mentioned in the first post, risk is not always bad, it's also an opportunity - and it's an intrinsic part of doing business. You cannot be a board director if you avoid risk.
+As I mentioned in the first post, risk is not always bad, it's also an opportunity – and it's an intrinsic part of doing business. You cannot be a board director if you avoid risk.
 
 You need to know what the principal risks are to the business, and you need to have risk management systems/internal controls in place.
 
@@ -48,11 +48,11 @@ As a director you might have to make a decisions on what project to invest in. D
 
 Return on capital employed asks: what is the return generated as a percentage of the capital outlay?
 
-This is simple, and useful as a screening tool - if it doesn't exceed the organisation's hurdle rate it can be rejected. However, the downside is that it's simple and doesn't take into considerations cash flow, timing or risk.
+This is simple, and useful as a screening tool – if it doesn't exceed the organisation's hurdle rate it can be rejected. However, the downside is that it's simple and doesn't take into considerations cash flow, timing or risk.
 
 Payback asks: how long does it take for the capital outlay to be repaid from the returns generated?
 
-This is also simple, and if the availability of funding or timescale is an issue, it's very useful. The disadvantages are also with the simplicity - it doesn't consider total returns over lifetime of the project, or risk.
+This is also simple, and if the availability of funding or timescale is an issue, it's very useful. The disadvantages are also with the simplicity – it doesn't consider total returns over lifetime of the project, or risk.
 
 ## Neither of these take into account the 'time value of money'
 
@@ -62,11 +62,11 @@ Cash today is worth more than cash tomorrow. For example:
 - inflation
 - risk (a bird in the hand...)
 
-So money has a value that varies depending when the money is available - the time value of money.
+So money has a value that varies depending when the money is available – the time value of money.
 
 ## Discounted cash flow is an appraisal technique that takes into account the time value of money
 
-The first thing is to attempt to calculate the value of all the cash flows of the project as a cash amount today - its present value. Then you subtract the outgoing costs from the incoming money and that gives you the net present value (NPV).
+The first thing is to attempt to calculate the value of all the cash flows of the project as a cash amount today – its present value. Then you subtract the outgoing costs from the incoming money and that gives you the net present value (NPV).
 
 There is a calculation to work out the present value using the forecasted cash flow, the 'discount factor' (this might be the WACC), and time. The 'discount factor' is based on lots of assumptions and is an estimate, as is the forecasted cash flow; so there are a lot of guesses in working out the discounted cash flow.
 
@@ -121,9 +121,9 @@ Limited companies report annually to Companies House, and anyone can [read these
 
 The commentary accompanying the accounts should not just be about numbers, they should be about the why, the narrative. What did we hope would happen? What actually happened? So what?
 
-It should cover leading indicators, i.e. do not wait until KPI (key performance indicators) or targets are met to report, but report on how they are going. KPIs themselves should mostly be non-financial, e.g. Customer Satisfaction. And they should be aligned to the strategy - there should be a "golden thread".
+It should cover leading indicators, i.e. do not wait until KPI (key performance indicators) or targets are met to report, but report on how they are going. KPIs themselves should mostly be non-financial, e.g. Customer Satisfaction. And they should be aligned to the strategy – there should be a "golden thread".
 
-KPIs should show what you are really going for - what will change when that KPI is met. And the narrative should explain why these results are being measured and what value do they bring to decision-making.
+KPIs should show what you are really going for – what will change when that KPI is met. And the narrative should explain why these results are being measured and what value do they bring to decision-making.
 
 <div class="quote">
 <p>"We don't just want to measure our results, we want to measure what drives our results."</p>
@@ -181,7 +181,7 @@ None of these are perfect. Share price is just a finger in the air.
 
 The method you choose depends in part on why you are valuing the company. For example, is it deciding whether to invest, or deciding whether to buy the whole entereprise? (In the latter case you have to pay for the shares *and* pay the company's debt.)
 
-Is the company balance-sheet driven or P&L driven? Most companies are the latter, but those such as a bank, which uses its capital (i.e. what is on the balance sheet) and lends it out, is termed balance-sheet  driven.
+Is the company balance-sheet driven or P&L driven? Most companies are the latter, but those such as a bank, which uses its capital (i.e. what is on the balance sheet) and lends it out, is termed balance-sheet driven.
 
 Price is what you pay, value is what you get. And valuing is subjective; use the tools with caution and take into account non-financial things (e.g. management credibility).
 
@@ -203,6 +203,6 @@ The main things I took from it were that finance is not cold hard facts, but "it
 
 I've learned a lot more about how to evaluate a company and how to read and understand financial statements.
 
-The next piece of the puzzle is tying all this back to the work I actually do; I am a technical director: I and my team are not producing widgets that we can feed into a break-even analysis; we need to understand how our work contributes to the financial health of the company and - possibly more importantly - what work we should not do, because it just does not offer value for money. This course has really helped me understand the structure of what I need to fit my work into; the next piece of the puzzle will follow in due course.
+The next piece of the puzzle is tying all this back to the work I actually do; I am a technical director: I and my team are not producing widgets that we can feed into a break-even analysis; we need to understand how our work contributes to the financial health of the company and – possibly more importantly – what work we should not do, because it just does not offer value for money. This course has really helped me understand the structure of what I need to fit my work into; the next piece of the puzzle will follow in due course.
 
 In the meantime, I can now understand the financial pages of the FT!
