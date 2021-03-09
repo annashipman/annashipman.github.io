@@ -16,7 +16,7 @@ The point is that capital is not free. For example, debt has interest due on it.
 
 The WACC is calculated by working out the cost of debt and equity, the percentage of funding which is each and summing them.
 
-![WACC calculation example](/img/wacc_calculation_example.png)
+![WACC calculation example](/img/wacc_calculation_example.jpg)
 
 The WACC is also known as the 'hurdle rate', i.e. the minimum return that any project the company undertakes needs to deliver in order to be generating value rater than eroding it.
 
@@ -134,7 +134,7 @@ KPIs should show what you are really going for - what will change when that KPI 
 
 Working capital is the capital required to finance the operating cycle of the busness, i.e. pay debts, costs, etc. The working capital cycle is the length of time it takes to convert the working capital into cash.
 
-![The working capital cycle](/img/working_capital_cycle.png)
+![The working capital cycle](/img/working_capital_cycle.jpg)
 
 Understanding this helps you manage your cash flow, inventory, and efficiency, or alternatively, see how well a business you are looking at is managing those things.
 
@@ -152,21 +152,19 @@ Fixed costs: e.g. salary, rent. These remain constant regardless of activity.
 
 Variable costs: e.g. materials, overtime, sales commission. These vary with activity.
 
-![Break-even calculations](/img/break_even_calculations.png)
+![Break-even calculations](/img/break_even_calculations.jpg)
 
 "Contribution" indicates that every time you sell something, it contributes to fixed cost.
+
+![Margin of safety calculation](/img/margin_of_safety.jpg)
+
+The margin of safety indicates how much sales have to drop before you are no longer breaking even. 10% seems high risk. 30% a bit more comfortable.
 
 Fixed costs are useful when thinking about whether you can afford to hire more.
 
 Low operational gearing means low fixed costs and often high variable costs.
 
 High operational gearing means a high level of fixed costs. This is more risky because if there is a downturn, you can't stop fixed costs.
-
-![](/img/break_even_analysis.png)
-
-The margin of safety indicates how much sales have to drop before you are no longer breaking even. 10% seems high risk. 30% a bit more comfortable.
-
-![Margin of safety calculation](/img/margin_of_safety.png)
 
 ## There are lots of ways of valuing companies
 
@@ -189,7 +187,7 @@ Price is what you pay, value is what you get. And valuing is subjective; use the
 
 At this point in the course the instructor brought up a quote from the FT, which she swore was always in the course and wasn't just because of my presence!
 
-![](/img/FT_quote_numbers.png)
+![Numbers can create a sense of objectivity where there is none...](/img/FT_quote_numbers.jpg)
 
 ## This year, purpose is what investors want to talk about
 
