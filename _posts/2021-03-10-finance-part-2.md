@@ -28,7 +28,7 @@ We thus reached 4 as the IoD by a process of elimination, but the business model
 
 ## Accountancy guidelines
 
-It is mandatory to adopt accountancy guidelines (of which there are a few - IFRS: International Financial Reporting Standards; UK GAAP - UK Generally Accepted Accounting *Practice*; US GAAP: Generally Accepted Accounting *Principles*).
+It is mandatory to adopt accountancy guidelines (of which there are a few – IFRS: International Financial Reporting Standards; UK GAAP – UK Generally Accepted Accounting *Practice*; US GAAP: Generally Accepted Accounting *Principles*).
 
 However, they are guidelines or principles, not rules. Your accounts do not need to be compliant with every one. If adopting an accounting standard would lead to an outcome that was not true or fair, then you must not follow it. In that case, you would talk to the auditors, who would add a note to this effect.
 
@@ -56,13 +56,13 @@ What makes a strategy viable is how you are going to pay for it. Whether you pay
 
 Our instructor gave us a case study of a new company that went under because they made a few wrong decisions. 1. They invested some cash when they should have borrowed it, repaying over 10 years, i.e. they should have increased their gearing. And 2. They paid for the first lot of materials in the first month, instead of negotiating 30 days with the supplier. She described this as 'mismanagement of funding' and even though they made a profit, the company went under.
 
-Note that in the public sector, the wording is different but the fundamental concepts are the same - you have resources, you need to do the best you can with those resources.
+Note that in the public sector, the wording is different but the fundamental concepts are the same – you have resources, you need to do the best you can with those resources.
 
 ## A going concern is a company that will continue trading for 12 months from its annual report
 
 That is, one which has no *necessity* or *intent* to cease trading. Necessity could be lack of liquidity, i.e. they will not be able to fulfill their debts when they fall due.
 
-This applies not just at annual report time. If you suspect the company that you are on the board of is not a going concern at any time, you have an obligation to report it - to the board in the first instance. Get it minuted, and get independent legal advice. Knowingly trading while insolvent (unable to meet debts) can lead to directors becoming personally responsible for the company's debts.
+This applies not just at annual report time. If you suspect the company that you are on the board of is not a going concern at any time, you have an obligation to report it – to the board in the first instance. Get it minuted, and get independent legal advice. Knowingly trading while insolvent (unable to meet debts) can lead to directors becoming personally responsible for the company's debts.
 
 Also note that a lot of things on the balance sheet are valued as if the company is a going concern, e.g. the value of the stock. If you *had* to sell it off today, it would not fetch as much.
 
@@ -70,11 +70,11 @@ Also note that a lot of things on the balance sheet are valued as if the company
 
 I talked briefly about this in [the first post](/jfdi/finance-part-1.html). Accruing means we record things when they happen, not when the cash flow happens.
 
-For example, if your financial year is Jan-Dec and you have an electricity bill due next January. By the end of the accounting year you've neither received a bill nor paid it, but you have made an accrual to show that the money will be due. You've had use of the electricity, you just have not yet paid for it.
+For example, if your financial year is Jan–Dec and you have an electricity bill due next January. By the end of the accounting year you've neither received a bill nor paid it, but you have made an accrual to show that the money will be due. You've had use of the electricity, you just have not yet paid for it.
 
 This is for expenses (like the bill) or sales, e.g. you sell something but won't get paid for a few months. You put the sale in as an accrual.
 
-Because of accruals, it doesn't matter to the P&L whether you are paid in advance or after delivery, it will look the same in each case. (However, paid in advance is better - as you will actually have the cash, and therefore will be more likely to survive the year...)
+Because of accruals, it doesn't matter to the P&L whether you are paid in advance or after delivery, it will look the same in each case. (However, paid in advance is better – as you will actually have the cash, and therefore will be more likely to survive the year...)
 
 The matching concept only exists in accruals accounting (the alternative to accruals accounting is cash-basis accounting). Matching means you match revenues with the expenses incurred to earn those revenues, and that you report them both at the same time.
 
@@ -112,7 +112,7 @@ Every time you interact with a customer it costs money. You might find that cust
 
 ## Are your costs delivering value?
 
-Expenses describe something that is giving value - they are not just costs.
+Expenses describe something that is giving value – they are not just costs.
 
 So for example, a new CEO might announce they are striking 10% off the cost base. But it's not strategic – those costs may be delivering value.
 
