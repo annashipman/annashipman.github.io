@@ -52,7 +52,7 @@ Both sides of each transaction have to add up to the same total. Double-entry bo
 
 ## How you pay for things is important
 
-What makes a strategy viable is how you are going to pay for it. Whether you pay now or over time can move something viable to non-viable.
+What makes a strategy viable is how you are going to pay for it. Whether you pay now or over time can move something from being viable to non-viable.
 
 Our instructor gave us a case study of a new company that went under because they made a few wrong decisions. 1. They invested some cash when they should have borrowed it, repaying over 10 years, i.e. they should have increased their gearing. And 2. They paid for the first lot of materials in the first month, instead of negotiating 30 days with the supplier. She described this as 'mismanagement of funding' and even though they made a profit, the company went under.
 
@@ -72,9 +72,9 @@ I talked briefly about this in [the first post](/jfdi/finance-part-1.html). Accr
 
 For example, if your financial year is Jan–Dec and you have an electricity bill due next January. By the end of the accounting year you've neither received a bill nor paid it, but you have made an accrual to show that the money will be due. You've had use of the electricity, you just have not yet paid for it.
 
-This is for expenses (like the bill) or sales, e.g. you sell something but won't get paid for a few months. You put the sale in as an accrual.
+Accruals are for both expenses, like the electricity bill, and sales, for example if you sell something but won't get paid for a few months. You put the sale in as an accrual.
 
-Because of accruals, it doesn't matter to the P&L whether you are paid in advance or after delivery, it will look the same in each case. (However, paid in advance is better – as you will actually have the cash, and therefore will be more likely to survive the year...)
+Because of accruals, it doesn't matter to the P&L whether you are paid in advance or after delivery, it will look the same in each case. (However, paid in advance is better – as you will actually have the cash, and therefore will be more likely to survive the year)
 
 The matching concept only exists in accruals accounting (the alternative to accruals accounting is cash-basis accounting). Matching means you match revenues with the expenses incurred to earn those revenues, and that you report them both at the same time.
 
@@ -86,7 +86,7 @@ I understood this as "don't count your chickens before they are hatched".
 
 We never realise a profit until it has been earned.
 
-However, we might realise bad news in advance if it is material.
+However, we might realise bad news in advance if it is likely to have an impact.
 
 ## The reliability principle
 
@@ -94,7 +94,7 @@ Requires that there are internal controls for backing up all of this.
 
 ## The prudence principle is about making provisions
 
-For example, you might anticipate a material loss this year, so you charge the P&L, i.e. make a provision. But then, if it doesn't happen, next year you may 'release the provisions'. Last year you took a hit to the P&L, but the cash appeared this year – and this year's P&L goes up.
+For example, you might anticipate a significant loss this year, so you charge the P&L, i.e. make a provision. But then, if the loss doesn't end up happening, in the following year you may 'release the provisions'. Last year you took a hit to the P&L, but the cash appeared this year – and this year's P&L goes up.
 
 Our instructor pointed out this is a standard move for a new CEO or Finance Director, as you've got a window of opportunity to blame the whole thing on your predecessor. You make provisions in year 1, stating because of everything that was going wrong before you joined, this year you will take a hit on profit. Then in year 2 you release the provisions and it looks great. In fact, the profits may be the same as normal in both years.
 
@@ -108,13 +108,15 @@ You can also make some big write-offs in your first year.
 
 ## Most accounting systems are poor at capturing costs
 
-Every time you interact with a customer it costs money. You might find that customers who cause a lot of trouble are actually causing a loss. There are rules of thumb. For example 50% of your customers are causing you to break even, a small number are making you a profit and some are causing a loss. You could find that you increase your profits by reducing your sales and being more selective about your customers.
+Every time you interact with a customer it costs money. You might find that customers who cause a lot of trouble are actually causing a loss.
+
+There are rules of thumb; for example it might be that 50% of your customers are causing you to break even, a small number are making you a profit and some are causing a loss. You could find that you increase your profits by reducing your sales and being more selective about your customers.
 
 ## Are your costs delivering value?
 
 Expenses describe something that is giving value – they are not just costs.
 
-So for example, a new CEO might announce they are striking 10% off the cost base. But it's not strategic – those costs may be delivering value.
+So for example, a new CEO might announce they are striking 10% off the cost base. But if it's not strategic this could very well be a bad move – those costs may be delivering value.
 
 ## The role of auditors is to say whether the accounts are true and fair
 
@@ -126,7 +128,7 @@ It's an independent examination of the accounts and expression of opinion. Are t
 
 ## Financial ratios can help with assessing the health of a business
 
-When looking at the financial statments, the context is important. Is this an early-stage or a mature business? What are you expecting to see and why? What is the direction of travel over the next 5-10 years?
+When looking at the financial statements, the context is important. Is this an early-stage or a mature business? What are you expecting to see and why? What is the direction of travel over the next 5-10 years?
 
 Another useful tool is the use of financial ratios. Financial ratios are the relationship between two numbers. They don't give answers, but might highlight areas to look at.
 
