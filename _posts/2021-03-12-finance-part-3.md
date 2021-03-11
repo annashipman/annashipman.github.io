@@ -18,9 +18,9 @@ The WACC is calculated by working out the cost of debt and equity, the percentag
 
 ![WACC calculation example](/img/wacc_calculation_example.jpg)
 
-The WACC is also known as the 'hurdle rate', i.e. the minimum return that any project the company undertakes needs to deliver in order to be generating value rater than eroding it.
+The WACC is also known as the 'hurdle rate', i.e. the minimum return that any project the company undertakes needs to deliver in order to be generating value rater than eroding it. By how much should a capital project or investment exceed WACC? The answer depends on perceptions of the risks involved.
 
-By how much should a capital project or investment exceed WACC? The answer depends on perceptions of the risks involved.
+The WACC/hurdle rate is not usually used on its own, but as part of one of the project appraisal techniques that I will talk about a bit more below.
 
 ## CAPM and beta
 
@@ -48,7 +48,7 @@ As a director you might have to make a decisions on what project to invest in. D
 
 Return on capital employed asks: what is the return generated as a percentage of the capital outlay?
 
-This is simple, and useful as a screening tool – if it doesn't exceed the organisation's hurdle rate it can be rejected. However, the downside is that it's simple and doesn't take into considerations cash flow, timing or risk.
+This is simple, and useful as a screening tool – if it doesn't exceed the organisation's hurdle rate (the WACC) it can be rejected. However, the downside is that it's simple and doesn't take into considerations cash flow, timing or risk.
 
 Payback asks: how long does it take for the capital outlay to be repaid from the returns generated?
 
@@ -68,7 +68,7 @@ So money has a value that varies depending when the money is available – the t
 
 The first thing is to attempt to calculate the value of all the cash flows of the project as a cash amount today – its present value. Then you subtract the outgoing costs from the incoming money and that gives you the net present value (NPV).
 
-There is a calculation to work out the present value using the forecasted cash flow, the 'discount factor' (this might be the WACC), and time. The 'discount factor' is based on lots of assumptions and is an estimate, as is the forecasted cash flow; so there are a lot of guesses in working out the discounted cash flow.
+There is a calculation to work out the present value using the forecasted cash flow, the 'discount factor' (this might be the WACC/hurdle rate), and time. The 'discount factor' is based on lots of assumptions and is an estimate, as is the forecasted cash flow; so there are a lot of guesses in working out the discounted cash flow.
 
 Once you've made all these estimates and done the calculation, you have the net present value, and if it is positive, the investment will generate value.
 
