@@ -26,11 +26,13 @@ The WACC/hurdle rate is not usually used on its own, but as part of one of the p
 
 A commonly used model to help with calculating the cost of equity is the capital asset pricing model (CAPM), which uses the term 'beta' to represent how responsive your business model is to changes in the overall economy. We didn't learn how to calculate CAPM, but what we learned about beta was interesting.
 
-Beta is represented as whether it is greater than, less than or equal to 1. A beta of 1 means it's about the same risk as the overall economy. Greater than 1 means higher risk, and less than one means more stable than the overall economy. For example, airlines are good examples of sectors with a beta higher than 1 – they amplify the risks in the economy. If the economy goes down, people stop taking foreign holidays. Food retail is a good example of a beta lower than 1 – if there is a recession, people do still buy food, and if there is a boom, people do not buy more food.
+Beta is represented as whether it is greater than, less than or equal to 1. A beta of 1 means it's about the same risk as the overall economy. Greater than 1 means higher risk, and less than one means more stable than the overall economy.
+
+For example, airlines are good examples of sectors with a beta higher than 1 – they amplify the risks in the economy. If the economy goes down, people stop taking foreign holidays. Food retail is a good example of a beta lower than 1 – if there is a recession, people do still buy food, and if there is a boom, people do not buy more food.
 
 ## Risk is something where there is uncertainty of outcome
 
-As I mentioned in the first post, risk is not always bad, it's also an opportunity – and it's an intrinsic part of doing business. You cannot be a board director if you avoid risk.
+As I mentioned in the [first of these finance posts](/jfdi/finance-part-1.html), risk is not always bad, it's also an opportunity – and it's an intrinsic part of doing business. You cannot be a board director if you avoid risk.
 
 You need to know what the principal risks are to the business, and you need to have risk management systems/internal controls in place.
 
@@ -52,13 +54,13 @@ This is simple, and useful as a screening tool – if it doesn't exceed the orga
 
 Payback asks: how long does it take for the capital outlay to be repaid from the returns generated?
 
-This is also simple, and if the availability of funding or timescale is an issue, it's very useful. The disadvantages are also with the simplicity – it doesn't consider total returns over lifetime of the project, or risk.
+This is also simple, and if the availability of funding or timescale is an issue, it's very useful. The disadvantages are also with the simplicity – it doesn't consider total returns over the lifetime of the project, or risk.
 
 ## Neither of these take into account the 'time value of money'
 
 Cash today is worth more than cash tomorrow. For example:
 
-- opportunity cost (if you get the money now you can invest it and it could be worth more in the future whereas if you wait this opportunity is lost)
+- opportunity cost (if you get the money now you can invest it and it could be worth more in the future, whereas if you wait this opportunity is lost)
 - inflation
 - risk (a bird in the hand...)
 
@@ -70,7 +72,7 @@ The first thing is to attempt to calculate the value of all the cash flows of th
 
 There is a calculation to work out the present value using the forecasted cash flow, the 'discount factor' (this might be the WACC/hurdle rate), and time. The 'discount factor' is based on lots of assumptions and is an estimate, as is the forecasted cash flow; so there are a lot of guesses in working out the discounted cash flow.
 
-Once you've made all these estimates and done the calculation, you have the net present value, and if it is positive, the investment will generate value.
+Once you've made all these estimates and done the calculation, you have the net present value, and if it is positive, the model predicts the investment will generate value.
 
 It is very sensitive and complex, but this *does not mean it is more accurate*.
 
@@ -117,7 +119,7 @@ If you don't pay in agreed terms of trade, creditors can wind you up, i.e. they 
 
 ## Company reports are important for understanding companies' health
 
-Limited companies report annually to Companies House, and anyone can [read these reports online](https://find-and-update.company-information.service.gov.uk/), including creditors and potential investors. Accounts, notes to the accounts, and commentary are collectively called the company reports and accounts.
+Limited companies report annually to Companies House, and anyone can [read these reports online](https://find-and-update.company-information.service.gov.uk/), including creditors and potential investors. Accounts, notes to the accounts, and commentary are collectively called the company report and accounts.
 
 The commentary accompanying the accounts should not just be about numbers, they should be about the why, the narrative. What did we hope would happen? What actually happened? So what?
 
@@ -181,7 +183,7 @@ None of these are perfect. Share price is just a finger in the air.
 
 The method you choose depends in part on why you are valuing the company. For example, is it deciding whether to invest, or deciding whether to buy the whole entereprise? (In the latter case you have to pay for the shares *and* pay the company's debt.)
 
-Is the company balance-sheet driven or P&L driven? Most companies are the latter, but those such as a bank, which uses its capital (i.e. what is on the balance sheet) and lends it out, is termed balance-sheet driven.
+Is the company balance-sheet driven or P&L driven? Most companies are the latter, but those such as a bank, which uses its capital (i.e. what is on the balance sheet) and lends it out, are termed balance-sheet driven.
 
 Price is what you pay, value is what you get. And valuing is subjective; use the tools with caution and take into account non-financial things (e.g. management credibility).
 
