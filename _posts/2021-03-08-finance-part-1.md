@@ -167,7 +167,7 @@ This also makes it hard to reason financially about brand deterioration or reput
 
 It is another thing that is not set in stone. For example, valuing stock involves being confident of the price you can sell it at, and you must value it at the lower of the cost or what you can get for it. So if you bought it for £1 per unit but are pretty sure you can only sell it at 80p per unit, the value is 80p per unit – but note that it's still an estimate of what the value is.
 
-Likewise when valuing receivables – it is not how much you are owed, but how much you can reasonably expect to actually receieve; as some debtors will not pay, or will not pay the full amount owed.
+Likewise when valuing receivables – it is not how much you are owed, but how much you can reasonably expect to actually receive; as some debtors will not pay, or will not pay the full amount owed.
 
 ## The profit and loss statement (P&L) is about the profit and loss over a specific accounting period
 
@@ -297,7 +297,7 @@ Notes
 <table class="underline-table">
 <tr><th>Sources: Liabilities & equity %</th><th>1</th><th> 2</th><th> 3</th> <th> 4 </th><th> 5</th><th> 6</th></tr>
 <tr><td>Payables/creditors &lt;1yr </td><td>  31 </td><td>  33 </td><td>  46</td><td> 61</td><td> 32</td><td> 7 </td></tr>
-<tr><td> Payables/creditors &gt;1yr       </td><td>  42  </td><td>  20  </td><td> 29   </td><td> 10  </td><td>  3  </td><td> 6   </td></tr>
+<tr><td> Payables/creditors &gt;1yr       </td><td>  42  </td><td>  20  </td><td> 29   </td><td> 10  </td><td>  31  </td><td> 6   </td></tr>
 <tr><td> Other                         </td><td>      </td><td>      </td><td> 19   </td><td>     </td><td>     </td><td>     </td></tr>
 <tr><td> Equity/shareholders' funds    </td><td>  27  </td><td>  47  </td><td> 6    </td><td> 29  </td><td> 37  </td><td> 87  </td></tr>
 <tr><td></td><td>100      </td><td>   100</td><td> 100 </td><td>   100 </td><td>   100 </td><td>  100 </td></tr>
