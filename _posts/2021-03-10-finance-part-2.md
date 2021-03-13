@@ -72,9 +72,9 @@ I talked briefly about this in [the first post](/jfdi/finance-part-1.html). Accr
 
 For example, if your financial year is Jan–Dec and you have an electricity bill due next January. By the end of the accounting year you've neither received a bill nor paid it, but you have made an accrual to show that the money will be due. You've had use of the electricity, you just have not yet paid for it.
 
-Accruals are for both expenses, like the electricity bill, and sales, for example if you sell something but won't get paid for a few months. You put the sale in as an accrual.
+Accruals are for both expenses, like the electricity bill, and income, for example if you are due but have not yet received interest, you put the interest in as an an accrual.
 
-Because of accruals, it doesn't matter to the P&L whether you are paid in advance or after delivery, it will look the same in each case. (However, paid in advance is better – as you will actually have the cash, and therefore will be more likely to survive the year)
+Because of accruals, it doesn't matter to the P&L whether you are paid in advance or after delivery for sales, it will look the same in each case. (However, paid in advance is better – as you will actually have the cash, and therefore will be more likely to survive the year.)
 
 The matching concept only exists in accruals accounting (the alternative to accruals accounting is cash-basis accounting). Matching means you match revenues with the expenses incurred to earn those revenues, and that you report them both at the same time.
 
