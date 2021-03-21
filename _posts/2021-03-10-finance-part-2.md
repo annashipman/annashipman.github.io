@@ -164,3 +164,5 @@ The main reason for trading higher is an expectation that the company might grow
 ## Evaluating projects and companies will follow on Friday
 
 In this post I've talked about some important accounting principles, and some ways to think about the financial health of a business. In the final post on Friday, I will talk about methods for evaluating projects and companies.
+
+_This is post two of three posts. You can read [part one here](/jfdi/finance-part-1.html) and [part three here](/jfdi/finance-part-3.html)._

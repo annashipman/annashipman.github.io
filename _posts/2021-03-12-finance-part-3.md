@@ -208,3 +208,5 @@ I've learned a lot more about how to evaluate a company and how to read and unde
 The next piece of the puzzle is tying all this back to the work I actually do; I am a technical director: I and my team are not producing widgets that we can feed into a break-even analysis; we need to understand how our work contributes to the financial health of the company and – possibly more importantly – what work we should not do, because it just does not offer value for money. This course has really helped me understand the structure of what I need to fit my work into; the next piece of the puzzle will follow in due course.
 
 In the meantime, I can now understand the financial pages of the FT!
+
+_This is post three of three. You can read [part one here](/jfdi/finance-part-1.html) and [part two here](/jfdi/finance-part-2.html)._
