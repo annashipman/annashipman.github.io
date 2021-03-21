@@ -307,3 +307,5 @@ Notes
 ## Answers on Wednesday
 
 The answers to the quiz and more on accountancy principles, project appraisal techniques and other interesting financial concepts to follow!
+
+_This is post one of three posts. You can read [part two here](/jfdi/finance-part-2.html) and [part three here](/jfdi/finance-part-3.html)._
