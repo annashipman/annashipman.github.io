@@ -4,7 +4,7 @@ title: "Finance for non-finance directors: Part 2"
 layout: blog_post
 ---
 
-On Monday I published [part one of three  blog posts about finance](/jfdi/finance-part-1.html), finishing with a quiz. In this post I will share the answers to the quiz, then talk about some important accountancy principles and some ways of thinking about the financial health of companies. In part three on Friday, I will talk about methods for evaluating projects and companies.
+On Monday I published [part one of three  blog posts about finance](/jfdi/finance-part-1.html), finishing with a quiz. In this post I will share the answers to the quiz, then talk about some important accountancy principles and some ways of thinking about the financial health of companies. In [part three on Friday](/jfdi/finance-part-3.html), I will talk about methods for evaluating projects and companies.
 
 ## Answers to the balance sheet quiz
 

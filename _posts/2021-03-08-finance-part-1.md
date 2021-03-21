@@ -8,7 +8,7 @@ A couple of years ago I got some [excellent training on finance from a finance d
 
 In this post I will cover some important principles about company finance, sources of company funding and financial statements, and include a quiz!
 
-In the follow-up post on Wednesday, I'll give the answers and cover some accountancy principles and on Friday I'll cover how to evaluate whether to invest in a company or a project.
+In the [follow-up post on Wednesday](/jfdi/finance-part-2.html), I'll give the answers and cover some accountancy principles and [on Friday](/jfdi/finance-part-3.html) I'll cover how to evaluate whether to invest in a company or a project.
 
 ## The role of finance is to enable the organisation to meet its strategy
 
