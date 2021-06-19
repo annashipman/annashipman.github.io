@@ -94,7 +94,7 @@ Instead, you can use Ubiquti's free controller software, but you need somewhere 
 
 You can get their [cloud key](https://unifi-protect.ui.com/cloud-key-gen2), which also allows remote connectivity (in case you want to administer your network from elsewhere). However, they are > £100, and they plug into the router, so take up one of your Ethernet ports.
 
-You could use something like a Raspberry Pi, but we are going use our iMac because it's always on and we both have access.
+You could use something like a Raspberry Pi, but we decided to use our iMac because it's always on and we both have access.
 
 We are using a Vagrant box so we don't have to install all the other dependencies (and also because I love Vagrant). We figured it out mostly using [this guide to installing via APT](https://help.ubnt.com/hc/en-us/articles/220066768-UniFi-How-to-Install-and-Update-via-APT-on-Debian-or-Ubuntu), but we also had to refer to the [installing manually guide](https://help.ubnt.com/hc/en-us/articles/360012282453-UniFi-How-to-Install-Upgrade-the-UniFi-Network-Controller-Software), e.g. for port forwarding. [Our Vagrantfile](https://gist.github.com/annashipman/2f3a9454e0c1a41f9357a9196f34b0b0) is on GitHub.
 
