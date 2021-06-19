@@ -113,11 +113,11 @@ The VM intermediary layer created a couple of problems:
 
 Vagrant supports bridged networking, and as I have already mentioned, I love Vagrant, so we gave up on Docker.
 
-## Spam was coming from *Inside the House*!!
+## Spam was coming from Inside the House!!
 
 The controller software shows network association failures, i.e. clients not successfully connecting to the WiFi. Once we were able to see these logs, we realised we were getting thousands of network association failures a day, from a single device.
 
-It turned out that the TV was trying to connect but it had the wrong password. In fact we had deliberately given it the wrong password because when it updated its network, this often broke features (yes, it's a "smart" TV) so we didn't want it on the network – and there is no way to make the TV forget a network.
+It turned out that the TV was trying to connect but it had the wrong password. In fact we had deliberately given it the wrong password because when it updated its software this often broke features (yes, it's a "smart" TV) so we didn't want it on the network – and there is no way to make the TV forget a network.
 
 The thousands of failures hadn't caused any problems at all, but now we could see these errors it had to be stopped. (We created a new network, let it join that network and then turned off that network). This cleared up the error messages on the controller. It had no beneficial effect apart from that but the curse of being an engineer is having to solve painless problems!
 
@@ -137,11 +137,11 @@ This lasted for around six months.
 
 However, we started to notice various parts of the network dropping out. On examination the relevant access point would not even appear to be on the network. Restarting the router did not help; only unplugging and replugging the Ethernet cable for the AP solved the problem. Either the router was struggling to handle four Ethernet connections or it was reaching the end of its usable life. It was time to go all in.
 
-So we needed a switch. We needed one with >4 Ethernet ports to connect all our APs and the outside world, and ideally one with PoE so we could remove all the adaptors.
+So we needed a switch. We needed one with >4 Ethernet ports to connect all our APs and the outside world, and ideally one with PoE so we could remove all the adaptors. As we had a server cabinet, we *obviously* had to get one that was rack-mountable; so the one we got had 16 ports.
 
 Theoretically we could have just got a switch and used the ISP's router as the security gateway, router and modem, but by this stage we were ready to fully commit.
 
-The security gateway also acts as a router, and buying our own allows us better control of the network. The ISP's router was a black box; we could not debug anything. It also did not support Universal Plug and Play [UPnP](https://en.wikipedia.org/wiki/Universal_Plug_and_Play) or Multicast DNS [mDNS](https://en.wikipedia.org/wiki/Multicast_DNS) which meant that Airplay didn't reliably work and the Xbox didn't reliably connect to the network. Also, managing your own security gateway means you can add things like [DNSCrypt](https://www.opendns.com/about/innovations/dnscrypt/) and use [ODoH](https://techcrunch.com/2020/12/08/cloudflare-and-apple-design-a-new-privacy-friendly-internet-protocol/?guccounter=1).
+The security gateway also acts as a router, and buying our own allows us better control of the network. The ISP's router was a black box; we could not debug anything. It also did not properly support Universal Plug and Play ([UPnP](https://en.wikipedia.org/wiki/Universal_Plug_and_Play)) or Multicast DNS ([mDNS](https://en.wikipedia.org/wiki/Multicast_DNS)) which meant that the Xbox didn't reliably connect to the network and Airplay didn't reliably work. Also, managing your own security gateway means you can add things like [DNSCrypt](https://www.opendns.com/about/innovations/dnscrypt/) and use [ODoH](https://techcrunch.com/2020/12/08/cloudflare-and-apple-design-a-new-privacy-friendly-internet-protocol/?guccounter=1).
 
 We didn't need to buy a modem as we happened to have an old BT-provided one in a drawer.
 
@@ -153,17 +153,15 @@ We didn't need to buy a modem as we happened to have an old BT-provided one in a
 
 ## How we set it all up
 
-If you go all in to start with, buying a switch, security gateway, and a few APs all at once, you would just plug them all together, set up your controller software, and configure. Your devices would automatically connect to the new network as it had the same name as the old network.
+If you go all in to start with, buying a switch, security gateway, and a few APs all at once, you would just plug them all together, set up your controller software, and configure. Your devices would automatically connect to the new network iiff it had the same name as the old network.
 
 If you're adding the extra kit later, as we did, you first have to do a full factory reset on your exisiting APs, because setting up a security gateway redefines your network, so you don't want to try to adopt it into an existing network. Once the APs are back online you configure the network using the controller software (i.e. adopting each AP as new).
-
-You might lose anything special you've configured on the APs, like custom netowrk configurations - but these should have been backed up so you can restore them during setup.
 
 ## Summary, six months on
 
 It's great.
 
-Our internet speed has increased, from about 72mb to 75mb down and from 18mb to 21mb up; an overall increase of about 5%. Our Airplay devices are always available. UPnP is now integrated and works consistently so the Xbox can always access the network. Connecting to other devices is instantaneous, for example SSHing to the iMac, and connecting to the WiFi is also faster, e.g. when opening a laptop. Everything is easier to debug because everything is a little Linux box.
+Our Airplay devices are always available. UPnP is now integrated and works consistently so the Xbox can always access the network. Connecting to other devices is instantaneous, for example SSHing to the iMac, and connecting to the WiFi is also faster, e.g. when opening a laptop. Everything is easier to debug because everything is a little Linux box. And our internet connection speed has slightly increased, from about 72mb to 75mb down and from 18mb to 21mb up.
 
 And most importantly, we have what we wanted: coverage everywhere throughout the house.
 
