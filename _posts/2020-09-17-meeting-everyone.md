@@ -38,7 +38,7 @@ Firstly I ran through everything I planned to cover, and then stepped through it
 - Then, if you like, I'd love you to tell me a bit about yourself – as much or as little as you feel like sharing
 - Then we'll discuss the following questions:
 
-1. What do you think the most important things we should be doing over the next year?
+1. What do you think are the most important things we should be doing over the next year?
 1. What will get in the way of us doing that?
 1. What’s going well, i.e. what should we make sure we don’t change?
 1. Is there anything you think I should know about?

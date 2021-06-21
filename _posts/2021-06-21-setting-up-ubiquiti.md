@@ -153,7 +153,7 @@ We didn't need to buy a modem as we happened to have an old BT-provided one in a
 
 ## How we set it all up
 
-If you go all in to start with, buying a switch, security gateway, and a few APs all at once, you would just plug them all together, set up your controller software, and configure. Your devices would automatically connect to the new network iiff it had the same name as the old network.
+If you go all in to start with, buying a switch, security gateway, and a few APs all at once, you would just plug them all together, set up your controller software, and configure. Your devices would automatically connect to the new network if it had the same name as the old network.
 
 If you're adding the extra kit later, as we did, you first have to do a full factory reset on your exisiting APs, because setting up a security gateway redefines your network, so you don't want to try to adopt it into an existing network. Once the APs are back online you configure the network using the controller software (i.e. adopting each AP as new).
 
