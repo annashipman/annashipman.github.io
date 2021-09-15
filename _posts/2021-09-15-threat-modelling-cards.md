@@ -6,7 +6,7 @@ layout: blog_post
 
 Threat modelling is a way to identify the potential security flaws in your system, and prioritise mitigations. On Monday I attended a session comparing some card games you can use to help you, at [SPA conference](https://www.spaconference.org/). This is a brief write-up.
 
-## The purpose of thread modelling cards is to provoke discussion
+## The purpose of threat modelling cards is to provoke discussion
 
 There are various ways to do threat modelling, for example the [National Cyber Security Centre (NCSC) recommends attack trees](https://www.ncsc.gov.uk/collection/cyber-security-design-principles/establish-the-context-before-designing-a-system).
 
