@@ -22,13 +22,13 @@ At the end of the three games we spent a few minutes dot voting on the issues we
 
 ## We used three very different decks of cards
 
-The card games we used in this session were [Elevation of Privilege](https://www.usenix.org/conference/3gse14/summit-program/presentation/shostack) (you can download a [very useful presentation](https://adam.shostack.org/Elevation-of-Privilege-BlackHat2010ShostackFinal.pptx) on it), [Adversary Personas](https://daylight.berkeley.edu/adversary-personas/) and the [Security and Privacy Threat Discovery](http://securitycards.cs.washington.edu/index.html).
+The card games we used in this session were [Elevation of Privilege](https://www.usenix.org/conference/3gse14/summit-program/presentation/shostack) (you can download a [very useful presentation](https://adam.shostack.org/Elevation-of-Privilege-BlackHat2010ShostackFinal.pptx) on it), [Adversary Personas](https://daylight.berkeley.edu/adversary-personas/) and [Security and Privacy Threat Discovery](http://securitycards.cs.washington.edu/index.html).
 
-Each of these decks were slightly different with slightly different activities involved.
+Each of these decks were quite different with different activities involved.
 
 ## Elevation of Privilege
 
-The Elevation of Privelege cards are very technical. They outline something that might happen, divided into the six areas in the [STRIDE framework](https://en.wikipedia.org/wiki/STRIDE_(security)). For example, one card is titled "Spoofing" and reads "An attacker could squat on the random port or socket that the server normally uses".
+The Elevation of Privilege cards are very technical. They outline something that might happen, divided into the six areas in the [STRIDE framework](https://en.wikipedia.org/wiki/STRIDE_(security)). For example, one card is titled "Spoofing" and reads "An attacker could squat on the random port or socket that the server normally uses".
 
 The actual game involves placing cards on the diagram to indicate where in the architecture the situation described on the card could be a problem, but for our shortened version of the game we were to indicate what situation was present for this to be a problem.
 
@@ -44,7 +44,7 @@ You play this game by first understanding what you are protecting (the impact) a
 
 As for all the games, we didn't play the full version in the session. Instead, we talked about the personas and impacts and used that discussion to identify some potential issues.
 
-This one generated some really interesting discussion, and people with less technical or secuirty experience were able to get fully involved.
+This one generated some really interesting discussion, and people with less technical or security experience were able to get fully involved.
 
 ## Security and Privacy Threat Discovery
 
@@ -61,7 +61,7 @@ This was the third game we played, and after the other two it was very odd. Each
 
 Coming straight after Adversary Personas, which had really encouraged unbounded thinking, it was hard to engage with these cards at first. With the above one, for example, it lists quite a lot of the potential answers, which doesn't feel very motivating to come up with more.
 
-The [activities](http://securitycards.cs.washington.edu/activities.html) for these cards are different to the other two sets and they can also be used for education rather than a particular system. It seemed like they might prompt good ideas for a group less familiar with security concepts, and we did generate quite a few potential issues from them.
+The [activities](http://securitycards.cs.washington.edu/activities.html) for these cards are different to the other two sets and they can also be used for education rather than for securing a particular system. It seemed like they might prompt good ideas for a group less familiar with security concepts, and we did generate quite a few potential issues from them.
 
 ## Which cards generated more insights?
 
@@ -71,7 +71,7 @@ However, in all groups, the Adversary Personas had generated the most red dots, 
 
 ## I would definitely want to use a deck of cards
 
-I found this exercise really interesting. I thought that all of the decks of cards prompted the group to think outside our default ways of thinking, so I would advocate using a deck of cards as a supplement to any threat modelling session I was doing.
+I found this exercise really interesting. All of the decks of cards prompted the group to think outside our default ways of thinking, so I would advocate using a deck of cards as a supplement to any threat modelling session I was doing.
 
 Which deck I would want to use would depend on the context, e.g. the technical understanding of those taking part, what other methods we were using, whether the priority of the session was to identify new risks or gain a collective understanding, etc.
 
