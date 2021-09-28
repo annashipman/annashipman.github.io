@@ -10,11 +10,12 @@ Here are the changes we made to address that. We still have some way to go and w
 
 ## The pandemic had knocked out our processes
 
-One of the early reasons we found less time for tech work was because over the course of 2020, team health work became more important. We all found ourselves doing (and needing!) more of that, both due to the external stresses of the pandemic, and internal pressures around changes that had to be made because of it.
+One reason we had less time for larger pieces of tech work was that over the course of 2020, team health work became more important. We all found ourselves doing (and needing!) more of that, both due to the external stresses of the pandemic, and internal pressures around changes that had to be made because of it.
 
 In addition, when the pandemic hit and we all moved to working from home, a few of our processes also dropped out. For example, we no longer had a physical wall, and in the rush and emotional turmoil of those first few working from home weeks, we dropped having a stand-up meeting and did not restart it.
 
 ## Individual principal engineers did not feel confident making big technical decisions
+
 By the end of summer 2020, all of the principal engineers and I felt that we had been struggling to make time for the larger pieces of technical work.
 
 However, it wasn’t just about making time. It emerged that none of the principal engineers felt empowered to push forward on any individual piece of tech work, because all felt uncertain about what the priorities were or the direction of travel.
@@ -22,7 +23,6 @@ However, it wasn’t just about making time. It emerged that none of the princip
 They all felt confident in making decisions about team health, recruitment etc, often without discussion with each other, but with technical decisions there was uncertainty about the overall direction and what the priorities were, which meant that only small technical issues got worked on, and mostly in a very reactive way.
 
 We all felt that we were avoiding the bigger technical issues, and spending too much time on lower value work, but didn’t understand why or how to fix it.
-
 
 ## We had prioritised tech work using a card exercise
 
@@ -82,13 +82,13 @@ We reviewed the list and questioned whether each one was actually something we s
 
 Technical work is where we can really add value as senior technical leaders - and it is work that needs doing, that no-one else can do. We were not fulfilling our potential, or even doing our jobs properly by allowing sand to crowd that work out.
 
-As well as going through the list of activities we felt were with our remit, we also agreed that the overriding principle of what we should and shouldn’t be doing is to to prioritise the work that only we can do, as senior technical leaders. This helps us be clear about when we should say no to things.
+We agreed that this should be the overriding principle of what we should be doing – prioritise the work that only we can do, as senior technical leaders. This helps us be clear about when we should say no to things.
 
 ## We instated some regular in-depth planning and discussion meetings
 
 While our one-off conversation had made sure we were all aware of what the next priorities were and were making progress towards them, I still wanted a process that supported that happening in an ongoing way.
 
-My goal is still, and always has been, looking for ways to make myself redundant in a role, and in this case, for the Customer Products principal engineers to be able to run the team without me – so anything that relied on me having to state what the priorities are was a bad sign.
+My goal is still, and always has been, looking for ways to make myself redundant in a role, and in this case, for the Customer Products principal engineers to be able to run the team without me – so anything that relies on me having to state what the priorities are is a bad sign.
 
 We have a weekly principals’ meeting that anyone can add items to and we go through in priority order. There’s always a lot on the agenda, and what we found was that we often didn’t have time for in-depth discussions.
 
@@ -108,9 +108,9 @@ So we made some changes:
 
 - We set up two weekly discussion slots of an hour each. These are for the ‘pebbles’ that need more discussion than we can cover in our weekly meeting, or for making progress together on ‘rocks’.
 
-  These slots are booked and available so that if we do need to have a more in depth discussion about something, we don’t need to then worry about finding the time; and if there’s nothing that we need to discuss - great, we’ve got a bit of time back to do other focused work.
+  These slots are booked and available so that if we do need to have a more in depth discussion about something, we don’t need to then worry about finding the time; and if there’s nothing that we need to talk about: great, we’ve got a bit of time back to do other focused work.
 
-These changes have worked really well. Future planning means we are spending time discussing the bigger picture and making sure we are still agree on the top priorities. Incremental planning makes sure we are keeping on track. And the discussion slots are really useful – sometimes we use up both the slots in a week, either ad hoc or booked in advance, and quite often we don’t have a discussion so we get some time back.
+These changes have worked really well. Future planning means we are spending time discussing the bigger picture and making sure we are still agree on the top priorities. Incremental planning makes sure we are keeping on track. And the discussion slots are really useful – sometimes we use up both the slots in a week, either ad hoc or booked in advance, and about half the time we don't have anything on the agenda so we get some time back.
 
 ## We had picked some big things to work on and a process rather than a coherent plan of action
 
@@ -118,7 +118,7 @@ We have worked out what the next big things are, and a process to share context 
 
 However, the forward planning meeting and other changes we’ve made are about context sharing and thinking together. While this is very useful, what is missing is clarity around what kind of thing should be next. What should person X, as an engineer on Customer Products, do next, in order to get us to our goal?
 
-Strategy should be /jfdi/good-strategy-bad-strategy.html diagnosis, vision and a plan of coherent action. The “rocks” are steps on the way, but they do not form a full plan of action, and they do not tell us how to prioritise the next thing to work on.
+Strategy should be [diagnosis, vision and a plan of coherent action](/jfdi/good-strategy-bad-strategy.html). The “rocks” are steps on the way, but they do not form a full plan of action, and they do not tell us how to prioritise the next thing to work on.
 
 ## Some thoughts on how we could clarify the next steps
 
@@ -134,18 +134,20 @@ Working this out is my next thing to do.
 
 ## In summary
 
-- We’ve set up some structured planning meetings and agreed to make sure we are always focusing on the most important large pieces of work (the “rocks”)
-- We’ve set aside some time to discuss the medium sized things that need a bit more in-depth thinking (the “pebbles”)
-- We’ve clarified when something is work that principal engineers should do – when it is work that only we can do.
-- We’ve identified what the three next big priorities are, and we are using our forward planning meeting to share context of what the next big things might be
+- We’ve set up some structured planning meetings and agreed to make sure we are always focusing on the most important large pieces of work (the “rocks”).
+- We’ve set aside some time to discuss the medium sized things that need a bit more in-depth thinking (the “pebbles”).
+- We’ve clarified when something is work that principal engineers should do: when it is work that only we can do.
+- We’ve identified the three next big priorities, and we are using our forward planning meeting to share context of current and upcoming priorities.
 
-However
+However:
 
 - We have not worked out how to involve the wider group of senior engineers in the discussions.
 - We don’t know how to share context and get clarity over what the next priorities are either in a remote meeting or asynchronously.
+- We haven't created a coherent plan of action so that anyone in the wider team can clearly see what the next step might be.
 
 ## I would love to hear your thoughts
 
-I would love to hear from anyone who has useful contributions on this; any thoughts about how to do a card exercise or similar context-sharing/prioritising activity with a large group of people either remotely or asynchronously.
+I would love to hear from anyone who has useful contributions on this; particularly any thoughts about how to do a card exercise or similar context-sharing/prioritising activity with a large group of people either remotely or asynchronously.
+
 
 And I would also love to hear from others who are in charge of a large stack and successfully share the work of prioritising with the team.
