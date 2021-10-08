@@ -82,7 +82,7 @@ Some of the excellent advice I got from the people I talked to included:
 - A good recruiter can act as an agent for you, telling you what skills you need to pick up in your current role so that they can sell you again in 2-3 years.
 - Someone asked me where I wanted to be in 5-10 years, which is an excellent question to focus the mind.
 - Think about how you would introduce yourself = "this is the kind of person I am".
-- And someone who noted that I was taking time over choosing my next step (more on that in a moment) reminded me not spend too long thinking before taking action by asking me "what is the risk of getting it wrong?"
+- And someone who noted that I was taking time over choosing my next step (more on that in a moment) reminded me not to spend too long thinking before taking action by asking me "what is the risk of getting it wrong?"
 
 ## If you do nothing else, definitely have some chats
 
