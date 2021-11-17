@@ -8,8 +8,7 @@ A few weeks ago I wrote a post about [being a technical architect](/jfdi/what-is
 
 [Phil Wills](https://twitter.com/philwills) had a suggestion for me:
 
-<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/annashipman">@annashipman</a> one of the most important things I did, a long time after becoming an architect, was to stop going to recurring meetings.</p>&mdash; Phil Wills (@philwills) <a href="https://twitter.com/philwills/status/572117516870393856">March 1, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr"><a href="https://twitter.com/annashipman?ref_src=twsrc%5Etfw">@annashipman</a> one of the most important things I did, a long time after becoming an architect, was to stop going to recurring meetings.</p>&mdash; Phil Wills (@philwills) <a href="https://twitter.com/philwills/status/572117516870393856?ref_src=twsrc%5Etfw">March 1, 2015</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 At QCon, I asked him more about this. Did he mean *all* recurring meetings? What about retrospectives? What about stand-ups? We ended up having a mini [Open Space](http://en.wikipedia.org/wiki/Open_Space_Technology#Guiding_principles_and_one_law) of our own, joined after a while by a couple of others, and then Phil proposed a session on 'how to stay technical as a senior techie' at last Friday's [Scale Summit](http://www.scalesummit.org/). Here are some of the thoughts I got from that session.
 
