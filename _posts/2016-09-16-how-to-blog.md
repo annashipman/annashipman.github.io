@@ -27,8 +27,7 @@ myself, for example [on regex](http://www.annashipman.co.uk/jfdi/some-regex-in-t
 This helps build up a body of work, and also helps you to be less perfectionist
 about what you post. And it's also very useful when you want to refresh your memory!
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/matwall">@matwall</a> <a href="https://twitter.com/brunns">@brunns</a> occasionally i google for an answer to a problem and find one written by <a href="https://twitter.com/philandstuff">@philandstuff</a></p>&mdash; Philip Potter (@philandstuff) <a href="https://twitter.com/philandstuff/status/497434096755548160">August 7, 2014</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr"><a href="https://twitter.com/matwall?ref_src=twsrc%5Etfw">@matwall</a> <a href="https://twitter.com/brunns?ref_src=twsrc%5Etfw">@brunns</a> occasionally i google for an answer to a problem and find one written by <a href="https://twitter.com/philandstuff?ref_src=twsrc%5Etfw">@philandstuff</a></p>&mdash; Philip Potter (@philandstuff) <a href="https://twitter.com/philandstuff/status/497434096755548160?ref_src=twsrc%5Etfw">August 7, 2014</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Write about things people ask you to write about
 
