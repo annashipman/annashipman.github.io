@@ -83,49 +83,43 @@ So. Digging into this suggestion led me to some very interesting learnings about
 
 <blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">I’m thinking that the default of 50% may be restricting the creation of additional threads. Also, try adding something that causes a kernel call to force another thread to run.</p>&mdash; Dak (David A. Keldsen) (@d_a_keldsen) <a href="https://twitter.com/d_a_keldsen/status/1439963498734395399?ref_src=twsrc%5Etfw">September 20, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-explain what cpu cap is
+The CPU execution cap controls how much of the host's CPU time a virtual CPU can use. The [VirtualBox documentation](https://www.virtualbox.org/manual/ch03.html#settings-processor) doesn't appear to say what the default is, though the suggestion above is that its 50%, which makes sense.
 
-suggestion is that there's not enough CPU being allowed for the guest to create new threads
+However, explicitly setting it to 50% and then 100% on my VM made no difference. At 100% it was faster, but there was still no difference between the speed of `reduce` and `fold`.
 
-Try it with a higher cpu blah
+But in any case, we know that there is enough CPU being allowed for the guest to create new threads because some of the other threading in the book does work. Relevantly, the Java threading examples work, and Clojure runs on the JVM.
 
-But also realised afterwards, we know that's not the case here as some fo the other threading works, specifically, the Java does, and Clojure runs on the JVM, so... 
+Even though it looks like this is not the cause of the problem, it's a very interesting suggestion and helped consolidate my understanding of how threading works.
 
-The making a kernal call is also interesting
-
-The idea here is calling an interrupt to test whether control can pass from thread to trhread; calling an interrupt tests this because interrupts can be higher priority (e.g. kernel interrupt would be higher priority than my clojure function), so if you call a lkerenal inerrupt and it's not sucesful (what do es success look like>>!) then we know threading is not working as expected in my VM.
+The idea of making a kernel call is very interesting. The idea here is calling an interrupt to test whether control can pass from thread to thread; calling an interrupt tests this because interrupts can be higher priority (e.g. kernel interrupt would be higher priority than my Clojure function), so if you call a kernel inerrupt and it's not successful, then we know threading is not working as expected in my VM.
 
 However, in this case it's not clear how I could add an interrupt, as clojure is doing all the threading under the hood. in java, would call thread.interrupt form outside the thread but not sure how to do this here.
 
 in any case, we konw threading is working, so again, learned things but didn't haelp.
 
-Some useful links:
-
-https://www.virtualbox.org/manual/ch08.html 
-
-https://lwn.net/Articles/65178/ to start - digging in here will help me understand threads/the kernal etc better.
-
 ## It could be to do with the JVM Garbage Collection
 
 <blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">LEIN_JVM_OPTS=&quot;-verbose:gc -XX:+UnlockExperimentalVMOptions -XX:G1NewSizePercent=50 -XX:+UseG1GC -Xms3g -Xmx3g&quot; lein repl</p>&mdash; Philip Wigg (@philipwigg) <a href="https://twitter.com/philipwigg/status/1439693698539864067?ref_src=twsrc%5Etfw">September 19, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-[Philip Wigg](https://twitter.com/philipwigg) had the answer that had the most impact.
+[Philip Wigg](https://twitter.com/philipwigg) had the answer that had the most impact. He suggested that it might be the JVM Garbage Collection that was messing with the results.
+
+Instead of starting the Leiningen REPL with `lein repl`, start it with `LEIN_JVM_OPTS="-verbose:gc -XX:+UnlockExperimentalVMOptions -XX:G1NewSizePercent=50 -XX:+UseG1GC -Xms3g -Xmx3g" lein repl`.
+
+This did make `parallel-sum` faster for me. And here are his results:
+
+<blockquote class="twitter-tweet" data-conversation="none" data-dnt="true"><p lang="en" dir="ltr">Slightly modified version of your script that runs 10 of each. Couple of slow ones due to GC but otherwise Fold wins. <a href="https://t.co/Xy4hJAF8qV">pic.twitter.com/Xy4hJAF8qV</a></p>&mdash; Philip Wigg (@philipwigg) <a href="https://twitter.com/philipwigg/status/1439696075980525571?ref_src=twsrc%5Etfw">September 19, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 To unpick this:
 
-- LEIN_JVM_OPTS is [setting options for the leiningen JVM](https://github.com/technomancy/leiningen/blob/master/doc/TUTORIAL.md#setting-jvm-options)
-- verbose:gc
-- -XX:+UnlockExperimentalVMOptions
--XX:G1NewSizePercent=50
--XX:+UseG1GC
--Xms3g -Xmx3g
+- `LEIN_JVM_OPTS`: [set options for the leiningen JVM](https://github.com/technomancy/leiningen/blob/master/doc/TUTORIAL.md#setting-jvm-options)
+- `verbose:gc`: make the garbage collector verbose
+- `XX:+UnlockExperimentalVMOptions` - why?
+-XX:G1NewSizePercent=50 - why?
+-XX:+UseG1GC is explicitly use the [Garbage-First Garbage Collector](https://docs.oracle.com/javase/9/gctuning/garbage-first-garbage-collector.htm#JSGCT-GUID-0394E76A-1A8F-425E-A0D0-B48A3DC82B42), though it's the default so do I need it? - wait, maybe I do because old Java?
+-Xms3g -Xmx3g - might it just work with this?
 
-Next step here, look up “GC (Allocation Failure)” out of interest
-https://technospace.medium.com/gc-allocation-failures-42c68e8e5e04
-
- and see if I can get a definitive answer that this is what it is.
-
-Can set the lein opts https://stackoverflow.com/questions/32323572/is-there-a-way-to-set-system-properties-in-leinegen <-not quite it but might get me there 
+While looking into this I found this [very useful and interesting article about garbage collection](https://technospace.medium.com/gc-allocation-failures-42c68e8e5e04), most of which I'd forgotten about since my time as a Java programmer, many years ago.
 
 Useful links:
 https://docs.oracle.com/en/java/javase/17/gctuning/garbage-first-g1-garbage-collector1.html#GUID-0394E76A-1A8F-425E-A0D0-B48A3DC82B42
@@ -135,28 +129,14 @@ https://docs.oracle.com/javase/8/docs/technotes/guides/vm/gctuning/g1_gc.html#ga
 heap size stuff https://www.spigotmc.org/threads/how-can-i-add-more-ram-to-a-server-im-going-to-create.457818/?__cf_chl_jschl_tk__=pmd_KGBYGizSow5oZV4Sv4oWSiA4mGuAezMcjkFUwVhLLeQ-1632155339-0-gqNtZGzNAiWjcnBszQhR
 
 
-using verbose alone seems to make it faster, Steve suggests this is because GC happens less when in verbose mode. Check this out.
-
-It also seems that it needs to be reloaded each time I start the repl to get the results, maybe even destroyed, so bear that in mind if testing.
-
-
-## to note
-
-didn't test locally myself but a few other people did, as part o fthe reasdon using vagrant is don't want to install all this stuff on my machine
-
-wondered whether it might bre lein repl needed to do concucrrecny epxlicity but others said it worked
-
-could it be the version?
 
 ## conclusion title
 
-Not sure I actually solved this problem,  but learned some interesting things! do share if you have other ideas here.
+This was a very interesting digression. I learned a lot that I didn't know, some of it about concurrency, and some about how computers work, always a fascinating topic.
 
-I made/didn't make these changes to the VM so now at least that one will run, but have not gone back through the rest of the code samples
+Of course, I didn't actually solve my problem! An easy way to have replicated these concurrency gains would have been to install Clojure and Leiningen on my Mac and run it like that. But one of the other reasons I like Vagrant is that I don't like to install things on my computer that I don't need. I don't even have Java on this computer. So installing all that on my computer would have taken away one of the main benefits of using Vagrant for me.
 
-I learned a lot that I didn't know, not all of it about concurrency, but about how computers work, always a fascinating topic.
-
-And something something summmary.
+If you want to follow along with the 7 conncurrency modeles book, you can use [my Vagrantfile](https://github.com/annashipman/7weeks-concurrency/blob/main/Vagrantfile) to run some of the examples. But be warned, the Clojure ones do not work as expected. Hopefully you now have some hints about why!
 
 
 ## notes
