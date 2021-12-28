@@ -8,9 +8,9 @@ I recently couldn't work out why Clojure was not working concurrently in a Vagra
 
 ## I use Vagrant for most things I do
 
-I love [Vagrant](https://www.vagrantup.com/), because I love being able to put things down and pick them up where I left off, without having to recreate environments. In any case, I do not have a good memory, and the Vagrantfile is built in documentation. I create a Vagrantfile for almost every side project I do.
+I love [Vagrant](https://www.vagrantup.com/), because I love being able to put things down and pick them up where I left off, without having to recreate environments. I do not have a good memory, and the Vagrantfile is built-in documentation. I create a Vagrantfile for almost every side project I do.
 
-Of course, this means I sometimes (/often) end up going down a rabbithole that is has very little to do with the actual side project itself. However, these are usually great fun and I learn things. Here is one rabbithole and what I learned.
+Of course, this means I sometimes (or often...) end up going down a rabbithole that has very little to do with the actual side project itself. However, these are usually most entertaining, and I learn things. Here is one rabbithole and what I learned.
 
 ## I could not replicate a concurrency gain
 
@@ -47,7 +47,7 @@ However, on my Vagrant box, the two functions ran in approximately the same leng
 
 ## I eventually asked for help on Twitter
 
-After quite a bit of investigation myself, including [correcting some foolish errors](https://github.com/annashipman/7weeks-concurrency/commit/360bedc), I was not able to work out why this wasn't working. Vagrant could see all four of the cores (`(.availableProcessors (Runtime/getRuntime))` showed it could see 4) but the alledgly parallel code was no faster.
+After quite a bit of investigation myself, including [correcting some foolish errors](https://github.com/annashipman/7weeks-concurrency/commit/360bedc), I was not able to work out why this wasn't working. Vagrant could see all four of the cores (`(.availableProcessors (Runtime/getRuntime))` showed it could see 4) but the allegedly parallel code was no faster.
 
 I figured this must be something to do with Vagrant, and I was committed to getting it all working on my Vagrant machine, if I could.
 
@@ -61,27 +61,21 @@ I got some very helpful responses.
 
 <blockquote class="twitter-tweet" data-conversation="none" data-dnt="true"><p lang="en" dir="ltr">I don&#39;t know clojure but based on your info I would guess it might be how VirtualBox creates cpus.<br><br>4 cores on a single cpu share L3 cache but 4 cpus with one core doesn&#39;t. That might make enough difference for clojure.core.reducers to determine it&#39;s not worth doing in parallel</p>&mdash; Pär Björklund (@Paxxi) <a href="https://twitter.com/Paxxi/status/1439650030844063746?ref_src=twsrc%5Etfw">September 19, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-I had not realised until I read this tweet that cores and CPUs were different things.
+Until I read this tweet, I had not consciously realised that CPUs and cores were different things. Sometimes the two terms are used interchangeably – incorrectly, I now know.
 
-In fact, the two terms are often used interchangeably. (See, for example, "[A multi-core processor is a computer processor  with two or more separate processing units (CPUs), called cores" https://www.newcmi.com/blog/how-many-cores). or "Multi-core processors can be dual-core (2 CPUs), quad-core (4 CPUs)" (https://www.dignited.com/36727/the-difference-between-cpu-vs-cores/). In fact both of those qquotes are using "CPU" incorrectly.
+A dual-core machine is not a computer with two CPUs, it's a computer with one CPU that has two cores. A CPU is made up of one or more cores, an input and output management unit, and some other things. The cores are the parts that actually do the work of executing instructions, so multiple cores allow the CPU (in theory at least) to carry out multiple instructions at once.
 
-The fact of the matter is that in, for example, a dual-core machine, there is one CPU with two cores. The CPU is what carries out the program's instructions, and is made up of one or more cores, input and output management unit, and some other things. The core is the part that actually does the work of executing instructions, so multiple cores allow the CPU (in theory at least) to carry out multiple instructions at once.
+L3 cache is the biggest CPU cache and is built between the CPU and the RAM. Each core has its own L1 cache. L2 cache may be part of the CPU chip, or between the CPU and the RAM, but L3 cache will usually be shared between cores.
 
-Part of my confusion could be because it is in the industry's interest to elide CPUs and cores. CPUs cannot get any faster (**link**), so to advertise faster computers, you need a some way of having multiple processing units, and it is cheaper and easier to make a computer that has one CPU with multiple cores than it is to make a computer with multiple CPUs.
+So Pär Björklund's suggestion was that if VirtualBox created the multiple CPUs as CPUs rather than cores, the L3 cache wouldn't be shared, so parallelising would not produce much of an efficiency gain.
 
+The investigation into whether my virtual machine has multiple cores or multiple CPUs involved much unpicking. [Vagrant's docs](https://www.vagrantup.com/docs/providers/virtualbox/configuration) refer to setting CPUs. It links to the [VirtualBox manual](https://www.virtualbox.org/manual/ch08.html) which refers also to CPUs ("`--cpus <cpucount>`: Sets the number of virtual CPUs for the virtual machine") but refers you on to [another part of the manual](https://www.virtualbox.org/manual/ch03.html#settings-processor) which reveals that it's actually CPU *cores*: "Sets the number of virtual CPU cores the guest OSes can see."
 
+From this, I learned that [I should not have set my guest VM to have 4 CPUs on my dual-core host](https://github.com/annashipman/7weeks-concurrency/commit/2e81a52).
 
-L3 cache is the biggest level of CPU cache and is built between the CPU and the RAM. Whereas L1 and sometimes L2 caches might be on the CPU chip itself, 
+Not unexpectedly, making that change did not affect the speed of the second function. I did establish that it looks like VirtualBox is creating multiple cores rather than multiple CPUs, so in theory they may be sharing L3 cache, though I can't say definitively they are. In any case, it doesn't seem that I have any control over it.
 
-https://www.bbc.co.uk/bitesize/guides/zmb9mp3/revision/3
-
-So Pär Björklund's suggestion was ...
-
-
-The next step to see if this was the issue was to try with a bigger number; however, too big caused an OutOfMemoryError, and in between didn't make any difference. It's not clear that this would actually solve my problem so I moved on from it but I learned a number of very interesting things from this***.
-
-This might actually be the problem, it is not clear how I could solve it even if it was, so I moved on
-
+So. Digging into this suggestion led me to some very interesting learnings about the structure of computers, and might actually be the root of the problem, but even if it is, it's not clear if I can solve it if so, so I moved on to other suggestions.
 
 ## It could be that there are not enough threads
 
@@ -113,11 +107,18 @@ https://lwn.net/Articles/65178/ to start - digging in here will help me understa
 
 ## It could be to do with the JVM Garbage Collection
 
-2. JVM Garbage collection issue.
-
-
 <blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">LEIN_JVM_OPTS=&quot;-verbose:gc -XX:+UnlockExperimentalVMOptions -XX:G1NewSizePercent=50 -XX:+UseG1GC -Xms3g -Xmx3g&quot; lein repl</p>&mdash; Philip Wigg (@philipwigg) <a href="https://twitter.com/philipwigg/status/1439693698539864067?ref_src=twsrc%5Etfw">September 19, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+[Philip Wigg](https://twitter.com/philipwigg) had the answer that had the most impact.
+
+To unpick this:
+
+- LEIN_JVM_OPTS is [setting options for the leiningen JVM](https://github.com/technomancy/leiningen/blob/master/doc/TUTORIAL.md#setting-jvm-options)
+- verbose:gc
+- -XX:+UnlockExperimentalVMOptions
+-XX:G1NewSizePercent=50
+-XX:+UseG1GC
+-Xms3g -Xmx3g
 
 Next step here, look up “GC (Allocation Failure)” out of interest
 https://technospace.medium.com/gc-allocation-failures-42c68e8e5e04
