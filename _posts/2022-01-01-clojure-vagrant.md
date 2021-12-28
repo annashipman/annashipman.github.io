@@ -4,7 +4,7 @@ title: Why didn't Clojure work concurrently in Vagrant?
 layout: blog_post
 ---
 
-I recently couldn't work out why Clojure was not working concurrently in a Vagrant box. I'm not sure I solved the problem but I learned many things, and here are some of them.
+I recently couldn't work out why Clojure was not working concurrently in a Vagrant box. I didn't solve the problem, but I learned many things, and here are some of them.
 
 ## I use Vagrant for most things I do
 
@@ -105,32 +105,26 @@ in any case, we konw threading is working, so again, learned things but didn't h
 
 Instead of starting the Leiningen REPL with `lein repl`, start it with `LEIN_JVM_OPTS="-verbose:gc -XX:+UnlockExperimentalVMOptions -XX:G1NewSizePercent=50 -XX:+UseG1GC -Xms3g -Xmx3g" lein repl`.
 
-This did make `parallel-sum` faster for me. And here are his results:
-
-<blockquote class="twitter-tweet" data-conversation="none" data-dnt="true"><p lang="en" dir="ltr">Slightly modified version of your script that runs 10 of each. Couple of slow ones due to GC but otherwise Fold wins. <a href="https://t.co/Xy4hJAF8qV">pic.twitter.com/Xy4hJAF8qV</a></p>&mdash; Philip Wigg (@philipwigg) <a href="https://twitter.com/philipwigg/status/1439696075980525571?ref_src=twsrc%5Etfw">September 19, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
 To unpick this:
 
 - `LEIN_JVM_OPTS`: [set options for the leiningen JVM](https://github.com/technomancy/leiningen/blob/master/doc/TUTORIAL.md#setting-jvm-options)
 - `verbose:gc`: make the garbage collector verbose
-- `XX:+UnlockExperimentalVMOptions` - why?
--XX:G1NewSizePercent=50 - why?
--XX:+UseG1GC is explicitly use the [Garbage-First Garbage Collector](https://docs.oracle.com/javase/9/gctuning/garbage-first-garbage-collector.htm#JSGCT-GUID-0394E76A-1A8F-425E-A0D0-B48A3DC82B42), though it's the default so do I need it? - wait, maybe I do because old Java?
--Xms3g -Xmx3g - might it just work with this?
+- `XX:+UnlockExperimentalVMOptions`: the version of Java on my VM is Java 8, so the following are all experimental at that stage.
+-`XX:G1NewSizePercent=50`: set the percentage of the heap to use as the minimum for the young generation size
+- `XX:+UseG1GC`: explicitly use the [Garbage First Garbage Collector](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/gctuning/g1_gc.html#garbage_first_garbage_collection). This is now the default, but was not for Java 8.
+- `Xms3g -Xmx3g`: set the initial and max heap size
 
 While looking into this I found this [very useful and interesting article about garbage collection](https://technospace.medium.com/gc-allocation-failures-42c68e8e5e04), most of which I'd forgotten about since my time as a Java programmer, many years ago.
 
-Useful links:
-https://docs.oracle.com/en/java/javase/17/gctuning/garbage-first-g1-garbage-collector1.html#GUID-0394E76A-1A8F-425E-A0D0-B48A3DC82B42
-https://docs.oracle.com/javase/8/docs/technotes/guides/vm/gctuning/g1_gc_tuning.html
-https://docs.oracle.com/javase/8/docs/technotes/guides/vm/gctuning/g1_gc.html#garbage_first_garbage_collection
+The theory here is that on the host, the JVM has access to more RAM, but on the smaller VM, without this tuning, it has to keep doing garbage collection, which slows things down.
 
-heap size stuff https://www.spigotmc.org/threads/how-can-i-add-more-ram-to-a-server-im-going-to-create.457818/?__cf_chl_jschl_tk__=pmd_KGBYGizSow5oZV4Sv4oWSiA4mGuAezMcjkFUwVhLLeQ-1632155339-0-gqNtZGzNAiWjcnBszQhR
+This did make `parallel-sum` faster for me. And here are his results:
 
+<blockquote class="twitter-tweet" data-conversation="none" data-dnt="true"><p lang="en" dir="ltr">Slightly modified version of your script that runs 10 of each. Couple of slow ones due to GC but otherwise Fold wins. <a href="https://t.co/Xy4hJAF8qV">pic.twitter.com/Xy4hJAF8qV</a></p>&mdash; Philip Wigg (@philipwigg) <a href="https://twitter.com/philipwigg/status/1439696075980525571?ref_src=twsrc%5Etfw">September 19, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+However, I never got to the promised 2.5x speed-up, and I later found that this did not even consistently speed up my results. But once again, it was a very entertaining digression and I learned (and remembered!) some interesting things.
 
-## conclusion title
+## I never got to the bottom of it!
 
 This was a very interesting digression. I learned a lot that I didn't know, some of it about concurrency, and some about how computers work, always a fascinating topic.
 
@@ -138,16 +132,4 @@ Of course, I didn't actually solve my problem! An easy way to have replicated th
 
 If you want to follow along with the 7 conncurrency modeles book, you can use [my Vagrantfile](https://github.com/annashipman/7weeks-concurrency/blob/main/Vagrantfile) to run some of the examples. But be warned, the Clojure ones do not work as expected. Hopefully you now have some hints about why!
 
-
-## notes
-
-
-Maybe some reasding, if relevant.
-
-
-https://purelyfunctional.tv/guide/clojure-concurrency/
-
-https://clojure.org/about/concurrent_programming
-
-https://functional.works-hub.com/learn/concurrency-models-and-clojure-237db
-
+Somehow add this in https://purelyfunctional.tv/guide/clojure-concurrency/ because I love the brief summary of how each concurrency model works at the beginning.
