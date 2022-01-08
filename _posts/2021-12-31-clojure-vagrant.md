@@ -127,3 +127,13 @@ This was a very interesting digression. I learned a lot that I didn't know, some
 Of course, I didn't actually solve my problem! An easy way to have replicated these concurrency gains would have been to install Clojure and Leiningen on my Mac and run it like that. But one of the other reasons I like Vagrant is that I don't like to install things on my computer that I don't need. I don't even have Java on this computer. So installing all that on my computer would have taken away another of the main benefits of using Vagrant for me.
 
 If you want to follow along the code examples in the *Seven concurrency models* book, you can use [my Vagrantfile](https://github.com/annashipman/7weeks-concurrency/blob/main/Vagrantfile) to run some of the examples. But be warned, the Clojure ones do not all work as expected. Hopefully you now have some hints about why!
+
+## Edit: It could be a problem with the JDK that VirtualBox installs
+
+After publishing this blog post, [Linus Ericsson](https://twitter.com/linusericsson) suggested another theory:
+
+<blockquote class="twitter-tweet" data-conversation="none" data-dnt="true"><p lang="en" dir="ltr">One problem I had with JDK 8 before 181 or so running in *Docker* was that they did not honour Dockers way of reporting the number of CPU:s (using cgroups). This lead to the JVM:s go above the Docker:s quotas and being terminated or fail.<a href="https://t.co/PAIFPjkpGD">https://t.co/PAIFPjkpGD</a></p>&mdash; Linus Ericsson (@linusericsson) <a href="https://twitter.com/linusericsson/status/1478096719762137100?ref_src=twsrc%5Etfw">January 3, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">My theory is that the old JDK version misinterprets the amount of resources (cores, perhaps memort) that are made availiable in the Vagrant virtual box and the program therefore make incorrect decisions when spawning the fork-join-processes.</p>&mdash; Linus Ericsson (@linusericsson) <a href="https://twitter.com/linusericsson/status/1478101205469515778?ref_src=twsrc%5Etfw">January 3, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+This is very plausible. Thanks!
