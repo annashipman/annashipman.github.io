@@ -136,4 +136,4 @@ After publishing this blog post, [Linus Ericsson](https://twitter.com/linuserics
 
 <blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">My theory is that the old JDK version misinterprets the amount of resources (cores, perhaps memort) that are made availiable in the Vagrant virtual box and the program therefore make incorrect decisions when spawning the fork-join-processes.</p>&mdash; Linus Ericsson (@linusericsson) <a href="https://twitter.com/linusericsson/status/1478101205469515778?ref_src=twsrc%5Etfw">January 3, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-This is very plausible. Thanks!
+This is very plausible. Unfortunately, the default JDK for the OS I'm running is 1.8.0_292, and the latest available is 1.8.0_312: not a big difference, and installing that did not solve my problem. So again, this could be the solution but I cannot fix it if so.
