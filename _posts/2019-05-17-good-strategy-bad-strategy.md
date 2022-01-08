@@ -1,6 +1,6 @@
 ---
 anchor_id: good-strategy
-title: Good Strategy Bad Strategy
+title: Good Strategy, Bad Strategy
 layout: blog_post
 ---
 
@@ -87,7 +87,7 @@ Making such a policy work takes more than a plan on paper – you need to work t
 
 [This Twitter thread](https://twitter.com/iamdeepa/status/944237019265298432) from Deepa Subramaniam is also very useful, particularly the practical tips on how to do that work.
  
-## You should read it
+## You should read Good Strategy, Bad Strategy
 
 These are some of the notes I've found useful to refer back to. [These slides](https://www.slideshare.net/sophiedennis/usercentred-digital-strategy-ux-in-the-city-manchester-2017) by [Sophie Dennis](https://twitter.com/sophiedennis) are also an excellent summary of some of the main points.
 
