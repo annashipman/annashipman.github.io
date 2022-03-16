@@ -276,10 +276,7 @@ PLATFORMS
   arm64-darwin-21
 
 DEPENDENCIES
-  commonmarker
   github-pages
-  kramdown (>= 2.3.0)
-  nokogiri (>= 1.10.4)
   webrick (~> 1.7)
 
 BUNDLED WITH
