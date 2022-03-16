@@ -6,3 +6,5 @@ gem 'github-pages'
 gem "nokogiri", ">= 1.10.4"
 gem "kramdown", ">= 2.3.0"
 gem "commonmarker"
+
+gem "webrick", "~> 1.7"
