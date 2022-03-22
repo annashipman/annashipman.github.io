@@ -22,7 +22,7 @@ So in a meeting where you want everyone to participate, it's best to give everyo
 
 The first time I was involved in a retrospective at work, many years ago, the facilitiator asked us each to warm up with a comment about "our hopes and fears for the retrospective". That's a pretty hard question! First you have to think of the answer, and then you have to filter it for what you think is appropriate to say in that context with those people ("I fear this is going to be the biggest waste of my time" is probably not the opening gambit you want to go with.)
 
-Personal questions are also tricky. Some people like sharing at work, and some people do not; so a question that involves revealing something about yourself can also be pretty stressful. ("Tell us about the best holiday you've ever had", or "If you were an animal, what animal would you be or why" are examples of questions I do not want to answer unless I'm comfortable already in that team.)
+Personal questions are also tricky. Some people like sharing at work, and some people do not; so a question that involves revealing something about yourself can also be pretty stressful. ("Tell us about the best holiday you've ever had", or "If you were an animal, what animal would you be and why" are examples of questions I do not want to answer unless I'm comfortable already in that team.)
 
 I favour questions that are unrevealing if the person wants them to be; brief; and something that just gets participants to practice speaking and being heard in the meeting.
 
@@ -53,9 +53,9 @@ For example the last one is only appropriate in a workplace where *everyone* fee
 
 ## Keep them simple
 
-The purpose of the check-in is just so that everyone has a chance to practice speaking in that meeting and being heard, so it doesn't matter what is said.
+The purpose of the check-in is solely that everyone has a chance to practice speaking in that meeting and being heard.
 
-The idea is just that they've already spoken, before the time comes where they may have an important contribution to make.
+So it doesn't matter what is said, just that they've already spoken, before the time comes where they may have an important contribution to make.
 
 ## This is not a silver bullet
 
