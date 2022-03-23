@@ -16,7 +16,7 @@ Any of you who have met me in person might be surprised to hear that I used to b
 
 When you are not as confident speaking up in a meeting, you can spend a lot of mental energy wondering about *how* to say what you want to say, including things like how loud your voice will have to be, and often the moment will have passed. Once you've made your first contribution though, the next one is easer as the technicalities are out of the way.
 
-So in a meeting where you want everyone to participate, it's best to give everyone a chance to practice using their voice on a low effort, low impact comment at the beginning,
+So in a meeting where you want everyone to participate, it's best to give everyone a chance to practise using their voice on a low effort, low impact comment at the beginning,
 
 ## Don't make it something meaningful
 
@@ -24,7 +24,7 @@ The first time I was involved in a retrospective at work, many years ago, the fa
 
 Personal questions are also tricky. Some people like sharing at work, and some people do not; so a question that involves revealing something about yourself can also be pretty stressful. ("Tell us about the best holiday you've ever had", or "If you were an animal, what animal would you be and why" are examples of questions I do not want to answer unless I'm comfortable already in that team.)
 
-I favour questions that are unrevealing if the person wants them to be; brief; and something that just gets participants to practice speaking and being heard in the meeting.
+I favour questions that are unrevealing if the person wants them to be; brief; and something that just gets participants to practise speaking and being heard in the meeting.
 
 ## Some sample questions
 
@@ -53,7 +53,7 @@ For example the last one is only appropriate in a workplace where *everyone* fee
 
 ## Keep them simple
 
-The purpose of the check-in is solely that everyone has a chance to practice speaking in that meeting and being heard.
+The purpose of the check-in is solely that everyone has a chance to practise speaking in that meeting and being heard.
 
 So it doesn't matter what is said, just that they've already spoken, before the time comes where they may have an important contribution to make.
 
