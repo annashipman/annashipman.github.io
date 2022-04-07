@@ -4,7 +4,7 @@ title: "No Next Next: Fighting Entropy in Your Microservices Architecture"
 layout: blog_post
 ---
 
-On Tuesday, I delivered a talk at [QCon London](https://qconlondon.com/london2022/presentation/no-next-next-fighting-entropy-microservices-architecture): No Next Next: Fighting Entropy in Your Microservices Architecture.
+On Tuesday, I delivered a talk at QCon London: [No Next Next: Fighting Entropy in Your Microservices Architecture](https://qconlondon.com/london2022/presentation/no-next-next-fighting-entropy-microservices-architecture).
 
 This was my first in person conference talk since 2019, and I really enjoyed it.
 
