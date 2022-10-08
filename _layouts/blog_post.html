@@ -14,7 +14,6 @@
     {% endif %}
     {% for tag in tags %}
       / <a href="{{site.baseurl}}/tags.html#{{tag|slugize}}">{{tag}}</a>
-    {% unless forloop.last %}&nbsp;{% endunless %}
     {% endfor %}
 
       {{ content }}
