@@ -1,6 +1,7 @@
 ---
 anchor_id: being-principal 
 title: Being a Principal Engineer in Customer Products at the FT
+tag: Leadership
 layout: blog_post
 ---
 
