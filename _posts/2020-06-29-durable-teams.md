@@ -1,6 +1,7 @@
 ---
 anchor_id: durable-teams
 title: Unlocking value with durable teams
+tags: Strategy
 layout: blog_post
 ---
 

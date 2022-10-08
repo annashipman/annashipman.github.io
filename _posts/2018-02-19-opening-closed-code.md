@@ -1,6 +1,7 @@
 ---
 anchor_id: open-closed-code
 title: How to open up closed code
+tag: Open source
 layout: blog_post
 ---
 

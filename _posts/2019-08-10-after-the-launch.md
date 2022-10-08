@@ -1,6 +1,7 @@
 ---
 anchor_id: open-code-release-faster
 title: "After the launch: the difficult teenage years"
+tags: Strategy Speaking
 layout: blog_post
 ---
 

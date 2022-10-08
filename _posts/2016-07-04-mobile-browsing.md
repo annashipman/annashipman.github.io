@@ -1,6 +1,7 @@
 ---
 anchor_id: mobile-browsing
 title: Making my site look better on small screens
+tag: Technology
 layout: blog_post
 ---
 

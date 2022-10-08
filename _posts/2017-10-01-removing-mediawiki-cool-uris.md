@@ -2,6 +2,7 @@
 anchor_id: mediawiki-spa-cool-uris
 title: Removing MediaWiki from SPA&#58; Cool URIs don't change
 date: 2017-10-01 10:00
+tags: ["Technology", "SPA conference"]
 layout: blog_post
 ---
 

@@ -1,6 +1,7 @@
 ---
 anchor_id: pull-requests
 title: How to raise a good pull request
+tag: Technology
 layout: blog_post
 ---
 

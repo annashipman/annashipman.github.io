@@ -1,6 +1,7 @@
 ---
 anchor_id: reviews
 title: Why and how to do annual performance reviews
+tag: Leadership
 layout: blog_post
 ---
 

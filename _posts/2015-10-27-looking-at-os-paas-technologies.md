@@ -1,6 +1,7 @@
 ---
 anchor_id: oss-paas-tech
 title: Looking at open source PaaS technologies
+tag: Technology
 layout: blog_post
 ---
 <p>I’ve been working on a prototype of what a Platform as a Service (PaaS) for

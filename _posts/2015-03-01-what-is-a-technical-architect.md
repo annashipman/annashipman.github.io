@@ -1,6 +1,7 @@
 ---
 anchor_id: tech-arch
 title: What is a technical architect?
+tag: Technology
 layout: blog_post
 ---
 

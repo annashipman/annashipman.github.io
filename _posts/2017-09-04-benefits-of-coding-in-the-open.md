@@ -1,6 +1,7 @@
 ---
 anchor_id: benefits-coding-open
 title: The benefits of coding in the open
+tag: Open source
 layout: blog_post
 ---
 

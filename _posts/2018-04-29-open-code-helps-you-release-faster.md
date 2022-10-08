@@ -1,6 +1,7 @@
 ---
 anchor_id: open-code-release-faster
 title: How coding in the open can help you release faster
+tag: Open source
 layout: blog_post
 ---
 

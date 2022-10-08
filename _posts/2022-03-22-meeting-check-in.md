@@ -1,6 +1,7 @@
 ---
 anchor_id: check-in
 title: Encouraging meeting participation with a check-in
+tag: Leadership
 layout: blog_post
 ---
 

@@ -1,6 +1,7 @@
 ---
 anchor_id: ignite-prep
 title: Some thoughts on preparing an Ignite talk
+tag: Speaking
 layout: blog_post
 ---
 

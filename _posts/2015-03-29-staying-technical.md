@@ -1,6 +1,7 @@
 ---
 anchor_id: staying-technical
 title: Staying technical
+tag: Leadership
 layout: blog_post
 ---
 

@@ -1,6 +1,7 @@
 ---
 anchor_id: testing-the-redirections
 title: Testing the redirections
+tag: Technology
 layout: blog_post
 ---
 

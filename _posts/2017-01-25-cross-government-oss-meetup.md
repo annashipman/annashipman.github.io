@@ -1,6 +1,7 @@
 ---
 anchor_id: cross-gov-oss-meetup
 title: Come to the cross-government Open Source meetup
+tag: Open source
 layout: blog_post
 ---
 

@@ -1,6 +1,7 @@
 ---
 anchor_id: business-case
 title: Writing a business case
+tag: Strategy
 layout: blog_post
 ---
 

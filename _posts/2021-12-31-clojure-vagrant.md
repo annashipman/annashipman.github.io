@@ -1,6 +1,7 @@
 ---
 anchor_id: clojure-vagrant
 title: Why didn't Clojure work concurrently in Vagrant?
+tag: Technology
 layout: blog_post
 ---
 

@@ -1,6 +1,7 @@
 ---
 anchor_id: fighting-entropy
 title: "No Next Next: Fighting Entropy in Your Microservices Architecture"
+tags: Technology Strategy Speaking
 layout: blog_post
 ---
 

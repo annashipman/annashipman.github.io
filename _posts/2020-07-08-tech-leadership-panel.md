@@ -1,6 +1,7 @@
 ---
 anchor_id: panel
 title: The Multiple Faces of Technical Leadership
+tags: Leadership Speaking
 layout: blog_post
 ---
 

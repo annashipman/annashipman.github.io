@@ -1,6 +1,7 @@
 ---
 anchor_id: effective-executive
 title: The Effective Executive
+tags: [Leadership, Book notes]
 layout: blog_post
 ---
 

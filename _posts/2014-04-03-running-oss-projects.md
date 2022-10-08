@@ -1,6 +1,7 @@
 ---
 anchor_id: oss
 title: Running OSS projects
+tag: Open source
 layout: blog_post
 ---
 

@@ -1,6 +1,7 @@
 ---
 anchor_id: turn-the-ship
 title: Turn the Ship Around!
+tags: [Leadership, Book notes]
 layout: blog_post
 ---
 

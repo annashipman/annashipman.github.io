@@ -1,6 +1,7 @@
 ---
 anchor_id: choosing-cf
 title: Choosing Cloud Foundry for the Government Platform as a Service
+tag: Technology
 layout: blog_post
 ---
 

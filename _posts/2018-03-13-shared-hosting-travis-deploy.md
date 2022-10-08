@@ -1,6 +1,7 @@
 ---
 anchor_id: travis-deploy
 title: Deploying to shared hosting with Travis
+tag: Technology
 layout: blog_post
 ---
 

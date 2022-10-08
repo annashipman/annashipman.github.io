@@ -1,6 +1,7 @@
 ---
 anchor_id: delegating-team
 title: How do you delegate to a group of people?
+tag: Leadership
 layout: blog_post
 ---
 

@@ -1,6 +1,7 @@
 ---
 anchor_id: join-spa
 title: Join the SPA organising committee
+tag: SPA conference
 layout: blog_post
 ---
 

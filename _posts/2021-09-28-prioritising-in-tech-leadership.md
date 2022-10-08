@@ -1,6 +1,7 @@
 ---
 anchor_id: tech-leadership
 title: Working on the most important things as a technical leadership team
+tag: Leadership
 layout: blog_post
 ---
 

@@ -1,6 +1,7 @@
 ---
 anchor_id: building-paas
 title: Building a platform to host digital services
+tags: Strategy Technology
 layout: blog_post
 ---
 

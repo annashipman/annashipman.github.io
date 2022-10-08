@@ -1,6 +1,7 @@
 ---
 anchor_id: tech-nottingham
 title: The difficult teenage years at Tech Nottingham
+tags: Strategy Speaking
 layout: blog_post
 ---
 

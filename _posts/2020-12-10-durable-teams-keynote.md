@@ -1,6 +1,7 @@
 ---
 anchor_id: durable-teams-keynote
 title: How Durable Teams Take You Further, Faster
+tags: Strategy Speaking
 layout: blog_post
 ---
 
