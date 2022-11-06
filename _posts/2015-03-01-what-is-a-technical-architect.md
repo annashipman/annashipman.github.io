@@ -1,7 +1,7 @@
 ---
 anchor_id: tech-arch
 title: What is a technical architect?
-tag: Technology
+tags: [Technology, "Career development"]
 layout: blog_post
 ---
 

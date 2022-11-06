@@ -1,6 +1,7 @@
 ---
 anchor_id: how-to-blog
 title: How to blog
+tag: "Career development"
 layout: blog_post
 ---
 

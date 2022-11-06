@@ -2,6 +2,7 @@
 anchor_id: job-search
 title: Finding the next level tech job
 layout: blog_post
+tag: "Career development"
 ---
 
 Last April, [I joined the Financial Times as Technical Director for FT.com](https://twitter.com/annashipman/status/966644775708479489). This has been a brilliant move. The job search was different from any of my previous job searches, as it involved an explicit step into technical leadership, and here I share how I did it and some things I learned.

@@ -1,7 +1,7 @@
 ---
 anchor_id: staying-technical
 title: Staying technical
-tag: Leadership
+tags: [Leadership, "Career development"]
 layout: blog_post
 ---
 

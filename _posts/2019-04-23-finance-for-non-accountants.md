@@ -1,6 +1,7 @@
 ---
 anchor_id: finance
 title: Finance for non-accountants
+tag: Leadership
 layout: blog_post
 ---
 
