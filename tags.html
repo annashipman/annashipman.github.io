@@ -13,8 +13,12 @@
 <div class="right-column">
 <h2>Tags</h2>
 
+<a href="#Technology">Technology</a> / <a href="#Leadership">Leadership</a> / <a href="#Strategy">Strategy</a> /
+
 {% for tag in site.tags %}
-<a href="#{{tag[0]|slugize}}">{{tag[0]}}</a> /
+  {% if tag[0] != "Technology" and tag[0] != "Leadership" and tag[0] != "Strategy" %}
+    <a href="#{{tag[0]|slugize}}">{{tag[0]}}</a> /
+  {% endif %}
 {% endfor %}
 
 {% for tag in site.tags %}
