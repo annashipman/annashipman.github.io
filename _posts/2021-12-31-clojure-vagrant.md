@@ -52,7 +52,7 @@ After quite a bit of investigation myself, including [correcting some foolish er
 
 I figured this must be something to do with Vagrant, and I was committed to getting it all working on my Vagrant machine, if I could.
 
-<blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">Do I know anyone who knows Vagrant and Clojure and can help me debug a (minor) concurrency issue?</p>&mdash; Anna Shipman (@annashipman) <a href="https://twitter.com/annashipman/status/1439527358701113346?ref_src=twsrc%5Etfw">September 19, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+![Tweet from @annashipman: "Do I know anyone who knows Vagrant and Clojure and can help me debug a (minor) concurrency issue?"](/img/twitter/asking_for_help.png)
 
 On [@borkdude](https://twitter.com/borkdude/status/1439529936218435587)'s suggestion I [wrote it up in a gist](https://gist.github.com/annashipman/d3b0533ce26df1e4dd84fbc3001e98dc).
 
@@ -60,7 +60,9 @@ I got some very helpful responses.
 
 ## It could be how VirtualBox creates CPUs
 
-<blockquote class="twitter-tweet" data-conversation="none" data-dnt="true"><p lang="en" dir="ltr">I don&#39;t know clojure but based on your info I would guess it might be how VirtualBox creates cpus.<br><br>4 cores on a single cpu share L3 cache but 4 cpus with one core doesn&#39;t. That might make enough difference for clojure.core.reducers to determine it&#39;s not worth doing in parallel</p>&mdash; Pär Björklund (@Paxxi) <a href="https://twitter.com/Paxxi/status/1439650030844063746?ref_src=twsrc%5Etfw">September 19, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+![Image of a tweet; Text from tweet in next paragraph](/img/twitter/cpus_with_shared_core.png)
+
+_**Text in image** Tweet from Pär Björklund (@Paxxi): "I don't know clojure but based on your info I would guess it might be how VirtualBox creates cpus. 4 cores on a single cpu share L3 cache but 4 cpus with one core doesn't. That might make enough difference for clojure.core.reducers to determine it's not worth doing in parallel_
 
 Until I read this tweet, I had not consciously realised that CPUs and cores were different things. Sometimes the two terms are used interchangeably – incorrectly, I now know.
 
@@ -82,7 +84,7 @@ Digging into this suggestion led me to some very interesting learnings about the
 
 [Dak](https://twitter.com/d_a_keldsen) asked what I had set the virtual CPUs and CPU cap to:
 
-<blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">I’m thinking that the default of 50% may be restricting the creation of additional threads. Also, try adding something that causes a kernel call to force another thread to run.</p>&mdash; Dak (David A. Keldsen) (@d_a_keldsen) <a href="https://twitter.com/d_a_keldsen/status/1439963498734395399?ref_src=twsrc%5Etfw">September 20, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+![Tweet from @Dak: "I’m thinking that the default of 50% may be restricting the creation of additional threads. Also, try adding something that causes a kernel call to force another thread to run."](/img/twitter/cpu_cap.png)
 
 The CPU execution cap controls how much of the host's CPU time a virtual CPU can use. The [VirtualBox documentation](https://www.virtualbox.org/manual/ch03.html#settings-processor) doesn't appear to say what the default is, though the suggestion above is that its 50%, which makes sense.
 
@@ -96,7 +98,9 @@ Even though it looks like this is not the cause of the problem, it's a very inte
 
 ## It could be to do with the JVM Garbage Collection
 
-<blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">LEIN_JVM_OPTS=&quot;-verbose:gc -XX:+UnlockExperimentalVMOptions -XX:G1NewSizePercent=50 -XX:+UseG1GC -Xms3g -Xmx3g&quot; lein repl</p>&mdash; Philip Wigg (@philipwigg) <a href="https://twitter.com/philipwigg/status/1439693698539864067?ref_src=twsrc%5Etfw">September 19, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+![Tweet suggesting Garbage collection could be the issue, text below](/img/twitter/gc_options.png)
+
+_**Text in image** Tweet from @philipwigg: "What results to do you get? Could be a JVM thing rather than Vagrant? eg. it's doing GC which messes up the results. I can speed it up and make fold a bit more consistently faster by increasing the Vagrant box size to 4gb and running lein like...[followed by the command I outline below]"_
 
 [Philip Wigg](https://twitter.com/philipwigg) had the answer that had the most impact. He suggested that it might be the JVM Garbage Collection that was messing with the results.
 
@@ -117,7 +121,8 @@ The theory here is that on the host, the JVM has access to more RAM, but on the 
 
 This did make `parallel-sum` faster for me. And here are his results:
 
-<blockquote class="twitter-tweet" data-conversation="none" data-dnt="true"><p lang="en" dir="ltr">Slightly modified version of your script that runs 10 of each. Couple of slow ones due to GC but otherwise Fold wins. <a href="https://t.co/Xy4hJAF8qV">pic.twitter.com/Xy4hJAF8qV</a></p>&mdash; Philip Wigg (@philipwigg) <a href="https://twitter.com/philipwigg/status/1439696075980525571?ref_src=twsrc%5Etfw">September 19, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+![Tweet from @philipwigg: "Slightly modified version of your script that runs 10 of each. Couple of slow ones due to GC but otherwise Fold wins." with an image of terminal output showing this"](/img/twitter/philipwigg_results.png)
+
 
 However, I never got to the promised 2.5x speed-up, and I later found that this did not even consistently speed up my results. But once again, it was very entertaining and I learned (and remembered!) some interesting things.
 
@@ -133,8 +138,14 @@ If you want to follow along the code examples in the *Seven concurrency models* 
 
 After publishing this blog post, [Linus Ericsson](https://twitter.com/linusericsson) suggested another theory:
 
-<blockquote class="twitter-tweet" data-conversation="none" data-dnt="true"><p lang="en" dir="ltr">One problem I had with JDK 8 before 181 or so running in *Docker* was that they did not honour Dockers way of reporting the number of CPU:s (using cgroups). This lead to the JVM:s go above the Docker:s quotas and being terminated or fail.<a href="https://t.co/PAIFPjkpGD">https://t.co/PAIFPjkpGD</a></p>&mdash; Linus Ericsson (@linusericsson) <a href="https://twitter.com/linusericsson/status/1478096719762137100?ref_src=twsrc%5Etfw">January 3, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+![First of three tweets, text below](/img/twitter/jdk_misinterpreting_resources_1.png)
 
-<blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">My theory is that the old JDK version misinterprets the amount of resources (cores, perhaps memort) that are made availiable in the Vagrant virtual box and the program therefore make incorrect decisions when spawning the fork-join-processes.</p>&mdash; Linus Ericsson (@linusericsson) <a href="https://twitter.com/linusericsson/status/1478101205469515778?ref_src=twsrc%5Etfw">January 3, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+![Second and third of three tweets, text below](/img/twitter/jdk_misinterpreting_resources_2.png)
+
+_**Text in images** Tweet 1 of 3 @linusericsson: One problem I had with JDK 8 before 181 or so running in *Docker* was that they did not honour Dockers way of reporting the number of CPU:s (using cgroups). This lead to the JVM:s go above the Docker:s quotas and being terminated or fail. <a href="https://stackoverflow.com/questions/64262912/java-prior-to-jdk8-update-131-applications-running-in-docker-container-cpu-m">link to Stack overflow</a>_
+
+_Tweet 2 of 3 @linusericson: "Oracle has changed the licencing for openjdk from version 11 (yes) which means the new packages are "adoptopenjdk".  I have no idea on the availiability of openjdk-8 versions for ubuntu, the most recent one openjdk seems to be 8u312-b07, according to <a href="https://wiki.openjdk.org/display/jdk8u/Main">https://wiki.openjdk.org/display/jdk8u/Main</a>_
+
+_Tweet 3 of 3 @linusericsson: "My theory is that the old JDK version misinterprets the amount of resources (cores, perhaps memort) that are made availiable in the Vagrant virtual box and the program therefore make incorrect decisions when spawning the fork-join-processes._"
 
 This is very plausible. Unfortunately, the default JDK for the OS I'm running is 1.8.0_292, and the latest available is 1.8.0_312: not a big difference, and installing that did not solve my problem. So again, this could be the solution but I cannot fix it if so.
