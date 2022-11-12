@@ -18,7 +18,7 @@ I got some great questions after the talk, including questions about:
 
 I also got asked a very interesting question about how to improve your storytelling. As I'd mentioned a couple of times in my talk, telling a good story is really important to communication. I didn't immediately have an answer, but I put it to Twitter – check out the thread for a lot of great suggestions.
 
-<blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">If anyone else has ideas about how to improve your storytelling, please chip in!</p>&mdash; Anna Shipman (@annashipman) <a href="https://twitter.com/annashipman/status/1511699820834136066?ref_src=twsrc%5Etfw">April 6, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+![Tweet asking how to improve storytelling](/img/twitter/storytelling.png)
 
 Slides from my talk are below and I will post a link to the video when it is available
 
