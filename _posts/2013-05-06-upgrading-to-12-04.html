@@ -4,7 +4,7 @@ title: Upgrading to 12.04...
 tag: Technology
 layout: blog_post
 ---
-<p>I needed to write some code. Thanks to <a href="http://georgebrock.com/images/thumbsup.gif" target="_blank">George Brocklehurst</a>, I was no longer content to do this on my personal laptop using gedit – I required Vim.</p>
+<p>I needed to write some code. Thanks to <a href="http://georgebrock.com/images/thumbsup.gif">George Brocklehurst</a>, I was no longer content to do this on my personal laptop using gedit – I required Vim.</p>
 <p>But I could not upgrade Vim!</p>
 
 <div class="code-sample">
@@ -17,35 +17,33 @@ E: Unable to fetch some archives, maybe run apt-get update or try with --fix-mis
 A problem occurred during the update. This is usually some sort of network problem, please check your network connection and retry.<br />
 , W:Failed to fetch http://extras.ubuntu.com/ubuntu/dists/natty/main/binary-i386/Packages.gz  404  Not Found<br />
 , E:Some index files failed to download, they have been ignored, or old ones used instead.<br /></div>
-<p>Ah. Wrong. I left it so long that it was <a href="http://askubuntu.com/questions/226906/how-to-upgrade-ubuntu-unsupported-10-10-to-11-04-then-ultimately-to-12-10" target="_blank">no longer supported</a>.
+<p>Ah. Wrong. I left it so long that it was <a href="http://askubuntu.com/questions/226906/how-to-upgrade-ubuntu-unsupported-10-10-to-11-04-then-ultimately-to-12-10">no longer supported</a>.
 
 <p>Right, so I couldn't go to 11.04. But actually, I didn't want 11.04, I wanted 12.04. So can I not just go directly there?</p>
-<p>Well, no, as it turns out. Or maybe you can. I still don't know. But threads like <a href="http://askubuntu.com/questions/34430/can-i-skip-over-releases-when-upgrading" target="_blank">this</a> suggested that I couldn't go directly to 12.04 without doing a fresh install and losing my files. I didn't fancy that, so I thought I'd go the long way round.</p> 
-<p>Since I was out of time to upgrade via the Update Manager, I needed to download the <a href="http://old-releases.ubuntu.com/releases/natty/" target="_blank">11.04 ISO</a>, confirming that it was, as I thought, 64-bit:</p>
+<p>Well, no, as it turns out. Or maybe you can. I still don't know. But threads like <a href="http://askubuntu.com/questions/34430/can-i-skip-over-releases-when-upgrading">this</a> suggested that I couldn't go directly to 12.04 without doing a fresh install and losing my files. I didn't fancy that, so I thought I'd go the long way round.</p>
+<p>Since I was out of time to upgrade via the Update Manager, I needed to download the <a href="http://old-releases.ubuntu.com/releases/natty/">11.04 ISO</a>, confirming that it was, as I thought, 64-bit:</p>
 <div class="code-sample" id="64">
 uname -m<br />
 x86_64<br /></div>
-<p>and then save the ISO to a CD. Having not done this before, I found <a href="https://help.ubuntu.com/community/BurningIsoHowto" target="_blank">this</a> useful. You want the CD to have multiple files and folders, not just the ISO as one file.</p>
-<p>Great. So then you stick the CD in and just follow the instructions. Like <a href="http://www.liberiangeek.net/2012/04/upgrade-to-ubuntu-12-04-from-11-10-using-ubuntu-cd-dvd/" target="_blank">these</a>. Fine. No problem.</p>
-<p>Except... problem. <a href="http://www.liberiangeek.net/wp-content/uploads/2012/04/upgrade_cd_percise_4.png" target="_blank">This bit?</a> That hung there for HOURS. If you click the arrow you can see the command it is hanging on, but Googling that on another computer (which I had by now switched on in order to continue with my life) gave me nothing.</p>
+<p>and then save the ISO to a CD. Having not done this before, I found <a href="https://help.ubuntu.com/community/BurningIsoHowto">this</a> useful. You want the CD to have multiple files and folders, not just the ISO as one file.</p>
+<p>Great. So then you stick the CD in and just follow the instructions. Like <a href="http://www.liberiangeek.net/2012/04/upgrade-to-ubuntu-12-04-from-11-10-using-ubuntu-cd-dvd/">these</a>. Fine. No problem.</p>
+<p>Except... problem. <a href="http://www.liberiangeek.net/wp-content/uploads/2012/04/upgrade_cd_percise_4.png">This bit?</a> That hung there for HOURS. If you click the arrow you can see the command it is hanging on, but Googling that on another computer (which I had by now switched on in order to continue with my life) gave me nothing.</p>
 <p>I'm telling you this, even though I'm embarrassed: I killed it. It had been hanging there for hours! I couldn't take it any more!</p>
 <p>And funnily enough, that turned out not to have an ideal outcome... it would not boot. On the plus side, it's dual boot and Windows seemed fine, though at this stage, I was pretty sure I could "fix" that too:</p>
-<blockquote class="twitter-tweet"><p>Current status <a href="http://t.co/mgSQUIBrUY" title="http://xkcd.com/349/">xkcd.com/349/</a></p>&mdash; Anna Shipman (@annashipman) <a href="https://twitter.com/annashipman/status/318362562385309696">March 31, 2013</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<img src="/img/twitter/sharks.png" alt="Tweet from @annashipman: 'Current status https://xkcd.com/349/'">
+<p>(The link in the image is <a href="https://xkcd.com/349/">xkcd 39</a>)</p>
 <p>Fine, never mind, all my files etc were backed up, it's no biggie. In fact, I could just install Ubuntu 12.04 at this point? Since it appeared that I may well have lost all my files.</p>
 <p>Except somehow, no. The other computer I was using was Windows, and – who knew? – it wasn't so easy to get the ISO onto a CD. After some trying, I gave up.</p>
 <p>Next plan was to install 11.04 from the disc I actually had. And, to my joy and incredulity – THIS WORKED!</p>
-<blockquote class="twitter-tweet"><p>Omg! So I've managed to upgrade to 11.04. I mean, yeah, I was aiming for 12.04, and OK, so I've lost all my files but, y'know, go me!</p>&mdash; Anna Shipman (@annashipman) <a href="https://twitter.com/annashipman/status/318384505117372416">March 31, 2013</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<img src="/img/twitter/got_to_11.04.png" alt="Tweet from @annashipman: 'Omg! So I've managed to upgrade to 11.04. I mean, yeah, I was aiming for 12.04, and OK, so I've lost all my files but, y'know, go me!'">
 <p>And then, amazingly, the upgrade to 11.10, and then 12.04, could be done via the Update Manager. Finally, six hours after I'd embarked on this foolish mission I was able to report back:</p>
-<blockquote class="twitter-tweet"><p>Made it to 12.04! Hurrah! All I need to do is restore my lost files from backup and then I can get on with what I planned to do 6 hrs ago...</p>&mdash; Anna Shipman (@annashipman) <a href="https://twitter.com/annashipman/status/318423522768723968">March 31, 2013</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<img src="/img/twitter/got_to_12.04.png" alt="Tweet from @annashipman: 'Made it to 12.04! Hurrah! All I need to do is restore my lost files from backup and then I can get on with what I planned to do 6 hrs ago...'">
 <p>...shortly followed by...<p>
-<blockquote class="twitter-tweet"><p>Current status (finally!) <a href="http://t.co/vJVhFTg6Y6" title="http://i.imgur.com/VhlQK.gif">i.imgur.com/VhlQK.gif</a></p>&mdash; Anna Shipman (@annashipman) <a href="https://twitter.com/annashipman/status/318660522130149376">April 1, 2013</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<img src="/img/twitter/programming.png" alt="Tweet from @annashipman: 'Current status (finally!) i.imgur.com/VhlQK.gif">
+<p>(Link in image is to <a href="https://i.imgur.com/VhlQK.gif">programming image on Imgur</a>).<p>
 <h3 id="hard-earned-learnings">So what have I learned?</h3>
 <ol><li>How to check your system is <a href="#64">64-bit</a>.</li>
 <li>How to embed tweets into blog posts (click the 'More' button to the right of the 'Favourite' button and all will be revealed).</li>
 <li>Not to put off the upgrade until such time that it's no longer supported and you have to go through all this!</li>
-<li>ALWAYS be backing up your files. As Jeff Atwood said, "until you have a backup strategy of some kind, <a href="http://www.codinghorror.com/blog/2009/12/international-backup-awareness-day.html" target="_blank">you're screwed</a>, you just don't know it yet". This could've been much worse for me.</li></ol>
-<p>Happy <a href="http://i.imgur.com/VhlQK.gif" target="_blank">programming</a>!</p>
+<li>ALWAYS be backing up your files. As Jeff Atwood said, "until you have a backup strategy of some kind, <a href="https://blog.codinghorror.com/international-backup-awareness-day/">you're screwed</a>, you just don't know it yet". This could've been much worse for me.</li></ol>
+<p>Happy <a href="http://i.imgur.com/VhlQK.gif">programming</a>!</p>
