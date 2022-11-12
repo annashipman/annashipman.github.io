@@ -1,6 +1,7 @@
 ---
 anchor_id: removing-cms
 title: Replacing the SPA CMS
+tags: [Technology, SPA conference]
 layout: blog_post
 ---
 

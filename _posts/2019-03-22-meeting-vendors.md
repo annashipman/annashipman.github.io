@@ -1,6 +1,7 @@
 ---
 anchor_id: meeting-vendors
 title: How to make the most out of meetings with vendors
+tags: Leadership Technology
 layout: blog_post
 ---
 

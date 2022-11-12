@@ -1,6 +1,7 @@
 ---
 anchor_id: code-sharing
 title: Code sharing in large organisations
+tags: Technology Leadership
 layout: blog_post
 ---
 

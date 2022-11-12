@@ -1,6 +1,7 @@
 ---
 anchor_id: russells-advice
 title: Russell Davies's strategy advice
+tag: Strategy
 layout: blog_post
 ---
 

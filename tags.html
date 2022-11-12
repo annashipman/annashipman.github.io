@@ -1,0 +1,32 @@
+---
+---
+{% include header.html page_name=" : Tags" %}
+
+<div class="left-column">
+
+    <p>I am a technical director and software developer living and working in London.</p>
+    <p>I am Technical Director for Customer Products at the <a href="https://www.ft.com/">Financial Times</a>, leading on the award-winning <a href="https://www.ft.com">FT.com</a> website and the FT iPhone and Android apps.</p>
+    <p>I write about tech, leadership and tech leadership on my <a href="jfdi.html">blog, JFDI.</a> I also <a href="http://twitter.com/annashipman">tweet</a>, occasionally <a href="https://github.com/annashipman">code</a>, and play pool.</p>
+<p>You can see a <a href="/bio.html">slightly longer bio</a> or have a look at my <a href="/cv.html">CV</a> for more.</p>
+</div>
+
+<div class="right-column">
+<h2>Tags</h2>
+
+<a href="#Technology">Technology</a> / <a href="#Leadership">Leadership</a> / <a href="#Strategy">Strategy</a> /
+
+{% for tag in site.tags %}
+  {% if tag[0] != "Technology" and tag[0] != "Leadership" and tag[0] != "Strategy" %}
+    <a href="#{{tag[0]|slugize}}">{{tag[0]}}</a> /
+  {% endif %}
+{% endfor %}
+
+{% for tag in site.tags %}
+  <h3><a id="{{ tag[0]}}">{{ tag[0] }}</a></h3>
+  <ul>
+    {% for post in tag[1] %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% endfor %}
+</div>

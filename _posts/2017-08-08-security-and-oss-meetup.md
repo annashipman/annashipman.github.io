@@ -1,6 +1,7 @@
 ---
 anchor_id: security-oss-meetup
 title: Cross government meetup on Open Source and Security
+tag: Open source
 layout: blog_post
 ---
 

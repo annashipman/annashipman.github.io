@@ -1,6 +1,7 @@
 ---
 anchor_id: johari-window
 title: Understanding my strengths using a Johari window
+tags: ["Leadership", "Career development"]
 layout: blog_post
 ---
 

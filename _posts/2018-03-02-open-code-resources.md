@@ -1,6 +1,7 @@
 ---
 anchor_id: open-code-resources
 title: Resources for coding in the open
+tag: Open source
 layout: blog_post
 ---
 

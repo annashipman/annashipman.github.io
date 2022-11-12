@@ -1,6 +1,7 @@
 ---
 anchor_id: meeting-everyone
 title: Meeting everyone on a new team
+tag: Leadership
 layout: blog_post
 ---
 

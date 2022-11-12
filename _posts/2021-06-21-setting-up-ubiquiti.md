@@ -1,6 +1,7 @@
 ---
 anchor_id: ubiquiti
 title: Setting up a Ubiquiti network
+tag: Technology
 layout: blog_post
 ---
 

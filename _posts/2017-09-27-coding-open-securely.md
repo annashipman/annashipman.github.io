@@ -1,6 +1,7 @@
 ---
 anchor_id: coding-open-securely
 title: Don’t be afraid to code in the open&#58; here’s how to do it securely
+tag: Open source
 layout: blog_post
 ---
 

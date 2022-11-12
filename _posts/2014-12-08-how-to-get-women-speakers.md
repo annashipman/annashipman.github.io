@@ -1,6 +1,7 @@
 ---
 anchor_id: anonymity
 title: How do I get more women to speak at my conference?
+tags: [Leadership, "SPA conference"]
 layout: blog_post
 ---
 

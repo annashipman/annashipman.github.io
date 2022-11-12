@@ -1,6 +1,7 @@
 ---
 anchor_id: interviewing-fairly
 title: How to interview job applicants fairly
+tag: Leadership
 layout: blog_post
 ---
 

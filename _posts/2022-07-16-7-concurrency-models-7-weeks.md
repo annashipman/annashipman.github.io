@@ -1,6 +1,7 @@
 ---
 anchor_id: 7 weeks
 title: Seven Concurrency Models in Seven Weeks
+tag: Technology
 layout: blog_post
 ---
 

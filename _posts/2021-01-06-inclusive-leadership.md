@@ -1,6 +1,7 @@
 ---
 anchor_id: inclusive
 title: Some notes on inclusive leadership
+tag: Leadership
 layout: blog_post
 ---
 

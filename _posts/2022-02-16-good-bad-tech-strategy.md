@@ -1,6 +1,7 @@
 ---
 anchor_id: good-bad-tech
 title: The good, the bad and the tech strategy
+tags: Strategy Speaking
 layout: blog_post
 ---
 

@@ -1,6 +1,7 @@
 ---
 anchor_id: difficult-teenage-years
 title: "The difficult teenage years: Setting tech strategy after a launch"
+tags: Strategy Technology
 layout: blog_post
 ---
 

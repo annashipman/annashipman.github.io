@@ -1,6 +1,7 @@
 ---
 anchor_id: next-steps-oss
 title: Next steps for Open Source in government
+tag: ["Open source", Strategy]
 layout: blog_post
 excerpt: <p>I was recently appointed Open Source Lead at the Government Digital Service. In this post, I talk about my first priorities as Open Source Lead and let you know how you can get involved.</p>
 ---

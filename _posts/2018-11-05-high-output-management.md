@@ -1,6 +1,7 @@
 ---
 anchor_id: high-output
 title: High output management
+tags: [Leadership, Book notes]
 layout: blog_post
 ---
 

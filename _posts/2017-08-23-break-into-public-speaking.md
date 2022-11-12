@@ -1,6 +1,7 @@
 ---
 anchor_id: break-into-speaking
 title: Break into public speaking
+tags: [Speaking, "Career development"]
 layout: blog_post
 ---
 

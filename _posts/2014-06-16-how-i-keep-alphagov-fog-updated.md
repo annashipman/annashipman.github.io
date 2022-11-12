@@ -1,6 +1,7 @@
 ---
 anchor_id: alphagov-fog-updated
 title: How I keep alphagov/fog updated...
+tag: Technology
 layout: blog_post
 ---
 

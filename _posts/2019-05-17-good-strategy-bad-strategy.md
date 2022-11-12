@@ -1,6 +1,7 @@
 ---
 anchor_id: good-strategy
 title: Good Strategy, Bad Strategy
+tags: [Strategy, Book notes]
 layout: blog_post
 ---
 

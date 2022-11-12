@@ -1,6 +1,7 @@
 ---
 anchor_id: what-got-you-here
 title: What got you here won't get you there
+tags: [Leadership, Book notes]
 layout: blog_post
 ---
 

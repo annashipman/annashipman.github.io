@@ -1,6 +1,7 @@
 ---
 anchor_id: finance-directors-2
 title: "Finance for non-finance directors: Part 2"
+tag: Leadership
 layout: blog_post
 ---
 

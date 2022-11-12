@@ -1,6 +1,7 @@
 ---
 anchor_id: mod-wsgi
 title: A 'Hello World' mod-wsgi application
+tag: Technology
 layout: blog_post
 ---
 

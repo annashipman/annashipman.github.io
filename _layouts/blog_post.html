@@ -7,6 +7,15 @@
   <div id="{{ page.anchor_id }}" class="blog-post">
     <h1>{{ page.title}}</h1>
     <date>{{ page.date | date_to_long_string }}</date>
+    {% if post %}
+      {% assign tags = post.tags %}
+    {% else %}
+      {% assign tags = page.tags %}
+    {% endif %}
+    {% for tag in tags %}
+      / <a href="{{site.baseurl}}/tags.html#{{tag|slugize}}">{{tag}}</a>
+    {% endfor %}
+
       {{ content }}
   </div>
   {% include mailinglist.html %}

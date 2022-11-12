@@ -1,6 +1,7 @@
 ---
 anchor_id: a-paas-for-government
 title: A PaaS for Government
+tags: Technology Speaking
 layout: blog_post
 ---
 

@@ -1,6 +1,7 @@
 ---
 anchor_id: open-source-lead
 title: A year in the life of an Open Source Lead
+tag: Open source
 layout: blog_post
 ---
 

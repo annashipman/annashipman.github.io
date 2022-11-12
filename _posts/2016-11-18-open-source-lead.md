@@ -1,6 +1,7 @@
 ---
 anchor_id: open-source-lead
 title: I am now Open Source Lead
+tag: Open source
 layout: blog_post
 ---
 

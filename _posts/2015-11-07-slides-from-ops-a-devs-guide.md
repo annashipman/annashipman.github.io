@@ -1,6 +1,7 @@
 ---
 anchor_id: slides-ops-a-devs-guide
 title: "Slides and links from Operations: a developer's guide"
+tags: Technology Speaking
 layout: blog_post
 ---
 

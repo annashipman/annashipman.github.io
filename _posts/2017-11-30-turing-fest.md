@@ -1,6 +1,7 @@
 ---
 anchor_id: turing-fest
 title: Coding in the open in government&#58; Turing Fest talk
+tags: ["Open source", Speaking]
 layout: blog_post
 ---
 

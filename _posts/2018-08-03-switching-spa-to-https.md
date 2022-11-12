@@ -1,6 +1,7 @@
 ---
 anchor_id: https-spa
 title: Moving SPA to HTTPS
+tags: [Technology, SPA conference]
 layout: blog_post
 ---
 

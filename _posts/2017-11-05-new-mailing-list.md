@@ -1,6 +1,7 @@
 ---
 anchor_id: mailing-list
 title: Sign up to my new mailing list!
+tag: Technology
 layout: blog_post
 ---
 

@@ -2,6 +2,7 @@
 anchor_id: mediawiki-spa-site-changes
 title: Removing MediaWiki from SPA&#58; Changes to the site
 date: 2017-10-01 09:00
+tags: ["Technology", "SPA conference"]
 layout: blog_post
 ---
 

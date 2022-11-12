@@ -1,6 +1,7 @@
 ---
 anchor_id: strategy-panel
 title: Creating, defining and refining an effective tech strategy
+tags: Strategy Speaking
 layout: blog_post
 ---
 

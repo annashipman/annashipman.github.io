@@ -1,6 +1,7 @@
 ---
 anchor_id: ops-a-devs-guide-video
 title: "Video of Operations: a developer's guide"
+tags: Technology Speaking
 layout: blog_post
 ---
 

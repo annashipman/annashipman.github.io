@@ -1,6 +1,7 @@
 ---
-anchor_id: ubiquiti
+anchor_id: threat-modelling-cards
 title: Threat modelling cards
+tag: Technology
 layout: blog_post
 ---
 

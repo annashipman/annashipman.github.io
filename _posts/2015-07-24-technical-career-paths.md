@@ -1,6 +1,7 @@
 ---
 anchor_id: career-paths
 title: A career path for technologists at GDS
+tag: Leadership
 layout: blog_post
 ---
 

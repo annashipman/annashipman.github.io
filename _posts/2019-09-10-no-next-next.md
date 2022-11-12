@@ -1,6 +1,7 @@
 ---
 anchor_id: no-next-next
 title: No next Next
+tags: Strategy Technology
 layout: blog_post
 ---
 
