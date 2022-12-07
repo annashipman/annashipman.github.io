@@ -1,29 +1,15 @@
-<!DOCTYPE HTML>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<html lang="en-GB">
-    <head>
-        <title>Anna Shipman</title>
-        <link rel="shortcut icon" href="favicon.ico" />
-        <link rel="stylesheet" type="text/css" href="/style.css" />
-    </head>
-    <body>
-        <div class="header">
-            <span class="name"><a href="/">Anna Shipman</a></span>
-            <div class="navigation">
-                <a href="http://www.twitter.com/annashipman" class="header-text twitter">Follow me on Twitter</a>
-                <table class="link-group">
-                    <tr>
-                        <td><a href="/jfdi.html" class="header-text">JFDI</a></td>
-                        <td><a href="/cv.html" class="header-text">CV</a></td>
-                        <td><a href="/etc.html" class="header-text">Etc</a></td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-<div class="message-container">
-<h1>404</h1>
-<p>There isn't a page here.</p>
-<p>Please use the links above to find your way home.</p>
+---
+---
+
+{% include header.html page_name=" : 404" %}
+<div class="left-column">
+    {% include sidebar.html %}
 </div>
-</body>
-</html>
+
+<div class="right-column">
+  <h1>404</h1>
+    <p>There isn't a page here.</p>
+    <p>Please use the links above to find your way home.</p>
+</div>
+
+{% include footer.html %}
