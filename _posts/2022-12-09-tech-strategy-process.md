@@ -1,6 +1,6 @@
 ---
-anchor_id: tech-strategy-remotely
-title: Working together on tech strategy, remotely
+anchor_id: tech-strategy-process
+title: Working together on tech strategy
 tags: Leadership Strategy
 layout: blog_post
 ---
