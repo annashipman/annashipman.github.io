@@ -129,7 +129,9 @@ There were also advantages to having listed out and discussed all the areas of f
 
 This process meant it was much easier to get product involvement, which is really important for a successful and useful tech strategy. We were also able to share this outside of the Customer Products team which helped others understand our tech strategy in more detail than usual. Not everyone likes to read long documents, but it was useful for those who do.
 
+One thing that it missed out was creating the forum for ideas generation. People did add suggestions to the document of things we might consider, but they were usually ones they'd already been thinking of. One advantage of a big group discussion is, if done right, it can really create the environment to spark new ideas and thinking. It would be good to incorporate something there in future.
+
 ## We will probably do a similar process next year
 
-On balance, this worked very well, so we will follow a similar process next year, though next year we will have more inputs to draw in, and we are very close to having a tech strategy for the whole of the FT not just the separate groups. I’m really excited to see what we do next!
+On balance, this worked very well, so we will definitely use parts of this process next year, though next year we will have more inputs to draw in, and we are very close to having a tech strategy for the whole of the FT not just the separate groups. I’m really excited to see what we do next!
 
