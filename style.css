@@ -39,7 +39,7 @@ a {
     color: white;
 }
 
-h1 a {
+h1 a, h2 a {
     color: black;
 }
 a:hover, a:focus{
@@ -144,6 +144,10 @@ h2 {
     border: 1px solid #ddd;
     background: #eee;
     padding: 5px 15px 15px 15px;
+}
+
+.conference-name {
+    font-style: italic;
 }
 
 .quote {
