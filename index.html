@@ -12,10 +12,10 @@
 </div>
 
 <div class="right-column">
-  <div><h1><a href="jfdi.html">Recent blog posts</a></h1></div>
+  <div><h1><a href="jfdi.html">Recent posts</a></h1></div>
   {% for post in site.posts limit:10 %}
     <div id="{{ post.anchor_id }}" class="blog-post">
-      <h1><a href="{{post.url}}">{{ post.title}}</a></h1>
+      <h2><a href="{{post.url}}">{{ post.title}}</a></h2>
       <date>{{ post.date | date_to_long_string }}</date>
         {{ post.excerpt }}
     </div>
