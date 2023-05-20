@@ -5,7 +5,7 @@ tags: Strategy Speaking
 layout: blog_post
 ---
 
-Yesterday, I delivered a talk at [LeadDev Together](https://events.leaddev.com/2022-S3-articulating-strategy): The good, the bad and the tech strategy.
+Yesterday, I delivered a talk at [LeadDev Together](https://events.leaddev.com/together): The good, the bad and the tech strategy.
 
 I covered what strategy is and what makes a good strategy (both very much distillations of the excellent [Good Strategy, Bad Strategy](/jfdi/good-strategy-bad-strategy.html)), and then I talked about what a good tech strategy looks like.
 

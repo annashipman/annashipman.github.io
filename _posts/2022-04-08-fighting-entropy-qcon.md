@@ -20,6 +20,6 @@ I also got asked a very interesting question about how to improve your storytell
 
 <blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">If anyone else has ideas about how to improve your storytelling, please chip in!</p>&mdash; Anna Shipman (@annashipman) <a href="https://twitter.com/annashipman/status/1511699820834136066?ref_src=twsrc%5Etfw">April 6, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Slides from my talk are below and I will post a link to the video when it is available
+Slides from my talk are below. A recorded version of the talk, used in QConPlus, is [on the InfoQ site](https://www.infoq.com/presentations/microservices-entropy/).
 
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/eD9G6SNvuINGR4" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> </div>
