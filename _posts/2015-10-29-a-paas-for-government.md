@@ -9,5 +9,5 @@ I gave a keynote at Velocity EU about the work I've been doing on a PaaS for
 government.
 
 <div class="embedded">
-  <iframe src="https://www.youtube.com/embed/OLOaq-Xf5zU" frameborder="0" allowfullscreen></iframe>
+  <iframe src="https://www.youtube-nocookie.com/embed/OLOaq-Xf5zU" frameborder="0" allowfullscreen></iframe>
 </div>

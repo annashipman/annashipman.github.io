@@ -10,7 +10,7 @@ A few weeks ago I talked about how coding in the open can help you release faste
 ## Video (30 minutes)
 
 <div class="embedded">
-  <iframe src="https://www.youtube.com/embed/M94Hg1mMGAg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <iframe src="https://www.youtube-nocookie.com/embed/M94Hg1mMGAg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 
 ## Slides
