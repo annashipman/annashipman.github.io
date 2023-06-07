@@ -8,7 +8,7 @@ layout: blog_post
 Video from my FFconf talk *Operations: a developer's guide*.
 
 <div class="embedded">
-  <iframe src="https://www.youtube.com/embed/y6hbrS3DheU" frameborder="0" allowfullscreen></iframe>
+  <iframe src="https://www.youtube-nocookie.com/embed/y6hbrS3DheU" frameborder="0" allowfullscreen></iframe>
 </div>
 
 [Slides and links in previous post](/jfdi/slides-from-ops-a-devs-guide.html).

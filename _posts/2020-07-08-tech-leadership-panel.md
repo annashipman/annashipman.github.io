@@ -16,5 +16,5 @@ We discussed three main areas:
 It was a really interesting discussion. You can watch it here:
 
 <div class="embedded">
-  <iframe src="https://www.youtube.com/embed/gWXYVOjb-tA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://www.youtube-nocookie.com/embed/gWXYVOjb-tA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

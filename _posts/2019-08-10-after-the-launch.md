@@ -14,7 +14,7 @@ I gave a talk about how you can get out of the difficult teenage years at Contin
 ## Video (30 minutes)
 
 <div class="embedded">
-  <iframe src="https://www.youtube.com/embed/EkfqgQXfEv8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://www.youtube-nocookie.com/embed/EkfqgQXfEv8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ## Slides
