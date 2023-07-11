@@ -1,11 +1,11 @@
 ---
 anchor_id: fireside-chat
-title: 
+title: "Strategic technology leadership: fireside chat"
 tags: Strategy Speaking
 layout: blog_post
 ---
 
-In May, I keynoted the second day of [CTO Craft Con](https://conference.ctocraft.com/london-2023/). The topic was strategic technology leadership. Here's a write-up; video will follow.
+I keynoted the second day of [CTO Craft Con: The Strategic CTO](https://conference.ctocraft.com/london-2023/). The topic was strategic technology leadership. Here's a write-up; video will follow.
 
 ## It was a fireside chat
 
@@ -39,7 +39,7 @@ Another question from the audience was "how do you directly incentivise people a
 
 This was an interesting question because I don't think of it like that. Part of the work of strategy is inspiring people with the vision. When you are working on the plan, the more you can involve people, the more bought in they will be.
 
-I don't think about separately incentivising people because I find people are motivated by working towards the vision they've (hopefully) bought into, with some actions they've helped figure out. People like to be involved in delivering something good.
+I don't think about separately incentivising people, because I find they are motivated by working towards the vision they've (hopefully) bought into, with some actions they've helped figure out. People like to be involved in delivering something good.
 
 ## How to get started
 
@@ -54,4 +54,6 @@ I said:
 
 ## We discussed a lot of other topics
 
-There were a lot of other great questions, like how OKRs and strategy can work together, aspiring to have an elevator pitch for your strategy, and thinking about strategy mistakes I've made. The video will be available in a couple of months and I will share it here.
+There were a lot of other great questions, like how OKRs and strategy can work together, aspiring to have an elevator pitch for your strategy, and thinking about strategy mistakes I've made.
+
+The video will be available in a couple of months and I will share it here.
