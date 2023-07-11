@@ -5,7 +5,7 @@ tags: Strategy Speaking
 layout: blog_post
 ---
 
-In May, I keynoted the second day of [CTO Craft Con](https://conference.ctocraft.com/london-2023/). The topic was Strategic Technology Leadership. Here's a write-up; video will follow.
+In May, I keynoted the second day of [CTO Craft Con](https://conference.ctocraft.com/london-2023/). The topic was strategic technology leadership. Here's a write-up; video will follow.
 
 ## It was a fireside chat
 
@@ -29,7 +29,7 @@ It can be really difficult to carve time out to begin with, but once you have, y
 
 Another question was: "what's the best approach for course correction and how do you tell the difficult story to the board when it's a drastic change?"
 
-Talking to the board, you should operate on the principle of "no surprises", so when you see things heading off track, have the conversatin as soon as you can.
+Talking to the board, you should operate on the principle of "no surprises", so when you see things heading off track, have the conversation as soon as you can.
 
 This led into a discussion how to have that conversation. Emma asked how you change your style if you are communicating upwards, to the board; and one thing I shared was that it's a good idea to create artefacts (diagrams, documents, progress indicators) and use the same artefacts for everyone: for the board, for your peers, and for your reports, so that everyone knows you are talking about the same thing.
 
@@ -45,17 +45,13 @@ I don't think about separately incentivising people because I find people are mo
 
 Emma then asked for suggestions on how to actually get started on strategy work.
 
+I said:
 - carve out the time
-- be really clear on the diagnosis
-- be clear on the vision; what is different about the world when you've achieved it?
-- work out what the coherent actions are
+- be really clear on the diagnosis; you need to know where you are starting from
+- understand where you're headed; what is different about the world when you've achieved your vision?
 - communicate. Is it simple, does it have a narrative, can you explain it to the board, your peers and your team?
-- keep getting feedback throughout the process.
-
-I also delivered another talk with some even more actionable steps on building a strategy; more to follow on that!
+- keep getting feedback throughout the process
 
 ## We discussed a lot of other topics
 
-There were a lot of other great questions, like "What is your view on OKRs and whether they help or hinder aligning on strategy?" (if you have a good strategy it is very easy to peel off the next set of OKRs, but if you are trying to work upwards, starting with OKRs and jamming them together to form a strategy, it won't be as successful); "Is it important to have a strong elevator pitch of your strategy?" (it's definitely something to aspire to because it means your strategy is simple and clear enough to be easily communicated) and whether 100% of your work should be on strategy (ideally, yes).
-
-The video will be available in a couple of months and I will share it here.
+There were a lot of other great questions, like how OKRs and strategy can work together, aspiring to have an elevator pitch for your strategy, and thinking about strategy mistakes I've made. The video will be available in a couple of months and I will share it here.
