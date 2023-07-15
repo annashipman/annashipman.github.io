@@ -1,0 +1,58 @@
+---
+---
+
+{% include header.html page_name=" : Archive" %}
+
+<div class="left-column">
+    {% include bio_sidebar.html %}
+    {% include posts_list.html %}
+</div>
+
+<div class="right-column">
+
+<h2>Browse by category</h2>
+
+<a href="#Technology">Technology</a> / <a href="#Leadership">Leadership</a> / <a href="#Strategy">Strategy</a> /
+
+{% for tag in site.tags %}
+  {% if tag[0] != "Technology" and tag[0] != "Leadership" and tag[0] != "Strategy" %}
+    <a href="#{{tag[0]|slugize}}">{{tag[0]}}</a> /
+  {% endif %}
+{% endfor %}
+
+<h2>Browse by date</h2>
+
+{% for post in site.posts %}
+
+        {% capture year_of_current_post %}
+        {{ post.date | date: "%Y" }}
+        {% endcapture %}
+
+        {% capture year_of_previous_post_in_set %}
+        {{ site.posts[forloop.index].date | date: "%Y" }}
+        {% endcapture %}
+
+        {% if forloop.first %}
+        <h2>{{ year_of_current_post }}</h2>
+        <ul>
+        {% endif %}
+        <div id="{{ post.anchor_id }}" class="blog-post">
+          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        </div>
+        {% if forloop.last %}
+        </ul>
+        {% else %}
+        {% if year_of_current_post != year_of_previous_post_in_set %}
+        </ul>
+
+        <h2>{{ year_of_previous_post_in_set }}</h2>
+        <ul>
+        {% endif %}
+        {% endif %}
+
+{% endfor %}
+
+</div>
+
+{% include footer.html %}
+
