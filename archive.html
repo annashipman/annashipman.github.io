@@ -12,7 +12,23 @@
 
 <h2>Browse by category</h2>
 
-<a href="#Technology">Technology</a> / <a href="#Leadership">Leadership</a> / <a href="#Strategy">Strategy</a> /
+{% for tag in site.tags %}
+  {% if tag[0] == "Technology" %}
+    <a href="#{{tag[0]|slugize}}">{{tag[0]}}</a> ({{tag[0]|size}}) /
+  {% endif %}
+{% endfor %}
+
+{% for tag in site.tags %}
+  {% if tag[0] == "Leadership" %}
+    <a href="#{{tag[0]|slugize}}">{{tag[0]}}</a> ({{tag[0]|size}}) /
+  {% endif %}
+{% endfor %}
+
+{% for tag in site.tags %}
+  {% if tag[0] == "Strategy" %}
+    <a href="#{{tag[0]|slugize}}">{{tag[0]}}</a> ({{tag[0]|size}}) /
+  {% endif %}
+{% endfor %}
 
 {% for tag in site.tags %}
   {% if tag[0] != "Technology" and tag[0] != "Leadership" and tag[0] != "Strategy" %}
