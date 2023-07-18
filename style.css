@@ -165,6 +165,11 @@ p .pretty-code-sample {
     border-bottom: 1px dotted #333;
 }
 
+.posts-list a{
+    color: black;
+    font-weight: bold;
+}
+
 
 @media (min-width: 700px) {
   .left-column {

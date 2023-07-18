@@ -10,7 +10,7 @@
 
 <div class="right-column">
 
-  {% for post in site.posts %}
+  {% for post in site.posts limit: 4 %}
     <div id="{{ post.anchor_id }}" class="blog-post">
       <h1><a href="{{post.url}}">{{ post.title}}</a></h1>
       <date>{{ post.date | date_to_long_string }}</date>
@@ -25,7 +25,7 @@
         {{ post.content }}
     </div>
   {% endfor %}
-
+<h3>For more posts, see the <a href="/archive.html">archive</a>.</h3>
 </div>
 
 {% include footer.html %}
