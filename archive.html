@@ -10,13 +10,14 @@
 
 <div class="right-column">
 
-<h2>Browse by category</h2>
+<h2>Browse by tag</h2>
 
     {% include tags_list.html %}
 
 <h2>Browse by date</h2>
 
-{% for post in site.posts %}
+  <div class="posts-list">
+  {% for post in site.posts %}
 
         {% capture year_of_current_post %}
         {{ post.date | date: "%Y" }}
@@ -30,8 +31,8 @@
         <h2>{{ year_of_current_post }}</h2>
         <ul>
         {% endif %}
-        <div id="{{ post.anchor_id }}" class="blog-post">
-          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <div id="{{ post.anchor_id }}">
+          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
         </div>
         {% if forloop.last %}
         </ul>
@@ -44,8 +45,9 @@
         {% endif %}
         {% endif %}
 
-{% endfor %}
+  {% endfor %}
 
+  </div>
 </div>
 
 {% include footer.html %}

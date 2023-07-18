@@ -15,12 +15,14 @@
 
     {% include tags_list.html %}
 
-{% for tag in site.tags %}
-  <h3><a id="{{ tag[0]}}">{{ tag[0] }}</a></h3>
-  <ul>
-    {% for post in tag[1] %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-{% endfor %}
+  <div class="posts-list">
+  {% for tag in site.tags %}
+    <h3><a id="{{ tag[0]}}">{{ tag[0] }}</a></h3>
+      <ul>
+        {% for post in tag[1] %}
+          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
+  {% endfor %}
+  </div>
 </div>
