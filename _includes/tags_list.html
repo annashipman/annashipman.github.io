@@ -1,23 +1,23 @@
 {% for tag in site.tags %}
   {% if tag[0] == "Technology" %}
-    <a href="/tags/html#{{tag[0]|slugize}}">{{tag[0]}}</a> ({{tag[0]|size}}) /
+    <a href="/tags/html#{{tag[0]|slugize}}">{{tag[0]}}</a> ({{ tag[1]|size }}) /
   {% endif %}
 {% endfor %}
 
 {% for tag in site.tags %}
   {% if tag[0] == "Leadership" %}
-    <a href="/tags/html#{{tag[0]|slugize}}">{{tag[0]}}</a> ({{tag[0]|size}}) /
+    <a href="/tags/html#{{tag[0]|slugize}}">{{tag[0]}}</a> ({{tag[1]|size}}) /
   {% endif %}
 {% endfor %}
 
 {% for tag in site.tags %}
   {% if tag[0] == "Strategy" %}
-    <a href="/tags/html#{{tag[0]|slugize}}">{{tag[0]}}</a> ({{tag[0]|size}}) /
+    <a href="/tags/html#{{tag[0]|slugize}}">{{tag[0]}}</a> ({{tag[1]|size}}) /
   {% endif %}
 {% endfor %}
 
 {% for tag in site.tags %}
   {% if tag[0] != "Technology" and tag[0] != "Leadership" and tag[0] != "Strategy" %}
-    <a href="/tags/html#{{tag[0]|slugize}}">{{tag[0]}}</a> ({{tag[0]|size}}) /
+    <a href="/tags/html#{{tag[0]|slugize}}">{{tag[0]}}</a> ({{tag[1]|size}}) /
   {% endif %}
 {% endfor %}
