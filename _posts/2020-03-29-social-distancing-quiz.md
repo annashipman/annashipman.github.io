@@ -1,6 +1,7 @@
 ---
 anchor_id: quiz
 title: Social distancing quiz
+tag: Leadership
 layout: blog_post
 ---
 

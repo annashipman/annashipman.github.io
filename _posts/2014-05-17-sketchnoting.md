@@ -1,6 +1,7 @@
 ---
 anchor_id: sketchnoting
 title: Sketchnoting
+tag: Career development
 layout: blog_post
 ---
 
