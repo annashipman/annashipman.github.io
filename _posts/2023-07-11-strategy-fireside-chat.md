@@ -5,7 +5,7 @@ tags: Strategy Speaking
 layout: blog_post
 ---
 
-I keynoted the second day of [CTO Craft Con: The Strategic CTO](https://conference.ctocraft.com/london-2023/). The topic was strategic technology leadership. Here's a write-up; video will follow.
+I keynoted the second day of [CTO Craft Con: The Strategic CTO](https://conference.ctocraft.com/london-2023/). The topic was strategic technology leadership. This is a write-up; you can [watch the video here](/jfdi/strategy-fireside-video.html).
 
 ## It was a fireside chat
 
@@ -56,4 +56,4 @@ I said:
 
 There were a lot of other great questions, like how OKRs and strategy can work together, aspiring to have an elevator pitch for your strategy, and thinking about strategy mistakes I've made.
 
-The video will be available in a couple of months and I will share it here.
+You can [watch the full conversation here](/jfdi/strategy-fireside-video.html).
