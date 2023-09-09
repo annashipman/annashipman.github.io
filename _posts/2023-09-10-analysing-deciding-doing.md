@@ -5,42 +5,21 @@ tags: Strategy Speaking
 layout: blog_post
 ---
 
-In June, I delivered a talk at [Turing Fest](https://turingfest.com/) on how to create a strategy. Here is a brief write-up and the video and slides.
+In June, I delivered a talk at [Turing Fest](https://turingfest.com/) on how to create a strategy. Here is the video, the slides and a short write-up.
 
 ## It covered what I wanted to know when starting out in strategy
 
 When I first starting working on strategy, the question I had was 'how do you actually *do* it?'. Since then, having read a lot, been on some courses and practiced a lot, I now have a better idea; and the purpose of this talk was to share what I myself would have wanted to know when starting out.
 
-## Some models for analysising, deciding and doing
+## It covers models and techniques to help you create and drive your strategy
 
-Building a strategy comes in three stages: first you analyse your situation and make a diagnosis; then you decide how to address it; and then you enact your strategy.
+In the talk, I go through some specific models, with examples.
 
-This talk goes through some models that help with that.
+- Analysing the situation: how to reach a diagnosis, including models like PESTLE, S-curves, Five Forces, VRIN, and value chain analysis.
+- Making a strategic decision: how to make a strategic choice, including Three Horizons, Ansoff matrix, Blue Ocean strategies, and weighting and scoring.
+- Making it happen: how to implement your strategy, including communication, managing change and showing progress.
 
-For analysising, we look at:
-
-- PESTLE
-- S-curves
-- Five forces
-- Distinctive capabilities using VRIN
-- Value chain analysis
-- SWOT
-
-For deciding, we look at:
-
-- Three horizons
-- Ansoff matrix
-- Blue Ocean strategies and the Strategy Canvas
-- SAFe (Suitable, Acceptable, Feasible, not Scaled Agile Framework!)
-- Weighting and scoring
-- Sophie Dennis' smell tests
-
-and for doing, we look at:
-
-- communicating
-- showing progress
-- managing change
-- using the strategy
+These tools, techniques and actionable advice will set you up to be able to create and deliver an effective strategy.
 
 ## Watch the talk!
 
