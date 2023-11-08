@@ -5,7 +5,7 @@ tag: Leadership
 layout: blog_post
 ---
 
-When I started line managing people at work, three years ago, I got some great advice from the excellent [Andrew Seward](https://twitter.com/mrandrew). He structured one-to-ones around the following list of questions:
+When I started line managing people at work, three years ago, I got some great advice from the excellent [Andrew Seward](https://www.linkedin.com/in/abseward/). He structured one-to-ones around the following list of questions:
 
 <div class="pretty-code-sample">
 <ol>
