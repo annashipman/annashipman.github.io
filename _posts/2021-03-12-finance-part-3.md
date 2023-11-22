@@ -182,7 +182,7 @@ For example:
 
 None of these are perfect. Share price is just a finger in the air.
 
-The method you choose depends in part on why you are valuing the company. For example, is it deciding whether to invest, or deciding whether to buy the whole entereprise? (In the latter case you have to pay for the shares *and* pay the company's debt.)
+The method you choose depends in part on why you are valuing the company. For example, is it deciding whether to invest, or deciding whether to buy the whole enterprise? (In the latter case you have to pay for the shares *and* pay the company's debt.)
 
 Is the company balance-sheet driven or P&L driven? Most companies are the latter, but those such as a bank, which uses its capital (i.e. what is on the balance sheet) and lends it out, are termed balance-sheet driven.
 
