@@ -232,4 +232,4 @@ This book contained a lot of great ideas and pulled together a lot of useful res
 
 It's also very long. Hughes Johnson says it’s not necessarily to be read cover-to-cover but instead pick it up and go to the page of what’s on your mind. However, for that to be the case, the contents pages and index need to be a lot better.
 
-If you are in company that doesn't have good processes, particularly around people management, then this definitely has a lot of useful content and good ideas, but it wasn't a strong recommend from me.
+If you are in a company that doesn't have good processes, particularly around people management, then this definitely has a lot of useful content and good ideas, but it wasn't a strong recommend from me.
