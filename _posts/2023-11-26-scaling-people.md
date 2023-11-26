@@ -93,7 +93,7 @@ Make your job ads genuine, not a rosy ad. Be self aware as a company. Knowing wh
 
 Think about who is successful at the company. What qualities do they share and what questions can you ask to suss out whether candidates have those qualities?
 
-She also has some great background on how Stripe makes it clear that hiring is everyone’s job. They have some clear principles for all involved: hiring managers, interviews and recruitment, about how to make hiring successful. For example, keep calendar accurate, reply to any candidate question within 48 hours or send on to hiring manager; and on recruitments side, be respectful of calendars, shepherd candidates through offsites, etc.
+She also has some great background on how Stripe makes it clear that hiring is everyone’s job. They have some clear principles for all involved: hiring managers, interviews and recruitment, about how to make hiring successful. For example, keep calendar accurate, reply to any candidate question within 48 hours or send on to hiring manager; and on recruitment's side, be respectful of calendars, shepherd candidates through offsites, etc.
 
 Her advice is that the founder should meet each hire until the the company is about 100 people, because they are the people critical to the company’s trajectory.
 
@@ -147,7 +147,7 @@ If you are thinking about restructuring a team, she recommends mapping out the s
 
 ## Under-delegating and over-delegating
 
-She talks about delegation, and extends the usual discussion with some good examples of where you might be under-delegating or over-delegating.
+She has some good examples of where you might be under-delegating or over-delegating to your team.
 
 Under-delegating: you are involved in all the team's work, you ask to review it all before seen externally. Some clues you may be under-delegating:
 
@@ -172,7 +172,7 @@ Structure, agendas, prep, etc. She has [given a talk about it](https://m.youtube
 
 One new idea to me was checking out. I've written before about [meeting check-ins](/jfdi/meeting-check-in.html). We recently did some team training where they said "you haven't joined a meeting until you've spoken" and suggested check-ins for every meeting.
 
-Hughes Johnson's suggestion is start with maybe just one word on how you are feeling, and then also end with a checkout, for example, are you happy with the decision we took?
+Hughes Johnson's suggestion is start with maybe just one word on how you are feeling, and then also end the meeting with a checkout, for example, are you happy with the decision we took?
 
 ## Very useful suggestions on how to calibrate end of year reviews
 
@@ -198,11 +198,11 @@ Pullers: help them prioritise and set boundaries; encourage and reward them in p
 
 ## Do the best for your reports
 
-Aniticipate when the work will become boring and work with them to think about where they might want to focus in six moths. Include them in your succession planning. Think laterally about opportunities that might give them a chance to grow in the ways they want to, even if they aren't their logical next step.
+Aniticipate when the work will become boring and work with your reports to think about where they might want to focus in six months. Include them in your succession planning. Think laterally about opportunities that might give them a chance to grow in the ways they want to, even if they aren't their logical next step.
 
 Finally, let go. If you can't find interesting opportunites for a high performer on your team, don't hold onto them for too long – land them a job in another part of the organisation, or open up your network and help them get another job; play the long game, you'll have earned their loyalty and trust.
 
-She also suggests pre-exit interviews – ask people if you were going to leave, what would be the reason? Ask 3-5 people, or maybe the top 10% of talent.
+She also suggests pre-exit interviews – ask people: if you were going to leave, what would be the reason? Ask 3-5 people, or maybe the top 10% of talent.
 
 ## Managing good performers
 
@@ -222,14 +222,14 @@ One of the things she does in this book is suggest different ways to say things:
 "So rather than "The team is performing terribly," you might say, "My impression is that the team isn't communicating well right now, and I think deadlines are being missed as a result. Do you agree, or could it be something else?".
 </div>
 
-I found this grating, and there was a lot of it in the section on managing poor performance. This could be useful for people who don't have experience here or want advice on exactly what words to use, but it didn't work for me.
+I found this a bit grating, and there was a lot of it in the section on managing poor performance. This could be useful for people who don't have experience here or want advice on exactly what words to use, but it didn't work for me.
 
 One thing to note is that the content on managing out is definitely not useful if you are not based in the US.
 
 ## Who is this book for?
 
-This book contained a lot of great ideas and pulled together a lot of useful resources, but overall, I found it very tiring, rather than inspiring. I am not sure if that was the style, or just that I am not the target audience. It was definitely management rather than leadership.
+This book contained a lot of great ideas and pulled together a lot of useful resources, but as a whole, I found it tiring, rather than inspiring. I am not sure if that was the style, or just that I am not the target audience. It was definitely management rather than leadership.
 
 It's also very long. Hughes Johnson says it’s not necessarily to be read cover-to-cover but instead pick it up and go to the page of what’s on your mind. However, for that to be the case, the contents pages and index need to be a lot better.
 
-If you are in company that doesn't have good processes, particularly around people management, then this definitely has useful content, but it wasn't a strong recommend from me.
+If you are in company that doesn't have good processes, particularly around people management, then this definitely has a lot of useful content and good ideas, but it wasn't a strong recommend from me.
