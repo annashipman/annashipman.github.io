@@ -13,7 +13,7 @@ The problem for my team was that our tech estate was in contention. I was leadin
 
 It seemed to me that we needed an overarching strategy to enable us to resolve these conflicts and all pull together towards the same ultimate goal, but it didn't feel like my place to work out what that would be: it would impact my peers' teams as well as my own so it felt like the solution had to come from the level above.
 
-However, two things changed for me. I started working with an excellent coach, who helped me unblock my thinking around it "not being my place". Then, I was talking to someone about my understanding of the opportunity and how we could be there, but it wasn't for me to solve, they said, why not you?
+However, two things changed for me. I started working with an excellent coach, who helped me unblock my thinking. Then, I was talking to someone about how it wasn't for me to solve this problem and they said: why not you?
 
 And I thought, yes, why *not* me? So I pitched to my boss that I step aside from my role for three months to propose a solution.
 
@@ -21,16 +21,16 @@ This post is not about the answers I came up with, but about what I learned thro
 
 ## What I planned to achieve
 
-I had planned propose our strategic direction, including any changes we’d need to make to our technical architecture or organisation.
+I had planned to work out our strategic direction, including any changes we’d need to make to our technical architecture or organisation.
 
 My proposed end goal of the three months included:
 
 - a plan for what technical work would be required and roughly how complex it was
 - how might the desired end state fit with current funding models
 - what the cost impact would be
-- and a team for initial changes ready to start work
+- a team for initial changes ready to start work
 
-I also had hoped that we would reach that point by clarifying the overarching strategy.
+I had also hoped that we would reach these goals by clarifying the overarching strategy.
 
 This sounds laughably ambitious now, but when I proposed this piece of work, I genuinely thought I would be able to get all or most of that done in the agreed time.
 
@@ -48,7 +48,7 @@ This was an incredible learning experience. Here are some of the things I learne
 
 At every level of my career I’ve learned that you don’t have to wait for someone else to solve a problem you have, or to create the opportunity you believe exists. However, each time it looks a bit different. This time it looked like I would be treading on toes and/or would not be in a position to be able to achieve results.
 
-If I had just gone off and done it on my own, it would have been difficult. However, this work solved a problem for my boss. Pitching how I could get a solution meant that he backed me to do it, which conferred the authority to get the work done.
+If I had just gone off and done it on my own, it would have been difficult. However, this work solved a problem for my boss. Pitching how I could get us to a solution meant that he backed me to do it, which conferred the authority to get the work done.
 
 ### Put the work in to clarify expectations
 
@@ -61,7 +61,7 @@ This led to two main problems:
 
 I didn't clarify, because I didn't know all the possible outcomes. But this is a problem that has been solved in engineering. In this situation, either be really precise about the outcome you plan to achieve and then work towards that, updating on progress as you go, or timebox the efforts and report on how far through that timebox you are.
 
-It's quite easy to sell a poorly defined piece of work that will solve everyone's problems, and is much harder to sell a piece of work that is smaller in scope and more clearly defined, but it's worth putting that work in at the beginning to make sure all stakeholders understand what the goal is and everyone is clear how far along we are towards that goal.
+It's quite easy to sell a poorly defined piece of work that will solve everyone's problems, and is much harder to sell a piece of work that is more clearly defined but smaller in scope. However, it's worth putting that work in at the beginning to make sure all stakeholders understand what the goal is.
 
 ### It's very important to know who your stakeholders are
 
@@ -73,7 +73,7 @@ The learning for me was that it's not always obvious who the key stakeholders ar
 
 This was not just an engineering problem, so I asked two of my colleagues in product to work with me on this. This was great, as their understanding and challenge helped the work be much better.
 
-We also talked to a wide range of people to get their input. We conducted about 50 internal interviews and I also had about 10 conversations with external companies to understand how they did it. Working as a team with other poeple made it possible to have that many conversations and to learn more from them.
+We also talked to a wide range of people to get their input. We conducted about 50 internal interviews and I also had about 10 conversations with external companies to understand how they did it. Working as a team with other people made it possible to have that many conversations, and bought a lot of learning and diverse thinking.
 
 ### You need to bring everyone else on the journey with you
 
@@ -133,11 +133,11 @@ This was one of my biggest personal learnings that year. Because of how I’m mo
 
 That doesn't help me, because it can mean that I feel like I've not achieved much, as I'm always looking forwards at what is left to do. But more importantly, if I don't celebrate the amazing successes of my team, it doesn't help them feel their efforts and hard work have been worthwhile; and it doesn't help executive sponsors see the value of the work.
 
-This is something I'm still working on. You can even see that in this post, where I've spent a lot more time talking about how I would improve, than I have talking about the big changes we managed to drive, the engagement of multiple people in making this project successful, and the tangible change of direction of the tech strategy that demonstrably helps teams deliver faster.
+This is something I'm still working on. You can even see that in this post, where I've spent a lot more time talking about how I would improve, than I have talking about the big changes we managed to drive, the engagement of multiple people in making this project successful, and the tangible change of direction of the tech strategy that demonstrably helped teams deliver faster.
 
 ## This continues to be very useful for me
 
-If I had to pull out my three most valuable lessons:
+If I had to pull out the three lessons that were  most valuable to me:
 
 - Even if you think you know the desired end state, take a smaller chunk and make some tangible steps.
 - Overcommunicate the goal and your progress towards it.
