@@ -5,7 +5,7 @@ tag: Strategy
 layout: blog_post
 ---
 
-As I become more senior I have more of a need to write business cases. I turned to the excellent [Peter Grzeszczak](https://twitter.com/Pete_Grz) for advice, and this is what he said.
+As I become more senior I have more of a need to write business cases. I turned to the excellent Peter Grzeszczak for advice, and this is what he said.
 
 ## Start with the problem, not the solution
 
@@ -67,7 +67,7 @@ It's also worth (as with most things) finding a critical friend who is not invol
 
 ## The five cases for a government business case
 
-We were not talking about producing a business case for the Treasury, though that's a lot of what Peter does. Although that is a much more involved exercise, I found it useful to think of the different cases you are required to make for Treasury cases: strategic, economic, commercial, financial and management. It can be useful to think of your problem in those lights, even if you don't go into all the detail. [This guide on assessing Treasury business cases (PDF)](https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/190609/Green_Book_guidance_short_plain_English_guide_to_assessing_business_cases.pdf) is useful for more information on that.
+We were not talking about producing a business case for the Treasury, though that's a lot of what Peter does. Although that is a much more involved exercise, I found it useful to think of the different cases you are required to make for Treasury cases: strategic, economic, commercial, financial and management. It can be useful to think of your problem in those lights, even if you don't go into all the detail. [This guide on assessing Treasury business cases](https://www.gov.uk/government/publications/the-green-book-appraisal-and-evaluation-in-central-government/the-green-book-2020) is useful for more information on that.
 
 ## Ultimately, it's about telling a story
 
