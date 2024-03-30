@@ -65,7 +65,7 @@ It's quite easy to sell a poorly defined piece of work that will solve everyone'
 
 ### It's very important to know who your stakeholders are
 
-This is good advice in general, but with a piece of work like this it's crucial, as your results dependend on buy-in. In this case, a peer of my boss was a key stakeholder. She already had a solution in mind, and saw my work as part of that, which led to crossed wires when I took a different direction than the one she had anticipated.
+This is good advice in general, but with a piece of work like this it's crucial, as your results depend on buy-in. In this case, a peer of my boss was a key stakeholder. She already had a solution in mind, and saw my work as part of that, which led to crossed wires when I took a different direction than the one she had anticipated.
 
 The learning for me was that it's not always obvious who the key stakeholders are and it's important to understand that and manage them closely.
 
