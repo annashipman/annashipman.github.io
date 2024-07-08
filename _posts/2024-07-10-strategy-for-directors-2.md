@@ -42,13 +42,13 @@ One interesting thing this course recommended was doing the SWOT analysis last, 
 
 Firstly, look at the **macro-external market**, i.e. the world. For this, use [PESTLE](/jfdi/strategy-for-directors-1.html#pestle). You can also do scenario testing for analysing a [VUCA](/jfdi/strategy-for-directors-1.html#vuca) situation, which is imagining some changes in the external world that could affect your business, and for any that would have a large impact, plan what you could do.
 
-Then, look at the **micro-external environment**: customers, competitors, suppliers etc. For this, use [S-curves](/jfdi/strategy-for-directors-1.html#market-lifecycles-s-curves), [market segmentation](/jfdi/strategy-for-directors-1.html), [generic strategies](/jfdi/strategy-for-directors-1.html), and [Five forces](/jfdi/strategy-for-directors-1.html).
+Then, look at the **micro-external environment**: customers, competitors, suppliers etc. For this, use [S-curves](/jfdi/strategy-for-directors-1.html#market-lifecycles-s-curves), [market segmentation](/jfdi/strategy-for-directors-1.html#market-segmentation), [generic strategies](/jfdi/strategy-for-directors-1.html#strategic-positioning--generic-strategies), and [Five forces](/jfdi/strategy-for-directors-1.html#five-forces-analysis).
 
-Then, look at the **internal environment**: how your organisation currently is. For this, use [capabilities](/jfdi/strategy-for-directors-1.html), [core competencies](/jfdi/strategy-for-directors-1.html), [threshold/distinctive capabilities (VRIN)](/jfdi/strategy-for-directors-1.html), and [value chain analysis](/jfdi/strategy-for-directors-1.html).
+Then, look at the **internal environment**: how your organisation currently is. For this, use [capabilities](/jfdi/strategy-for-directors-1.html#capability), [core competencies](/jfdi/strategy-for-directors-1.html#core-competence), [threshold/distinctive capabilities (VRIN)](/jfdi/strategy-for-directors-1.html#threshold-and-distinctive-capabilities-vrin), and [value chain analysis](/jfdi/strategy-for-directors-1.html#value-chain-analysis).
 
 ## Bring it all together: portfolio analysis and SWOT!
 
-Now you've analysed the external world and your organisation, bring it all together for an integrated picture. Firstly, you can do a [portfolio analysis](/jfdi/strategy-for-directors-1.html), and then use [SWOT](/jfdi/strategy-for-directors-1.html) to bring together all the other outputs.
+Now you've analysed the external world and your organisation, bring it all together for an integrated picture. Firstly, you can do a [portfolio analysis](/jfdi/strategy-for-directors-1.html#bringing-it-all-together-portfolio-analysis), and then use [SWOT](/jfdi/strategy-for-directors-1.html#swot) to bring together all the other outputs.
 
 SWOT is a nice way to share the outputs of this work, but be aware that people you share only the SWOT with will not have all the context of the work you did to get to that, so it is not always a very effective communication tool.
 
@@ -72,13 +72,13 @@ What are you are trying to do here is communicate a compelling call to action th
 
 You've now completed your analysis and you know what the central challenge is for your organisation. So what are you going to do?
 
-Models to use to come up with options include [Three horizons](/jfdi/strategy-for-directors-1.html), [Ansoff matrix](/jfdi/strategy-for-directors-1.html) and [Blue Ocean](/jfdi/strategy-for-directors-1.html) approaches. It is also worth looking at the [disruptive innovation model](/jfdi/strategy-for-directors-1.html) now in case disrupting your own industry is an option.
+Models to use to come up with options include [Three horizons](/jfdi/strategy-for-directors-1.html#three-horizons), [Ansoff matrix](/jfdi/strategy-for-directors-1.html#ansoff-matrix) and [Blue Ocean](/jfdi/strategy-for-directors-1.html#blue-ocean-approaches) approaches. It is also worth looking at the [disruptive innovation model](/jfdi/strategy-for-directors-1.html#disruptive-innovation) now in case disrupting your own industry is an option.
 
 ## Evaluation and making a strategic choice
 
 You now have your analysis and your options. So what do you do?
 
-Whatever you choose is informed by all this work. It needs to be explicit, forward thinking, and simple. Some models to help choose are [SAFe](/jfdi/strategy-for-directors-1.html) and [weighting and scoring](/jfdi/strategy-for-directors-1.html).
+Whatever you choose is informed by all this work. It needs to be explicit, forward thinking, and simple. Some models to help choose are [SAFe](/jfdi/strategy-for-directors-1.html#safe-no-not-that-one) and [weighting and scoring](/jfdi/strategy-for-directors-1.html#weighting-and-scoring).
 
 They also spent some time on the course talking about decision-making biases, including cognitive bias ([Wikipedia has a good list](https://en.wikipedia.org/wiki/Cognitive_bias)), [unconscious bias](https://builtin.com/diversity-inclusion/unconscious-bias-examples) and group decision-making vulnerabilities including social loafing (people are prone to work less hard when in a group than when working alone), evaluation apprehension (nervousness about what others might think) and the Einstellung affect (thinking a method that has worked in the past will work again now, even if more effective methods exist).
 
@@ -107,7 +107,7 @@ As well as commitment, you need to ensure the organisation can execute. [Neilson
 
 ## Using the implementation web
 
-The last model we learned about that can support your execution is the [implementation web](/jfdi/strategy-for-directors-1.html). This allows you to create a spider diagram of where you are across the 8 key areas of implementation and where you therefore need to put more focus.
+The last model we learned about that can support your execution is the [implementation web](/jfdi/strategy-for-directors-1.html#implementation-web). This allows you to create a spider diagram of where you are across the 8 key areas of implementation and where you therefore need to put more focus.
 
 There is a lot to cover in the implementation web but some of the key areas follow.
 
