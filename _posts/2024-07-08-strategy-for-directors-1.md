@@ -260,4 +260,4 @@ The exercise here is to score each of the following on a scale of 0-10. The resu
 
 ## To be continued
 
-On Wednesday, I will talk about how to tie these together and use these models in practice.
+In [my next post](/jfdi/strategy-for-directors-2.html) I talk about how to tie these together and use these models in practice.
