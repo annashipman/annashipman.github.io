@@ -36,7 +36,7 @@ Part of the analysis phase is about challenging groupthink. Sometimes knowledge 
 
 Many of us are familiar with a SWOT analysis:  identifying the organisation's Strengths, Weaknesses, Opportunities, and Threats. It is often a starting point for defining strategy.
 
-One interesting thing this course recommended was doing the SWOT analysis last, after other models, because it is quite a blunt instrument; it can be quite simplistic. They recommend instead using SWOTit to pull together the outputs from the other analyses.
+One interesting thing this course recommended was doing the SWOT analysis last, after other models, because it is quite a blunt instrument; it can be quite simplistic. They recommend instead using SWOT to pull together the outputs from the other analyses.
 
 ## Analyse the external and internal environment
 
