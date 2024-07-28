@@ -19,7 +19,13 @@
     <link href="https://www.annashipman.co.uk{{ post.url }}"/>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <id>https://www.annashipman.co.uk{{ post.url }}</id>
-    <content type="html">{{ post.content | xml_escape }}</content>
+    {% assign content = post.content %}
+    {% capture href %}href="{{ site.url }}/{% endcapture %}
+    {% capture src %}src="{{ site.url }}/{% endcapture %}
+    {% capture converted_content %}
+      {{ content | replace: 'href="/', href | replace: 'src="/', src }}
+    {% endcapture %}
+    <content type="html">{{ converted_content | xml_escape }}</content>
   </entry>
   {% endfor %}
 
