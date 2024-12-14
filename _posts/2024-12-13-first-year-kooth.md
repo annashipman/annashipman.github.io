@@ -17,7 +17,7 @@ Another thing that really drew me to Kooth were the technical challenges. When I
 
 We rolled out Soluna at the beginning of 2024, and have spent this year adding features and improving on it. If you are in the US [you can download it here](https://solunaapp.com/). And if you are in the UK, hold tight, because one of the next big exciting technical challenges we have is bringing Soluna back to the UK.
 
-![Screenshots of the Soluna app. Main image is of an exercise: "choose up to six values to guide your self-discovery journey"](/img/soluna_screenshot.png)
+<img src="/img/soluna_screenshot.png" alt="Screenshots of the Soluna app. Main image is of an exercise: 'choose up to six values to guide your self-discovery journey'" style="max-width: 100%; height: auto; display: block; border: 0;">
 
 ## Kooth is a very inclusive and friendly place
 
