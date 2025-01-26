@@ -22,7 +22,7 @@ One other thing which added to the sense of connectedness, was that as I was goi
 
 We had two music rounds, two picture rounds, a currencies & podcasts round and a film quotes round. The questions and picture rounds were related to our work at the [Financial Times](https://www.ft.com/).
 
-The first music round was film songs, prepared for a previous quiz by [Nick Ramsbottom](https://twitter.com/nickramsbottom). This was a WhatsApp Audio mpeg, and I just played this on my computer.
+The first music round was film songs, prepared for a previous quiz by [Nick Ramsbottom](https://www.linkedin.com/in/nick-ramsbottom-88249661/). This was a WhatsApp Audio mpeg, and I just played this on my computer.
 
 Then, after I'd given the answers to that, while I was collecting in scores, I shared a link to the first picture round, which was "Name the FT journalist", created by [Luke Kavanagh](http://ft.com/luke).
 

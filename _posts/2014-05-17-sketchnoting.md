@@ -4,9 +4,9 @@ title: Sketchnoting
 layout: blog_post
 ---
 
-At [Scottish Ruby Conference](http://2014.scottishrubyconference.com/) earlier this week, among the many great talks I attended was [Jess Eldredge](http://twitter.com/jessabean)'s excellent [introduction to sketchnoting](https://speakerdeck.com/jessabean/sketchnoting-creative-notes-for-technical-content).
+At Scottish Ruby Conference earlier this week, among the many great talks I attended was [Jess Eldredge](https://front-end.social/@jessabean)'s excellent [introduction to sketchnoting](https://speakerdeck.com/jessabean/sketchnoting-creative-notes-for-technical-content).
 
-I liked the idea of doing sketchnotes since I came across the first ones I saw, by [Amanda Wright](http://www.yahnyinlondon.com/), but had never properly tried it. I do makes notes in a fairly visual way – here, for example, are my notes from [Kerri Miller](https://twitter.com/kerrizor)'s excellent talk on concurrency.
+I liked the idea of doing sketchnotes since I came across the first ones I saw, by [Amanda Wright](http://www.yahnyinlondon.com/), but had never properly tried it. I do makes notes in a fairly visual way – here, for example, are my notes from [Kerri Miller](https://www.linkedin.com/in/kerrizor/)'s excellent talk on concurrency.
 
 ![concurrency notes](/img/concurrency.jpg)
 
@@ -16,7 +16,7 @@ I was right at the front in Jess's talk and felt self-conscious, so the notes I 
 
 ![original sketchnotes notes](/img/original_sketchnotes.jpg)
 
-However, I was inspired, and also happened to have a nice pen with me, so tried to do a sketchnote in my last talk of the day, [André Arko](https://twitter.com/indirect)'s very interesting [Development was the easy part](https://speakerdeck.com/indirect/development-was-the-easy-part-scottish-ruby-2014).
+However, I was inspired, and also happened to have a nice pen with me, so tried to do a sketchnote in my last talk of the day, [André Arko](https://www.linkedin.com/in/andrearko/)'s very interesting [Development was the easy part](https://speakerdeck.com/indirect/development-was-the-easy-part-scottish-ruby-2014).
 
 ![tip of the iceberg notes](/img/tip_of_the_iceberg.jpg)
 

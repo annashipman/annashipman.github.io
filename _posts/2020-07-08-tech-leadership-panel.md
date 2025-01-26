@@ -5,7 +5,7 @@ tags: Leadership Speaking
 layout: blog_post
 ---
 
-On Monday I was on a panel, organised by Codemotion, about technical leadership. It was a great discussion, with extremely impressive co-panellists [Omosola Odetunde](https://twitter.com/omosolatweets) and [Pat Kua](https://twitter.com/patkua), and well faciliated by [Piergiorgio Niero](https://twitter.com/pigiuz).
+On Monday I was on a panel, organised by Codemotion, about technical leadership. It was a great discussion, with extremely impressive co-panellists [Omosola Odetunde](https://www.linkedin.com/in/omosola-odetunde/) and [Pat Kua](https://www.patkua.com/), and well faciliated by [Piergiorgio Niero](https://www.linkedin.com/in/piergiorgioniero/).
 
 We discussed three main areas:
 
