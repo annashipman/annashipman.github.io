@@ -5,7 +5,7 @@ tag: Open source
 layout: blog_post
 ---
 
-At [ScaleSummit](http://www.scalesummit.org/) last week, I proposed a session on running Open Source projects. I am hoping to move the project I'm working on, [vCloud Tools](https://github.com/alphagov/vcloud-tools), from being [coded in the open](https://gds.blog.gov.uk/2012/10/12/coding-in-the-open/) to being Open Source and wanted to get the benefit of the accumulated wisdom. It was an excellent session and I really got a lot out of it.
+At ScaleSummit last week, I proposed a session on running Open Source projects. I am hoping to move the project I'm working on, [vCloud Tools](https://github.com/alphagov/vcloud-tools), from being [coded in the open](https://gds.blog.gov.uk/2012/10/12/coding-in-the-open/) to being Open Source and wanted to get the benefit of the accumulated wisdom. It was an excellent session and I really got a lot out of it.
 
 The executive summary is that if you are trying to build a community, you need to optimise for bringing people into the community, and a lot of the discussion focused around that. Here are some of the main things that I took away from it.
 
@@ -23,7 +23,7 @@ In a later discussion back at GDS we decided not to do that for this project bec
 
 As well as (or instead of) an IRC channel, you should have a mailing list.  You can either make it open or make it so that only a subset of people can reply. Someone advised that it wasn’t a good idea to have lots of mailing lists, (\*announce\*, \*discussion\* etc). It was also pointed out that even if you’re not writing code, managing the community can easily become a full-time job.
 
-The Perl community does communication well, and the example of [Catalyst](http://www.catalystframework.org/) was given -- this project has 450 committers and the maintainer has changed 5+ times. Also mentioned was this blog post about communication with newcomers to the project: [Love your idiots](http://shadow.cat/blog/matt-s-trout/love-your-idiots/).
+The Perl community does communication well, and the example of [Catalyst](https://www.perl.org/about/whitepapers/perl-webframework.html) was given -- this project has 450 committers and the maintainer has changed 5+ times. Also mentioned was this blog post about communication with newcomers to the project: [Love your idiots](http://shadow.cat/blog/matt-s-trout/love-your-idiots/).
 
 
 ### Respond quickly to external contributions
@@ -66,7 +66,7 @@ You need to be using the software yourself, otherwise it’s a recipe for abando
 
 ### Contributing Guidelines
 
-It is important to have contributing guidelines. This wasn’t discussed extensively in the session, but in an extremely helpful follow-up email from [Tom Doran](https://twitter.com/bobtfish) he pointed me at a number of great resources which included the [Catalyst development guidelines](https://metacpan.org/pod/distribution/Catalyst-Manual/lib/Catalyst/Manual/DevelopmentProcess.pod). I also heard from [George Brocklehurst](https://twitter.com/georgebrock) who pointed me at the [contributing guidelines for gitsh](https://github.com/thoughtbot/gitsh/blob/master/CONTRIBUTING.md) and also a really useful page that [thoughtbot](http://thoughtbot.com/) have on [code review](https://github.com/thoughtbot/guides/tree/master/code-review).
+It is important to have contributing guidelines. This wasn’t discussed extensively in the session, but in an extremely helpful follow-up email from [Tom Doran](https://github.com/bobtfish) he pointed me at a number of great resources which included the [Catalyst development guidelines](https://metacpan.org/pod/distribution/Catalyst-Manual/lib/Catalyst/Manual/DevelopmentProcess.pod). I also heard from [George Brocklehurst](https://www.georgebrock.com/) who pointed me at the [contributing guidelines for gitsh](https://github.com/thoughtbot/gitsh/blob/master/CONTRIBUTING.md) and also a really useful page that [thoughtbot](http://thoughtbot.com/) have on [code review](https://github.com/thoughtbot/guides/tree/master/code-review).
 
 ### Legal issues
 
@@ -80,4 +80,4 @@ Many other things were discussed, including when you need a standalone website, 
 
 #### Notes
 
-Note that ScaleSummit operates under the [Chatham House Rule](http://en.wikipedia.org/wiki/Chatham_House_Rule) so none of the comments made in the session have been attributed, and thanks to [Matt Bostock](https://twitter.com/mattbostock) and [Phil Potter](https://twitter.com/philandstuff) whose write-ups ([Matt's](http://tech.mattbostock.com/2014/03/23/scale-summit/), [Phil's](https://gist.github.com/philandstuff/9684513)), were a very useful addition to my own notes.
+Note that ScaleSummit operates under the [Chatham House Rule](http://en.wikipedia.org/wiki/Chatham_House_Rule) so none of the comments made in the session have been attributed, and thanks to [Matt Bostock](https://www.linkedin.com/in/mattbostock/) and [Phil Potter](https://hachyderm.io/@philandstuff) whose write-ups ([Matt's](http://tech.mattbostock.com/2014/03/23/scale-summit/), [Phil's](https://gist.github.com/philandstuff/9684513)), were a very useful addition to my own notes.

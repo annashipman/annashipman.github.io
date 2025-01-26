@@ -16,9 +16,17 @@ I got some great questions after the talk, including questions about:
 - how to sell technical work to the business ([Talking like a suit](https://www.infoq.com/articles/communicating-engineering-work-business/) is an excellent article on that topic)
 - and how to work on a tech strategy when there isn't a clear business or product strategy (I think that may be a whole other talk in itself!)
 
-I also got asked a very interesting question about how to improve your storytelling. As I'd mentioned a couple of times in my talk, telling a good story is really important to communication. I didn't immediately have an answer, but I put it to Twitter – check out the thread for a lot of great suggestions.
+I also got asked a very interesting question about how to improve your storytelling. As I'd mentioned a couple of times in my talk, telling a good story is really important to communication. I didn't immediately have an answer, but I put it to Twitter.
 
-<blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">If anyone else has ideas about how to improve your storytelling, please chip in!</p>&mdash; Anna Shipman (@annashipman) <a href="https://twitter.com/annashipman/status/1511699820834136066?ref_src=twsrc%5Etfw">April 6, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+![Tweet asking how to improve storytelling](/img/twitter/storytelling.png)
+
+I got some great suggestions, including:
+
+- read and write a lot
+- learn to analyse material, e.g. like you do in a screenwriting course
+- improv
+- Toastmasters
+- think about story types, e.g. the Hero's journey ([This is an interesting post that outlines 8 story types](https://blog.sparkol.com/8-classic-storytelling-techniques-for-engaging-presentations)).
 
 Slides from my talk are below. A recorded version of the talk, used in QConPlus, is [on the InfoQ site](https://www.infoq.com/presentations/microservices-entropy/).
 

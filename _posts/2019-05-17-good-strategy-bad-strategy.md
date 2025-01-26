@@ -86,10 +86,10 @@ He also suggests that you note down judgements you make over time, and then refe
 
 Making such a policy work takes more than a plan on paper – you need to work to maintain the coherence of the plan, every quarter, year, decade.
 
-[This Twitter thread](https://twitter.com/iamdeepa/status/944237019265298432) from Deepa Subramaniam is also very useful, particularly the practical tips on how to do that work.
- 
+This [Twitter thread from Deepa Subramaniam](https://twitter.com/iamdeepa/status/944237019265298432) is also very useful, particularly the practical tips on how to do that work, and if you do not wish to visit twitter, I've copied the [content to a gist](https://gist.github.com/annashipman/f88e05e1cdab044fdf0565b59bb2c565)
+
 ## You should read Good Strategy, Bad Strategy
 
-These are some of the notes I've found useful to refer back to. [These slides](https://www.slideshare.net/sophiedennis/usercentred-digital-strategy-ux-in-the-city-manchester-2017) by [Sophie Dennis](https://twitter.com/sophiedennis) are also an excellent summary of some of the main points.
+These are some of the notes I've found useful to refer back to. [These slides](https://www.slideshare.net/sophiedennis/usercentred-digital-strategy-ux-in-the-city-manchester-2017) by [Sophie Dennis](https://www.linkedin.com/in/sophiedennis/) are also an excellent summary of some of the main points.
 
 But the book itself is extremely worth reading. It has made a big difference to how I think about and work on strategy.
