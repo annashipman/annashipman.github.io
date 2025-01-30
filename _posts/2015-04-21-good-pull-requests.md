@@ -7,7 +7,7 @@ layout: blog_post
 
 On our team we always commit code using [pull requests](https://help.github.com/articles/creating-a-pull-request/), for review by someone who hasn't worked on that code.
 
-I was recently pairing with the excellent [Martin Jackson](https://twitter.com/actionjack). He had made a change to use [Librarian-Ansible](https://github.com/bcoe/librarian-ansible) to manage our dependencies; but [the pull request](https://github.com/alphagov/tsuru-ansible/pull/8) was difficult to review because most of the changes were in one commit. I paired with him to help make it easier to review, and he suggested I write up the guidelines I shared.
+I was recently pairing with the excellent [Martin Jackson](https://www.linkedin.com/in/uncommondevops/). He had made a change to use [Librarian-Ansible](https://github.com/bcoe/librarian-ansible) to manage our dependencies; but [the pull request](https://github.com/alphagov/tsuru-ansible/pull/8) was difficult to review because most of the changes were in one commit. I paired with him to help make it easier to review, and he suggested I write up the guidelines I shared.
 
 ## Write good commit messages
 
@@ -61,7 +61,7 @@ As well as making sure the whole team can keep an eye on what changes are happen
 
 ## An example of a good pull request
 
-Take a look at this [extremely good pull request](https://github.com/alphagov/frontend/pull/784) raised by the excellent [Alice Bartlett](https://twitter.com/alicebartlett).
+Take a look at this [extremely good pull request](https://github.com/alphagov/frontend/pull/784) raised by the excellent [Alice Bartlett](https://alicebartlett.co.uk/).
 
 Alice did the work first, and then pulled out the changes one-by-one to a new branch to make it clear. While doing the work she refactored some code but in the final PR she has put the refactoring up front, to clear the way for the change she wants to make. This makes it much easier to review because the changes don't then clutter up later commits. There is also a lot of detail in the overview.
 
