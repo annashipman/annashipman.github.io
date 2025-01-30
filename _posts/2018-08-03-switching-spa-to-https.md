@@ -5,7 +5,7 @@ tags: [Technology, SPA conference]
 layout: blog_post
 ---
 
-I had long been thinking I must move the [SPA site](https://www.spaconference.org/) to HTTPS. However, everything is difficult when using shared hosting and I wasn't sure how to do it. So I was delighted when [Johan Peeters](https://twitter.com/YoPeeters) and [Nelis Boucké](https://twitter.com/nelisboucke) proposed a session for the 2017 SPA conference called [Why SPA should switch to HTTPS and how easy that is](http://spaconference.org/spa2017/sessions/session703.html).
+I had long been thinking I must move the [SPA site](https://www.spaconference.org/) to HTTPS. However, everything is difficult when using shared hosting and I wasn't sure how to do it. So I was delighted when [Johan Peeters](https://johanpeeters.com/) and [Nelis Boucké](https://hachyderm.io/@nelis) proposed a session for the 2017 SPA conference called [Why SPA should switch to HTTPS and how easy that is](http://spaconference.org/spa2017/sessions/session703.html).
 
 It was a great session. In short, they recommended three approaches:
 

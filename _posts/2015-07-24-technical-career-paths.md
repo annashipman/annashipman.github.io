@@ -23,9 +23,9 @@ of the exercise, and is one reason why it’s hard to take a career path from
 another organisation – their values might not reflect yours.</p>
 <p>To identify these skills and values we held a series of facilitated workshops
 with a group of people from our technology community. In order to involve more
-of our technologists, <a href="https://twitter.com/rjw1">bob walker</a>, <a
-href="https://twitter.com/danielroseman">Daniel Roseman</a> and <a
-href="https://twitter.com/tombaromba">Tom Byers</a> gathered feedback between
+of our technologists, <a href="https://mastodon.me.uk/@bob">bob walker</a>, <a
+href="https://universeodon.com/@danielroseman">Daniel Roseman</a> and <a
+href="https://www.tombyers.co.uk/">Tom Byers</a> gathered feedback between
 the workshops from others in the web operations, backend development and
 frontend development communities.</p>
 <p>We also decided at this point that there shouldn't be a frontend/backend
@@ -35,17 +35,16 @@ work across the full stack.</p>
 <p>The workshops produced an outline of what skills were expected at each level.
 However, it was quite light on details of technical expertise. It's harder to
 work that out by committee.</p>
-<p>Myself, <a href="https://twitter.com/bradwright">Brad Wright</a> and <a
-href="https://twitter.com/jystewart">James Stewart</a> – three technical
+<p>Myself, <a href="https://www.linkedin.com/in/bradleywright/">Brad Wright</a> and <a
+href="https://jystewart.net/">James Stewart</a> – three technical
 architects who are also senior line managers – listed the technical competencies
 we expect at each level. We also talked to line managers to see how what we had
 come up with fitted in with how we were already working on developing
 people.</p>
 <p>At this point we had an alpha version of the career paths document,
 definitely not formatted as we would like, but with the information we had
-learned in it. You can download the first version as a PDF: <a
-href="https://gdstechnology.blog.gov.uk/wp-content/uploads/sites/31/2015/07/Developerweb-op-career-paths-v1.0.pdf">Developer:web
-op career paths v1.0</a>.</p>
+learned in it. [Sadly you can no longer download the first version as a PDF]
+</p>
 <h2>Use of the career path</h2>
 <p>The main aim of the career path work is to help people clarify where they are
 in their careers and what to focus on when working out how to progress, so the
@@ -85,14 +84,13 @@ start working on in order to develop their careers as a technologist within
 GDS.</p>
 <h2>It’s still a work in progress</h2>
 <p>We’ve made some changes based on the feedback from the tech line managers,
-and with input from <a href="https://twitter.com/jamesholloway">James
-Holloway</a>, then a writer at GDS, we produced the next version, which you can
+and with input from James Holloway, then a writer at GDS, we produced the next version, which you can
 also download as a PDF: <a
 href="https://gdstechnology.blog.gov.uk/wp-content/uploads/sites/31/2015/07/Career_pathing_for_technologists_v2.0.pdf">Career_pathing_for_technologists_v2.0</a>.
 We’re now using it, and all technologists at GDS have had an opportunity to work
 out their career plan with their line managers. There are still many areas for
-improvement, and <a href="https://twitter.com/alicebartlett">Alice Bartlett</a>,
-<a href="https://twitter.com/edds">Edd Sowden</a> and others are currently
+improvement, and <a href="https://alicebartlett.co.uk/">Alice Bartlett</a>,
+<a href="https://e26.co.uk/">Edd Sowden</a> and others are currently
 working on the next iteration.</p>
 <p>One interesting point is that we may have gone too far the other way on
 removing detail. I suspect the way to balance this will be around how we
