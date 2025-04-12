@@ -17,5 +17,13 @@ We talked about:
 It was a really interesting conversation with great contributions from my co-panellists [Mal Minhas](https://www.linkedin.com/in/malminhas/) and [Chris Evans](https://www.linkedin.com/in/evnsio/) and good facilitiation by [Jon Topper](https://www.linkedin.com/in/jtopper/) with some help from [Claude](https://claude.ai/).
 
 <div class="embedded">
-  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/bc01kXFV-kQ?si=FbNIa6Fx3_W9MxQv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe src="https://www.youtube-nocookie.com/embed/bc01kXFV-kQ?si=FbNIa6Fx3_W9MxQv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
+
+<noscript>
+  <a href="https://www.youtube.com/watch?v=bc01kXFV-kQ">
+    <img src="/img/saas_cto_thumbnail.jpg"
+         alt="Watch the video on YouTube"
+         style="max-width: 100%; height: auto; display: block; border: 0;">
+  </a>
+</noscript>
