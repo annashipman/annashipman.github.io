@@ -15,6 +15,10 @@ At the reference call stage I am excited by this candidate and do not need convi
 
 I will always say something like "I am really enthusiastic about X, you don't need to sell them, I just want to understand their areas for development and how I can best support them."
 
+## This does not replace competency questions
+
+This is not an interview, and ideally it's not even a decision-point, unless you hear red flags or serious areas of concern that your interview process hasn't uncovered. For more on how to structure a good interview, you can read my post on [how to interview fairly](/jfdi/interviewing-fairly.html).
+
 ## Sometimes you need to clarify the exact relationship
 
 - What was your working relationship with X?
