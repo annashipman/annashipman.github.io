@@ -51,8 +51,6 @@ For example, using the question about unblocking team members. Context: Why were
 
 This will give them a better opportunity to make sure you have the information you need. Remember, this is about giving them the opportunity to give you the most useful information to help you make a decision about whether they are right for the role.
 
-(For candidates, I've got a bit more advice about how to structure your answers and think of examples in [this blog post for the Government Digital Service](https://gdstechnology.blog.gov.uk/2013/12/24/applying-for-a-job-at-gds/) or read this [excellent Twitter thread by Beth Fraser](https://twitter.com/edinbeth/status/1072518477196464130).)
-
 ## Score the questions immediately
 
 In order to make the most of the process, you need to give a score for each question as soon as you can. Ideally immediately after the interview, so that you can remember what has been discussed. This helps you focus on how they performed against each of the important skills, rather than being influenced by what you thought of them personally, or your general sense of whether they'd be good (which will be informed by your unconscious biases).
