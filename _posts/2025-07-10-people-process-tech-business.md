@@ -11,9 +11,9 @@ Becoming a successful technology leader requires skills in three core areas: peo
 
 Being the best you can be at your job, as well as being more rewarding personally, is to fulfill your primary role as a technology leader; which is not to lead technologists, it is to deliver buisness outcomes. As a leader, your peers are your first team, and working with them to lead your organisation is your most important role.
 
-## Watch the talk!
+## Watch the talk
 
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-5QwJeawSdc?si=oR4HpO_mXGAHXcTA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 The slides are here:
 
