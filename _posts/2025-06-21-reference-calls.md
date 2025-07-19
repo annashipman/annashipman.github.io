@@ -48,6 +48,6 @@ This is one to ask in the middle; you might think this is one to throw in at the
 
 ## I don't ask every question
 
-I always ask the unlocking question, somewhere in the middle, but other than that I ask some combination of the other questions. These are questions I've gleaned from various sources (I can't find the original reference for the unlocking quesiton, please let me know if you can!)
+I always ask the unlocking question, somewhere in the middle, but other than that I ask some combination of the other questions. These are questions I've gleaned from various sources (I can't find the original reference for the unlocking question, please let me know if you can!)
 
 These are always interesting conversations and I have found them really useful as I onboard and get to know my new colleagues.
