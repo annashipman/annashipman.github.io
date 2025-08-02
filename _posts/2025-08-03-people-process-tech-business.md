@@ -13,8 +13,28 @@ Being the best you can be at your job, as well as being more rewarding personall
 
 ## Watch the talk
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-5QwJeawSdc?si=oR4HpO_mXGAHXcTA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="embedded">
+  <iframe src="https://www.youtube.com/embed/-5QwJeawSdc?si=oR4HpO_mXGAHXcTA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<noscript>
+  <a href="https://www.youtube.com/watch?v=-5QwJeawSdc">
+    <img src="/img/ppt_thumbnail.jpg"
+         alt="Watch the video on YouTube"
+         style="max-width: 100%; height: auto; display: block; border: 0;">
+  </a>
+</noscript>
 
 ## Read the slides
 
-<iframe src="https://www.slideshare.net/slideshow/embed_code/key/wHubiXaNCWb1ex?startSlide=1" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border: var(--border-1) solid #CCC; border-width:1px; margin-bottom:5px;max-width: 100%;" allowfullscreen></iframe> 
+<div class="embedded">
+  <iframe src="https://www.slideshare.net/slideshow/embed_code/key/wHubiXaNCWb1ex?startSlide=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border: var(--border-1) solid #CCC; border-width:1px; margin-bottom:5px;max-width: 100%;" allowfullscreen></iframe>
+</div>
+
+<noscript>
+  <a href="https://www.slideshare.net/slideshow/people-process-technology-business/276551320">
+    <img src="/img/ppt_slides.jpg"
+         alt="View the slides on Slideshare"
+         style="max-width: 100%; height: auto; display: block; border: 0;">
+  </a>
+</noscript>
