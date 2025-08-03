@@ -33,7 +33,7 @@ Being the best you can be at your job, as well as being more rewarding personall
 
 <noscript>
   <a href="https://www.slideshare.net/slideshow/people-process-technology-business/276551320">
-    <img src="/img/ppt_slides.jpg"
+    <img src="/img/ppt_slides.jpeg"
          alt="View the slides on Slideshare"
          style="max-width: 100%; height: auto; display: block; border: 0;">
   </a>
