@@ -137,7 +137,7 @@ Engineering salaries are often higher than other roles and this is especially th
 
 The way I like to think about this is like a translation layer, a component that converts data from one set of formats to another to allow different systems to communicate with each other.
 
-![](/img/eng-to-exec-translation-layer.jpg)
+<img src="/img/eng-to-exec-translation-layer.jpg" alt="" style="max-width: 100%; height: auto; display: block; border: 0;">
 
 ### Consider the translation layer when talking to your CTO
 
