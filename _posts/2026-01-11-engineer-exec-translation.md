@@ -51,7 +51,7 @@ There are some factors that are golden and will be the case for all CEOs and exe
 
 Understanding the responsibility of the CEO sets the scene for understanding the motivations of the other exec, including your CTO.
 
-As CTO, a key part of my role is working with my exec peers across the business to ensure the CEO is able to fulfill her responsibilities. In all but the tiniest of businesses, the CEO cannot do it all herself. That means, as CTO, my motivations are very similar.
+As CTO, a key part of my role is working with my exec peers across the business to ensure the CEO is able to fulfil her responsibilities. In all but the tiniest of businesses, the CEO cannot do it all herself. That means, as CTO, my motivations are very similar.
 
 So you should remember that any proposal you make needs to show how it can meet the needs of the exec, the CEO, or their stakeholders.
 
@@ -61,14 +61,14 @@ It is important to remember that almost all execs, likely including your CTO, ar
 
 By that, I don’t mean they are busier than you — you may be very busy, you may even feel overloaded — or that what they are busy with is more important than what you are busy with.
 
-The difference is that the more senior in an organization someone’s role is, the more their span of responsibility increases, meaning the more areas they need to oversee, meaning proportionally the time available to spend in each area is less.
+The difference is that the more senior in an organisation someone’s role is, the more their span of responsibility increases, meaning the more areas they need to oversee, meaning proportionally the time available to spend in each area is less.
 Mathematically, an Engineering Manager who manages a team of 6 will have more time to spend on your proposal than your CTO, who may have 250 engineers to oversee, or your CEO, who may have hundreds or thousands, or tens of thousands of employees.
 
 So this point is not that execs are more busy than you, it’s that the number of things they need to be across is greater than yours and so the time they can spend on each is less.
 
 For this reason, it is very important to make that time count.
 
-### Execs optimize for company-wide impact
+### Execs optimise for company-wide impact
 
 As I mentioned above, the executives are supporting the CEO to run the company well, and a key part of that is working across the business to deliver, by thinking horizontally about the enterprise, not just within each discipline.
 
@@ -123,7 +123,7 @@ We might talk about delivering specific features; upgrading our development fram
 
 However, exec goals might be things like increasing EBITDA, reducing CAC, strengthening brand reputation, or improving employee engagement and retention. The language is very different, and the minimum time horizon is likely to be a year, or multiple years.
 
-Your goals in engineering should always map up to these wider organizational goals, but when talking about them day to day, the language is very different. It’s likely that the exec team will translate the exec goals into language that makes sense to each of their disciplines and your CTO probably does this for you.
+Your goals in engineering should always map up to these wider organisational goals, but when talking about them day to day, the language is very different. It’s likely that the exec team will translate the exec goals into language that makes sense to each of their disciplines and your CTO probably does this for you.
 
 Here, we are talking about using the translation layer in the other direction – for your work to make sense.
 
@@ -211,7 +211,7 @@ Never forget that the person you are communicating with does not have all the co
 
 I talked above about why execs have less time for looking at the proposal. You should therefore make it as brief as you can. If it takes too long to read a proposal then it will be delayed until the reader can find sufficient time to go through it.
 
-My favorite form of receiving and delivering written communication is a one-page document — a “one-pager”. Others have other preferences; a common preference for execs is a slide deck. Whatever the convention is in your workplace, it is very important that you make it brief.
+My favourite form of receiving and delivering written communication is a one-page document — a “one-pager”. Others have other preferences; a common preference for execs is a slide deck. Whatever the convention is in your workplace, it is very important that you make it brief.
 
 The advantage of being brief is that you have to try really hard to make sure you distill the key information. You are asking someone to make a decision and you can’t expect them to identify the most salient details if the doc flows over 10 pages, or the explanation takes 20 minutes.
 
@@ -245,7 +245,7 @@ Include measurement, particularly how you will measure the impact of what you ar
 
 For example, you might propose adopting a new chat or project management platform because the interface is much improved and it’s easier to track tasks. But this will not convince an exec. In this case I would want to see data showing that it actually reduces meeting time, speeds up delivery, or improves cross-team collaboration.
 
-And don’t forget the so what! Spell it out: “In our trial, cross-team bug resolution time fell 40%” So what? “…reducing production risk and improving customer satisfaction.”
+And don’t forget the "so what"! Spell it out: “In our trial, cross-team bug resolution time fell 40%” So what? “…reducing production risk and improving customer satisfaction.”
 
 A big advantage of including measurement is that then it’s easy to show progress or learning.
 
@@ -259,7 +259,7 @@ The last and in some ways easiest part of the translation layer is the literal t
 
 Assume you are communicating with a smart and motivated person who doesn’t have to hand the details that you do about your work. Many things that are self-evident to you as an engineer will not be to your audience.
 
-The more you use jargon, or rely on concepts that require a particular engineering background, the harder it will be to make your case. Don’t patronize your reader, but explain things clearly: do the hard work to make it simple. Don’t forget to tie it to what you know they care about. You don’t need to explain every detail, just the salient features.
+The more you use jargon, or rely on concepts that require a particular engineering background, the harder it will be to make your case. Don’t patronise your reader, but explain things clearly: do the hard work to make it simple. Don’t forget to tie it to what you know they care about. You don’t need to explain every detail, just the salient features.
 
 For example:
 
@@ -276,7 +276,7 @@ Sarah Wells explains really clearly here why “tech debt” doesn’t land and 
 
 I want to finish on one note to bear in mind.
 
-It is possible that after passing your proposal through the translation layer you realize it is not actually going to make the grade. You’ve done the above work and you cannot align your objectives with organizational objectives in a way that will make sense to execs.
+It is possible that after passing your proposal through the translation layer you realise it is not actually going to make the grade. You’ve done the above work and you cannot align your objectives with organisational objectives in a way that will make sense to execs.
 
 This can be a hard lesson, and in my career I’ve certainly had some disappointing rejections of work that I genuinely believed was important and valuable and that I was unable to gain buy-in on even when my exec team fully understood it.
 
@@ -294,7 +294,7 @@ Clearly tie your proposal to results the person you are communicating with will 
 
 So here are the main takeaways:
 
-1. Optimize for executive priorities — execs think horizontally across the business, optimizing for company-wide impact, so tie your proposals to broad business outcomes. Show how you’ll measure impact, always include the “so what,” and explain technical concepts clearly.
+1. Optimise for executive priorities — execs think horizontally across the business, optimising for company-wide impact, so tie your proposals to broad business outcomes. Show how you’ll measure impact, always include the “so what,” and explain technical concepts clearly.
 1. Bottom line up front — executives have broader spans of responsibility, meaning less time per area. Lead with a short executive summary stating what decision you need and why. Only include what’s crucial for decision-making, and anticipate the questions they’ll ask: cost, ROI, alternatives, timing, risks, and how you’ll measure success.
 1. Be your own translation layer — don’t expect your CTO or other execs to translate technical details into business language. Do that work yourself by connecting engineering work to the business outcomes they care about.
 
