@@ -20,7 +20,7 @@ Today I’d like to demystify this and give you some practical steps you can tak
 
 ## 1. How executives think
 
-With every piece of work you do, it is important to understand the user needs.
+With every piece of work you do, it is important to [understand the user needs](/jfdi/what-i-learned-in-six-years-at-gds.html).
 
 In the case of communicating with execs, what do they need from your communication? To answer this question, it is useful to understand the demands on your executive team, and what their motivations might be.
 
@@ -74,7 +74,7 @@ As I mentioned above, the executives are supporting the CEO to run the company w
 
 When you make a proposal, executives are weighing up how it might affect customers, other teams and financials across the company, not just how it might impact engineering.
 
-It’s worth remembering that the CTO’s primary role is to work with exec peers across the business to deliver business outcomes, and that is the same for all of the exec team, and the CEO.
+It’s worth remembering that the CTO’s primary role is to [work with exec peers across the business](/jfdi/people-process-tech-business.html) to deliver business outcomes, and that is the same for all of the exec team, and the CEO.
 
 So any proposal you make has to make it clear that this is about the business, not about improving engineering for its own purposes.
 
@@ -188,7 +188,7 @@ As an exec, I would much rather know about problems than never find out because 
 
 However, you do not want to pass all decisions up to your boss to make.
 
-You yourself have great ideas about how to solve issues you see, and generating good solutions is a skill that definitely improves with practice. If you want your proposal to land, it needs to cover not just “we should solve this problem” but “and here’s one way we could do that”. It’s also useful to include some other options that you considered and discarded.
+You yourself have great ideas about how to solve issues you see, and generating good solutions is a skill that definitely improves with practice. If you want your proposal to land, it needs to cover not just “we should solve this problem” but “and here’s one way we could do that”. It’s also useful to include [some other options that you considered and discarded](/jfdi/1-measure-3-1.html).
 
 Your initial proposed solutions may not align with business value, but you will get feedback and learn and improve. If you never try, you will never get better and you will find you are senior and still making similar suggestions that do not get adopted.
 
@@ -270,7 +270,7 @@ A personal bugbear of mine is the phrase "tech debt".
 
 It doesn’t share context well within engineering as it can mean different things to different engineers (for example, the natural result of entropy vs an explicit decision we made to cut a corner) so it obscures what the actual issue is, and even more so to an outside observer such as an exec.
 
-Sarah Wells explains really clearly here why “tech debt” doesn’t land and how to make the case for this work.
+Sarah Wells explains really clearly here [why “tech debt” doesn’t land and how to make the case for this work](https://epsd.io/blog/technical-debt-and-making-the-case-for-engineering-work/).
 
 ### The translation layer may kill your piece of work
 
