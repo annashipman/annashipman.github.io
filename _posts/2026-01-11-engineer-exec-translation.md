@@ -127,7 +127,7 @@ Your goals in engineering should always map up to these wider organisational goa
 
 Here, we are talking about using the translation layer in the other direction – for your work to make sense.
 
-## Engineering is expensive
+### Engineering is expensive
 
 Remember that engineering may be one of the largest investments your company makes.
 
