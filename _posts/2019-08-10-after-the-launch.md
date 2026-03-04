@@ -9,7 +9,7 @@ After you launch a new product and no longer have the launch to work towards, it
 
 I gave a talk about how you can get out of the difficult teenage years at Continuous Lifecycle London in May this year.
 
-[Talk description here](https://2019.continuouslifecycle.london/sessions/launch-difficult-teenage-years/), and video and slides below.
+Video and slides below.
 
 ## Video (30 minutes)
 

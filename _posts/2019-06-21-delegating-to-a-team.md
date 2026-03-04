@@ -124,7 +124,7 @@ A lot of the work in the planning meeting is ahead of time in compiling the agen
 
 I have a clear idea of where we are trying to get to with our tech strategy and what good looks like, but I don’t think I’ve shared that consistently well, so I've been consciously working on communicating that better.
 
-For example, I've added a page to the internal wiki, I gave [a talk at a conference](https://continuouslifecycle.london/sessions/launch-difficult-teenage-years/) and I’m currently working on a blog post (watch this space!). I'm also working on how we actually measure/evaluate that our tech strategy has been successful.
+For example, I've added a page to the internal wiki, I gave [a talk at a conference](/jfdi/after-the-launch.html) and I’m currently working on a blog post (watch this space!). I'm also working on how we actually measure/evaluate that our tech strategy has been successful.
 
 Interesting suggestions I had from my network around this included the idea of [command intent](https://en.wikipedia.org/wiki/Intent_(military)) and Amazon's practice of [working backwards](https://www.allthingsdistributed.com/2006/11/working_backwards.html).
 
