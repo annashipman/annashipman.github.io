@@ -146,3 +146,5 @@ What's our process for monitoring accuracy over time? How often will we retrain 
 *Organisational velocity* Where is our organisation genuinely constrained by legacy systems vs. slowed by bureaucracy? What would it take to create a team that moves at startup speed while maintaining core systems?
 
 *Execution vs. technology* How does our speed of iteration compare to competitors? Can we ship, learn, and improve faster?
+
+*This post originally appeared on [CxAI](https://cxai100.substack.com/p/three-ai-principles-every-exec-leader).*
