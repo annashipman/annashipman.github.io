@@ -57,7 +57,7 @@ The original conversation that sparked the panel was a discussion about whether 
 
 None of the panellists could see a scenario where they would go back to a role where they led only product or technology, AI or not.
 
-However, they all agreed that adaptability is the most important skill for all exec roles, especially with the current rate of change. CPTO is the role currently most needing to adapt to take advantage of AI advances, but they predicted CMO would be next, with COO (for example supply chains, logistics)  and CFO not far behind.
+However, we all agreed that adaptability is the most important skill for all exec roles, especially with the current rate of change. CPTO is the role currently most needing to adapt to take advantage of AI advances, but we predicted CMO would be next, with COO (for example supply chains, logistics)  and CFO not far behind.
 
 For all roles, as well as adaptability, other crucial skills include being able to mobilise people and move fast. Judgement and a product understanding is crucial: we've all seen companies finish their backlog but not a lot of companies actually delivering new value using AI, and that is because understanding what to build is the real distinction.
 
