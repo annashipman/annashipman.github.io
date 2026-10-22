@@ -2,7 +2,7 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <html lang="en-GB">
   <head>
-    <title>Anna Shipman{{ include.page_name }}</title>
+   <title>{% if include.page_title %}{{ include.page_title }}{% else %}Anna Shipman{{ include.page_name }}{% endif %}</title>
       <meta name="viewport" content="initial-scale=1, shrink-to-fit=no">
       <meta name="title" content="Anna Shipman">
       <meta name="description" content="Strategic technology leader">

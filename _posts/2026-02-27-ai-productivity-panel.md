@@ -1,7 +1,7 @@
 ---
 anchor_id: ai-prod-panel
 title: "Engineering Productivity in 2026: Where AI Actually Pays Off"
-tags: [Leadership, Technology]
+tags: [Speaking, Leadership, Technology]
 layout: blog_post
 ---
 Earlier this week I was on a panel with some excellent peers discussing AI and engineering productivity. We discussed how to measure engineering productivity; tactics for driving adoption; how this might change how we structure our teams and the impact on junior engineers, among other topics. Here are my notes.
