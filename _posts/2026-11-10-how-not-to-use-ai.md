@@ -38,7 +38,7 @@ This changed the way I ask questions of GenAI and it generates much more useful 
 
 ## Generic questions get generic answers
 
-Later in the book she suggests doing "prompt poetry". For example: "Show me how desire moves through digital spaces like wind through leaves" and later, showing it other worlds: "Where in nature does coordination happen without management?" One suggestion she has is ask GenAI to indentify domains where your constraints don't exist, or what pattern would make them irrelevant.
+Later in the book she suggests doing "prompt poetry". For example: "Show me how desire moves through digital spaces like wind through leaves" and later, showing it other worlds: "Where in nature does coordination happen without management?" One suggestion she has is ask GenAI to identify domains where your constraints don't exist, or what pattern would make them irrelevant.
 
 She also talks about asking for solutions from outside of your domain using the "pattern trinity": one from nature, one from art and one from an unexpected source, e.g. children's play.
 
@@ -48,7 +48,7 @@ She argues that these pattern-based questions strengthen your own pattern recogn
 
 Another thing she points out is that the nature of these tools mean they can work really well for different communication styles.
 
-For example, she has ADHD and suggests some with ADHD may feel frustrated by trying to force questions into linear order – "learning to prompt properly" – and instead, it's better to lean into stream of consciousness prompting, including all the tangential thinking. "By editing out your cognitive signature, you literally removed the competitive advantage—the unexpected connections that drive real innovation". She has simliar suggestions for Autism and Dyslexia.
+For example, she has ADHD and suggests some with ADHD may feel frustrated by trying to force questions into linear order – "learning to prompt properly" – and instead, it's better to lean into stream of consciousness prompting, including all the tangential thinking. "By editing out your cognitive signature, you literally removed the competitive advantage—the unexpected connections that drive real innovation". She has similar suggestions for Autism and Dyslexia.
 
 This also ties in with a recommendation she makes earlier in the book to try speaking to AI rather than typing. She says research suggests that speaking activates broader areas of the brain; though like all research she mentions in the book no specific research is cited, and it's not clear that any research into this does genuinely imply that speaking leads to a different quality of thought.
 
@@ -66,7 +66,7 @@ One the one hand, is that actually what we really want?! On the other hand, want
 
 ## She proposes a response
 
-It ends with a proposal to grow an alternative garden. "Grow a garden so compelling that people naturally migrate." I love this idea of how to fight back. What she explicitly means is a variety of things, from leaving companies that are surveillance-focused, to building digital platform cooperatives like Stocksy United and Resonate, to sovereign AI inititatives or distributed AI.
+It ends with a proposal to grow an alternative garden. "Grow a garden so compelling that people naturally migrate." I love this idea of how to fight back. What she explicitly means is a variety of things, from leaving companies that are surveillance-focused, to building digital platform cooperatives like Stocksy United and Resonate, to sovereign AI initiatives or distributed AI.
 
 In a discussion with some peers about about this book we had a really interesting debate about whether we are moving back to the '90s when everyone had a server in their office and we lose the value of centralised information, or whether that would actually be better.
 
@@ -74,7 +74,7 @@ In summary, she urges us to let AI accelerate our thinking and then take that le
 
 ## There's so much more
 
-There is so much more in this book that I haven't touched on; for example she talks about the computational inefficiency of the frontier labs' models as being an architectural choice, and halllucinations as a reflection of how we are, and an opportunity.
+There is so much more in this book that I haven't touched on; for example she talks about the computational inefficiency of the frontier labs' models as being an architectural choice, and hallucinations as a reflection of how we are, and an opportunity.
 
 She goes into the value of questions, "the creative act isn’t in judging outputs but in composing questions”, pointing out that the quality of your question determines the quality of your answers (true with or without AI), quoting the Sufi poet Rumi "Sell your cleverness and buy bewilderment".
 
@@ -96,4 +96,4 @@ The pattern throughout the book is reminding you of your own intelligence and wh
 
 It is a challenging read, both in a good way and in a not so good way. At times it is frustrating and the style can become grating. Some of the people I've recommended it to have not been happy with me afterwards (sorry Stephen!) but I still strongly recommend it.
 
-Even dipping in and out will give value, and if nothing else, it will help you keep your thinking nimble, and help you not lose sight of the importance of continuing to think for yourself.
+Even dipping in and out will give value, and if nothing else, it will help keep your thinking nimble. It will remind you of the importance of continuing to think for yourself.
