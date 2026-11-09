@@ -11,7 +11,7 @@ Earlier this year, I read [How Not To Use AI: 50 Contrarian Principles for the I
 
 It is a real counterpoint to the current AI narrative. We are currently being told a story about AI that is driven mostly by the big tech companies, but this book reminds us that there is always more than one story.
 
-I found this book incredibly refreshing and I found myself engaging with it in a way I've rarely done since my philosophy degree, including making notes in the margins of where a point struck home or I had a counter-argument. I very much didn’t agree with everything she said, but it was very thought-provoking.
+I found this book incredibly refreshing and I engaged with it in a way I've rarely done since my philosophy degree, including making notes in the margins when a point struck home or I had a counter-argument. I very much didn’t agree with everything she said, but it was very thought-provoking.
 
 For that reason alone, I have been recommending everyone pick it up, to get a different take. Be warned though: it is a challenging read, in content and writing style, as well as being a daunting size.
 
@@ -38,7 +38,7 @@ This changed the way I ask questions of GenAI and it generates much more useful 
 
 ## Generic questions get generic answers
 
-Later in the book she suggests doing "prompt poetry". For example: "Show me how desire moves through digital spaces like wind through leaves" and later, showing it other worlds: "Where in nature does coordination happen without management?" She advocates identifying domains where your constraints don't exist: "what pattern makes this constraint irrelevant?".
+Later in the book she suggests doing "prompt poetry". For example: "Show me how desire moves through digital spaces like wind through leaves" and later, showing it other worlds: "Where in nature does coordination happen without management?" One suggestion she has is ask GenAI to indentify domains where your constraints don't exist, or what pattern would make them irrelevant.
 
 She also talks about asking for solutions from outside of your domain using the "pattern trinity": one from nature, one from art and one from an unexpected source, e.g. children's play.
 
@@ -48,13 +48,15 @@ She argues that these pattern-based questions strengthen your own pattern recogn
 
 Another thing she points out is that the nature of these tools mean they can work really well for different communication styles.
 
-For example, she has ADHD and suggests some with ADHD may feel frustrated by trying to force questions into linear order – 'learning to prompt properly' – and instead, it's better to lean into stream of consciousness prompting, including all the tangential thinking. "By editing out your cognitive signature, you literally removed the competitive advantage—the unexpected connections that drive real innovation". She has simliar suggestions for Autism and Dyslexia.
+For example, she has ADHD and suggests some with ADHD may feel frustrated by trying to force questions into linear order – "learning to prompt properly" – and instead, it's better to lean into stream of consciousness prompting, including all the tangential thinking. "By editing out your cognitive signature, you literally removed the competitive advantage—the unexpected connections that drive real innovation". She has simliar suggestions for Autism and Dyslexia.
 
-This also ties in with a recommendation she makes earlier in the book to try speaking to AI rather than typing. She says research suggests that speaking activates broader areas of the brain; though like all research she mentions in the book no specific research is cited, and it's not clear that any research into this does genuinely imply that speaking leads to a different quality of thought. However, whatever the science behind it, I have definitely found that saying everything in an unstructured way can often be a very useful way to progress mhy thinking with AI.
+This also ties in with a recommendation she makes earlier in the book to try speaking to AI rather than typing. She says research suggests that speaking activates broader areas of the brain; though like all research she mentions in the book no specific research is cited, and it's not clear that any research into this does genuinely imply that speaking leads to a different quality of thought.
+
+However, whatever the science behind it, I have definitely found that saying everything in an unstructured way can often be a very useful way to progress my thinking with AI.
 
 ## Extraction thinking
 
-One theme that comes up throughout the book is AI as extraction thinking. "The system extracts twice: first from unpaid creators whose work trains the models, then from underpaid workers who make the output acceptable." She also says, when you approach it as an extraction machine you get spiritually dead answers.
+One theme that comes up throughout the book is AI as extraction thinking. "The system extracts twice: first from unpaid creators whose work trains the models, then from underpaid workers who make the output acceptable." She also says when you approach it as an extraction machine you get spiritually dead answers.
 
 Her response is to think for ourselves, as a form of rebellion: "Every time you choose to think before you prompt you're committing an act of resistance... they want your thinking externalised, captured, optimised and monetised. They want you dependent on tools they control, convinced you can't function without them".
 
@@ -74,20 +76,17 @@ In summary, she urges us to let AI accelerate our thinking and then take that le
 
 There is so much more in this book that I haven't touched on; for example she talks about the computational inefficiency of the frontier labs' models as being an architectural choice, and halllucinations as a reflection of how we are, and an opportunity.
 
-She goes into the value of questions, "the creative act isn’t in judging outputs but in composing questions”, pointing out that the quality of your question determines the quality of your answers (true with or without AI), quoting Rumi "Sell your cleverness and buy bewilderment".
+She goes into the value of questions, "the creative act isn’t in judging outputs but in composing questions”, pointing out that the quality of your question determines the quality of your answers (true with or without AI), quoting the Sufi poet Rumi "Sell your cleverness and buy bewilderment".
 
 I really appreciated that her examples were very frequently women or people of colour; for example when she’s talking about visionaries who shaped our world, the list is Ada Lovelace, Octavia Butler and Grace Hopper.
-
-You may even get something out of the third section of the book, which I could not.
-
 
 ## This is a heavy tome and hard to get through
 
 This book is self-published, which I can understand: the pace of change in AI means you wouldn't want to wait for a traditional publishing cycle to get this out there.
 
-However, it could really have benefited from a good editor. It's over 500 pages long and does not need to be; her arguments are strong, thought-provoking and refreshing but could have landed stronger in a third of the length.
+However, it could really have benefited from a good editor. It's over 500 pages long and does not need to be; her arguments are strong, thought-provoking and refreshing but could have landed more strongly in a third of the length.
 
-I did finish it, though if you are struggling to get through it, I'll share that she lost me around chapters 30-35, but I rejoined afterwards and continued to get value from it.
+I did finish it, though if you are struggling to get through it, I'll share that I did not get on with the third section of the book and she completely lost me around chapters 30-35, but I rejoined afterwards and continued to get value from it.
 
 ## I recommend this book for challenging your thinking
 
@@ -95,6 +94,6 @@ A few months after reading this, I am still thinking about it and applying some 
 
 The pattern throughout the book is reminding you of your own intelligence and what that brings. Done well, you are getting AI to amplify, sharpen, enhance, challenge, develop your own thinking. Not do the thinking for you.
 
-It is a challenging read, both in a good way and in a not so good way. At times it is frustrating and the style can become grating. Some of the people I've recommended it to have not been happy with me afterwards (sorry Stephen!) but I would still strongly recommend reading some or all of it.
+It is a challenging read, both in a good way and in a not so good way. At times it is frustrating and the style can become grating. Some of the people I've recommended it to have not been happy with me afterwards (sorry Stephen!) but I still strongly recommend it.
 
-Even dipping in and out will give value and if nothing else, it will help you keep your thinking nimble and help you not lose sight of the importance of continuing to think for yourself.
+Even dipping in and out will give value, and if nothing else, it will help you keep your thinking nimble, and help you not lose sight of the importance of continuing to think for yourself.
